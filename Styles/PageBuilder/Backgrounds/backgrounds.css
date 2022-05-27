@@ -1,0 +1,16 @@
+@import "../Vendors/normalize.css";
+.landingPage {
+    background-image: url('/Assets/Backgrounds/LandingPage.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.steelDesktopGradient {
+    background-image: url('/Assets/Backgrounds/SteelDesktopGradient.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100vw;
+    min-height: 100vh;
+}
