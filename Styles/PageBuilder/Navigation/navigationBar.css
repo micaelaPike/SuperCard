@@ -1,16 +1,34 @@
+@import url("../Global/index.css");
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap');
 .navList {
     display: flex;
     list-style-type: none;
-    gap: 3rem;
-    font-size: 2rem;
+    gap: 2rem;
+    font-size: 1.5rem;
     font-family: 'Gothic A1', sans-serif;
     font-weight: 800;
     padding-right: 3rem;
 }
 
 .navList a {
+    padding: 0.5rem;
+}
+
+.navList a:link {
     color: black;
+}
+
+.navList a:visited {
+    color: purple;
+}
+
+.navList a:hover {
+    background-color: #d4a7a5;
+    color: #1c1313;
+}
+
+.navList a:active {
+    color: #cf000e;
 }
 
 .navBar1 {
@@ -35,10 +53,9 @@
     align-items: center;
     margin-right: auto;
     padding-left: 1rem;
-    border-width: 0px;
 }
 
-.scLogo {
-    border-width: 0px;
+.navLogo img {
     width: 100%;
+    height: 4rem;
 }

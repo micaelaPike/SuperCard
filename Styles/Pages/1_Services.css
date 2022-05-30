@@ -1,6 +1,40 @@
 @import url("../Global/index.css");
 .scVideo {
-    width: 60rem;
-    padding-top: 17.5rem;
-    padding-left: 9rem;
+    width: 45rem;
+    padding-left: 4rem;
+}
+
+.mainContainer {
+    display: flex;
+}
+
+.servicesContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    align-items: center;
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+.servicesParagraph {
+    display: flex;
+    padding: 1rem;
+}
+
+.servicesList {
+    padding: 2rem;
+}
+
+.servicesList li {
+    display: flex;
+    padding-left: 50px;
+    list-style-type: none;
+    background-image: url('/Assets/Logos/SuperCardIcon.png');
+    background-position: 0 0;
+    background-size: 2.5rem;
+    background-repeat: no-repeat;
 }
