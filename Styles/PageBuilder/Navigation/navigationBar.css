@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import "../Vendors/normalize.css";
 .navList {
     display: flex;
     list-style-type: none;
     gap: 3rem;
     font-size: 2rem;
-    color: black;
     font-family: 'Gothic A1', sans-serif;
-    font-style: 'ExtraBold';
+    font-weight: 800;
+    padding-right: 3rem;
+}
+
+.navList a {
+    color: black;
 }
 
 .navBar1 {
@@ -23,9 +26,8 @@
     align-items: center;
     justify-content: right;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0.45) 59.37%, rgba(255, 255, 255, 0) 100%);
-    padding-right: 3rem;
     padding-top: 1rem;
-    width: calc(100vw - 1rem - 3rem);
+    width: 100vw;
 }
 
 .navLogo {

@@ -1,0 +1,16 @@
+@import "Styles/Global/index.css";
+.pageHeading {
+    font-size: 56px;
+    font-family: 'bauhaus';
+    font-weight: 800;
+    padding-left: 6rem;
+    width: calc(100vw - 6rem);
+}
+
+.pageHeading p1 {
+    color: black;
+}
+
+.pageHeading p2 {
+    color: #cf000e
+}
