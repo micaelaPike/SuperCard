@@ -3,6 +3,7 @@
 @import "../PageBuilder/Headings/PageHeadings.css";
 @import "../PageBuilder/Backgrounds/backgrounds.css";
 @import "../Pages/1_Services.css";
+@import "../Pages/2_Cards.css";
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @font-face {
     src: url('/Assets/Fonts/Bauhaus-Font-Family/BauhausRegular.ttf'), url('Assets/FontsBauhaus-Font-Family/BauhausBold.ttf'), url('Assets/Fonts/Bauhaus-Font-Family/BauhausBoldItalic.ttf'), url('Assets/Fonts/Bauhaus-Font-Family/BauhausItalic.ttf'), url('Assets/Fonts/Bauhaus-Font-Family/BAUHHL.ttf'), url('Assets/Fonts/Bauhaus-Font-Family/BROOKH2.ttf');

@@ -19,12 +19,17 @@
 }
 
 .navList a:visited {
-    color: purple;
+    color: #cf000e;
 }
 
 .navList a:hover {
+    border-radius: 15px;
     background-color: #d4a7a5;
     color: #1c1313;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
 
 .navList a:active {
