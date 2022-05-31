@@ -1,17 +1,18 @@
-@import "Styles/Global/index.css";
-.pageHeading {
-    font-size: 56px;
-    font-family: 'bauhaus';
-    font-weight: 800;
-    padding-top: 1rem;
-    padding-left: 4rem;
-    width: calc(100vw - 4rem);
-}
-
-.pageHeading p1 {
-    color: black;
-}
-
-.pageHeading p2 {
-    color: #cf000e
-}
+    @import "Styles/Global/index.css";
+    .pageHeading {
+        font-size: 56px;
+        font-family: 'bauhaus';
+        font-weight: 800;
+        padding-top: 1rem;
+        padding-left: 4rem;
+        width: calc(100vw - 4rem);
+    }
+    
+    .pageHeadingP1 {
+        color: black;
+    }
+    
+    mark {
+        all: unset;
+        color: #cf000e;
+    }
