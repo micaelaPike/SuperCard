@@ -3,9 +3,9 @@
         font-size: 56px;
         font-family: 'bauhaus';
         font-weight: 800;
-        padding-top: 1rem;
-        padding-left: 4rem;
-        width: calc(100vw - 4rem);
+        padding-top: 8px;
+        padding-left: 64px;
+        width: calc(100vw - 64px);
     }
     
     .pageHeadingP1 {

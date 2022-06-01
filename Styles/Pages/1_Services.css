@@ -1,11 +1,10 @@
-@import url("../Global/index.css");
+.mainContainer {
+    display: flex;
+}
+
 .scVideo {
     width: 45rem;
     padding-left: 4rem;
-}
-
-.mainContainer {
-    display: flex;
 }
 
 .servicesContainer {

@@ -1,99 +1,61 @@
-    @import url("../Global/index.css");
-    .mainContainer {
-        display: flex;
-    }
-    
-    .cardDescription {
-        display: flex;
-        flex-direction: column;
-        width: 47rem;
-        padding-left: 4rem;
-        font-family: 'Gothic A1', sans-serif;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 2rem;
-        font-size: 1.75rem;
-    }
-    
-    .cardDescription p1 {
-        padding: 1rem 0rem 0rem 2rem;
-    }
-    
-    .cardDescription p2 {
-        padding: 1rem 0rem 1rem 2rem;
-    }
-    
-    .cardCarouselContainer {
-        display: flex;
-        flex-direction: column;
-        width: calc(100vw - 47rem);
-    }
-    
-    .cardHeading {
-        font-size: 48px;
-        font-family: 'bauhaus';
-        font-weight: 600;
-        padding: 0rem 2rem 0.5rem 0rem;
-        margin-left: calc(100vw - 47rem - 22rem);
-    }
-    
-    .cardHeading p1 {
-        color: black;
-    }
-    
-    .cardHeading p2 {
-        color: #cf000e;
-    }
-    
-    .cardCarousel {
-        width: 550px;
-        margin-left: calc(100vw - 47rem - 40rem);
-        border-radius: 30px;
-        box-shadow: 21px 21px 19px -1px rgba(0, 0, 0, 0.79);
-    }
-    
-    .carouselSelectContainer {
-        display: flex;
-        flex-direction: row;
-        margin-top: 1rem;
-        margin-left: calc(100vw - 47rem - 33rem);
-    }
-    
-    .carouselSelect {
-        display: flex;
-        border-radius: 50%;
-        height: 1.5rem;
-        width: 1.5rem;
-        padding: 0.8rem;
-        margin: 0.5rem;
-        background-color: #cf000e;
-        border-color: #cf000e;
-        box-shadow: 6px 8px 17px 0px rgba(0, 0, 0, 0.75);
-    }
-    
-    .active {
-        background-color: black;
-        border-color: black;
-    }
-    
-    .carouselNext {
-        width: 2.8rem;
-        height: 2.8rem;
-        border-radius: 50%;
-        margin-left: 0.75rem;
-        margin-top: 0.1rem;
-        box-shadow: 6px 8px 17px 0px rgba(0, 0, 0, 0.75);
-    }
-    
-    .register {
-        display: flex;
-        width: 27.5rem;
-        height: 4.25rem;
-        border: 6px solid #cf000e;
-        font-size: 2rem;
-        font-family: 'Gothic A1', sans-serif;
-        font-weight: 700;
-        margin: 0rem 35rem 5rem;
-        align-items: center;
-        justify-content: center;
-    }
+.mainContainer {
+    display: flex;
+}
+
+.cardDescription {
+    display: flex;
+    flex-direction: column;
+    width: 47rem;
+    padding-left: 4rem;
+    font-family: 'Gothic A1', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2rem;
+    font-size: 1.75rem;
+}
+
+.cardDescription p1 {
+    padding: 1rem 0rem 0rem 2rem;
+}
+
+.cardDescription p2 {
+    padding: 1rem 0rem 1rem 2rem;
+}
+
+.cardHeading {
+    font-size: 48px;
+    font-family: 'bauhaus';
+    font-weight: 600;
+    padding: 0rem 2rem 0.5rem 0rem;
+    margin-left: calc(100vw - 47rem - 22rem);
+}
+
+.cardHeading p1 {
+    color: black;
+}
+
+.cardHeading p2 {
+    color: #cf000e;
+}
+
+.carouselNext {
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    margin-left: 0.75rem;
+    margin-top: 0.1rem;
+    box-shadow: 6px 8px 17px 0px rgba(0, 0, 0, 0.75);
+}
+
+.register {
+    display: flex;
+    width: 27.5rem;
+    height: 4.25rem;
+    border: 6px solid #cf000e;
+    font-size: 2rem;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 700;
+    margin: 0rem 32rem 5rem;
+    align-items: center;
+    justify-content: center;
+}

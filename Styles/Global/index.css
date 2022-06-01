@@ -2,10 +2,95 @@
 @import "../PageBuilder/Navigation/navigationBar.css";
 @import "../PageBuilder/Headings/PageHeadings.css";
 @import "../PageBuilder/Backgrounds/backgrounds.css";
+@import "../PageBuilder/Carousel/carousel.css";
 @import "../Pages/1_Services.css";
-@import "../Pages/2_Cards.css";
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @font-face {
     src: url('/Assets/Fonts/Bauhaus-Font-Family/BauhausRegular.ttf'), url('Assets/FontsBauhaus-Font-Family/BauhausBold.ttf'), url('Assets/Fonts/Bauhaus-Font-Family/BauhausBoldItalic.ttf'), url('Assets/Fonts/Bauhaus-Font-Family/BauhausItalic.ttf'), url('Assets/Fonts/Bauhaus-Font-Family/BAUHHL.ttf'), url('Assets/Fonts/Bauhaus-Font-Family/BROOKH2.ttf');
     font-family: 'Bauhaus';
+}
+
+.scLogo {
+    display: flex;
+    width: calc(100vw - 20rem);
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin: 1rem 10rem 1rem 10rem;
+}
+
+.scLogo img {
+    width: 65rem;
+}
+
+.mainContainer {
+    display: flex;
+}
+
+.side1 {
+    width: 50%;
+}
+
+.side2 {
+    width: 50%;
+}
+
+.btnContainer {
+    display: flex;
+    margin: 7rem 10rem 0rem 4rem;
+}
+
+.btnCards {
+    width: 12rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: 'Gothic-A1', sans-serif;
+    background-color: #cf000e;
+    color: white;
+    border-color: #cf000e;
+    border-radius: 25px;
+    padding: 0.7rem 0.5rem 0.7rem 0.5rem;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    margin-right: auto;
+    margin-left: 5rem;
+}
+
+.btnServices {
+    width: 12rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Gothic-A1', sans-serif;
+    background-color: white;
+    color: #cf000e;
+    border-color: white;
+    border-radius: 25px;
+    padding: 0.7rem 0.5rem 0.7rem 0.5rem;
+    box-shadow: 8px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    margin-left: auto;
+    margin-right: 8rem;
+}
+
+.infoContainer {
+    display: flex;
+    margin: 3rem 10rem 0rem 4rem;
+}
+
+.infoContainer p {
+    font-size: 2rem;
+    font-family: 'Bauhaus';
+    font-weight: 600;
+    align-items: center;
+}
+
+mark.centered {
+    display: flex;
+    justify-content: center;
+}
+
+.spacer {
+    width: 1rem;
+    height: 4rem;
+    background-color: dimgrey;
+    border-radius: 15px;
+    opacity: 90%;
+    margin: 0rem 4rem 0rem 4rem;
 }

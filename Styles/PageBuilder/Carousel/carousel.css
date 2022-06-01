@@ -1,0 +1,36 @@
+.cardCarouselContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardCarousel {
+    display: flex;
+    width: 25rem;
+    border-radius: 30px;
+    box-shadow: 21px 21px 19px -1px rgba(0, 0, 0, 0.79);
+}
+
+.carouselSelectContainer {
+    display: flex;
+    flex-direction: row;
+    justify-items: right;
+    margin: 1rem 16rem;
+}
+
+.carouselSelect {
+    display: flex;
+    border-radius: 50%;
+    height: 1.5rem;
+    width: 1.5rem;
+    padding: 0.8rem;
+    margin: 0.5rem;
+    background-color: #cf000e;
+    border-color: #cf000e;
+    box-shadow: 6px 8px 17px 0px rgba(0, 0, 0, 0.75);
+}
+
+.selected {
+    background-color: black;
+    border-color: black;
+}
