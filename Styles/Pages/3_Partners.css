@@ -23,11 +23,6 @@
     display: flex;
     width: 100%;
     justify-content: center;
-    margin-top: 10%;
-}
-
-.logoContainer a {
-    display: flex;
 }
 
 .logoContainer img {
@@ -50,4 +45,8 @@
 .bmsLogo {
     display: flex;
     width: 8%;
+}
+
+.mapHeight {
+    min-height: 60vh;
 }

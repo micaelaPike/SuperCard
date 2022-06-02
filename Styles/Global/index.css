@@ -28,20 +28,23 @@
     width: 100%;
 }
 
+
+/* 
 .side1 {
     width: 50%;
-}
+} */
 
 .infoContainer {
     display: flex;
-    width: 100%;
-    margin: 20% 2.5% 0% 1.25%;
+    width: 50%;
+    margin: 8% 2.5% 0% 3%;
 }
 
 .col1 {
     display: flex;
     flex-direction: column;
     width: 43%;
+    align-items: center;
 }
 
 .col2 {
@@ -67,8 +70,8 @@
     padding: 1rem 3rem;
     box-shadow: 8px 5px 5px 0px rgba(0, 0, 0, 0.75);
     justify-content: left;
-    margin-left: 10%;
-    margin-right: auto;
+    /* margin-left: 10%; */
+    /* margin-right: auto; */
     cursor: pointer;
 }
 

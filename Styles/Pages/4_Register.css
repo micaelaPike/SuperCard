@@ -1,0 +1,42 @@
+.registerTextContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 600;
+    font-size: 140%;
+    line-height: 2.1rem;
+    margin: 2% 0% 0% 5%;
+}
+
+.p1 {
+    font-size: 140%;
+    padding: 0rem 3rem 2rem 3rem;
+}
+
+.registerList {
+    padding: 1rem 3rem 1rem 3rem;
+}
+
+.registerList li {
+    padding-top: 1%;
+    padding-left: 5%;
+}
+
+.kioskContainer {
+    display: flex;
+    width: 50%;
+}
+
+.kioskImageContainer {
+    display: flex;
+    width: 100%;
+}
+
+.kioskImage {
+    display: flex;
+    margin: 2% 15% 2% 15%;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
