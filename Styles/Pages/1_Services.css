@@ -1,39 +1,74 @@
-.mainContainer {
+.videoContainer {
     display: flex;
+    width: 50%;
 }
 
 .scVideo {
-    width: 45rem;
-    padding-left: 4rem;
+    width: 95%;
+    padding: 2rem 0rem 0rem 3rem;
 }
 
 .servicesContainer {
     display: flex;
     flex-direction: column;
-    padding: 1.5rem;
+    width: 50%;
     align-items: center;
     font-family: 'Gothic A1', sans-serif;
-    font-style: normal;
     font-weight: 600;
-    font-size: 1.5rem;
-    line-height: 2.5rem;
+    font-size: 140%;
+    line-height: 2.1rem;
+    margin-right: 5%;
 }
 
 .servicesParagraph {
     display: flex;
-    padding: 1rem;
+    width: 100%;
+    padding: 16px;
+}
+
+.servicesListContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .servicesList {
-    padding: 2rem;
+    padding: 24px;
 }
 
 .servicesList li {
-    display: flex;
-    padding-left: 50px;
+    padding-left: 10%;
     list-style-type: none;
     background-image: url('/Assets/Logos/SuperCardIcon.png');
     background-position: 0 0;
-    background-size: 2.5rem;
+    background-size: 5%;
     background-repeat: no-repeat;
+}
+
+.poweredBy {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 800;
+    font-size: 150%;
+    margin: 5% 25% 34% 25%;
+    background-color: aliceblue;
+    padding: 1%;
+    border-radius: 55px;
+    opacity: 80%;
+}
+
+.scLogoServices {
+    display: flex;
+    width: 35%;
+    padding-right: 1.6%;
+    margin-left: 8%;
+}
+
+.sabissLogo {
+    display: flex;
+    width: 25%;
+    padding-left: 1.6%;
+    margin-right: 7%;
 }

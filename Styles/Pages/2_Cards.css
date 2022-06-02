@@ -1,12 +1,8 @@
-.mainContainer {
-    display: flex;
-}
-
 .cardDescription {
     display: flex;
     flex-direction: column;
-    width: 47rem;
-    padding-left: 4rem;
+    width: 50%;
+    padding-left: 5%;
     font-family: 'Gothic A1', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -14,12 +10,8 @@
     font-size: 1.75rem;
 }
 
-.cardDescription p1 {
+.cardDescription p {
     padding: 1rem 0rem 0rem 2rem;
-}
-
-.cardDescription p2 {
-    padding: 1rem 0rem 1rem 2rem;
 }
 
 .cardHeading {
@@ -30,12 +22,8 @@
     margin-left: calc(100vw - 47rem - 22rem);
 }
 
-.cardHeading p1 {
+.cardHeading p {
     color: black;
-}
-
-.cardHeading p2 {
-    color: #cf000e;
 }
 
 .carouselNext {

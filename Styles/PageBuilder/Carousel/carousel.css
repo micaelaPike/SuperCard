@@ -1,13 +1,16 @@
 .cardCarouselContainer {
     display: flex;
+    width: 50%;
     flex-direction: column;
     align-items: center;
 }
 
 .cardCarousel {
     display: flex;
-    width: 25rem;
+    width: 50%;
+    margin-top: 5%;
     border-radius: 30px;
+    object-position: center;
     box-shadow: 21px 21px 19px -1px rgba(0, 0, 0, 0.79);
 }
 
@@ -28,6 +31,7 @@
     background-color: #cf000e;
     border-color: #cf000e;
     box-shadow: 6px 8px 17px 0px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
 }
 
 .selected {
