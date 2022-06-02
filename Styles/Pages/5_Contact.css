@@ -1,0 +1,33 @@
+.contactInfoContainer {
+    display: flex;
+    width: 50%;
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+    width: 80%;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 600;
+    font-size: 150%;
+    line-height: 2.1rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 3%;
+}
+
+.contactHeading {
+    display: flex;
+    align-self: center;
+    font-family: 'Bauhaus';
+    font-size: 180%;
+    padding-bottom: 1rem;
+}
+
+.contactHeading mark {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
