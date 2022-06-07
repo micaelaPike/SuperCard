@@ -13,7 +13,7 @@
     <div id="Contact" class="redDesktopGradient">
         <nav class="navBar2">
             <div class="navLogo">
-                <a href="../index.html"><img src="../Assets/Logos/SuperCard.png" alt="Home"></a>
+                <a href="../home.html"><img src="../Assets/Logos/SuperCard.png" alt="Home"></a>
             </div>
             <ul class="navList">
                 <li class="navListItem"><a href="../Pages/1_Services.html">Services</a></li>
@@ -34,9 +34,48 @@
                 </div>
             </div>
             <div class="contactForm">
+                <p class="formHeading">Talk To Us</p>
+                <div class="largeForm">
 
-            </div>
+                    <input type="text" id="name" value="Name" placeholder="Name" class="details">
+                    <input type="number" id="number" value="Number" placeholder="Contact Number" class="details">
+                    <input type="text" id="email" value="Email" placeholder="Email" class="details">
+                    <!-- <input type="text" id="message" placeholder="Message" class="details message"> -->
+                    <textarea id="message" value="Message" name="message" class="details message" placeholder="Message" rows="1" cols="50"></textarea>
+                </div>
+                <button type="submit" class="submitBtn">Submit</button> </div>
         </div>
+
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" />
+
+
+    <script type="text/javascript">
+        debugger;
+        let name = document.querySelector("#name").value;
+        let number = document.querySelector("#number").value;
+        let email = document.querySelector("#email").value;
+        let message = document.querySelector("#message").value;
+        (function() {
+            emailjs.init("eylt68t36B7sf7Baf");
+        })();
+
+        var templateParams = {
+            name,
+            number,
+            email,
+            message
+        };
+
+        emailjs.send('service_cnprkth', 'template_fqsuwrr', templateParams)
+            .then(function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+            }, function(error) {
+                console.log('FAILED...', error);
+            });
+    </script>
+
 </body>
 
 </html>

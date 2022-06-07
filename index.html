@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./Scripts/Components/carousel.js"></script>
     <link rel="stylesheet" href="./Styles/Global/index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SuperCard</title>
 </head>
 
@@ -21,7 +22,7 @@
             </ul>
         </nav>
         <div class="scLogoIndex">
-            <a href="./index.html"><img src="../Assets/Logos/SuperCard.png" alt="Home"></a>
+            <a href="./home.html"><img src="../Assets/Logos/SuperCard.png" alt="Home"></a>
         </div>
         <div class="mainContainer">
 
@@ -46,16 +47,16 @@
 
 
 
-            <div class="cardCarouselContainer">
+            <div id="imageCarouselContainer" class="cardCarouselContainer">
 
-                <img class="cardCarousel" src="./Assets/Images/Cards/StokvelCard.png" alt="SuperCard Card Designs"></img>
+                <img id="imageCarousel" class="cardCarousel" src="./Assets/Images/Cards/StokvelCard.png" alt="SuperCard Card Designs"></img>
 
                 <div class="carouselSelectContainer">
 
-                    <button class="carouselSelect selected"></button>
-                    <button class="carouselSelect"></button>
-                    <button class="carouselSelect"></button>
-                    <button class="carouselSelect"></button>
+                    <button id="btnOne" class="carouselSelect selected"></button>
+                    <button id="btnTwo" class="carouselSelect"></button>
+                    <button id="btnThree" class="carouselSelect"></button>
+                    <button id="btnFour" class="carouselSelect"></button>
 
                 </div>
 
