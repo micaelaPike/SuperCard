@@ -6,9 +6,9 @@ const cardDesciption = ["The functionality of this card ensures that the funds a
     "This card offers a retailer the opportunity to upload funds for their staff members and ensure that funds are spent in the store. <br>SuperCard will make these cards available upon the individual store’s request and will set up the rules of the card as per the store’s instruction."
 ];
 
+const cardHeadings = ["Stokvel Card", "Savings Card", "Gift Card", "Staff Card"];
 
 
-//let screen = document.
 let carouselContainer = document.querySelector(".cardCarouselContainer");
 let cardCarousel = document.querySelector(".cardCarousel");
 let carouselSelect = document.querySelectorAll(".carouselSelect");
@@ -17,7 +17,7 @@ let carouselNext = document.querySelector(".carouselNext");
 let carouselCounter = 0;
 
 function carouselTimer() {
-    myinterval = setInterval((changeStateTimer), 5000);
+    myinterval = setInterval((changeStateTimer), 7000);
 }
 
 carouselTimer();
@@ -27,36 +27,26 @@ function changeStateTimer() {
 
     if (carouselCounter >= cards.length) {
         carouselCounter = 0;
-    }
+    };
+
     cardCarousel.src = cards[carouselCounter];
 }
 
 function changeState(index) {
-
     cardCarousel.src = cards[index];
     carouselCounter = index;
     clearInterval(myinterval);
     carouselTimer();
 
-    console.log(cardCarousel)
+    console.log(cardCarousel);
 
 }
 
 carouselSelect.forEach((el, index) => {
     console.log(el.id + " " + index);
     el.addEventListener("click", function() { changeState(index) });
-
-
 });
 
-carouselNext.addEventListener("click", changeStateTimer);
-
-// function getOffset(el) {
-//     const rect = el.getBoundingClientRect();
-//     return {
-//         left: rect.left + window.scrollX,
-//         top: rect.top + window.scrollY
-//     };
-// }
-
-// console.log(getOffset(cardCarousel).left + " " + getOffset(cardCarousel).top)
+document.addEventListener("load", function() {
+    carouselNext.addEventListener("click", changeStateTimer);
+});
