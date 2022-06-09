@@ -1,66 +1,65 @@
-    @import url("../Global/index.css");
-    .navList {
-        all: unset;
-        display: flex;
-        list-style-type: none;
-        gap: 3rem;
-        font-size: 1.5rem;
-        font-family: 'Gothic A1', sans-serif;
-        font-weight: 800;
-        padding: 1rem 4rem;
-        border-radius: 15px;
-        -webkit-border-radius: 15px;
-        -moz-border-radius: 15px;
-        -ms-border-radius: 15px;
-        -o-border-radius: 15px;
-    }
-    
-    .navListItem {
-        all: unset;
-        background-color: transparent;
-        color: black;
-    }
-    
-    .active {
-        all: unset;
-        color: #cf000e;
-        border-color: #cf000e;
-        background-color: transparent;
-    }
-    
-    .navList a:visited {
-        all: unset;
-    }
-    
-    .navBar1 {
-        all: unset;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0.45) 70%, rgba(255, 255, 255, 0) 100%);
-        padding: 1.5rem 0rem;
-        width: 100vw;
-    }
-    
-    .navBar2 {
-        all: unset;
-        display: flex;
-        align-items: center;
-        justify-content: right;
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0.45) 70%, rgba(255, 255, 255, 0) 100%);
-        padding: 1rem 0rem;
-        width: 100vw;
-    }
-    
-    .navLogo {
-        all: unset;
-        display: flex;
-        align-items: center;
-        margin-right: auto;
-        padding-left: 16px;
-    }
-    
-    .navLogo img {
-        width: 100%;
-        height: 4rem;
-    }
+  .navList {
+      all: unset;
+      display: flex;
+      list-style-type: none;
+      gap: 3rem;
+      font-size: 1.5rem;
+      font-family: 'Gothic A1', sans-serif;
+      font-weight: 800;
+      padding: 1rem 4rem;
+      border-radius: 15px;
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      -ms-border-radius: 15px;
+      -o-border-radius: 15px;
+  }
+  
+  .navListItem {
+      all: unset;
+      background-color: transparent;
+      color: black;
+  }
+  
+  .active {
+      all: unset;
+      color: #cf000e;
+      border-color: #cf000e;
+      background-color: transparent;
+  }
+  
+  .navList a:visited {
+      all: unset;
+  }
+  
+  .navBar1 {
+      all: unset;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0.45) 70%, rgba(255, 255, 255, 0) 100%);
+      padding: 1.5rem 0rem;
+      width: 100vw;
+  }
+  
+  .navBar2 {
+      all: unset;
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0.45) 70%, rgba(255, 255, 255, 0) 100%);
+      padding: 1rem 0rem;
+      width: 100vw;
+  }
+  
+  .navLogo {
+      all: unset;
+      display: flex;
+      align-items: center;
+      margin-right: auto;
+      padding-left: 16px;
+  }
+  
+  .navLogo img {
+      width: 100%;
+      height: 4rem;
+  }

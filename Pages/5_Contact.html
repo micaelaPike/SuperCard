@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" defer src="../Scripts/Components/emailForm.js"></script>
     <link rel="stylesheet" href="../Styles/Global/index.css" />
     <title>Contact Us</title>
 </head>
@@ -26,6 +27,8 @@
         <div class="pageHeading">
             <p>Our <mark>Contact Information</mark></p>
         </div>
+        <div class="snackbar">Message sent successfully!</div>
+        <div id="failure" class="snackbar failure">Error! Message failed to send...</div>
         <div class="mainContainer">
             <div class="contactInfoContainer">
                 <div class="contactInfo">
@@ -35,47 +38,25 @@
             </div>
             <div class="contactForm">
                 <p class="formHeading">Talk To Us</p>
-                <div class="largeForm">
+                <form id="emailForm" action="#" class="largeForm" method="get" required>
+                    <label for="userName" class="formLabel">Name:</label>
+                    <input type="text" id="name" name="name" value="Name" placeholder="Name" class="details" required>
+                    <label for="userNumber" class="formLabel">Number:</label>
+                    <input type="text" id="number" name="number" value="Number" placeholder="Contact Number" class="details" required>
+                    <label for="userEmail" class="formLabel">Email:</label>
+                    <input type="text" id="email" name="email" value="Email" placeholder="Email" class="details" required>
+                    <label for="userMessage" class="formLabel">Message:</label>
+                    <textarea id="message" value="Message" name="message" class="details message" placeholder="Message" rows="1" cols="50" required></textarea>
+                    <label for="submitButton" class="formLabel">Submit:</label>
+                    <button type="submit" name="submit" class="submitBtn">Submit</button>
+                </form>
+            </div>
 
-                    <input type="text" id="name" value="Name" placeholder="Name" class="details">
-                    <input type="number" id="number" value="Number" placeholder="Contact Number" class="details">
-                    <input type="text" id="email" value="Email" placeholder="Email" class="details">
-                    <!-- <input type="text" id="message" placeholder="Message" class="details message"> -->
-                    <textarea id="message" value="Message" name="message" class="details message" placeholder="Message" rows="1" cols="50"></textarea>
-                </div>
-                <button type="submit" class="submitBtn">Submit</button> </div>
         </div>
 
     </div>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" />
-
-
-    <script type="text/javascript">
-        debugger;
-        let name = document.querySelector("#name").value;
-        let number = document.querySelector("#number").value;
-        let email = document.querySelector("#email").value;
-        let message = document.querySelector("#message").value;
-        (function() {
-            emailjs.init("eylt68t36B7sf7Baf");
-        })();
-
-        var templateParams = {
-            name,
-            number,
-            email,
-            message
-        };
-
-        emailjs.send('service_cnprkth', 'template_fqsuwrr', templateParams)
-            .then(function(response) {
-                console.log('SUCCESS!', response.status, response.text);
-            }, function(error) {
-                console.log('FAILED...', error);
-            });
-    </script>
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </body>
 
 </html>
