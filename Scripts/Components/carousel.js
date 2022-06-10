@@ -1,21 +1,17 @@
 "use strict";
 
-
+import { myInterval } from "./timer";
 
 const cards = ["../Assets/Images/Cards/StokvelCard.png", "../Assets/Images/Cards/SavingsCard.png", "../Assets/Images/Cards/GiftCard.png", "../Assets/Images/Cards/StaffCard.png"]
 
-let cardCarousel = document.querySelector(".cardCarousel");
-let carouselSelect = document.querySelectorAll(".carouselSelect");
+export let cardCarousel = document.querySelector(".cardCarousel");
+export let carouselSelect = document.querySelectorAll(".carouselSelect");
 
 export let carouselCounter = 0;
 
-export let myInterval = setInterval((changeState), 10000);
+export function changeStateTimer() {
+    cardCarousel.classList.add("animation");
 
-
-clearInterval(myInterval);
-
-
-function changeStateTimer() {
     carouselCounter++;
 
     if (carouselCounter >= cards.length) {
@@ -23,13 +19,9 @@ function changeStateTimer() {
     };
 
     cardCarousel.src = cards[carouselCounter];
-    clearInterval(myInterval);
-    myInterval = setInterval((changeState), 10000);
-    console.log(carouselCounter);
 
     changeSelectedBtn(carouselCounter);
 }
-
 
 export function changeSelectedBtn(selectedBtnIndex) {
 
@@ -44,22 +36,37 @@ export function changeSelectedBtn(selectedBtnIndex) {
     carouselSelect[selectedBtnIndex].classList.add("selected");
 }
 
-export function changeState(btnIndex) {
-    clearInterval(myInterval);
+function changeState(btnIndex) {
+
+    cardCarousel.classList.remove("animation");
+    cardCarousel.offsetWidth;
+    cardCarousel.classList.add("animation");
     cardCarousel.src = cards[btnIndex];
-    carouselCounter = btnIndex;
+    console.log(btnIndex);
+    changeSelectedBtn(btnIndex);
 
-    console.log(carouselCounter);
-
-    changeSelectedBtn(carouselCounter);
+    clearInterval(myInterval);
+    myInterval;
 }
 
-export function selectbtnAddClick() {
-    carouselSelect.forEach((el, index) => {
-        console.log(el.id + " " + index);
-        el.addEventListener("click", function() { changeState(index) });
-    });
+function selectbtnAddClick() {
+    carouselSelect.forEach(function(item, index) {
+        item.addEventListener("click", function() { changeState(index) });
+    })
+
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    selectbtnAddClick();
+    console.log(window.location.pathname);
+
+    if (window.location.pathname !== "/Pages/index.html") {
+        clearInterval(myInterval);
+        cardCarousel.classList.remove("animation");
+    }
+});
+
+
 
 // function getOffset(el) {
 //     let rect = el.getBoundingClientRect();
@@ -75,4 +82,3 @@ export function selectbtnAddClick() {
 // function newFunction() {
 //     console.log(getOffset(cardCarousel).left + " " + getOffset(cardCarousel).top);
 // }
-//  <!-- <script type="module" defer src="../Scripts/Components/carousel.js"></script> -->
