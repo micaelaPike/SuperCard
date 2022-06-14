@@ -2,16 +2,17 @@
 
 import { myInterval } from "./timer.js";
 
-const cards = ["../Assets/Images/Cards/StokvelCard.png", "../Assets/Images/Cards/SavingsCard.png", "../Assets/Images/Cards/GiftCard.png", "../Assets/Images/Cards/StaffCard.png"]
+export const cards = ["../Assets/Images/Cards/StokvelCard.png", "../Assets/Images/Cards/SavingsCard.png", "../Assets/Images/Cards/GiftCard.png", "../Assets/Images/Cards/StaffCard.png"]
 
 export let cardCarousel = document.querySelector(".cardCarousel");
 export let carouselSelect = document.querySelectorAll(".carouselSelect");
 
 export let carouselCounter = 0;
 
+let intervalId = 0;
 
-if (window.location.pathname === "/index.html") {
-    let intervalId = myInterval();
+if (window.location.pathname === "/index.html" || window.location.pathname === "/") {
+    intervalId = myInterval();
 
 }
 
@@ -45,8 +46,8 @@ export function changeSelectedBtn(selectedBtnIndex) {
 
 function changeState(btnIndex) {
 
-
-    if (window.location.pathname === "/index.html") {
+    debugger;
+    if (window.location.pathname === "/index.html" || window.location.pathname === "/") {
         clearInterval(intervalId);
     }
     cardCarousel.classList.remove("animation");
@@ -56,10 +57,8 @@ function changeState(btnIndex) {
     carouselCounter = btnIndex - 1;
     console.log(btnIndex);
     changeSelectedBtn(btnIndex);
-
-
     if (window.location.pathname === "/index.html") {
-        clearInterval(intervalId);
+        intervalId = myInterval();
     }
     //myInterval = setInterval((changeStateTimer), 5000);
 }
@@ -77,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     console.log(window.location.pathname);
 
-    if (window.location.pathname !== "/index.html") {
+    if (window.location.pathname !== "/index.html" || window.location.pathname !== "/") {
         clearInterval(myInterval);
         cardCarousel.classList.remove("animation");
     }
