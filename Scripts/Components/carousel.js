@@ -1,6 +1,6 @@
 "use strict";
 
-import { myInterval } from "./timer";
+import { myInterval } from "./timer.js";
 
 const cards = ["../Assets/Images/Cards/StokvelCard.png", "../Assets/Images/Cards/SavingsCard.png", "../Assets/Images/Cards/GiftCard.png", "../Assets/Images/Cards/StaffCard.png"]
 
@@ -8,6 +8,12 @@ export let cardCarousel = document.querySelector(".cardCarousel");
 export let carouselSelect = document.querySelectorAll(".carouselSelect");
 
 export let carouselCounter = 0;
+
+
+if (window.location.pathname === "/index.html") {
+    let intervalId = myInterval();
+
+}
 
 export function changeStateTimer() {
     cardCarousel.classList.add("animation");
@@ -21,6 +27,7 @@ export function changeStateTimer() {
     cardCarousel.src = cards[carouselCounter];
 
     changeSelectedBtn(carouselCounter);
+    console.log(carouselCounter);
 }
 
 export function changeSelectedBtn(selectedBtnIndex) {
@@ -38,15 +45,23 @@ export function changeSelectedBtn(selectedBtnIndex) {
 
 function changeState(btnIndex) {
 
+
+    if (window.location.pathname === "/index.html") {
+        clearInterval(intervalId);
+    }
     cardCarousel.classList.remove("animation");
     cardCarousel.offsetWidth;
     cardCarousel.classList.add("animation");
     cardCarousel.src = cards[btnIndex];
+    carouselCounter = btnIndex - 1;
     console.log(btnIndex);
     changeSelectedBtn(btnIndex);
 
-    clearInterval(myInterval);
-    myInterval;
+
+    if (window.location.pathname === "/index.html") {
+        clearInterval(intervalId);
+    }
+    //myInterval = setInterval((changeStateTimer), 5000);
 }
 
 function selectbtnAddClick() {
@@ -58,9 +73,11 @@ function selectbtnAddClick() {
 
 document.addEventListener("DOMContentLoaded", function() {
     selectbtnAddClick();
+    cardCarousel.classList.add("animation");
+
     console.log(window.location.pathname);
 
-    if (window.location.pathname !== "/Pages/index.html") {
+    if (window.location.pathname !== "/index.html") {
         clearInterval(myInterval);
         cardCarousel.classList.remove("animation");
     }

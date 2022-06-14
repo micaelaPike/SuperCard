@@ -24,7 +24,7 @@ carouselNext.addEventListener("click", changeContent(carouselCounter));
 function changeContent(cardIndex) {
     cardCarousel.classList.remove("animation");
     cardCarousel.src = cards[cardIndex];
-    changeSelectedBtn(btnIndex);
+    changeSelectedBtn(cardIndex);
 
     cardDescription.innerHTML = cardDesciptionArr[cardIndex];
     cardHeading.innerHTML = cardHeadingArr[cardIndex];
