@@ -46,7 +46,6 @@ export function changeSelectedBtn(selectedBtnIndex) {
 
 function changeState(btnIndex) {
 
-    debugger;
     if (window.location.pathname === "/index.html" || window.location.pathname === "/") {
         clearInterval(intervalId);
     }
@@ -55,12 +54,11 @@ function changeState(btnIndex) {
     cardCarousel.classList.add("animation");
     cardCarousel.src = cards[btnIndex];
     carouselCounter = btnIndex - 1;
-    console.log(btnIndex);
+    // console.log(btnIndex);
     changeSelectedBtn(btnIndex);
     if (window.location.pathname === "/index.html") {
         intervalId = myInterval();
     }
-    //myInterval = setInterval((changeStateTimer), 5000);
 }
 
 function selectbtnAddClick() {
@@ -81,20 +79,3 @@ document.addEventListener("DOMContentLoaded", function() {
         cardCarousel.classList.remove("animation");
     }
 });
-
-
-
-// function getOffset(el) {
-//     let rect = el.getBoundingClientRect();
-
-//     return {
-//         left: rect.left + window.scrollX,
-//         top: rect.top + window.scrollY
-//     };
-// }
-
-// newFunction();
-
-// function newFunction() {
-//     console.log(getOffset(cardCarousel).left + " " + getOffset(cardCarousel).top);
-// }
