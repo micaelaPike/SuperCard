@@ -9,6 +9,19 @@ export let carouselSelect = document.querySelectorAll(".carouselSelect");
 
 export let carouselCounter = 0;
 
+export function setCounter() {
+    carouselCounter++;
+    if (carouselCounter === cards.length) {
+        carouselCounter = 0;
+        return;
+    }
+}
+
+export function incCounter() {
+    carouselCounter++;
+
+}
+
 let intervalId = 0;
 
 if (window.location.pathname === "/index.html" || window.location.pathname === "/") {
@@ -52,6 +65,11 @@ function changeState(btnIndex) {
     cardCarousel.classList.remove("animation");
     cardCarousel.offsetWidth;
     cardCarousel.classList.add("animation");
+
+    if ((carouselCounter < 0) || (carouselCounter >= cards.length)) {
+        carouselCounter = 0;
+    };
+
     cardCarousel.src = cards[btnIndex];
     carouselCounter = btnIndex - 1;
     // console.log(btnIndex);
@@ -72,7 +90,6 @@ document.addEventListener("DOMContentLoaded", function() {
     selectbtnAddClick();
     cardCarousel.classList.add("animation");
 
-    console.log(window.location.pathname);
 
     if (window.location.pathname !== "/index.html" || window.location.pathname !== "/") {
         clearInterval(myInterval);
