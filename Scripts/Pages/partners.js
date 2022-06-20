@@ -1,8 +1,7 @@
-mapboxgl.accessToken = 'pk.eyJ1IjoibWljYWVsYS1zYWJpc3MiLCJhIjoiY2w0ZmY0cW1nMDA2YTNqcG0xcWV3YmRhOCJ9.Y4ZMenp1rJ7DLu40QkYjXA';
+let map = L.map("map").setView([-29.087217, 26.154898], 5);
 
-const map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/mapbox/light-v10',
-    center: [28.034088, -26.195246],
-    zoom: 4.5
+let osm = L.tileLayer("https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=jzUEBDy0K2YzaDzSHs7U", {
+    attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
 });
+
+osm.addTo(map);
