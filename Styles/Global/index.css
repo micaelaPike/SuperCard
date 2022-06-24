@@ -54,7 +54,7 @@
     width: 43%;
 }
 
-.btnCards {
+.btnRegister {
     width: 19rem;
     font-size: 25px;
     font-weight: 600;
@@ -65,10 +65,8 @@
     border-radius: 25px;
     padding: 1rem 3rem;
     box-shadow: 8px 5px 5px 0px rgba(0, 0, 0, 0.75);
-    justify-content: left;
-    /* margin-left: 10%; */
-    /* margin-right: auto; */
     cursor: pointer;
+    justify-content: left;
 }
 
 .btnServices {

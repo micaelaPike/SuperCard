@@ -12,6 +12,26 @@
     margin-left: 1rem;
 }
 
+
+/* .btnMapView {
+    display: flex;
+    margin-right: 15rem;
+    margin-left: -15rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Gothic-A1', sans-serif;
+    background-color: white;
+    color: #cf000e;
+    border-color: white;
+    border-radius: 25px;
+    padding: 1rem 3rem;
+    box-shadow: 8px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+} */
+
 .leaflet-popup-content {
     text-align: center;
 }

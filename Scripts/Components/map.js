@@ -23,11 +23,36 @@ let SuperCardIcon = L.icon({
 let map = L.map("map").setView([-28.0046, 26.7732], 5);
 
 //Map Layers
-let osm = L.tileLayer("https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=jzUEBDy0K2YzaDzSHs7U", {
-    attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
+let OpenStreetMap_Mapnik = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 });
 
-osm.addTo(map);
+OpenStreetMap_Mapnik.addTo(map);
+
+//Change Map View
+// let btnLayerChange = document.querySelector("#btnLayerChange");
+// let osm = true;
+
+// btnLayerChange.addEventListener("click", changeLayer);
+
+// function changeLayer() {
+
+//         let OpenStreetMap_Mapnik = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+//         maxZoom: 19,
+//         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+//     });
+
+//     OpenStreetMap_Mapnik.addTo(map);
+// }
+
+//     let Esri_WorldImagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+//         maxZoom: 19,
+//         attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+//     });
+
+//     Esri_WorldImagery.addTo(map);
+
 
 const markerLocations = await createMarker();
 
