@@ -25,33 +25,40 @@ let map = L.map("map").setView([-28.0046, 26.7732], 5);
 //Map Layers
 let OpenStreetMap_Mapnik = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    // attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+});
+
+let Esri_WorldImagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+    maxZoom: 19,
+    // attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
 });
 
 OpenStreetMap_Mapnik.addTo(map);
+let mapLayer = "osMap";
 
-//Change Map View
-// let btnLayerChange = document.querySelector("#btnLayerChange");
-// let osm = true;
+// Change Map View
+let btnLayerChange = document.querySelector("#btnLayerChange");
 
-// btnLayerChange.addEventListener("click", changeLayer);
+// debugger;
+console.log(mapLayer);
 
-// function changeLayer() {
+function changeLayer() {
 
-//         let OpenStreetMap_Mapnik = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-//         maxZoom: 19,
-//         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-//     });
+    if (mapLayer == "osMap") {
+        Esri_WorldImagery.addTo(map)
+        mapLayer = "ewiMap";
+        console.log(mapLayer);
 
-//     OpenStreetMap_Mapnik.addTo(map);
-// }
+    } else if (mapLayer == "ewiMap") {
+        OpenStreetMap_Mapnik.addTo(map);
+        mapLayer = "osMap";
+        console.log(mapLayer);
 
-//     let Esri_WorldImagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-//         maxZoom: 19,
-//         attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
-//     });
+    }
+}
 
-//     Esri_WorldImagery.addTo(map);
+btnLayerChange.addEventListener("click", changeLayer);
+
 
 
 const markerLocations = await createMarker();
@@ -65,7 +72,7 @@ const markerLocations = await createMarker();
 
 //Markers
 markerLocations.forEach(function(item, index) {
-    console.log(markerLocations[index].Longitude, markerLocations[index].Latitude);
+    // console.log(markerLocations[index].Longitude, markerLocations[index].Latitude);
     L.marker([markerLocations[index].Longitude, markerLocations[index].Latitude], { icon: SuperCardIcon })
         .bindPopup(`${markerLocations[index].StoreName.bold()} <br>
         ${markerLocations[index].Address}`)

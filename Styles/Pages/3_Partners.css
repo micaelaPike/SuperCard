@@ -2,14 +2,15 @@
         display: flex;
         flex-direction: column;
         width: 50%;
-        padding: 1rem;
+        padding: 1rem 7rem 1rem 1rem;
+        text-align: justify;
     }
     
     .partnersTextContainer p {
         align-items: center;
         font-family: 'Gothic A1', sans-serif;
         font-weight: 600;
-        font-size: 140%;
+        font-size: 120%;
         line-height: 2.1rem;
     }
     
