@@ -1,9 +1,5 @@
 // "use strict";
 let snackbar = document.querySelector(".snackbar");
-let success = document.getElementById("success");
-let failure = document.getElementById("failure");
-
-
 
 function vanish(element) {
     element.style.display = "none";
