@@ -17,10 +17,6 @@ export function setCounter() {
     }
 }
 
-export function incCounter() {
-    carouselCounter++;
-
-}
 
 let intervalId = 0;
 
@@ -58,7 +54,7 @@ export function changeSelectedBtn(selectedBtnIndex) {
 }
 
 function changeState(btnIndex) {
-
+    //debugger;
     if (window.location.pathname === "/index.html" || window.location.pathname === "/") {
         clearInterval(intervalId);
     }
@@ -71,8 +67,8 @@ function changeState(btnIndex) {
     };
 
     cardCarousel.src = cards[btnIndex];
-    carouselCounter = btnIndex - 1;
-    // console.log(btnIndex);
+    carouselCounter = btnIndex;
+    console.log(btnIndex);
     changeSelectedBtn(btnIndex);
     if (window.location.pathname === "/index.html") {
         intervalId = myInterval();

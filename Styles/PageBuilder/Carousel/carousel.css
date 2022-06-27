@@ -18,8 +18,8 @@
 }
 
 .animation {
-    animation: rotation 2s infinite linear;
-    -webkit-animation: rotation 2s infinite linear;
+    animation: rotation 3s infinite linear;
+    -webkit-animation: rotation 3s infinite linear;
 }
 
 .carouselSelectContainer {

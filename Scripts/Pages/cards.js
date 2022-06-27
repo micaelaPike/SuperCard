@@ -1,9 +1,7 @@
 "use strict";
 
-import { carouselCounter } from "../Components/carousel.js";
 import { myInterval } from "../Components/timer.js";
-import { cardCarousel, carouselSelect, changeSelectedBtn, cards } from "../Components/carousel.js";
-import { setCounter, incCounter } from "../Components/carousel.js";
+import { carouselCounter, cardCarousel, carouselSelect, changeSelectedBtn, cards, setCounter } from "../Components/carousel.js";
 
 const cardDesciptionArr = ["The functionality of this card ensures that the funds are secured for a long period of time. Perfect for the end of the year when most celebrations occur.<br>The card is electronically blocked and pin protected, which assures the customers that the funds they have accumulated over the months are available at the end of the year. <br><br></br> <a>Super<mark>Card</mark> opens the profile on the 15th of November and closes the profile on the 15th of February.</a>",
     "This is the most popular card, perfectly replacing traditional stamps. This card is tailor made to suit the day-to-day shopper. No transactional costs involved means that the shopper can use the card multiple times a day, week or month with peace of mind that their funds are secure.",
@@ -18,18 +16,20 @@ let cardDescription = document.querySelector(".cardDescription");
 let carouselNext = document.querySelector('.carouselNext')
 
 carouselNext.onclick = () => {
+    //debugger;
     console.log(carouselCounter)
     console.log('clicked')
-    changeContent(carouselCounter);
+    nextButtonClick();
 }
 
 function changeContent(cardIndex) {
+    console.log("changeContent");
 
     if (cardCarousel.classList.contains("animation")) {
         cardCarousel.classList.remove("animation");
     }
     setCounter();
-
+    console.log(carouselCounter);
     cardCarousel.src = cards[cardIndex];
     changeSelectedBtn(cardIndex);
 
@@ -39,6 +39,18 @@ function changeContent(cardIndex) {
     clearInterval(myInterval);
 }
 
+function nextButtonClick() {
+    if (cardCarousel.classList.contains("animation")) {
+        cardCarousel.classList.remove("animation");
+    }
+    setCounter();
+    cardCarousel.src = cards[carouselCounter];
+    changeSelectedBtn(carouselCounter);
+
+    cardDescription.innerHTML = cardDesciptionArr[carouselCounter];
+    cardHeading.innerHTML = cardHeadingArr[carouselCounter];
+}
+
 function selectbtnAddClickCards() {
     carouselSelect.forEach(
         function(item, index) {
@@ -46,6 +58,7 @@ function selectbtnAddClickCards() {
         });
 }
 document.addEventListener("DOMContentLoaded", function() {
+    console.log(carouselCounter);
     cardDescription.innerHTML = cardDesciptionArr[0];
     selectbtnAddClickCards();
 });
