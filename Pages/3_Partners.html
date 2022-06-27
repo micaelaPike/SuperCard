@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
     <link rel="icon" href="../Assets/Logos/favicon.ico">
     <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.js" integrity="sha512-OFs3W4DIZ5ZkrDhBFtsCP6JXtMEDGmhl0QPlmWYBJay40TT1n3gt2Xuw8Pf/iezgW9CdabjkNChRqozl/YADmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="module" defer src="/Scripts/Components/map.js"></script>
+
 
 
     <title>Partners</title>
@@ -41,7 +43,7 @@
                 <form class="searchStoreForm">
                     <label class="lblSearchStore" for="searchStore">Is your store a SuperCard store?</label><br>
                     <input class="inputSearchStore" type="text" id="searchStore" name="searchStore" placeholder="Type your store name here...">
-                    <input class="submitBtn small" type="submit" value="Submit">
+                    <input id="btnSearchStore" class="submitBtn small" type="submit" value="Submit">
                 </form>
             </div>
         </div>

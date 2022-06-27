@@ -33,3 +33,17 @@
 .leaflet-popup-content {
     text-align: center;
 }
+
+.markerIcon {
+    background-image: url('/Assets/Logos/SuperCardFavicon.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.leaflet-marker-icon {
+    margin: 0;
+    width: 20px;
+    height: 20px;
+}
