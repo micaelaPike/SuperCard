@@ -86,6 +86,30 @@ markerLocations.forEach(function(item, index) {
     markerCluster.addLayer(L.marker([markerLocations[index].Longitude, markerLocations[index].Latitude], { icon: SuperCardIcon }).bindPopup(`${markerLocations[index].StoreName.bold()} <br>
         ${markerLocations[index].Address}`));
     markerCluster.addTo(map).on('click', function(e) {
-        map.panTo(e.latlng).setZoom(20);
+        console.log("hello");
+
+        map.flyTo(e.latlng, 17, { duration: 3, easeLinearity: 5 });
     });
 });
+
+function searchStore() {
+
+    let inputSearchStore = document.getElementById("searchStore").value;
+
+    // debugger;
+    // map.flyTo([-29.752778, 30.7403891], 17, { duration: 3, easeLinearity: 5 });
+    markerLocations.forEach(function(item, index) {
+        if (((markerLocations[index].StoreName).toLowerCase()) || ((markerLocations[index].Address).toLowerCase()) === inputSearchStore.toLowerCase()) {
+            map.flyTo([parseFloat(item.Longitude), parseFloat(item.Latitude)], 17, { duration: 3, easeLinearity: 5 });
+            console.log("success");
+
+        } else {
+            console.log("fail");
+        }
+
+
+    })
+}
+let btnSearchStore = document.querySelector("#btnSearchStore");
+
+btnSearchStore.addEventListener("click", searchStore);
