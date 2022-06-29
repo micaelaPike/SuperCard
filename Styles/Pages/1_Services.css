@@ -18,6 +18,8 @@
     font-size: 140%;
     line-height: 2.1rem;
     margin-right: 5%;
+    align-content: center;
+    text-align: justify;
 }
 
 .servicesParagraph {
@@ -41,7 +43,7 @@
     list-style-type: none;
     background-image: url('/Assets/Logos/SuperCardFavicon.png');
     background-position: 0 0;
-    background-size: 5%;
+    background-size: 2rem;
     background-repeat: no-repeat;
 }
 
@@ -71,4 +73,9 @@
     width: 25%;
     padding-left: 1.6%;
     margin-right: 7%;
+}
+
+.sabissLogoImg {
+    display: flex;
+    width: 100%;
 }

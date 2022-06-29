@@ -22,6 +22,10 @@ let SuperCardIcon = L.icon({
     popUpAnchor: [0, 0]
 })
 
+// let clusterIcon = L.icon({
+//     icon
+// })
+
 //Map View on Load
 let map = L.map('map', {
     minZoom: 0,
@@ -71,7 +75,7 @@ var markerCluster = new L.MarkerClusterGroup({
         return L.divIcon({
             html: '<div></div>',
             width: "20px",
-            heigh: "20px",
+            height: "20px",
             className: 'markerIcon',
             iconSize: L.point(20, 20),
 
@@ -102,3 +106,10 @@ function searchStore() {
 }
 
 btnSearchStore.addEventListener("click", searchStore);
+
+// var element = document.getElementById('searchStore');
+// var topPos = element.getBoundingClientRect().top + window.scrollY;
+// var leftPos = element.getBoundingClientRect().left + window.scrollX;
+// var d = document.getElementById("div1");
+// var topPos = d.offsetTop;
+// console.log(leftPos);
