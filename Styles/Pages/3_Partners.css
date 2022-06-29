@@ -14,10 +14,6 @@
         line-height: 2.1rem;
     }
     
-    .searchStoreForm {
-        margin-top: 1rem;
-    }
-    
     .lblSearchStore {
         font-size: 200%;
         font-weight: 600;
@@ -38,6 +34,7 @@
         text-align: center;
         justify-content: center;
         padding: 0.8rem 1.2rem 0.8rem 1.2rem;
+        margin-top: 1rem;
         color: #cf000e;
         font-family: 'Gothic A1', sans-serif;
         font-weight: 800;

@@ -18,11 +18,13 @@
 }
 
 .cardHeading {
+    display: flex;
     font-size: 48px;
     font-family: 'bauhaus';
     font-weight: 600;
-    padding: 0rem 2rem 0.5rem 0rem;
-    margin-left: calc(100vw - 47rem - 22rem);
+    /* padding: 0rem 2rem 0.5rem 0rem; */
+    /* margin-left: calc(100vw - 47rem - 22rem); */
+    justify-content: center;
 }
 
 .cardHeading p {

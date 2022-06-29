@@ -1,49 +1,53 @@
-#map {
-    width: 50%;
-    height: 60vh;
-    border: 5px;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-    border-style: solid;
-    border-color: black;
-    margin-left: 1rem;
-}
-
-.btnMapView {
-    display: flex;
-    margin-right: 2rem;
-    margin-top: 0.25rem;
-    margin-bottom: 0.15rem;
-    align-items: center;
-    font-size: 25px;
-    font-weight: 600;
-    font-family: 'Gothic-A1', sans-serif;
-    background-color: white;
-    color: #cf000e;
-    border-color: white;
-    border-radius: 25px;
-    padding: 0.5rem 3rem;
-    box-shadow: 8px 5px 5px 0px rgba(0, 0, 0, 0.75);
-    cursor: pointer;
-}
-
-.leaflet-popup-content {
-    text-align: center;
-}
-
-.markerIcon {
-    background-image: url('/Assets/Logos/SuperCardFavicon.png');
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-}
-
-.leaflet-marker-icon {
-    margin: 0;
-    width: 20px;
-    height: 20px;
-}
+    #map {
+        width: 50%;
+        height: 60vh;
+        /* border: 5px; */
+        border: 0px;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        border-style: solid;
+        border-color: black;
+        margin-left: 1rem;
+        box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.45);
+        -webkit-box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.45);
+        -moz-box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.45);
+    }
+    
+    .btnMapView {
+        display: flex;
+        margin-right: 2rem;
+        margin-top: 0.25rem;
+        margin-bottom: 0.15rem;
+        align-items: center;
+        font-size: 25px;
+        font-weight: 600;
+        font-family: 'Gothic-A1', sans-serif;
+        background-color: white;
+        color: #cf000e;
+        border-color: white;
+        border-radius: 25px;
+        padding: 0.5rem 3rem;
+        box-shadow: 8px 5px 5px 0px rgba(0, 0, 0, 0.75);
+        cursor: pointer;
+    }
+    
+    .leaflet-popup-content {
+        text-align: center;
+    }
+    
+    .markerIcon {
+        background-image: url('/Assets/Logos/SuperCardFavicon.png');
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    
+    .leaflet-marker-icon {
+        margin: 0;
+        width: 20px;
+        height: 20px;
+    }
