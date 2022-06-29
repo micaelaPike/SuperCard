@@ -1,3 +1,5 @@
+let btnSearchStore = document.querySelector("#btnSearchStore");
+
 //Import JSON file with coordinates
 async function createMarker() {
 
@@ -92,24 +94,11 @@ markerLocations.forEach(function(item, index) {
     });
 });
 
+
 function searchStore() {
-
     let inputSearchStore = document.getElementById("searchStore").value;
-
-    // debugger;
-    // map.flyTo([-29.752778, 30.7403891], 17, { duration: 3, easeLinearity: 5 });
-    markerLocations.forEach(function(item, index) {
-        if (((markerLocations[index].StoreName).toLowerCase()) || ((markerLocations[index].Address).toLowerCase()) === inputSearchStore.toLowerCase()) {
-            map.flyTo([parseFloat(item.Longitude), parseFloat(item.Latitude)], 17, { duration: 3, easeLinearity: 5 });
-            console.log("success");
-
-        } else {
-            console.log("fail");
-        }
-
-
-    })
+    let searchQuery = markerLocations.find(item => item.StoreName.toLowerCase() === inputSearchStore.toLowerCase() || item.Address.toLowerCase() === inputSearchStore.toLowerCase());
+    map.flyTo([searchQuery.Longitude, searchQuery.Latitude], 17, { duration: 2, easeLinearity: 5 });
 }
-let btnSearchStore = document.querySelector("#btnSearchStore");
 
 btnSearchStore.addEventListener("click", searchStore);
