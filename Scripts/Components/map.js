@@ -96,21 +96,25 @@ let markerCluster = new L.MarkerClusterGroup({
 //Markers
 markerLocations.forEach(function(item, index) {
     console.log(markerLocations[index].Longitude, markerLocations[index].Latitude);
+    //debugger;
 
+    let marker = L.marker([markerLocations[index].Longitude, markerLocations[index].Latitude]);
 
-    markerCluster.addLayer(L.marker([markerLocations[index].Longitude, markerLocations[index].Latitude], { icon: SuperCardIcon }).bindPopup(`${markerLocations[index].StoreName.bold()} <br>
-        ${markerLocations[index].Address}`));
+    marker.bindPopup(`${ markerLocations[index].StoreName.bold() } <br> ${ markerLocations[index].Address }`);
 
     if (markerLocations.StoreType === "Spar") {
-        L.marker.setIcon(sparIcon);
+        console.log("spar");
+        marker.setIcon(new sparIcon);
     } else if (markerLocations.StoreType === "BMS") {
-        L.marker.setIcon(bmsIcon);
+        console.log("bms");
+        marker.setIcon(new bmsIcon);
     }
+
+    markerCluster.addLayer(marker);
+
     markerCluster.addTo(map).on('click', function(e) {
         console.log("hello");
         map.flyTo(e.latlng, 17, { duration: 3, easeLinearity: 5 });
-
-
     });
 });
 
