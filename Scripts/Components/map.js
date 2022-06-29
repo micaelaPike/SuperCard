@@ -18,13 +18,23 @@ async function createMarker() {
 let SuperCardIcon = L.icon({
     iconUrl: "/Assets/Logos/SuperCardFavicon.png",
     iconSize: [20, 20],
-    iconAnchor: [10, 20],
-    popUpAnchor: [0, 0]
+    iconAnchor: [10, 0],
+    popUpAnchor: [20, 0]
 })
 
-// let clusterIcon = L.icon({
-//     icon
-// })
+let bmsIcon = L.icon({
+    iconUrl: "/Assets/Logos/BMSIcon.png",
+    iconSize: [50, 30],
+    iconAnchor: [25, 0],
+    popUpAnchor: [50, 0]
+})
+
+let sparIcon = L.icon({
+    iconUrl: "/Assets/Logos/sparIcon.png",
+    iconSize: [40, 40],
+    iconAnchor: [20, 0],
+    popUpAnchor: [40, 0]
+})
 
 //Map View on Load
 let map = L.map('map', {
@@ -70,7 +80,7 @@ btnLayerChange.addEventListener("click", changeLayer);
 
 const markerLocations = await createMarker();
 //debugger;
-var markerCluster = new L.MarkerClusterGroup({
+let markerCluster = new L.MarkerClusterGroup({
     iconCreateFunction: function() {
         return L.divIcon({
             html: '<div></div>',
@@ -83,18 +93,24 @@ var markerCluster = new L.MarkerClusterGroup({
     },
 });
 
-//Marker load confirmation
-console.log(markerLocations);
-
 //Markers
 markerLocations.forEach(function(item, index) {
     console.log(markerLocations[index].Longitude, markerLocations[index].Latitude);
+
+
     markerCluster.addLayer(L.marker([markerLocations[index].Longitude, markerLocations[index].Latitude], { icon: SuperCardIcon }).bindPopup(`${markerLocations[index].StoreName.bold()} <br>
         ${markerLocations[index].Address}`));
+
+    if (markerLocations.StoreType === "Spar") {
+        L.marker.setIcon(sparIcon);
+    } else if (markerLocations.StoreType === "BMS") {
+        L.marker.setIcon(bmsIcon);
+    }
     markerCluster.addTo(map).on('click', function(e) {
         console.log("hello");
-
         map.flyTo(e.latlng, 17, { duration: 3, easeLinearity: 5 });
+
+
     });
 });
 
