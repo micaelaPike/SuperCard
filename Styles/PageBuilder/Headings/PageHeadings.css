@@ -2,8 +2,7 @@
         font-size: 300%;
         font-family: 'bauhaus';
         font-weight: 800;
-        padding-top: 8px;
-        padding-left: 64px;
+        padding: 0.5rem 0px 0.5rem 4rem;
         /* width: 100vw; */
         width: 50vw;
         text-align: center;

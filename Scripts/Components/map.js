@@ -98,24 +98,39 @@ markerLocations.forEach(function(item, index) {
     console.log(markerLocations[index].Longitude, markerLocations[index].Latitude);
     //debugger;
 
-    let marker = L.marker([markerLocations[index].Longitude, markerLocations[index].Latitude]);
-
-    marker.bindPopup(`${ markerLocations[index].StoreName.bold() } <br> ${ markerLocations[index].Address }`);
+    let marker;
+    // let marker = L.marker([markerLocations[index].Longitude, markerLocations[index].Latitude], { icon: bmsIcon });
 
     if (markerLocations.StoreType === "Spar") {
         console.log("spar");
-        marker.setIcon(new sparIcon);
+        marker = L.marker([markerLocations[index].Longitude, markerLocations[index].Latitude], { icon: sparIcon });
+        marker.bindPopup(`${ markerLocations[index].StoreName.bold() } <br> ${ markerLocations[index].Address }`);
+        markerCluster.addLayer(marker);
+
+        markerCluster.addTo(map).on('click', function(e) {
+            console.log("hello");
+            map.flyTo(e.latlng, 17, { duration: 3, easeLinearity: 5 });
+        });
+        // marker.setIcon(new sparIcon);
     } else if (markerLocations.StoreType === "BMS") {
         console.log("bms");
-        marker.setIcon(new bmsIcon);
+        marker = L.marker([markerLocations[index].Longitude, markerLocations[index].Latitude], { icon: bmsIcon });
+        marker.bindPopup(`${ markerLocations[index].StoreName.bold() } <br> ${ markerLocations[index].Address }`);
+        markerCluster.addLayer(marker);
+
+        markerCluster.addTo(map).on('click', function(e) {
+            console.log("hello");
+            map.flyTo(e.latlng, 17, { duration: 3, easeLinearity: 5 });
+        });
+        // marker.setIcon(new bmsIcon);
     }
 
-    markerCluster.addLayer(marker);
+    // markerCluster.addLayer(marker);
 
-    markerCluster.addTo(map).on('click', function(e) {
-        console.log("hello");
-        map.flyTo(e.latlng, 17, { duration: 3, easeLinearity: 5 });
-    });
+    // markerCluster.addTo(map).on('click', function(e) {
+    //     console.log("hello");
+    //     map.flyTo(e.latlng, 17, { duration: 3, easeLinearity: 5 });
+    // });
 });
 
 
