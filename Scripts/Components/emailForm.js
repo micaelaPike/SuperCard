@@ -25,7 +25,7 @@ window.onload = function() {
             }, function(error) {
                 console.log('FAILED...', error);
                 failure.style.display = "block";
-                snackbar.style.backgroundColor = "##ff2f18";
+                snackbar.style.backgroundColor = "#ff2f18";
                 snackbar.style.color = "white";
                 setTimeout(vanish, 3000, snackbar);
             })

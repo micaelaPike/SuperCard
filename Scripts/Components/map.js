@@ -1,4 +1,7 @@
 let btnSearchStore = document.querySelector("#btnSearchStore");
+let searchErrorBox = document.querySelector(".searchError");
+let closeButton = document.querySelector(".closeButton");
+
 
 //Import JSON file with coordinates
 async function createMarker() {
@@ -32,7 +35,7 @@ let bmsIcon = L.icon({
 let sparIcon = L.icon({
     iconUrl: "/Assets/Logos/sparIcon.png",
     iconSize: [40, 40],
-    iconAnchor: [20, 0],
+    iconAnchor: [20, 20],
     popUpAnchor: [40, 0]
 })
 
@@ -66,12 +69,12 @@ function changeLayer() {
 
     if (mapLayer == "osMap") {
         OpenStreetMap_Mapnik.setZIndex(0).addTo(map);
-        Esri_WorldImagery.setZIndex(9999).addTo(map)
+        Esri_WorldImagery.setZIndex(9000).addTo(map)
         mapLayer = "ewiMap";
 
     } else if (mapLayer == "ewiMap") {
         Esri_WorldImagery.setZIndex(0).addTo(map)
-        OpenStreetMap_Mapnik.setZIndex(9999).addTo(map);
+        OpenStreetMap_Mapnik.setZIndex(9000).addTo(map);
         mapLayer = "osMap";
     }
 }
@@ -95,52 +98,55 @@ let markerCluster = new L.MarkerClusterGroup({
 
 //Markers
 markerLocations.forEach(function(item, index) {
-    console.log(markerLocations[index].Longitude, markerLocations[index].Latitude);
-    //debugger;
+    // console.log(markerLocations[index].Longitude, markerLocations[index].Latitude);
+    let marker = L.marker([markerLocations[index].Longitude, markerLocations[index].Latitude], );
 
-    let marker;
-    // let marker = L.marker([markerLocations[index].Longitude, markerLocations[index].Latitude], { icon: bmsIcon });
-
-    if (markerLocations.StoreType === "Spar") {
-        console.log("spar");
+    if (item.StoreType === "Spar") {
         marker = L.marker([markerLocations[index].Longitude, markerLocations[index].Latitude], { icon: sparIcon });
         marker.bindPopup(`${ markerLocations[index].StoreName.bold() } <br> ${ markerLocations[index].Address }`);
         markerCluster.addLayer(marker);
 
         markerCluster.addTo(map).on('click', function(e) {
-            console.log("hello");
             map.flyTo(e.latlng, 17, { duration: 3, easeLinearity: 5 });
         });
         // marker.setIcon(new sparIcon);
-    } else if (markerLocations.StoreType === "BMS") {
-        console.log("bms");
+    } else if (item.StoreType === "BMS") {
         marker = L.marker([markerLocations[index].Longitude, markerLocations[index].Latitude], { icon: bmsIcon });
         marker.bindPopup(`${ markerLocations[index].StoreName.bold() } <br> ${ markerLocations[index].Address }`);
         markerCluster.addLayer(marker);
 
         markerCluster.addTo(map).on('click', function(e) {
-            console.log("hello");
             map.flyTo(e.latlng, 17, { duration: 3, easeLinearity: 5 });
         });
         // marker.setIcon(new bmsIcon);
     }
 
-    // markerCluster.addLayer(marker);
 
-    // markerCluster.addTo(map).on('click', function(e) {
-    //     console.log("hello");
-    //     map.flyTo(e.latlng, 17, { duration: 3, easeLinearity: 5 });
-    // });
 });
-
+let inputSearchStore;
 
 function searchStore() {
-    let inputSearchStore = document.getElementById("searchStore").value;
+    inputSearchStore = document.getElementById("searchStore").value;
+
     let searchQuery = markerLocations.find(item => item.StoreName.toLowerCase() === inputSearchStore.toLowerCase() || item.Address.toLowerCase() === inputSearchStore.toLowerCase());
+    console.log(searchQuery);
+    if (searchQuery === undefined) {
+        searchErrorBox.style.setZIndex = "9999";
+        searchErrorBox.style.display = "block";
+        return;
+    }
     map.flyTo([searchQuery.Longitude, searchQuery.Latitude], 17, { duration: 2, easeLinearity: 5 });
 }
 
+function closeError() {
+    inputSearchStore = document.querySelector("#searchStore");
+    searchErrorBox.style.display = "none";
+    inputSearchStore.value = "";
+
+}
+
 btnSearchStore.addEventListener("click", searchStore);
+closeButton.addEventListener("click", closeError);
 
 // var element = document.getElementById('searchStore');
 // var topPos = element.getBoundingClientRect().top + window.scrollY;

@@ -1,81 +1,138 @@
-    .partnersTextContainer {
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        padding: 1rem 7rem 1rem 1rem;
-        text-align: justify;
-    }
-    
-    .partnersTextContainer p {
-        align-items: center;
-        font-family: 'Gothic A1', sans-serif;
-        font-weight: 600;
-        font-size: 120%;
-        line-height: 2.1rem;
-    }
-    
-    .lblSearchStore {
-        font-size: 200%;
-        font-weight: 600;
-        font-family: 'Bauhaus';
-    }
-    
-    .inputSearchStore {
-        font-size: 150%;
-        font-weight: 500;
-        font-family: 'Gothic-A1', sans-serif;
-        width: 50%;
-        padding: 0.25rem;
-        margin: 0.25rem;
-    }
-    
-    .btnFindStore {
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        padding: 0.8rem 1.2rem 0.8rem 1.2rem;
-        margin-top: 1rem;
-        color: #cf000e;
-        font-family: 'Gothic A1', sans-serif;
-        font-weight: 800;
-        font-size: 1.25rem;
-        background-color: white;
-        border-color: white;
-        border-radius: 30px;
-        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.51);
-        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.51);
-        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.51);
-        -webkit-border-radius: 30px;
-        -moz-border-radius: 30px;
-        -ms-border-radius: 30px;
-        -o-border-radius: 30px;
-    }
-    
-    .logoContainer {
-        display: flex;
-        width: 100%;
-        padding-top: 1rem;
-        justify-content: center;
-    }
-    
-    .logoContainer img {
-        display: flex;
-        width: 100%;
-        padding-right: 1rem;
-    }
-    
-    .sparLogo {
-        display: flex;
-        width: 25%;
-    }
-    
-    .topsLogo {
-        display: flex;
-        width: 8%;
-        margin: 0rem 2rem;
-    }
-    
-    .bmsLogo {
-        display: flex;
-        width: 8%;
-    }
+.searchError {
+    display: none;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: #cf000e;
+    color: white;
+    width: 50%;
+    align-self: center;
+    z-index: 9999;
+    padding: 1rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 2rem;
+    font-weight: 650;
+}
+
+.markHeading {
+    all: unset;
+    font-size: 200%;
+    font-family: 'bauhaus';
+    font-weight: 800;
+    padding: 0.5rem 0px 0.5rem 4rem;
+    text-align: center;
+}
+
+.markBlack {
+    all: unset;
+    color: black;
+}
+
+.closeButton {
+    background-color: transparent;
+    border-color: transparent;
+    float: right;
+}
+
+.closeBtnImg {
+    display: flex;
+    width: 3rem;
+}
+
+.partnersTextContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 1rem 7rem 1rem 1rem;
+    text-align: justify;
+}
+
+.partnersTextContainer p {
+    align-items: center;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 600;
+    font-size: 120%;
+    line-height: 2.1rem;
+}
+
+.lblSearchStore {
+    font-size: 200%;
+    font-weight: 600;
+    font-family: 'Bauhaus';
+}
+
+.inputSearchStore {
+    font-size: 150%;
+    font-weight: 500;
+    font-family: 'Gothic-A1', sans-serif;
+    width: 50%;
+    padding: 0.25rem;
+    margin: 0.25rem;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.btnFindStore {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 0.8rem 1.2rem 0.8rem 1.2rem;
+    margin-top: 1rem;
+    color: #cf000e;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 800;
+    font-size: 1.25rem;
+    background-color: white;
+    border-color: white;
+    border-radius: 30px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.51);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.51);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.51);
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.logoContainer {
+    display: flex;
+    width: 100%;
+    padding-top: 1rem;
+    justify-content: center;
+}
+
+.logoContainer img {
+    display: flex;
+    width: 100%;
+    padding-right: 1rem;
+}
+
+.sparLogo {
+    display: flex;
+    width: 25%;
+    aspect-ratio: 5.66 / 1;
+}
+
+.topsLogo {
+    display: flex;
+    width: 8%;
+    margin: 0rem 2rem;
+    aspect-ratio: 2.03 / 1;
+}
+
+.bmsLogo {
+    display: flex;
+    width: 8%;
+    aspect-ratio: 1.66 / 1;
+}
