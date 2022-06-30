@@ -24,7 +24,7 @@
 
 .markHeading {
     all: unset;
-    font-size: 200%;
+    font-size: 2rem;
     font-family: 'bauhaus';
     font-weight: 800;
     padding: 0.5rem 0px 0.5rem 4rem;
@@ -59,18 +59,18 @@
     align-items: center;
     font-family: 'Gothic A1', sans-serif;
     font-weight: 600;
-    font-size: 120%;
+    font-size: 1.2rem;
     line-height: 2.1rem;
 }
 
 .lblSearchStore {
-    font-size: 200%;
+    font-size: 2rem;
     font-weight: 600;
     font-family: 'Bauhaus';
 }
 
 .inputSearchStore {
-    font-size: 150%;
+    font-size: 1.5rem;
     font-weight: 500;
     font-family: 'Gothic-A1', sans-serif;
     width: 50%;

@@ -1,9 +1,8 @@
     .pageHeading {
-        font-size: 300%;
+        font-size: 4rem;
         font-family: 'bauhaus';
         font-weight: 800;
         padding: 0.5rem 0px 0.5rem 4rem;
-        /* width: 100vw; */
         width: 50vw;
         text-align: center;
     }
@@ -15,4 +14,10 @@
     mark {
         all: unset;
         color: #cf000e;
+    }
+    
+    @media only screen and (max-width: 1740px) {
+        .pageHeading {
+            margin-top: 5%;
+        }
     }

@@ -1,11 +1,12 @@
 .videoContainer {
     display: flex;
     width: 50%;
+    padding: 2rem 0rem 0rem 3rem;
 }
 
 .scVideo {
     width: 95%;
-    padding: 2rem 0rem 0rem 3rem;
+    border-radius: 15px;
 }
 
 .servicesContainer {
@@ -15,7 +16,7 @@
     align-items: center;
     font-family: 'Gothic A1', sans-serif;
     font-weight: 600;
-    font-size: 140%;
+    font-size: 1.8rem;
     line-height: 2.1rem;
     margin-right: 5%;
     align-content: center;
@@ -35,7 +36,7 @@
 }
 
 .servicesList {
-    padding: 24px;
+    padding: 1.5rem;
 }
 
 .servicesList li {
@@ -47,18 +48,28 @@
     background-repeat: no-repeat;
 }
 
+.footer {
+    height: calc(100vh - 9.3% - 6.6% - 45.59%);
+    /* height: 7.66%; */
+}
+
 .poweredBy {
     display: flex;
     width: 50%;
     align-items: center;
     font-family: 'Gothic A1', sans-serif;
     font-weight: 800;
-    font-size: 150%;
-    margin: auto;
+    font-size: 1.5rem;
     background-color: aliceblue;
     padding: 1% 0.5% 0% 1%;
     border-radius: 55px;
     opacity: 80%;
+    justify-content: center;
+    transform: translate(50%, 50%);
+    -webkit-transform: translate(50%, 50%);
+    -moz-transform: translate(50%, 50%);
+    -ms-transform: translate(50%, 50%);
+    -o-transform: translate(50%, 50%);
 }
 
 .scLogoServices {
@@ -78,4 +89,31 @@
 .sabissLogoImg {
     display: flex;
     width: 100%;
+}
+
+@media only screen and (min-width: 1920px) {
+    .servicesContainer {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
+    .poweredBy {
+        transform: translate(50%, 100%);
+        -webkit-transform: translate(50%, 100%);
+        -moz-transform: translate(50%, 100%);
+        -ms-transform: translate(50%, 100%);
+        -o-transform: translate(50%, 100%);
+    }
+}
+
+@media only screen and (max-width: 1740px) {
+    .totalContainer {
+        margin-top: 2%;
+    }
+    .poweredBy {
+        transform: translate(50%, 150%);
+        -webkit-transform: translate(50%, 150%);
+        -moz-transform: translate(50%, 150%);
+        -ms-transform: translate(50%, 150%);
+        -o-transform: translate(50%, 150%);
+    }
 }

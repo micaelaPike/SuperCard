@@ -60,7 +60,7 @@
         display: flex;
         align-self: center;
         font-family: 'Bauhaus';
-        font-size: 200%;
+        font-size: 2rem;
         font-weight: 700;
         padding-bottom: 1rem;
     }
@@ -84,7 +84,7 @@
         padding: 0.25rem 0.25rem 0.25rem 0.5rem;
         font-family: 'Gothic A1', sans-serif;
         font-weight: 600;
-        font-size: 125%;
+        font-size: 1.25rem;
         color: gray;
         border-color: black;
         border-width: 2px;

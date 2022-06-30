@@ -48,6 +48,13 @@
     border-color: black;
 }
 
+@media only screen and (max-width: 1375) {
+    .cardCarousel.index {
+        width: 10rem%;
+        margin-top: 0%;
+    }
+}
+
 @keyframes rotation {
     0% {
         transform: rotateY(0deg);

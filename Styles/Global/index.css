@@ -1,114 +1,144 @@
-@import "../Vendors/normalize.css";
-@import "../PageBuilder/Navigation/navigationBar.css";
-@import "../PageBuilder/Headings/PageHeadings.css";
-@import "../PageBuilder/Backgrounds/backgrounds.css";
-@import "../PageBuilder/Carousel/carousel.css";
-@import "../PageBuilder/Map/map.css";
-@import "../Pages/1_Services.css";
-@import "../Pages/2_Cards.css";
-@import "../Pages/3_Partners.css";
-@import "../Pages/4_Register.css";
-@import "../Pages/5_Contact.css";
-@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@font-face {
-    src: url('/Assets/Fonts/Bauhaus-Font-Family/BauhausRegular.ttf'), url('Assets/FontsBauhaus-Font-Family/BauhausBold.ttf'), url('Assets/Fonts/Bauhaus-Font-Family/BauhausBoldItalic.ttf'), url('Assets/Fonts/Bauhaus-Font-Family/BauhausItalic.ttf'), url('Assets/Fonts/Bauhaus-Font-Family/BAUHHL.ttf'), url('Assets/Fonts/Bauhaus-Font-Family/BROOKH2.ttf');
-    font-family: 'Bauhaus';
-}
-
-.scLogoIndex {
-    display: flex;
-    width: calc(100vw - 30%);
-    margin: 1% 15% 1% 15%;
-}
-
-.scLogoIndex img {
-    width: 85%;
-}
-
-.mainContainer {
-    display: flex;
-    width: 100%;
-}
-
-.infoContainer {
-    display: flex;
-    width: 50%;
-    margin: 8% 2.5% 0% 3%;
-}
-
-.col1 {
-    display: flex;
-    flex-direction: column;
-    width: 43%;
-    align-items: center;
-}
-
-.col2 {
-    display: flex;
-    width: 23%;
-}
-
-.col3 {
-    display: flex;
-    flex-direction: column;
-    width: 43%;
-}
-
-.btnRegister {
-    width: 19rem;
-    font-size: 25px;
-    font-weight: 600;
-    font-family: 'Gothic-A1', sans-serif;
-    background-color: white;
-    color: #cf000e;
-    border-color: white;
-    border-radius: 25px;
-    padding: 1rem 3rem;
-    box-shadow: 8px 5px 5px 0px rgba(0, 0, 0, 0.75);
-    cursor: pointer;
-    justify-content: left;
-}
-
-.btnServices {
-    width: 19rem;
-    font-size: 25px;
-    font-weight: 600;
-    font-family: 'Gothic-A1', sans-serif;
-    background-color: #cf000e;
-    color: white;
-    border-color: #cf000e;
-    border-radius: 25px;
-    padding: 1rem 3rem;
-    box-shadow: 8px 5px 5px 0px rgba(0, 0, 0, 0.75);
-    justify-content: right;
-    margin-right: 10%;
-    margin-left: auto;
-    cursor: pointer;
-}
-
-.infoContainer p {
-    display: flex;
-    width: 100%;
-    font-size: 32px;
-    font-family: 'Bauhaus';
-    font-weight: 600;
-    align-items: center;
-    justify-content: center;
-}
-
-.centered {
-    display: flex;
-    color: #cf000e;
-    justify-content: center;
-    padding-top: 3rem;
-}
-
-.spacer {
-    width: 16px;
-    height: 75%;
-    background-color: grey;
-    border-radius: 15px;
-    opacity: 90%;
-    justify-content: center;
-    margin: 10% 46% 0% 46%;
-}
+        @import "../Vendors/normalize.css";
+        @import "../PageBuilder/Navigation/navigationBar.css";
+        @import "../PageBuilder/Headings/PageHeadings.css";
+        @import "../PageBuilder/Backgrounds/backgrounds.css";
+        @import "../PageBuilder/Carousel/carousel.css";
+        @import "../PageBuilder/Map/map.css";
+        @import "../Pages/1_Services.css";
+        @import "../Pages/2_Cards.css";
+        @import "../Pages/3_Partners.css";
+        @import "../Pages/4_Register.css";
+        @import "../Pages/5_Contact.css";
+        @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        @font-face {
+            src: url('/Assets/Fonts/Bauhaus-Font-Family/BauhausRegular.ttf'), url('Assets/FontsBauhaus-Font-Family/BauhausBold.ttf'), url('Assets/Fonts/Bauhaus-Font-Family/BauhausBoldItalic.ttf'), url('Assets/Fonts/Bauhaus-Font-Family/BauhausItalic.ttf'), url('Assets/Fonts/Bauhaus-Font-Family/BAUHHL.ttf'), url('Assets/Fonts/Bauhaus-Font-Family/BROOKH2.ttf');
+            font-family: 'Bauhaus';
+        }
+        
+        .scLogoIndex {
+            display: flex;
+            width: calc(100vw - 30%);
+            margin: 1% 15% 1% 15%;
+        }
+        
+        .scLogoIndex img {
+            width: 85%;
+        }
+        
+        .mainContainer {
+            margin: 0;
+            display: flex;
+            width: 100%;
+        }
+        
+        .infoContainer {
+            display: flex;
+            width: 50%;
+            margin: 8% 2.5% 0% 3%;
+            text-align: center;
+        }
+        
+        .col1 {
+            display: flex;
+            flex-direction: column;
+            width: 43%;
+            align-items: center;
+        }
+        
+        .col2 {
+            display: flex;
+            width: 23%;
+        }
+        
+        .col3 {
+            display: flex;
+            flex-direction: column;
+            width: 43%;
+        }
+        
+        .btnRegister {
+            width: 100%;
+            font-size: 1.5rem;
+            font-weight: 600;
+            font-family: 'Gothic-A1', sans-serif;
+            background-color: white;
+            color: #cf000e;
+            border-color: white;
+            border-radius: 25px;
+            padding: 1rem 3rem;
+            box-shadow: 8px 5px 5px 0px rgba(0, 0, 0, 0.75);
+            cursor: pointer;
+            justify-content: left;
+        }
+        
+        .btnServices {
+            width: 100%;
+            font-size: 1.5rem;
+            font-weight: 600;
+            font-family: 'Gothic-A1', sans-serif;
+            background-color: #cf000e;
+            color: white;
+            border-color: #cf000e;
+            border-radius: 25px;
+            padding: 1rem 3rem;
+            box-shadow: 8px 5px 5px 0px rgba(0, 0, 0, 0.75);
+            justify-content: right;
+            margin-right: auto;
+            margin-left: auto;
+            cursor: pointer;
+        }
+        
+        .infoContainer p {
+            display: flex;
+            width: 100%;
+            font-size: 2rem;
+            font-family: 'Bauhaus';
+            font-weight: 600;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .centered {
+            display: flex;
+            color: #cf000e;
+            justify-content: center;
+            padding-top: 3rem;
+        }
+        
+        .spacer {
+            width: 16px;
+            height: 75%;
+            background-color: grey;
+            border-radius: 15px;
+            opacity: 90%;
+            justify-content: center;
+            margin: 10% 46% 0% 46%;
+        }
+        
+        @media only screen and (min-width: 1920px) {
+            .mainContainer {
+                padding-top: 2rem;
+            }
+            .infoContainer p {
+                font-size: 2.5rem;
+            }
+        }
+        
+        @media only screen and (max-width: 1740px) {
+            .scLogoIndex {
+                margin-top: 10%;
+            }
+        }
+        
+        @media only screen and (max-width: 1375) {
+            .mainContainer.index {
+                display: flex;
+                flex-direction: column;
+            }
+            .scLogoIndex {
+                width: 100%
+            }
+            .infoContainer {
+                width: 100%;
+            }
+        }
