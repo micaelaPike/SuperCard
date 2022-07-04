@@ -1,6 +1,7 @@
 let btnSearchStore = document.querySelector("#btnSearchStore");
 let searchErrorBox = document.querySelector(".searchError");
 let closeButton = document.querySelector(".closeButton");
+let inputSearchStore;
 
 
 //Import JSON file with coordinates
@@ -123,7 +124,7 @@ markerLocations.forEach(function(item, index) {
 
 
 });
-let inputSearchStore;
+
 
 function searchStore() {
     inputSearchStore = document.getElementById("searchStore").value;

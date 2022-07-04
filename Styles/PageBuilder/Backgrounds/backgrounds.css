@@ -32,14 +32,14 @@
                 width: 100vw;
                 /* height: calc(100vh - 2.5rem); */
             }
-            .steelDesktopGradient {
+            /* .steelDesktopGradient {
                 width: 75rem !important;
                 height: 100rem;
             }
             .redDesktopGradient {
                 width: 75rem !important;
                 height: 100rem;
-            }
+            } */
         }
         /* @media only screen and (max-width: 992px) {
             .landingPage {

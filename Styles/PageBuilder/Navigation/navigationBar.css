@@ -87,7 +87,7 @@
       }
   }
   
-  @media only screen and (min-width: 880px) {
+  @media only screen and (max-width: 880px) {
       .navBar1 {
           width: 880px;
       }
@@ -96,6 +96,22 @@
       }
       .navList {
           font-size: 1.3rem;
+          gap: 1rem;
+          padding: 0.5rem 2rem;
+      }
+  }
+  
+  @media only screen and (max-width: 735px) {
+      .navBar1 {
+          width: 735px;
+      }
+      .navBar2 {
+          width: 735px;
+      }
+      .navList {
+          font-size: 0.5rem;
+          gap: 1rem;
+          padding: 0.5rem 1rem;
       }
   }
   /* @media only screen and (max-width: 1200px) {
