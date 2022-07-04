@@ -9,11 +9,12 @@
 
 .cardCarousel {
     display: flex;
-    width: 50%;
-    margin-top: 5%;
+    width: 60%;
+    margin: 5% 1rem 0 0;
     border-radius: 30px;
-    box-shadow: 21px 21px 19px -1px rgba(0, 0, 0, 0.79);
-    left: 60rem;
+    box-shadow: 0px 0px 15px 13px rgba(0, 0, 0, 0.55);
+    -webkit-box-shadow: 0px 0px 15px 13px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: 0px 0px 15px 13px rgba(0, 0, 0, 0.55);
     pointer-events: none;
     backface-visibility: hidden;
 }
@@ -27,7 +28,8 @@
     display: flex;
     flex-direction: row;
     justify-items: right;
-    margin: 1rem 16rem;
+    margin-top: 1rem;
+    padding: 1rem;
 }
 
 .carouselSelect {
@@ -48,10 +50,20 @@
     border-color: black;
 }
 
-@media only screen and (max-width: 1375) {
-    .cardCarousel.index {
-        width: 10rem%;
-        margin-top: 0%;
+@media only screen and (max-width: 1024px) {
+    .cardCarousel {
+        width: 80%;
+        margin: 10%;
+        margin-bottom: 0%
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .cardCarouselContainer {
+        width: 100%;
+    }
+    .cardCarousel {
+        width: 60%;
     }
 }
 

@@ -2,6 +2,7 @@
     display: flex;
     width: 50%;
     padding: 2rem 0rem 0rem 3rem;
+    align-items: center;
 }
 
 .scVideo {
@@ -16,7 +17,7 @@
     align-items: center;
     font-family: 'Gothic A1', sans-serif;
     font-weight: 600;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     line-height: 2.1rem;
     margin-right: 5%;
     align-content: center;
@@ -49,7 +50,7 @@
 }
 
 .footer {
-    height: calc(100vh - 9.3% - 6.6% - 45.59%);
+    height: calc(100% - 59.14%);
     /* height: 7.66%; */
 }
 
@@ -64,7 +65,10 @@
     padding: 1% 0.5% 0% 1%;
     border-radius: 55px;
     opacity: 80%;
-    justify-content: center;
+    top: 50%;
+    left: 50%;
+    /*justify-content: center;
+    */
     transform: translate(50%, 50%);
     -webkit-transform: translate(50%, 50%);
     -moz-transform: translate(50%, 50%);
@@ -105,7 +109,8 @@
     }
 }
 
-@media only screen and (max-width: 1740px) {
+
+/* @media only screen and (max-width: 1740px) {
     .totalContainer {
         margin-top: 2%;
     }
@@ -116,4 +121,4 @@
         -ms-transform: translate(50%, 150%);
         -o-transform: translate(50%, 150%);
     }
-}
+} */

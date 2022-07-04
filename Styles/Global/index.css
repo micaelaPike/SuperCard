@@ -17,12 +17,13 @@
         
         .scLogoIndex {
             display: flex;
-            width: calc(100vw - 30%);
-            margin: 1% 15% 1% 15%;
+            width: 100%;
+            padding-top: 2rem;
+            text-align: center;
         }
         
         .scLogoIndex img {
-            width: 85%;
+            width: 80%
         }
         
         .mainContainer {
@@ -65,7 +66,7 @@
             color: #cf000e;
             border-color: white;
             border-radius: 25px;
-            padding: 1rem 3rem;
+            padding: 1rem 1rem;
             box-shadow: 8px 5px 5px 0px rgba(0, 0, 0, 0.75);
             cursor: pointer;
             justify-content: left;
@@ -80,7 +81,7 @@
             color: white;
             border-color: #cf000e;
             border-radius: 25px;
-            padding: 1rem 3rem;
+            padding: 1rem 2.25rem;
             box-shadow: 8px 5px 5px 0px rgba(0, 0, 0, 0.75);
             justify-content: right;
             margin-right: auto;
@@ -116,29 +117,80 @@
         }
         
         @media only screen and (min-width: 1920px) {
-            .mainContainer {
-                padding-top: 2rem;
-            }
             .infoContainer p {
                 font-size: 2.5rem;
             }
         }
         
-        @media only screen and (max-width: 1740px) {
+        @media only screen and (max-width: 880px) {
             .scLogoIndex {
-                margin-top: 10%;
+                width: 100%;
             }
-        }
-        
-        @media only screen and (max-width: 1375) {
-            .mainContainer.index {
-                display: flex;
+            .mainContainer {
                 flex-direction: column;
-            }
-            .scLogoIndex {
-                width: 100%
+                align-items: center;
             }
             .infoContainer {
                 width: 100%;
             }
+            .col1 {
+                margin-left: 5rem;
+            }
+            .col2 {
+                width: 15%;
+            }
+            .col3 {
+                margin-right: 5rem;
+            }
+            .infoContainer p {
+                font-size: 2rem;
+            }
+            .btnRegister {
+                font-size: 1.75rem;
+            }
+            .btnServices {
+                font-size: 1.75rem;
+            }
         }
+        /* @media only screen and (max-width: 992px) {
+            .infoContainer p {
+                font-size: 1.5rem;
+            }
+            .btnRegister {
+                font-size: 1.5rem;
+            }
+            .btnServices {
+                font-size: 1.5rem;
+            }
+            .cardCarouselContainer {
+                width: 100%;
+            }
+        } */
+        /* @media only screen and (max-width: 768px) {
+            .infoContainer p {
+                font-size: 1.5rem;
+            }
+            .btnRegister {
+                font-size: 1.5rem;
+            }
+            .btnServices {
+                font-size: 1.5rem;
+            }
+            .cardCarouselContainer {
+                width: 100%;
+            }
+        } */
+        /* @media only screen and (max-width: 600px) {
+            .landingPage {
+                width: 37.5rem;
+                height: 90rem;
+            }
+            .steelDesktopGradient {
+                width: 37.5rem;
+                height: 90rem;
+            }
+            .redDesktopGradient {
+                width: 37.5rem;
+                height: 90rem;
+            }
+        } */

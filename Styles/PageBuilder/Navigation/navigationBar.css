@@ -3,10 +3,10 @@
       display: flex;
       list-style-type: none;
       gap: 3rem;
-      font-size: 2rem;
+      font-size: 1.25rem;
       font-family: 'Gothic A1', sans-serif;
       font-weight: 800;
-      padding: 1rem 4rem;
+      padding: 0.5rem 4rem;
       border-radius: 15px;
       -webkit-border-radius: 15px;
       -moz-border-radius: 15px;
@@ -34,21 +34,31 @@
   .navBar1 {
       all: unset;
       display: flex;
+      position: relative;
       align-items: center;
       justify-content: center;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0.45) 70%, rgba(255, 255, 255, 0) 100%);
-      padding: 1.5rem 0rem;
+      background-color: white;
+      /* border-bottom: 5px solid black; */
       width: 100vw;
+      z-index: auto;
+      box-shadow: 0px 10px 11px 0px rgba(0, 0, 0, 0.5);
+      -webkit-box-shadow: 0px 10px 11px 0px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: 0px 10px 11px 0px rgba(0, 0, 0, 0.5);
   }
   
   .navBar2 {
       all: unset;
       display: flex;
+      position: relative;
       align-items: center;
       justify-content: right;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0.45) 70%, rgba(255, 255, 255, 0) 100%);
-      padding: 1rem 0rem;
+      background-color: white;
+      /* border-bottom: 5px solid black; */
       width: 100vw;
+      z-index: auto;
+      box-shadow: 0px 10px 11px 0px rgba(0, 0, 0, 0.5);
+      -webkit-box-shadow: 0px 10px 11px 0px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: 0px 10px 11px 0px rgba(0, 0, 0, 0.5);
   }
   
   .navLogo {
@@ -56,10 +66,76 @@
       display: flex;
       align-items: center;
       margin-right: auto;
-      padding-left: 16px;
+      padding: 0.5rem;
+      padding-bottom: 0rem;
   }
   
   .navLogo img {
       width: 100%;
       height: 4rem;
   }
+  
+  @media only screen and (min-width: 1920px) {
+      .navBar1 {
+          width: 1920px;
+      }
+      .navBar2 {
+          width: 1920px;
+      }
+      .navList {
+          font-size: 1.5rem;
+      }
+  }
+  
+  @media only screen and (min-width: 880px) {
+      .navBar1 {
+          width: 880px;
+      }
+      .navBar2 {
+          width: 880px;
+      }
+      .navList {
+          font-size: 1.3rem;
+      }
+  }
+  /* @media only screen and (max-width: 1200px) {
+      .navBar1 {
+          width: 1200px;
+      }
+      .navBar2 {
+          width: 1200px;
+      }
+  } */
+  /* @media only screen and (max-width: 992px) {
+      .navBar1 {
+          width: 992px;
+          padding: 1rem 0rem;
+      }
+      .navBar2 {
+          width: 992px;
+      }
+  } */
+  /* @media only screen and (max-width: 768px) {
+      .navList {
+          font-size: 1.25rem;
+      }
+      .navBar1 {
+          width: 768px;
+          padding: 0.75rem 0rem;
+      }
+      .navBar2 {
+          width: 768px;
+      }
+  } */
+  /* @media only screen and (max-width: 600px) {
+      .navList {
+          font-size: 0.8rem;
+          gap: 1rem;
+      }
+      .navBar1 {
+          width: 600px;
+      }
+      .navBar2 {
+          width: 600px;
+      }
+  } */
