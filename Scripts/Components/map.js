@@ -152,7 +152,6 @@ markerLocations.forEach(function(item, index) {
 var featureGroupMarker = new L.FeatureGroup;
 
 function searchStore() {
-    //debugger;
     let inputSearchStore = document.getElementById("searchStore").value;
     let result = fuse.search(inputSearchStore);
 
@@ -166,16 +165,17 @@ function searchStore() {
 
             map.removeLayer(markerCluster);
 
-            let searchMarker = L.marker([item.item.Longitude, item.item.Latitude]);
+            debugger;
+            let searchMarker = L.marker([item.item.Longitude, item.item.Latitude], { icon: item.item.StoreType === "Spar" ? sparIcon : bmsIcon });
 
             if (result[index].item.StoreType === "Spar") {
-                searchMarker = L.marker([markerLocations[index].Longitude, markerLocations[index].Latitude], { icon: sparIcon });
-                searchMarker.bindPopup(`${ markerLocations[index].StoreName.bold() } <br> ${ markerLocations[index].Address }`);
+                //searchMarker = L.marker([markerLocations[index].Longitude, markerLocations[index].Latitude]);
+                searchMarker.bindPopup(`${ item.item.StoreName.bold() } <br> ${ item.item.Address }`);
                 featureGroupMarker.addLayer(searchMarker);
 
             } else if (result[index].item.StoreType === "BMS") {
-                searchMarker = L.marker([markerLocations[index].Longitude, markerLocations[index].Latitude], { icon: bmsIcon });
-                searchMarker.bindPopup(`${ markerLocations[index].StoreName.bold() } <br> ${ markerLocations[index].Address }`);
+                //searchMarker = L.marker([markerLocations[index].Longitude, markerLocations[index].Latitude]);
+                searchMarker.bindPopup(`${ item.item.StoreName.bold() } <br> ${ item.item.Address }`);
                 featureGroupMarker.addLayer(searchMarker);
             }
 

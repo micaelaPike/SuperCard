@@ -63,6 +63,11 @@
     line-height: 2.1rem;
 }
 
+.searchInput {
+    text-align: -webkit-center;
+    margin-top: auto;
+}
+
 .lblSearchStore {
     font-size: 2rem;
     font-weight: 600;
