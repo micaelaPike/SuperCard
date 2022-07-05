@@ -149,64 +149,54 @@ markerLocations.forEach(function(item, index) {
 
 });
 
-var myFGMarker = new L.FeatureGroup;
+var featureGroupMarker = new L.FeatureGroup;
 
 function searchStore() {
-    // debugger;
+    //debugger;
     let inputSearchStore = document.getElementById("searchStore").value;
     let result = fuse.search(inputSearchStore);
+
     console.log(result[0].score);
+
     result.forEach((item, index) => {
 
-        if ((result[0].score === 0) && (result.length = 1)) {
+        if (result[0].score === 0) {
             map.flyTo([result[0].item.Longitude, result[0].item.Latitude], 17, { duration: 2, easeLinearity: 5 });
         } else if (result[index].score <= 0.6) {
 
             map.removeLayer(markerCluster);
-
-            //myFGMarker = ([item.item.Longitude, item.item.Latitude]);
-            // myFGMarker.bindPopup(`${ result[index].item.StoreName.bold() } <br> ${ result[index].item.Address }`);
 
             let searchMarker = L.marker([item.item.Longitude, item.item.Latitude]);
 
             if (result[index].item.StoreType === "Spar") {
                 searchMarker = L.marker([markerLocations[index].Longitude, markerLocations[index].Latitude], { icon: sparIcon });
                 searchMarker.bindPopup(`${ markerLocations[index].StoreName.bold() } <br> ${ markerLocations[index].Address }`);
-                myFGMarker.addLayer(searchMarker);
-
-
+                featureGroupMarker.addLayer(searchMarker);
 
             } else if (result[index].item.StoreType === "BMS") {
                 searchMarker = L.marker([markerLocations[index].Longitude, markerLocations[index].Latitude], { icon: bmsIcon });
                 searchMarker.bindPopup(`${ markerLocations[index].StoreName.bold() } <br> ${ markerLocations[index].Address }`);
-                myFGMarker.addLayer(searchMarker);
-
-
+                featureGroupMarker.addLayer(searchMarker);
             }
 
-            //searchMarker.bindPopup(`${ result[index].item.StoreName.bold() } <br> ${ result[index].item.Address }`);
+            featureGroupMarker.addLayer(searchMarker);
+            featureGroupMarker.addTo(map);
 
-            myFGMarker.addLayer(searchMarker);
-            myFGMarker.addTo(map);
-
+            map.fitBounds(featureGroupMarker.getBounds());
         }
     });
 
-    map.fitBounds(myFGMarker.getBounds());
+    console.log(featureGroupMarker)
 
-    if (result.length === 0) {
-        searchErrorBox.style.setZIndex = "9999";
-        searchErrorBox.style.display = "block";
-        return;
-    }
+    // if (result.length > 0.6) {
+    //     searchErrorBox.style.setZIndex = "9999";
+    //     searchErrorBox.style.display = "block";
+    //     return;
+    // }
 }
 
-
 function closeError() {
-    //inputSearchStore = document.querySelector("#searchStore");
     searchErrorBox.style.display = "none";
-    //inputSearchStore.value = "";
-
 }
 
 btnSearchStore.addEventListener("click", searchStore);
