@@ -1,8 +1,22 @@
+//import Searcher from 'fast-fuzzy';
+//import { Searcher } from "fast-fuzzy";
+//const { Searcher } = require("fast-fuzzy");
+
 let btnSearchStore = document.querySelector("#btnSearchStore");
 let searchErrorBox = document.querySelector(".searchError");
 let closeButton = document.querySelector(".closeButton");
-let inputSearchStore;
 
+// let list = [{
+//         "title": "Old Man's War",
+//         "author": "John Scalzi",
+//         "tags": ["fiction"]
+//     },
+//     {
+//         "title": "The Lock Artist",
+//         "author": "Steve",
+//         "tags": ["thriller"]
+//     }
+// ];
 
 //Import JSON file with coordinates
 async function createMarker() {
@@ -13,9 +27,16 @@ async function createMarker() {
             type: "json",
         },
     })
-
     return storeMarker;
 }
+
+const options = {
+    includeScore: true,
+    // Search in `author` and in `tags` array
+    keys: ['StoreName', 'Address']
+}
+
+
 //debugger;
 
 //Create Icon Object
@@ -97,10 +118,14 @@ let markerCluster = new L.MarkerClusterGroup({
     },
 });
 
+const fuse = new Fuse(markerLocations, options)
+
+
+
 //Markers
 markerLocations.forEach(function(item, index) {
     // console.log(markerLocations[index].Longitude, markerLocations[index].Latitude);
-    let marker = L.marker([markerLocations[index].Longitude, markerLocations[index].Latitude], );
+    let marker = L.marker([markerLocations[index].Longitude, markerLocations[index].Latitude], { icon: SuperCardIcon });
 
     if (item.StoreType === "Spar") {
         marker = L.marker([markerLocations[index].Longitude, markerLocations[index].Latitude], { icon: sparIcon });
@@ -110,7 +135,7 @@ markerLocations.forEach(function(item, index) {
         markerCluster.addTo(map).on('click', function(e) {
             map.flyTo(e.latlng, 17, { duration: 3, easeLinearity: 5 });
         });
-        // marker.setIcon(new sparIcon);
+
     } else if (item.StoreType === "BMS") {
         marker = L.marker([markerLocations[index].Longitude, markerLocations[index].Latitude], { icon: bmsIcon });
         marker.bindPopup(`${ markerLocations[index].StoreName.bold() } <br> ${ markerLocations[index].Address }`);
@@ -119,30 +144,68 @@ markerLocations.forEach(function(item, index) {
         markerCluster.addTo(map).on('click', function(e) {
             map.flyTo(e.latlng, 17, { duration: 3, easeLinearity: 5 });
         });
-        // marker.setIcon(new bmsIcon);
     }
 
 
 });
 
+var myFGMarker = new L.FeatureGroup;
 
 function searchStore() {
-    inputSearchStore = document.getElementById("searchStore").value;
+    // debugger;
+    let inputSearchStore = document.getElementById("searchStore").value;
+    let result = fuse.search(inputSearchStore);
+    console.log(result[0].score);
+    result.forEach((item, index) => {
 
-    let searchQuery = markerLocations.find(item => item.StoreName.toLowerCase() === inputSearchStore.toLowerCase() || item.Address.toLowerCase() === inputSearchStore.toLowerCase());
-    console.log(searchQuery);
-    if (searchQuery === undefined) {
+        if ((result[0].score === 0) && (result.length = 1)) {
+            map.flyTo([result[0].item.Longitude, result[0].item.Latitude], 17, { duration: 2, easeLinearity: 5 });
+        } else if (result[index].score <= 0.6) {
+
+            map.removeLayer(markerCluster);
+
+            //myFGMarker = ([item.item.Longitude, item.item.Latitude]);
+            // myFGMarker.bindPopup(`${ result[index].item.StoreName.bold() } <br> ${ result[index].item.Address }`);
+
+            let searchMarker = L.marker([item.item.Longitude, item.item.Latitude]);
+
+            if (result[index].item.StoreType === "Spar") {
+                searchMarker = L.marker([markerLocations[index].Longitude, markerLocations[index].Latitude], { icon: sparIcon });
+                searchMarker.bindPopup(`${ markerLocations[index].StoreName.bold() } <br> ${ markerLocations[index].Address }`);
+                myFGMarker.addLayer(searchMarker);
+
+
+
+            } else if (result[index].item.StoreType === "BMS") {
+                searchMarker = L.marker([markerLocations[index].Longitude, markerLocations[index].Latitude], { icon: bmsIcon });
+                searchMarker.bindPopup(`${ markerLocations[index].StoreName.bold() } <br> ${ markerLocations[index].Address }`);
+                myFGMarker.addLayer(searchMarker);
+
+
+            }
+
+            //searchMarker.bindPopup(`${ result[index].item.StoreName.bold() } <br> ${ result[index].item.Address }`);
+
+            myFGMarker.addLayer(searchMarker);
+            myFGMarker.addTo(map);
+
+        }
+    });
+
+    map.fitBounds(myFGMarker.getBounds());
+
+    if (result.length === 0) {
         searchErrorBox.style.setZIndex = "9999";
         searchErrorBox.style.display = "block";
         return;
     }
-    map.flyTo([searchQuery.Longitude, searchQuery.Latitude], 17, { duration: 2, easeLinearity: 5 });
 }
 
+
 function closeError() {
-    inputSearchStore = document.querySelector("#searchStore");
+    //inputSearchStore = document.querySelector("#searchStore");
     searchErrorBox.style.display = "none";
-    inputSearchStore.value = "";
+    //inputSearchStore.value = "";
 
 }
 

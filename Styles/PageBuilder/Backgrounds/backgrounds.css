@@ -1,15 +1,15 @@
         .landingPage {
             background-image: url('/Assets/Backgrounds/LandingPage.png');
-            background-repeat: repeat;
+            background-repeat: no-repeat;
             background-size: 100% 100%;
             background-position-y: center;
             width: 100vw;
-            height: calc(100vh - 2.5rem);
+            height: calc(100vh - 2.4375rem);
         }
         
         .steelDesktopGradient {
             background-image: url('/Assets/Backgrounds/SteelDesktopGradient.png');
-            background-repeat: repeat;
+            background-repeat: no-repeat;
             background-size: 100% 100%;
             background-position-y: center;
             width: 100vw;
@@ -20,66 +20,9 @@
             display: flex;
             flex-direction: column;
             background-image: url('/Assets/Backgrounds/RedDesktopGradient.png');
-            background-repeat: repeat;
+            background-repeat: no-repeat;
             background-size: 100% 100%;
             background-position-y: center;
             width: 100vw;
-            height: calc(100vh - 2.5rem);
+            height: calc(100vh - 4.75rem);
         }
-        
-        @media only screen and (max-width: 880px) {
-            .landingPage {
-                width: 100vw;
-                /* height: calc(100vh - 2.5rem); */
-            }
-            /* .steelDesktopGradient {
-                width: 75rem !important;
-                height: 100rem;
-            }
-            .redDesktopGradient {
-                width: 75rem !important;
-                height: 100rem;
-            } */
-        }
-        /* @media only screen and (max-width: 992px) {
-            .landingPage {
-                width: 62rem !important;
-                height: 90rem;
-            }
-            .steelDesktopGradient {
-                width: 62rem !important;
-                height: 90rem;
-            }
-            .redDesktopGradient {
-                width: 62rem !important;
-                height: 90rem;
-            }
-        } */
-        /* @media only screen and (max-width: 768px) {
-            .landingPage {
-                width: 768px !important;
-                height: 90rem;
-            }
-            .steelDesktopGradient {
-                width: 48rem !important;
-                height: 90rem;
-            }
-            .redDesktopGradient {
-                width: 48rem !important;
-                height: 90rem;
-            }
-        } */
-        /* @media only screen and (max-width: 600px) {
-            .landingPage {
-                width: 600px !important;
-                height: 90rem;
-            }
-            .steelDesktopGradient {
-                width: 37.5rem !important;
-                height: 90rem;
-            }
-            .redDesktopGradient {
-                width: 37.5rem !important;
-                height: 90rem;
-            }
-        } */

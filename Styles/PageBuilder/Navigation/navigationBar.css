@@ -33,13 +33,13 @@
   
   .navBar1 {
       all: unset;
+      width: 100vw;
       display: flex;
       position: relative;
       align-items: center;
       justify-content: center;
       background-color: white;
       /* border-bottom: 5px solid black; */
-      width: 100vw;
       z-index: auto;
       box-shadow: 0px 10px 11px 0px rgba(0, 0, 0, 0.5);
       -webkit-box-shadow: 0px 10px 11px 0px rgba(0, 0, 0, 0.5);
@@ -48,13 +48,13 @@
   
   .navBar2 {
       all: unset;
+      width: 100vw;
       display: flex;
       position: relative;
       align-items: center;
       justify-content: right;
       background-color: white;
       /* border-bottom: 5px solid black; */
-      width: 100vw;
       z-index: auto;
       box-shadow: 0px 10px 11px 0px rgba(0, 0, 0, 0.5);
       -webkit-box-shadow: 0px 10px 11px 0px rgba(0, 0, 0, 0.5);
@@ -76,24 +76,24 @@
   }
   
   @media only screen and (min-width: 1920px) {
-      .navBar1 {
-          width: 1920px;
+      /* .navBar1 {
+          max-width: 1920px;
       }
       .navBar2 {
-          width: 1920px;
-      }
+          max-width: 1920px;
+      } */
       .navList {
           font-size: 1.5rem;
       }
   }
   
   @media only screen and (max-width: 880px) {
-      .navBar1 {
-          width: 880px;
+      /* .navBar1 {
+          max-width: 880px;
       }
       .navBar2 {
-          width: 880px;
-      }
+          max-width: 880px;
+      } */
       .navList {
           font-size: 1.3rem;
           gap: 1rem;
@@ -102,56 +102,17 @@
   }
   
   @media only screen and (max-width: 735px) {
-      .navBar1 {
-          width: 735px;
-      }
-      .navBar2 {
-          width: 735px;
-      }
       .navList {
           font-size: 0.5rem;
           gap: 1rem;
           padding: 0.5rem 1rem;
       }
   }
-  /* @media only screen and (max-width: 1200px) {
-      .navBar1 {
-          width: 1200px;
-      }
-      .navBar2 {
-          width: 1200px;
-      }
-  } */
-  /* @media only screen and (max-width: 992px) {
-      .navBar1 {
-          width: 992px;
-          padding: 1rem 0rem;
-      }
-      .navBar2 {
-          width: 992px;
-      }
-  } */
-  /* @media only screen and (max-width: 768px) {
+  
+  @media only screen and (max-width: 600px) {
       .navList {
-          font-size: 1.25rem;
-      }
-      .navBar1 {
-          width: 768px;
-          padding: 0.75rem 0rem;
-      }
-      .navBar2 {
-          width: 768px;
-      }
-  } */
-  /* @media only screen and (max-width: 600px) {
-      .navList {
-          font-size: 0.8rem;
+          font-size: 0.5rem;
           gap: 1rem;
+          padding: 0.5rem 1rem;
       }
-      .navBar1 {
-          width: 600px;
-      }
-      .navBar2 {
-          width: 600px;
-      }
-  } */
+  }
