@@ -155,6 +155,9 @@
         }
         
         @media only screen and (max-width: 735px) {
+            .mainContainer {
+                flex-direction: column-reverse;
+            }
             .infoContainer p {
                 font-size: 1.5rem;
             }

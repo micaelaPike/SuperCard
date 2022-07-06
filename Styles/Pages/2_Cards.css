@@ -48,7 +48,26 @@
     font-size: 2rem;
     font-family: 'Gothic A1', sans-serif;
     font-weight: 700;
-    margin: 0rem 32rem 5rem;
+    /* margin: 0rem 32rem 5rem; */
     align-items: center;
-    justify-content: center;
+    justify-self: center;
 }
+
+@media only screen and (min-width: 1920px) {}
+
+@media only screen and (max-width: 1335px) {}
+
+@media only screen and (max-width: 880px) {
+    .cardDescription {
+        width: 100%;
+        margin: 1rem;
+        padding: 0rem 4rem;
+    }
+    .register {
+        margin: 0rem;
+    }
+}
+
+@media only screen and (max-width: 755px) {}
+
+@media only screen and (max-width: 455px) {}

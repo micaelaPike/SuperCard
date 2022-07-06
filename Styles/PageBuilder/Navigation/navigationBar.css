@@ -77,6 +77,43 @@
       height: 4rem;
   }
   
+  .menuContainer {
+      display: inline-block;
+      cursor: pointer;
+  }
+  
+  .bar1,
+  .bar2 {
+      width: 35px;
+      height: 5px;
+      background-color: #333;
+      margin: 6px 0;
+      transition: 0.4s;
+  }
+  
+  .menuBar {
+      font-family: "Bauhaus";
+      font-weight: 600;
+      margin: 6px 0;
+      transition: 0.4s;
+  }
+  
+  .change .bar1 {
+      -webkit-transform: rotate(45deg) translate(-50%, 0px);
+      transform: rotate(45deg) translate(-50%, 0px);
+      -moz-transform: rotate(45deg) translate(-50%, 0px);
+      -ms-transform: rotate(45deg) translate(-50%, 0px);
+      -o-transform: rotate(45deg) translate(-50%, 0px);
+  }
+  
+  .change .bar2 {
+      -webkit-transform: rotate(-45deg) translate(50%, 0px);
+      transform: rotate(-45deg) translate(50%, 0px);
+      -moz-transform: rotate(-45deg) translate(50%, 0px);
+      -ms-transform: rotate(-45deg) translate(50%, 0px);
+      -o-transform: rotate(-45deg) translate(50%, 0px);
+  }
+  
   @media only screen and (min-width: 1920px) {
       .navList {
           font-size: 1.5rem;
