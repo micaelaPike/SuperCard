@@ -5,6 +5,7 @@
 let btnSearchStore = document.querySelector("#btnSearchStore");
 let searchErrorBox = document.querySelector(".searchError");
 let closeButton = document.querySelector(".closeButton");
+let inputSearchStore = document.getElementById("searchStore")
 
 // let list = [{
 //         "title": "Old Man's War",
@@ -206,6 +207,13 @@ function closeError() {
 }
 
 btnSearchStore.addEventListener("click", searchStore);
+
+inputSearchStore.addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+        searchStore();
+    }
+});
+
 closeButton.addEventListener("click", closeError);
 
 // var element = document.getElementById('searchStore');
