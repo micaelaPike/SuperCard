@@ -155,15 +155,21 @@ function searchStore() {
     let inputSearchStore = document.getElementById("searchStore").value;
     let result = fuse.search(inputSearchStore);
 
+    let filteredResults = [];
+
+    filteredResults = result;
+    debugger;
     console.log(result[0].score);
 
     result.forEach((item, index) => {
 
         if (result[0].score === 0) {
             map.flyTo([result[0].item.Longitude, result[0].item.Latitude], 17, { duration: 2, easeLinearity: 5 });
-        } else if (result[index].score <= 0.6) {
+        } else if (result[index].score <= 0.5) {
 
             map.removeLayer(markerCluster);
+
+
 
             debugger;
             let searchMarker = L.marker([item.item.Longitude, item.item.Latitude], { icon: item.item.StoreType === "Spar" ? sparIcon : bmsIcon });

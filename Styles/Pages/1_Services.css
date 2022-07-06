@@ -6,7 +6,7 @@
 }
 
 .scVideo {
-    width: 95%;
+    width: 100%;
     border-radius: 15px;
 }
 
@@ -20,6 +20,7 @@
     font-size: 1.6rem;
     line-height: 2.1rem;
     margin-right: 5%;
+    padding: 2rem;
     align-content: center;
     text-align: justify;
 }
@@ -60,15 +61,12 @@
     align-items: center;
     font-family: 'Gothic A1', sans-serif;
     font-weight: 800;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     background-color: aliceblue;
     padding: 1% 0.5% 0% 1%;
     border-radius: 55px;
     opacity: 80%;
-    top: 50%;
-    left: 50%;
-    /*justify-content: center;
-    */
+    justify-content: center;
     transform: translate(50%, 50%);
     -webkit-transform: translate(50%, 50%);
     -moz-transform: translate(50%, 50%);
@@ -76,18 +74,18 @@
     -o-transform: translate(50%, 50%);
 }
 
+.poweredBy p {
+    padding: 0 1rem;
+}
+
 .scLogoServices {
     display: flex;
     width: 35%;
-    padding-right: 1.6%;
-    margin-left: 8%;
 }
 
 .sabissLogo {
     display: flex;
     width: 25%;
-    padding-left: 1.6%;
-    margin-right: 7%;
 }
 
 .sabissLogoImg {
@@ -101,11 +99,57 @@
         line-height: 2.5rem;
     }
     .poweredBy {
-        transform: translate(50%, 100%);
-        -webkit-transform: translate(50%, 100%);
-        -moz-transform: translate(50%, 100%);
-        -ms-transform: translate(50%, 100%);
-        -o-transform: translate(50%, 100%);
+        transform: translate(50%, 80%);
+        -webkit-transform: translate(50%, 80%);
+        -moz-transform: translate(50%, 80%);
+        -ms-transform: translate(50%, 80%);
+        -o-transform: translate(50%, 80%);
+    }
+}
+
+@media only screen and (max-width: 1335px) {
+    .videoContainer {
+        width: 50%;
+        padding: 3rem;
+        align-items: baseline;
+        margin-top: 5rem;
+    }
+    .servicesContainer {
+        font-size: 1.5rem;
+        width: 70%;
+        padding: 3rem;
+        margin: 0rem;
+    }
+    .poweredBy {
+        font-size: 1.2rem;
+        transform: translate(50%, 20%);
+        -webkit-transform: translate(50%, 20%);
+        -moz-transform: translate(50%, 20%);
+        -ms-transform: translate(50%, 20%);
+        -o-transform: translate(50%, 20%);
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .videoContainer {
+        margin-top: 0rem;
+        width: 100%;
+    }
+    .servicesContainer {
+        width: 100%;
+        font-size: 1.5rem;
+        padding: 2rem;
+        margin: 0rem;
+        align-items: center;
+    }
+    .poweredBy {
+        width: 80%;
+        font-size: 1rem;
+        transform: translate(10%, -50%);
+        -webkit-transform: translate(10%, -50%);
+        -moz-transform: translate(10%, -50%);
+        -ms-transform: translate(10%, -50%);
+        -o-transform: translate(10%, -50%);
     }
 }
 

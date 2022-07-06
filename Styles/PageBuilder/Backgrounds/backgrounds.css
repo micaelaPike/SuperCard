@@ -4,7 +4,7 @@
             background-size: 100% 100%;
             background-position-y: center;
             width: 100vw;
-            height: calc(100vh - 2.4375rem);
+            height: calc(100vh - 4.75rem);
         }
         
         .steelDesktopGradient {
@@ -13,7 +13,7 @@
             background-size: 100% 100%;
             background-position-y: center;
             width: 100vw;
-            height: calc(100vh - 2.5rem);
+            height: calc(100vh - 4.75rem);
         }
         
         .redDesktopGradient {

@@ -9,7 +9,7 @@
 
 .cardCarousel {
     display: flex;
-    width: 60%;
+    width: 55%;
     margin-top: 3%;
     border-radius: 30px;
     box-shadow: 0px 0px 15px 13px rgba(0, 0, 0, 0.55);
@@ -28,15 +28,15 @@
     display: flex;
     flex-direction: row;
     justify-items: right;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     padding: 1rem;
 }
 
 .carouselSelect {
     display: flex;
     border-radius: 50%;
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 1.2rem;
+    width: 1.2rem;
     padding: 0.8rem;
     margin: 0.5rem;
     background-color: #cf000e;
