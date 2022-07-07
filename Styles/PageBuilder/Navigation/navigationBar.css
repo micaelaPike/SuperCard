@@ -99,20 +99,19 @@
   }
   
   .change .bar1 {
-      -webkit-transform: rotate(-45deg) translate(50p;
-      transform: ;
-      rotate(-45deg)translate(50p-moz-transform: rotate(-45deg) translate(50p;
-      -ms-transform: rotate(-45deg) translate(50p;
-      -o-transform: rotate(-45deg) translate(50p;
-      -moz-transform: rotate(-45deg) translate(50p;
+      -webkit-transform: rotate(45deg) translate(-50%, 0px);
+      transform: rotate(45deg) translate(-50%, 0px);
+      -moz-transform: rotate(45deg) translate(-50%, 0px);
+      -ms-transform: rotate(45deg) translate(-50%, 0px);
+      -o-transform: rotate(45deg) translate(-50%, 0px);
   }
   
   .change .bar2 {
-      -webkit-transform: rotate(-45deg) translate(-50px, 0px);
-      transform: rotate(-45deg) translate(-50px, 0px);
-      -moz-transform: rotate(-45deg) translate(-50px, 0px);
-      -ms-transform: rotate(-45deg) translate(-50px, 0px);
-      -o-transform: rotate(-45deg) translate(-50px, 0px);
+      -webkit-transform: rotate(-45deg) translate(50%, 0px);
+      transform: rotate(-45deg) translate(50%, 0px);
+      -moz-transform: rotate(-45deg) translate(50%, 0px);
+      -ms-transform: rotate(-45deg) translate(50%, 0px);
+      -o-transform: rotate(-45deg) translate(50%, 0px);
   }
   
   @media only screen and (min-width: 1920px) {
