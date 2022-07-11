@@ -88,6 +88,11 @@
     width: 25%;
 }
 
+.scLogoServicesImg {
+    display: flex;
+    width: 100%;
+}
+
 .sabissLogoImg {
     display: flex;
     width: 100%;
@@ -130,6 +135,9 @@
 }
 
 @media only screen and (max-width: 880px) {
+    .services.mainContainer {
+        flex-direction: column-reverse;
+    }
     .videoContainer {
         margin-top: 0rem;
         width: 100%;
@@ -153,18 +161,49 @@
     }
 }
 
-@media only screen and (max-width: 455px) {
+@media only screen and (max-width: 735px) {
+    .services.mainContainer {
+        flex-direction: column-reverse;
+    }
     .servicesContainer {
-        font-size: 1.5rem;
+        padding: 3rem;
+    }
+    .poweredBy {
+        width: 80%;
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .services.mainContainer {
+        flex-direction: column-reverse;
+    }
+    .servicesContainer {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .servicesContainer {
+        font-size: 1rem;
+        line-height: 2rem;
     }
     .servicesList {
-        padding: 1.5rem;
+        padding: 1rem;
     }
     .servicesList li {
-        padding-left: 15%;
+        background-size: 1.5rem;
     }
     .poweredBy {
         width: 80%;
         font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    .poweredBy {
+        width: 80%;
+        font-size: 0.7rem;
     }
 }

@@ -1,7 +1,6 @@
     #map {
         width: 50%;
         height: 60vh;
-        /* border: 5px; */
         border: 0px;
         border-radius: 15px;
         -webkit-border-radius: 15px;
@@ -14,24 +13,6 @@
         box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.45);
         -webkit-box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.45);
         -moz-box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.45);
-    }
-    
-    .btnMapView {
-        display: flex;
-        margin-right: 2rem;
-        margin-top: 0.25rem;
-        margin-bottom: 0.15rem;
-        align-items: center;
-        font-size: 25px;
-        font-weight: 600;
-        font-family: 'Gothic-A1', sans-serif;
-        background-color: white;
-        color: #cf000e;
-        border-color: white;
-        border-radius: 25px;
-        padding: 0.5rem 3rem;
-        box-shadow: 8px 5px 5px 0px rgba(0, 0, 0, 0.75);
-        cursor: pointer;
     }
     
     .leaflet-popup-content {
@@ -50,4 +31,108 @@
         margin: 0;
         width: 20px;
         height: 20px;
+    }
+    
+    @media only screen and (min-width: 1920px) {
+        .servicesContainer {
+            font-size: 1.5rem;
+        }
+        .poweredBy {
+            transform: translate(50%, 80%);
+            -webkit-transform: translate(50%, 80%);
+            -moz-transform: translate(50%, 80%);
+            -ms-transform: translate(50%, 80%);
+            -o-transform: translate(50%, 80%);
+        }
+    }
+    
+    @media only screen and (max-width: 1335px) {
+        .videoContainer {
+            width: 50%;
+            padding: 3rem;
+            align-items: baseline;
+            margin-top: 5rem;
+        }
+        .servicesContainer {
+            font-size: 1.5rem;
+            width: 70%;
+            padding: 3rem;
+            margin: 0rem;
+        }
+        .poweredBy {
+            font-size: 1.2rem;
+            transform: translate(50%, 20%);
+            -webkit-transform: translate(50%, 20%);
+            -moz-transform: translate(50%, 20%);
+            -ms-transform: translate(50%, 20%);
+            -o-transform: translate(50%, 20%);
+        }
+    }
+    
+    @media only screen and (max-width: 880px) {
+        .mainContainer {
+            flex-direction: column-reverse;
+        }
+        .videoContainer {
+            margin-top: 0rem;
+            width: 100%;
+        }
+        .servicesContainer {
+            width: 100%;
+            font-size: 1.5rem;
+            padding: 2rem;
+            margin: 0rem;
+            align-items: center;
+            line-height: 2.2rem;
+        }
+        .poweredBy {
+            width: 80%;
+            font-size: 1rem;
+            transform: translate(10%, -50%);
+            -webkit-transform: translate(10%, -50%);
+            -moz-transform: translate(10%, -50%);
+            -ms-transform: translate(10%, -50%);
+            -o-transform: translate(10%, -50%);
+        }
+    }
+    
+    @media only screen and (max-width: 735px) {
+        .servicesContainer {
+            padding: 3rem;
+        }
+        .poweredBy {
+            width: 80%;
+            font-size: 2rem;
+        }
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .servicesContainer {
+            font-size: 1.2rem;
+            line-height: 2rem;
+        }
+    }
+    
+    @media only screen and (max-width: 450px) {
+        .servicesContainer {
+            font-size: 1rem;
+            line-height: 2rem;
+        }
+        .servicesList {
+            padding: 1rem;
+        }
+        .servicesList li {
+            background-size: 1.5rem;
+        }
+        .poweredBy {
+            width: 80%;
+            font-size: 0.8rem;
+        }
+    }
+    
+    @media only screen and (max-width: 376px) {
+        .poweredBy {
+            width: 80%;
+            font-size: 0.7rem;
+        }
     }

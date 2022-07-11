@@ -29,6 +29,7 @@
   
   .navList a:visited {
       all: unset;
+      color: black;
   }
   
   .navBar1 {

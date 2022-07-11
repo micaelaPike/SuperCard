@@ -20,7 +20,7 @@ async function createMarker() {
 const options = {
     includeScore: true,
     // Search in `StoreName` and in `Address` array
-    keys: ['StoreName', 'Address'],
+    keys: ['StoreName', 'Group', 'Address'],
     shouldSort: true,
     ignoreLocation: true,
     threshold: 0.5
@@ -55,7 +55,7 @@ let map = L.map('map', {
     maxZoom: 20
 });
 
-map.setView([-28.0046, 26.7732], 5);
+map.setView([-28.0046, 26.7732], 6);
 
 //Map Layers
 let OpenStreetMap_Mapnik = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -102,7 +102,7 @@ let markerCluster = new L.MarkerClusterGroup({
 
 const fuse = new Fuse(markerLocations, options)
 
-btnLayerChange.addEventListener("click", changeLayer);
+
 
 //Markers
 markerLocations.forEach(function(item, index) {
@@ -151,14 +151,12 @@ function searchStore() {
 
     //Take out the ones if they search the storeType
     if (inputSearchStoreValue === "Spar" || inputSearchStoreValue === "BMS") {
-        filteredResults = arr.filter((item) => item.item.StoreType.toLowerCase().includes(inputSearchStoreValue));
-    } else {
-        filteredResults = result;
+        filteredResults = arr.filter((item) => item.item.StoreType.toLowerCase().includes(inputSearchStoreValue.toLowerCase()));
     }
 
     //Take out the ones that don't contain the word searched
     arr.forEach((item, index) => {
-        console.log(arr[index].item)
+        filteredResults = [];
         if (arr[index].item.StoreName.toLowerCase().includes(inputSearchStoreValue) || arr[index].item.Address.toLowerCase().includes(inputSearchStoreValue)) {
             filteredResults.push(arr[index]);
         } else {
@@ -170,94 +168,98 @@ function searchStore() {
 
     map.removeLayer(markerCluster);
 
-    filteredResults.forEach((item, index) => {
-        // debugger;
-
-        //Perfect Match
-        if (filteredResults[0].score === 0) {
-            let searchMarker = L.marker([filteredResults[index].item.Longitude, filteredResults[index].item.Latitude], { icon: filteredResults[index].item.StoreType === "Spar" ? sparIcon : bmsIcon });
-
-            if (filteredResults[index].item.StoreType === "Spar") {
-                searchMarker.bindPopup(`${ filteredResults[index].item.StoreName.bold() } <br> ${ filteredResults[index].item.Address }`);
-                featureGroupMarker.addLayer(searchMarker);
-
-            } else if (filteredResults[index].item.StoreType === "BMS") {
-                searchMarker.bindPopup(`${ filteredResults[index].item.StoreName.bold() } <br> ${ filteredResults[index].item.Address }`);
-                featureGroupMarker.addLayer(searchMarker);
-            }
-
+    //Perfect Match
+    if (filteredResults[0].score === 0) {
+        let searchMarker = L.marker([filteredResults[0].item.Longitude, filteredResults[0].item.Latitude], { icon: filteredResults[0].item.StoreType === "Spar" ? sparIcon : bmsIcon });
+        console.log(searchMarker)
+        if (filteredResults[0].item.StoreType === "Spar") {
+            searchMarker.bindPopup(`${ filteredResults[0].item.StoreName.bold() } <br> ${ filteredResults[0].item.Address }`);
             featureGroupMarker.addLayer(searchMarker);
 
-
-            map.flyTo([filteredResults[0].item.Longitude, filteredResults[0].item.Latitude], 17, { duration: 2, easeLinearity: 5 });
-            return;
+        } else if (filteredResults[0].item.StoreType === "BMS") {
+            searchMarker.bindPopup(`${ filteredResults[0].item.StoreName.bold() } <br> ${ filteredResults[0].item.Address }`);
+            featureGroupMarker.addLayer(searchMarker);
         }
 
-        //Near As Damnit
-        if (filteredResults[index].score <= 0.3) {
-            let searchMarker = L.marker([filteredResults[index].item.Longitude, filteredResults[index].item.Latitude], { icon: filteredResults[index].item.StoreType === "Spar" ? sparIcon : bmsIcon });
+        featureGroupMarker.addLayer(searchMarker);
 
-            if (filteredResults[index].item.StoreType === "Spar") {
-                searchMarker.bindPopup(`${ filteredResults[index].item.StoreName.bold() } <br> ${ filteredResults[index].item.Address }`);
+
+        map.flyTo([filteredResults[0].item.Longitude, filteredResults[0].item.Latitude], 17, { duration: 2, easeLinearity: 5 });
+    } else {
+        console.log("close")
+        filteredResults.forEach((item, index) => {
+            // debugger;
+
+            //Near As Damnit
+            if (filteredResults[index].score <= 0.3) {
+                let searchMarker = L.marker([filteredResults[index].item.Longitude, filteredResults[index].item.Latitude], { icon: filteredResults[index].item.StoreType === "Spar" ? sparIcon : bmsIcon });
+
+                if (filteredResults[index].item.StoreType === "Spar") {
+                    searchMarker.bindPopup(`${ filteredResults[index].item.StoreName.bold() } <br> ${ filteredResults[index].item.Address }`);
+                    featureGroupMarker.addLayer(searchMarker);
+
+                } else if (filteredResults[index].item.StoreType === "BMS") {
+                    searchMarker.bindPopup(`${ filteredResults[index].item.StoreName.bold() } <br> ${ filteredResults[index].item.Address }`);
+                    featureGroupMarker.addLayer(searchMarker);
+                }
+
                 featureGroupMarker.addLayer(searchMarker);
 
-            } else if (filteredResults[index].item.StoreType === "BMS") {
-                searchMarker.bindPopup(`${ filteredResults[index].item.StoreName.bold() } <br> ${ filteredResults[index].item.Address }`);
-                featureGroupMarker.addLayer(searchMarker);
             }
 
-            featureGroupMarker.addLayer(searchMarker);
+            //Can't Quite Find a Match
+            console.log("not really")
 
-            return;
-        }
+            if (filteredResults[index].score > 0.3 && filteredResults[index].score <= 0.5) {
 
-        //Can't Quite Find a Match
-        if (filteredResults[index].score > 0.3 && filteredResults[index].score <= 0.5) {
+                let searchMarker = L.marker([filteredResults[index].item.Longitude, filteredResults[index].item.Latitude], { icon: filteredResults[index].item.StoreType === "Spar" ? sparIcon : bmsIcon });
+                if (filteredResults[index].item.StoreType === "Spar") {
+                    searchMarker.bindPopup(`${ filteredResults[index].item.StoreName.bold() } <br> ${ filteredResults[index].item.Address }`);
+                    featureGroupMarker.addLayer(searchMarker);
 
-            let searchMarker = L.marker([filteredResults[index].item.Longitude, filteredResults[index].item.Latitude], { icon: filteredResults[index].item.StoreType === "Spar" ? sparIcon : bmsIcon });
-            if (filteredResults[index].item.StoreType === "Spar") {
-                searchMarker.bindPopup(`${ filteredResults[index].item.StoreName.bold() } <br> ${ filteredResults[index].item.Address }`);
+                } else if (filteredResults[index].item.StoreType === "BMS") {
+                    searchMarker.bindPopup(`${ filteredResults[index].item.StoreName.bold() } <br> ${ filteredResults[index].item.Address }`);
+                    featureGroupMarker.addLayer(searchMarker);
+                }
+
                 featureGroupMarker.addLayer(searchMarker);
 
-            } else if (filteredResults[index].item.StoreType === "BMS") {
-                searchMarker.bindPopup(`${ filteredResults[index].item.StoreName.bold() } <br> ${ filteredResults[index].item.Address }`);
-                featureGroupMarker.addLayer(searchMarker);
             }
-
-            featureGroupMarker.addLayer(searchMarker);
-
-        }
-        featureGroupMarker.addTo(map).on('click', function(e) {
-            map.flyTo(e.latlng, 17, { duration: 3, easeLinearity: 5 });
+            featureGroupMarker.addTo(map).on('click', function(e) {
+                map.flyTo(e.latlng, 17, { duration: 3, easeLinearity: 5 });
+            });
+            featureGroupMarker.addTo(map);
+            map.flyToBounds(featureGroupMarker.getBounds(), { maxZoom: 20 });
         });
-        featureGroupMarker.addTo(map);
-        map.flyToBounds(featureGroupMarker.getBounds(), { maxZoom: 20 });
+
+        // if (filteredResults[0].score > 0.5) {
+        //     searchErrorBox.style.setZIndex = "9999";
+        //     searchErrorBox.style.display = "block";
+        // }}
+
+
+    }
+
+    function closeError() {
+        searchErrorBox.style.display = "none";
+    }
+
+    btnLayerChange.addEventListener("click", changeLayer);
+
+    btnSearchStore.addEventListener("click", searchStore);
+
+    inputSearchStore.addEventListener('keypress', function(event) {
+        if (event.key === 'Enter') {
+            searchStore();
+        }
     });
 
-    // if (filteredResults[0].score > 0.5) {
-    //     searchErrorBox.style.setZIndex = "9999";
-    //     searchErrorBox.style.display = "block";
-    //     return;
-    // }
+    closeButton.addEventListener("click", closeError);
+
+    // var element = document.getElementById('searchStore');
+    // var topPos = element.getBoundingClientRect().top + window.scrollY;
+    // var leftPos = element.getBoundingClientRect().left + window.scrollX;
+    // var d = document.getElementById("div1");
+    // var topPos = d.offsetTop;
+    // console.log(leftPos);
 }
-
-function closeError() {
-    searchErrorBox.style.display = "none";
-}
-
-btnSearchStore.addEventListener("click", searchStore);
-
-inputSearchStore.addEventListener('keypress', function(event) {
-    if (event.key === 'Enter') {
-        searchStore();
-    }
-});
-
-closeButton.addEventListener("click", closeError);
-
-// var element = document.getElementById('searchStore');
-// var topPos = element.getBoundingClientRect().top + window.scrollY;
-// var leftPos = element.getBoundingClientRect().left + window.scrollX;
-// var d = document.getElementById("div1");
-// var topPos = d.offsetTop;
-// console.log(leftPos);

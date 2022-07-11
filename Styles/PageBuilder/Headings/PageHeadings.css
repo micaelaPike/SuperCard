@@ -1,10 +1,10 @@
     .pageHeading {
-        font-size: 3.5rem;
+        font-size: 4rem;
         font-family: 'bauhaus';
         font-weight: 800;
         width: 50vw;
         text-align: center;
-        padding-top: 1rem;
+        padding: 1.2rem 0rem 1rem 0rem;
     }
     
     .pageHeading p {
@@ -19,6 +19,12 @@
     @media only screen and (min-width: 1920px) {
         .pageHeading {
             font-size: 4rem;
+        }
+    }
+    
+    @media only screen and (min-width: 1335px) {
+        .pageHeading {
+            font-size: 3.5rem;
         }
     }
     

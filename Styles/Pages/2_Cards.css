@@ -19,7 +19,7 @@
 
 .cardHeading {
     display: flex;
-    font-size: 48px;
+    font-size: 3rem;
     font-family: 'bauhaus';
     font-weight: 600;
     /* padding: 0rem 2rem 0.5rem 0rem; */
@@ -58,6 +58,9 @@
 @media only screen and (max-width: 1335px) {}
 
 @media only screen and (max-width: 880px) {
+    .cardHeading {
+        font-size: 2.75rem;
+    }
     .cardDescription {
         width: 100%;
         margin: 1rem;
@@ -70,4 +73,14 @@
 
 @media only screen and (max-width: 755px) {}
 
-@media only screen and (max-width: 455px) {}
+@media only screen and (max-width: 450px) {
+    .cardDescription {
+        width: 100%;
+        padding: 0rem 2rem;
+        font-size: 1rem;
+    }
+    register {
+        margin: 0rem;
+        font-size: 1rem;
+    }
+}

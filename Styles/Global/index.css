@@ -35,7 +35,7 @@
         .infoContainer {
             display: flex;
             width: 50%;
-            margin: 8% 2.5% 0% 3%;
+            margin-top: 8%;
             text-align: center;
         }
         
@@ -127,12 +127,13 @@
             .scLogoIndex {
                 width: 100%;
             }
-            .mainContainer {
-                flex-direction: column;
+            .index.mainContainer {
+                flex-direction: column-reverse;
                 align-items: center;
             }
             .infoContainer {
                 width: 100%;
+                justify-content: center;
             }
             .col1 {
                 margin-left: 5rem;
@@ -155,9 +156,6 @@
         }
         
         @media only screen and (max-width: 735px) {
-            .mainContainer {
-                flex-direction: column-reverse;
-            }
             .infoContainer p {
                 font-size: 1.5rem;
             }
@@ -199,17 +197,21 @@
                 margin: 10% 46% 0% 46%;
             }
         }
-        /* @media only screen and (max-width: 600px) {
-            .landingPage {
-                width: 37.5rem;
-                height: 90rem;
+        
+        @media only screen and (max-width: 450px) {
+            .infoContainer p {
+                font-size: 1rem;
             }
-            .steelDesktopGradient {
-                width: 37.5rem;
-                height: 90rem;
+            .btnRegister {
+                font-size: 0.8rem;
+                padding: 0.5rem;
             }
-            .redDesktopGradient {
-                width: 37.5rem;
-                height: 90rem;
+            .btnServices {
+                font-size: 0.8rem;
+                padding: 0.5rem 1.75rem;
             }
-        } */
+            .spacer {
+                width: 2rem;
+                margin: 10% 46% 0% 46%;
+            }
+        }

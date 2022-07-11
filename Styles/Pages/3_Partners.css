@@ -117,10 +117,28 @@
     justify-content: center;
 }
 
+.btnMapView {
+    display: flex;
+    margin-right: 2rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.15rem;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Gothic-A1', sans-serif;
+    background-color: white;
+    color: #cf000e;
+    border-color: white;
+    border-radius: 25px;
+    padding: 0.5rem 3rem;
+    box-shadow: 8px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+}
+
 .logoContainer img {
     display: flex;
     width: 100%;
-    padding-right: 1rem;
+    padding: 0rem 1rem 0rem 1rem;
 }
 
 .sparLogo {
@@ -132,7 +150,6 @@
 .topsLogo {
     display: flex;
     width: 8%;
-    margin: 0rem 2rem;
     aspect-ratio: 2.03 / 1;
 }
 
@@ -141,3 +158,98 @@
     width: 8%;
     aspect-ratio: 1.66 / 1;
 }
+
+@media only screen and (max-width: 1920px) {
+    .partnersTextContainer {
+        padding: 3rem 7rem 3rem 1.5rem;
+    }
+    .partnersTextContainer p {
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+    }
+    .logoContainer {
+        padding-top: 2.8rem;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .partnersTextContainer {
+        padding: 1rem 7rem 3rem 1.5rem;
+    }
+    .partnersTextContainer p {
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+    .searchInput {
+        padding-top: 1rem;
+    }
+    .logoContainer {
+        padding-top: 0rem;
+    }
+    .btnFindStore {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem 0.6rem 1.2rem;
+    }
+    .btnMapView {
+        padding: 0.3rem 2rem;
+        font-size: 1.3;
+    }
+    .sparLogo {
+        display: flex;
+        width: 25%;
+        aspect-ratio: 5.66 / 1;
+    }
+    .topsLogo {
+        display: flex;
+        width: 10%;
+        aspect-ratio: 2 / 1;
+    }
+    .bmsLogo {
+        display: flex;
+        width: 10%;
+        aspect-ratio: 2 / 1;
+    }
+}
+
+@media only screen and (max-width: 1335px) {
+    .partnersTextContainer {
+        padding: 1rem 7rem 0rem 2rem;
+    }
+    .partnersTextContainer p {
+        font-size: 1.1rem;
+        line-height: 2rem;
+    }
+    .btnMapView {
+        padding: 0.3rem 2rem;
+        font-size: 1.3;
+    }
+    .btnFindStore {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem 0.6rem 1.2rem;
+    }
+    .sparLogo {
+        display: flex;
+        width: 25%;
+        aspect-ratio: 5.66 / 1;
+    }
+    .topsLogo {
+        display: flex;
+        width: 10%;
+        aspect-ratio: 2 / 1;
+    }
+    .bmsLogo {
+        display: flex;
+        width: 10%;
+        aspect-ratio: 2 / 1;
+    }
+}
+
+@media only screen and (max-width: 880px) {}
+
+@media only screen and (max-width: 735px) {}
+
+@media only screen and (max-width: 600px) {}
+
+@media only screen and (max-width: 450px) {}
+
+@media only screen and (max-width: 376px) {}
