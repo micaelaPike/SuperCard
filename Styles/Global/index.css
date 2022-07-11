@@ -132,6 +132,9 @@
                 flex-direction: column-reverse;
                 align-items: center;
             }
+            .register.mainContainer {
+                flex-direction: column;
+            }
             .infoContainer {
                 width: 100%;
                 justify-content: center;

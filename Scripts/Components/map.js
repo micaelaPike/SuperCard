@@ -55,7 +55,7 @@ let map = L.map('map', {
     maxZoom: 20
 });
 
-map.setView([-28.0046, 26.7732], 6);
+map.setView([-28.0046, 26.7732], 5);
 
 //Map Layers
 let OpenStreetMap_Mapnik = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {

@@ -42,7 +42,7 @@
     box-shadow: 6px 8px 17px 0px rgba(0, 0, 0, 0.75);
 }
 
-.register {
+.registerBar {
     display: flex;
     width: 27.5rem;
     height: 4.25rem;
@@ -68,7 +68,7 @@
         margin: 1rem;
         padding: 0rem 4rem;
     }
-    .register {
+    .registerBar {
         margin: 0rem;
     }
 }
@@ -81,7 +81,7 @@
         padding: 0rem 2rem;
         font-size: 1rem;
     }
-    register {
+    .registerBar {
         margin: 0rem;
         font-size: 1rem;
     }

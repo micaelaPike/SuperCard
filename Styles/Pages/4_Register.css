@@ -5,14 +5,15 @@
     align-items: center;
     font-family: 'Gothic A1', sans-serif;
     font-weight: 600;
-    font-size: 1.4rem;
-    line-height: 2.1rem;
-    margin: 2% 0% 0% 7%;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    margin-top: 1%;
+    margin-left: 7%;
 }
 
 .heading {
-    font-size: 1.5rem;
-    padding: 0rem 3rem 2rem 3rem;
+    font-size: 2rem;
+    padding: 1rem 3rem 1rem 3rem;
 }
 
 .registerList {
@@ -24,19 +25,135 @@
     padding-left: 5%;
 }
 
-.kioskContainer {
-    display: flex;
-    width: 50%;
-}
-
 .kioskImageContainer {
     display: flex;
-    width: 100%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
 }
 
 .kioskImage {
     display: flex;
-    margin: 2% 15% 2% 15%;
-    width: 100%;
-    aspect-ratio: 1 / 1;
+    width: 720px;
+    height: 752px;
+    padding: 10%;
+    margin-top: 2%;
+}
+
+@media only screen and (max-width: 1920px) {
+    .registerTextContainer {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    .heading {
+        font-size: 2.5rem;
+        padding: 2rem 3rem;
+    }
+    .kioskImage {
+        width: 720px;
+        height: 752px;
+        /* width: 90%;
+        height: 90%; */
+        margin-top: 2%;
+        padding: 10%;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .kioskImage {
+        width: 558px;
+        height: 584.29px;
+    }
+    .registerTextContainer {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+    }
+}
+
+@media only screen and (max-width: 1335px) {
+    .registerTextContainer {
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+    }
+    .kioskImage {
+        width: 522.99px;
+        height: 544.3px;
+    }
+    .heading {
+        font-size: 2rem;
+        padding: 2rem 3rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .registerTextContainer {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+    .kioskImage {
+        width: 500px;
+        height: 528px;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .registerTextContainer {
+        width: 100%;
+        padding: 5%;
+        margin: 0;
+        font-size: 1.5rem;
+    }
+    .kioskImageContainer {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .kioskImage {
+        width: 720px;
+        height: 752px;
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .kioskImage {
+        width: 720px;
+        height: 752px;
+        margin-top: 2%;
+        padding: 10%;
+    }
+    .registerTextContainer {
+        line-height: 3rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .kioskImage {
+        width: 558px;
+        height: 584.29px;
+    }
+    .registerTextContainer {
+        line-height: 2.8rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .kioskImage {
+        width: 460px;
+        height: 480px;
+    }
+    .registerTextContainer {
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    .kioskImage {
+        width: 410px;
+        height: 430px;
+    }
+    .registerTextContainer {
+        font-size: 1rem;
+        line-height: 2rem;
+    }
 }

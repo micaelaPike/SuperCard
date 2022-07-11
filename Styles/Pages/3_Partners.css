@@ -212,21 +212,6 @@
         font-size: 1rem;
         padding: 0.6rem 1.2rem 0.6rem 1.2rem;
     }
-    .sparLogo {
-        display: flex;
-        width: 25%;
-        aspect-ratio: 5.66 / 1;
-    }
-    .topsLogo {
-        display: flex;
-        width: 10%;
-        aspect-ratio: 2 / 1;
-    }
-    .bmsLogo {
-        display: flex;
-        width: 10%;
-        aspect-ratio: 2 / 1;
-    }
 }
 
 @media only screen and (max-width: 880px) {}
