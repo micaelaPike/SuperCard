@@ -71,6 +71,7 @@ let Esri_WorldImagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest
 let mapLayer = "osMap";
 OpenStreetMap_Mapnik.addTo(map);
 
+// debugger;
 // Change Map View
 function changeLayer() {
 

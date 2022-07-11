@@ -51,7 +51,7 @@
     display: flex;
     flex-direction: column;
     width: 50%;
-    padding: 0rem 7rem 0rem 1rem;
+    padding: 0rem 6rem 0rem 1rem;
     text-align: justify;
 }
 
@@ -59,13 +59,16 @@
     align-items: center;
     font-family: 'Gothic A1', sans-serif;
     font-weight: 600;
-    font-size: 1rem;
-    line-height: 2.1rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    padding: 0 1.5rem;
 }
 
 .searchInput {
+    width: 100%;
     text-align: -webkit-center;
     margin-top: auto;
+    padding: 1rem 0;
 }
 
 .lblSearchStore {
@@ -75,12 +78,12 @@
 }
 
 .inputSearchStore {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 500;
     font-family: 'Gothic-A1', sans-serif;
     width: 60%;
     padding: 0.25rem;
-    margin: 0.25rem;
+    margin: 1rem;
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
@@ -90,10 +93,11 @@
 
 .btnFindStore {
     display: flex;
+    width: 10rem;
     text-align: center;
     justify-content: center;
-    padding: 0.8rem 1.2rem 0.8rem 1.2rem;
-    margin-top: 1rem;
+    padding: 0.8rem 1.2rem;
+    margin-top: 0.5rem;
     color: #cf000e;
     font-family: 'Gothic A1', sans-serif;
     font-weight: 800;
@@ -113,32 +117,14 @@
 .logoContainer {
     display: flex;
     width: 100%;
-    padding-top: 1rem;
+    padding-top: 1.5rem;
     justify-content: center;
-}
-
-.btnMapView {
-    display: flex;
-    margin-right: 2rem;
-    margin-top: 0.25rem;
-    margin-bottom: 0.15rem;
-    align-items: center;
-    font-size: 25px;
-    font-weight: 600;
-    font-family: 'Gothic-A1', sans-serif;
-    background-color: white;
-    color: #cf000e;
-    border-color: white;
-    border-radius: 25px;
-    padding: 0.5rem 3rem;
-    box-shadow: 8px 5px 5px 0px rgba(0, 0, 0, 0.75);
-    cursor: pointer;
 }
 
 .logoContainer img {
     display: flex;
     width: 100%;
-    padding: 0rem 1rem 0rem 1rem;
+    padding: 0rem 1rem;
 }
 
 .sparLogo {
@@ -159,67 +145,151 @@
     aspect-ratio: 2 / 1;
 }
 
-@media only screen and (max-width: 1920px) {
+@media only screen and (min-width: 1920px) {
     .partnersTextContainer {
-        padding: 0rem 7rem 1rem 1.5rem;
+        padding: 0rem 8rem 1rem 2rem;
     }
     .partnersTextContainer p {
-        font-size: 1.4rem;
-        line-height: 2rem;
+        font-size: 2rem;
+        line-height: 3rem;
     }
     .logoContainer {
         padding-top: 2rem;
+    }
+    .searchInput {
+        text-align: -webkit-center;
+        margin-top: auto;
+    }
+    .lblSearchStore {
+        font-size: 3rem;
     }
 }
 
 @media only screen and (max-width: 1500px) {
     .partnersTextContainer {
-        padding: 0rem 7rem 3rem 1.5rem;
+        padding: 0rem 7rem 3rem 1rem;
     }
     .partnersTextContainer p {
-        font-size: 1rem;
+        font-size: 1.8rem;
         line-height: 2rem;
     }
     .searchInput {
-        padding-top: 1rem;
+        padding-top: 2rem;
     }
     .logoContainer {
-        padding-top: 0rem;
+        padding-top: 4rem;
     }
     .btnFindStore {
-        font-size: 1rem;
-        padding: 0.6rem 1.2rem 0.6rem 1.2rem;
-    }
-    .btnMapView {
-        padding: 0.3rem 2rem;
-        font-size: 1.3;
+        font-size: 1.4rem;
     }
 }
 
 @media only screen and (max-width: 1335px) {
     .partnersTextContainer {
-        padding: 1rem 7rem 0rem 2rem;
+        padding: 1rem 5rem 0rem 2rem;
     }
     .partnersTextContainer p {
-        font-size: 1.1rem;
+        font-size: 1.5rem;
         line-height: 2rem;
-    }
-    .btnMapView {
-        padding: 0.3rem 2rem;
-        font-size: 1.3;
     }
     .btnFindStore {
         font-size: 1rem;
         padding: 0.6rem 1.2rem 0.6rem 1.2rem;
     }
+    .lblSearchStore {
+        font-size: 2rem;
+    }
+    .inputSearchStore {
+        font-size: 1.5rem;
+    }
 }
 
-@media only screen and (max-width: 880px) {}
+@media only screen and (max-width: 1050px) {
+    .partnersTextContainer p {
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+        padding: 0 0rem;
+    }
+    .lblSearchStore {
+        font-size: 1.2rem;
+    }
+    .inputSearchStore {
+        font-size: 1rem;
+    }
+    .logoContainer {
+        padding-top: 3rem;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .partnersTextContainer {
+        width: 100%;
+        justify-content: center;
+        padding: 1rem 4rem 0rem 4rem;
+    }
+    .partnersTextContainer p {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    .lblSearchStore {
+        font-size: 3rem;
+    }
+    .inputSearchStore {
+        width: 80%;
+        font-size: 2rem;
+    }
+    .btnFindStore {
+        font-size: 2rem;
+    }
+    .logoContainer {
+        width: 100%;
+        padding-top: 2rem;
+    }
+    .sparLogo {
+        width: 45%;
+    }
+    .topsLogo {
+        width: 25%;
+    }
+    .bmsLogo {
+        width: 25%;
+    }
+}
 
 @media only screen and (max-width: 735px) {}
 
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+    .logoContainer {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logoContainer img {
+        padding: 1rem;
+    }
+    .inputSearchStore {
+        width: 90%;
+        font-size: 1.5rem;
+    }
+    .sparLogo {
+        width: 70%;
+    }
+    .topsLogo {
+        width: 45%;
+    }
+    .bmsLogo {
+        width: 45%;
+    }
+}
 
-@media only screen and (max-width: 450px) {}
-
-@media only screen and (max-width: 376px) {}
+@media only screen and (max-width: 450px) {
+    .partnersTextContainer {
+        width: 100%;
+        justify-content: center;
+        padding: 1rem 2rem 0rem;
+    }
+    .partnersTextContainer p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+}

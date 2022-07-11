@@ -27,7 +27,7 @@
         }
         
         .mainContainer {
-            margin: 0;
+            margin-top: 1rem;
             display: flex;
             width: 100%;
         }
@@ -133,6 +133,9 @@
                 align-items: center;
             }
             .register.mainContainer {
+                flex-direction: column;
+            }
+            .partners.mainContainer {
                 flex-direction: column;
             }
             .infoContainer {
