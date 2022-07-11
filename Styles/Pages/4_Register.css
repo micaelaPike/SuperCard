@@ -5,8 +5,8 @@
     align-items: center;
     font-family: 'Gothic A1', sans-serif;
     font-weight: 600;
-    font-size: 1.8rem;
-    line-height: 2.5rem;
+    font-size: 1.3rem;
+    line-height: 2rem;
     margin-top: 1%;
     margin-left: 7%;
 }
@@ -29,15 +29,15 @@
     display: flex;
     width: 50%;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .kioskImage {
     display: flex;
-    width: 720px;
-    height: 752px;
+    width: 35rem;
+    height: 37rem;
     padding: 10%;
-    margin-top: 2%;
+    padding-bottom: 15%;
 }
 
 @media only screen and (min-width: 1920px) {
