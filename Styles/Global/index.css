@@ -197,21 +197,3 @@
                 margin: 10% 46% 0% 46%;
             }
         }
-        
-        @media only screen and (max-width: 450px) {
-            .infoContainer p {
-                font-size: 1rem;
-            }
-            .btnRegister {
-                font-size: 0.8rem;
-                padding: 0.5rem;
-            }
-            .btnServices {
-                font-size: 0.8rem;
-                padding: 0.5rem 1.75rem;
-            }
-            .spacer {
-                width: 2rem;
-                margin: 10% 46% 0% 46%;
-            }
-        }

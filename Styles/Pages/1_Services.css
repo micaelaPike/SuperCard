@@ -99,10 +99,53 @@
 }
 
 @media only screen and (min-width: 1920px) {
+    .poweredBy {
+        transform: translate(50%, 100%);
+        -webkit-transform: translate(50%, 100%);
+        -moz-transform: translate(50%, 100%);
+        -ms-transform: translate(50%, 100%);
+        -o-transform: translate(50%, 100%);
+    }
+}
+
+@media only screen and (max-width: 1920px) {
     .servicesContainer {
         font-size: 1.5rem;
     }
     .poweredBy {
+        transform: translate(50%, 100%);
+        -webkit-transform: translate(50%, 100%);
+        -moz-transform: translate(50%, 100%);
+        -ms-transform: translate(50%, 100%);
+        -o-transform: translate(50%, 100%);
+    }
+}
+
+@media only screen and (max-width: 1700px) {
+    .poweredBy {
+        transform: translate(50%, 100%);
+    }
+}
+
+@media only screen and (max-width: 1335px) {
+    .videoContainer {
+        width: 80%;
+        padding-left: 2rem;
+        align-items: baseline;
+        margin-top: 5rem;
+    }
+    .servicesContainer {
+        font-size: 1rem;
+        width: 70%;
+        padding-right: 4rem;
+        margin: 0rem;
+        line-height: 1.8rem;
+    }
+    .servicesList li {
+        background-size: 1.5rem;
+    }
+    .poweredBy {
+        font-size: 1.2rem;
         transform: translate(50%, 80%);
         -webkit-transform: translate(50%, 80%);
         -moz-transform: translate(50%, 80%);
@@ -111,26 +154,13 @@
     }
 }
 
-@media only screen and (max-width: 1335px) {
+@media only screen and (max-width: 1000px) {
     .videoContainer {
-        width: 50%;
-        padding: 3rem;
-        align-items: baseline;
-        margin-top: 5rem;
+        padding: 0rem 0rem 0rem 1rem;
     }
     .servicesContainer {
-        font-size: 1.5rem;
-        width: 70%;
-        padding: 3rem;
-        margin: 0rem;
-    }
-    .poweredBy {
-        font-size: 1.2rem;
-        transform: translate(50%, 20%);
-        -webkit-transform: translate(50%, 20%);
-        -moz-transform: translate(50%, 20%);
-        -ms-transform: translate(50%, 20%);
-        -o-transform: translate(50%, 20%);
+        font-size: 1rem;
+        line-height: 2rem;
     }
 }
 
@@ -140,7 +170,9 @@
     }
     .videoContainer {
         margin-top: 0rem;
-        width: 100%;
+        width: 90%;
+        padding: 0rem 1rem 0rem 1rem;
+        align-self: center;
     }
     .servicesContainer {
         width: 100%;
@@ -152,7 +184,7 @@
     }
     .poweredBy {
         width: 80%;
-        font-size: 1rem;
+        font-size: 1.5rem;
         transform: translate(10%, -50%);
         -webkit-transform: translate(10%, -50%);
         -moz-transform: translate(10%, -50%);
@@ -162,42 +194,50 @@
 }
 
 @media only screen and (max-width: 735px) {
-    .services.mainContainer {
-        flex-direction: column-reverse;
-    }
     .servicesContainer {
         padding: 3rem;
     }
     .poweredBy {
         width: 80%;
-        font-size: 2rem;
+        font-size: 1.5rem;
+    }
+    .poweredBy {
+        width: 80%;
+        font-size: 1.5rem;
+        transform: translate(10%, 100%);
+        -webkit-transform: translate(10%, 100%);
+        -moz-transform: translate(10%, 100%);
+        -ms-transform: translate(10%, 100%);
+        -o-transform: translate(10%, 100%);
     }
 }
 
-@media only screen and (max-width: 600px) {
-    .services.mainContainer {
-        flex-direction: column-reverse;
-    }
-    .servicesContainer {
+@media only screen and (max-width: 620px) {
+    .poweredBy {
         font-size: 1.2rem;
-        line-height: 2rem;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .poweredBy {
+        font-size: 0.8rem;
     }
 }
 
 @media only screen and (max-width: 450px) {
     .servicesContainer {
+        padding: 1rem;
         font-size: 1rem;
-        line-height: 2rem;
+        line-height: 1.3rem;
     }
     .servicesList {
         padding: 1rem;
     }
     .servicesList li {
-        background-size: 1.5rem;
+        background-size: 1rem;
     }
     .poweredBy {
         width: 80%;
-        font-size: 0.8rem;
     }
 }
 
