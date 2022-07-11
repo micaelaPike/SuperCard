@@ -9,7 +9,7 @@
 
 .cardCarousel {
     display: flex;
-    width: 55%;
+    width: 50%;
     margin-top: 3%;
     border-radius: 30px;
     box-shadow: 0px 0px 15px 13px rgba(0, 0, 0, 0.55);

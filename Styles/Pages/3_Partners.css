@@ -51,7 +51,7 @@
     display: flex;
     flex-direction: column;
     width: 50%;
-    padding: 1rem 7rem 1rem 1rem;
+    padding: 0rem 7rem 0rem 1rem;
     text-align: justify;
 }
 
@@ -59,7 +59,7 @@
     align-items: center;
     font-family: 'Gothic A1', sans-serif;
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 2.1rem;
 }
 
@@ -149,35 +149,35 @@
 
 .topsLogo {
     display: flex;
-    width: 8%;
-    aspect-ratio: 2.03 / 1;
+    width: 10%;
+    aspect-ratio: 2 / 1;
 }
 
 .bmsLogo {
     display: flex;
-    width: 8%;
-    aspect-ratio: 1.66 / 1;
+    width: 10%;
+    aspect-ratio: 2 / 1;
 }
 
 @media only screen and (max-width: 1920px) {
     .partnersTextContainer {
-        padding: 3rem 7rem 3rem 1.5rem;
+        padding: 0rem 7rem 1rem 1.5rem;
     }
     .partnersTextContainer p {
-        font-size: 1.6rem;
-        line-height: 2.5rem;
+        font-size: 1.4rem;
+        line-height: 2rem;
     }
     .logoContainer {
-        padding-top: 2.8rem;
+        padding-top: 2rem;
     }
 }
 
 @media only screen and (max-width: 1500px) {
     .partnersTextContainer {
-        padding: 1rem 7rem 3rem 1.5rem;
+        padding: 0rem 7rem 3rem 1.5rem;
     }
     .partnersTextContainer p {
-        font-size: 1.3rem;
+        font-size: 1rem;
         line-height: 2rem;
     }
     .searchInput {
@@ -193,21 +193,6 @@
     .btnMapView {
         padding: 0.3rem 2rem;
         font-size: 1.3;
-    }
-    .sparLogo {
-        display: flex;
-        width: 25%;
-        aspect-ratio: 5.66 / 1;
-    }
-    .topsLogo {
-        display: flex;
-        width: 10%;
-        aspect-ratio: 2 / 1;
-    }
-    .bmsLogo {
-        display: flex;
-        width: 10%;
-        aspect-ratio: 2 / 1;
     }
 }
 
