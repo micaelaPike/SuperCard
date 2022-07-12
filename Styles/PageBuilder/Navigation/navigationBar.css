@@ -79,8 +79,10 @@
   }
   
   .menuContainer {
-      display: inline-block;
+      display: none;
       cursor: pointer;
+      margin-left: auto;
+      margin-right: 1rem;
   }
   
   .bar1,
@@ -159,10 +161,11 @@
   @media only screen and (max-width: 1335px) {}
   
   @media only screen and (max-width: 880px) {
+      .menuContainer {
+          display: flex;
+      }
       .navList {
-          font-size: 1rem;
-          gap: 1rem;
-          padding: 0.5rem 4rem;
+          display: none;
       }
   }
   
