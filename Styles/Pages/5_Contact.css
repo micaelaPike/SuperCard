@@ -182,9 +182,37 @@
     }
 }
 
-@media only screen and (max-width: 1335px) {}
+@media only screen and (max-width: 1335px) {
+    .contactInfo {
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+    }
+    .contactHeading {
+        font-size: 2rem;
+    }
+    .formHeading {
+        font-size: 2rem;
+    }
+    .details {
+        font-size: 1.4rem;
+    }
+    .submitBtn {
+        font-size: 1.4rem;
+    }
+}
 
-@media only screen and (max-width: 900px) {}
+@media only screen and (max-width: 1000px) {
+    .contactInfo {
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+    .formHeading {
+        font-size: 2rem;
+    }
+    .details {
+        padding: 0.5rem 1.25rem;
+    }
+}
 
 @media only screen and (max-width: 880px) {}
 
