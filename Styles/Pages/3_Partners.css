@@ -22,6 +22,11 @@
     font-weight: 650;
 }
 
+.dialogLink {
+    all: unset;
+    color: white;
+}
+
 .markHeading {
     all: unset;
     font-size: 2rem;
