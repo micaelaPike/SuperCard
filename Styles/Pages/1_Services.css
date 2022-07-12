@@ -53,7 +53,7 @@
 .footer {
     height: calc(100% - 59.14%);
     text-align: -webkit-center;
-    padding: 5rem;
+    /* padding: 5rem; */
 }
 
 .poweredBy {

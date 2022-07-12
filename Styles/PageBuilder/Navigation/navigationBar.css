@@ -88,7 +88,7 @@
       width: 35px;
       height: 5px;
       background-color: #333;
-      margin: 6px 0;
+      margin: 3px 0;
       transition: 0.4s;
   }
   
@@ -96,23 +96,46 @@
       font-family: "Bauhaus";
       font-weight: 600;
       margin: 6px 0;
+      margin-top: auto;
       transition: 0.4s;
   }
   
+  .menuBar p {
+      transition: opacity .4s ease-out;
+      -webkit-transition: opacity .4s ease-out;
+      -moz-transition: opacity .4s ease-out;
+      -ms-transition: opacity .4s ease-out;
+      -o-transition: opacity .4s ease-out;
+      -o-transition: opacity .5s ease-out;
+  }
+  
   .change .bar1 {
-      -webkit-transform: rotate(45deg) translate(-50%, 0px);
-      transform: rotate(45deg) translate(-50%, 0px);
-      -moz-transform: rotate(45deg) translate(-50%, 0px);
-      -ms-transform: rotate(45deg) translate(-50%, 0px);
-      -o-transform: rotate(45deg) translate(-50%, 0px);
+      position: absolute;
+      transform: rotate(-45deg) translate(14%, -41%);
+      -webkit-transform: rotate(-45deg) translate(14%, -41%);
+      -moz-transform: rotate(-45deg) translate(14%, -41%);
+      -ms-transform: rotate(-45deg) translate(14%, -41%);
+      -o-transform: rotate(-45deg) translate(14%, -41%);
   }
   
   .change .bar2 {
-      -webkit-transform: rotate(-45deg) translate(50%, 0px);
-      transform: rotate(-45deg) translate(50%, 0px);
-      -moz-transform: rotate(-45deg) translate(50%, 0px);
-      -ms-transform: rotate(-45deg) translate(50%, 0px);
-      -o-transform: rotate(-45deg) translate(50%, 0px);
+      position: absolute;
+      transform: rotate(45deg) translate(-7%, -100%);
+      -webkit-transform: rotate(45deg) translate(-7%, -100%);
+      -moz-transform: rotate(45deg) translate(-7%, -100%);
+      -ms-transform: rotate(45deg) translate(-7%, -100%);
+      -o-transform: rotate(45deg) translate(-7%, -100%);
+  }
+  
+  .burger.change .menuBar p {
+      opacity: 1;
+  }
+  
+  .burger {
+      display: flex;
+      flex-direction: column;
+      height: 3rem;
+      justify-content: space-between;
   }
   
   @media only screen and (min-width: 1920px) {

@@ -1,4 +1,4 @@
-let menuContainer = document.querySelector(".menuContainer");
+let menuContainer = document.querySelector(".burger");
 
 
 function changeHamburger(item) {

@@ -4,12 +4,29 @@ let featureGroupMarker = new L.FeatureGroup;
 let searchErrorBox = document.querySelector(".searchError");
 let closeButton = document.querySelector(".closeButton");
 let inputSearchStore = document.getElementById("searchStore");
+debugger;
+
+btnLayerChange.addEventListener("click", changeLayer);
+
+btnSearchStore.addEventListener("click", searchStore);
+
+inputSearchStore.addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+        searchStore();
+    }
+});
+
+closeButton.addEventListener("click", closeError);
+
+function closeError() {
+    searchErrorBox.style.display = "none";
+}
 
 //Import JSON file with coordinates
 async function createMarker() {
 
     const { default: storeMarker } = await
-    import ("/Scripts/Pages/MapMarkers.json", {
+    import ("/Scripts/Pages/MapMarkersV3.json", {
         assert: {
             type: "json",
         },
@@ -20,7 +37,7 @@ async function createMarker() {
 const options = {
     includeScore: true,
     // Search in `StoreName` and in `Address` array
-    keys: ['StoreName', 'Group', 'Address'],
+    keys: ['StoreName', 'Address'],
     shouldSort: true,
     ignoreLocation: true,
     threshold: 0.5
@@ -86,7 +103,7 @@ function changeLayer() {
         mapLayer = "osMap";
     }
 }
-
+debugger;
 const markerLocations = await createMarker();
 let markerCluster = new L.MarkerClusterGroup({
     iconCreateFunction: function() {
@@ -133,12 +150,13 @@ markerLocations.forEach(function(item, index) {
 
 
 function searchStore() {
-
     map.removeLayer(featureGroupMarker);
 
     featureGroupMarker = new L.FeatureGroup;
-    debugger;
+
     let inputSearchStoreValue = document.getElementById("searchStore").value;
+
+    inputSearchStoreValue = inputSearchStoreValue.toLowerCase();
 
     let result = fuse.search(inputSearchStoreValue);
 
@@ -151,19 +169,22 @@ function searchStore() {
     let filteredResults = [];
 
     //Take out the ones if they search the storeType
-    if (inputSearchStoreValue === "Spar" || inputSearchStoreValue === "BMS") {
-        filteredResults = arr.filter((item) => item.item.StoreType.toLowerCase().includes(inputSearchStoreValue.toLowerCase()));
+    debugger;
+    if (inputSearchStoreValue === "spar" || inputSearchStoreValue === "bms") {
+        filteredResults = arr.filter((item) => item.item.StoreType.toLowerCase().includes(inputSearchStoreValue));
+    } else {
+        //Take out the ones that don't contain the word searched
+        arr.forEach((item, index) => {
+            filteredResults = [];
+            if (arr[index].item.StoreName.toLowerCase().includes(inputSearchStoreValue) || arr[index].item.Address.toLowerCase().includes(inputSearchStoreValue)) {
+                filteredResults.push(arr[index]);
+            } else {
+                filteredResults = result;
+            }
+        });
+
     }
 
-    //Take out the ones that don't contain the word searched
-    arr.forEach((item, index) => {
-        filteredResults = [];
-        if (arr[index].item.StoreName.toLowerCase().includes(inputSearchStoreValue) || arr[index].item.Address.toLowerCase().includes(inputSearchStoreValue)) {
-            filteredResults.push(arr[index]);
-        } else {
-            filteredResults = result;
-        }
-    });
 
     console.log(filteredResults)
 
@@ -192,7 +213,7 @@ function searchStore() {
             // debugger;
 
             //Near As Damnit
-            if (filteredResults[index].score <= 0.3) {
+            if (filteredResults[index].score <= 0.1) {
                 let searchMarker = L.marker([filteredResults[index].item.Longitude, filteredResults[index].item.Latitude], { icon: filteredResults[index].item.StoreType === "Spar" ? sparIcon : bmsIcon });
 
                 if (filteredResults[index].item.StoreType === "Spar") {
@@ -208,24 +229,6 @@ function searchStore() {
 
             }
 
-            //Can't Quite Find a Match
-            console.log("not really")
-
-            if (filteredResults[index].score > 0.3 && filteredResults[index].score <= 0.5) {
-
-                let searchMarker = L.marker([filteredResults[index].item.Longitude, filteredResults[index].item.Latitude], { icon: filteredResults[index].item.StoreType === "Spar" ? sparIcon : bmsIcon });
-                if (filteredResults[index].item.StoreType === "Spar") {
-                    searchMarker.bindPopup(`${ filteredResults[index].item.StoreName.bold() } <br> ${ filteredResults[index].item.Address }`);
-                    featureGroupMarker.addLayer(searchMarker);
-
-                } else if (filteredResults[index].item.StoreType === "BMS") {
-                    searchMarker.bindPopup(`${ filteredResults[index].item.StoreName.bold() } <br> ${ filteredResults[index].item.Address }`);
-                    featureGroupMarker.addLayer(searchMarker);
-                }
-
-                featureGroupMarker.addLayer(searchMarker);
-
-            }
             featureGroupMarker.addTo(map).on('click', function(e) {
                 map.flyTo(e.latlng, 17, { duration: 3, easeLinearity: 5 });
             });
@@ -240,22 +243,6 @@ function searchStore() {
 
 
     }
-
-    function closeError() {
-        searchErrorBox.style.display = "none";
-    }
-
-    btnLayerChange.addEventListener("click", changeLayer);
-
-    btnSearchStore.addEventListener("click", searchStore);
-
-    inputSearchStore.addEventListener('keypress', function(event) {
-        if (event.key === 'Enter') {
-            searchStore();
-        }
-    });
-
-    closeButton.addEventListener("click", closeError);
 
     // var element = document.getElementById('searchStore');
     // var topPos = element.getBoundingClientRect().top + window.scrollY;

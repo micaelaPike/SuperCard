@@ -21,8 +21,32 @@
             flex-direction: column;
             background-image: url('/Assets/Backgrounds/RedDesktopGradient.png');
             background-repeat: no-repeat;
-            background-size: 100% 100%;
+            background-size: cover;
             background-position-y: center;
             width: 100vw;
             height: calc(100vh - 4.75rem);
+        }
+        
+        @media only screen and (max-width: 1345px) {
+            .landingPage {
+                min-height: 100vh;
+                height: auto;
+                background-position-x: center;
+            }
+        }
+        
+        @media only screen and (max-width: 1345px) {
+            .steelDesktopGradient {
+                min-height: 100vh;
+                height: auto;
+                background-position-x: center;
+            }
+        }
+        
+        @media only screen and (max-width: 1345px) {
+            .redDesktopGradient {
+                min-height: 100vh;
+                height: auto;
+                background-position-x: center;
+            }
         }
