@@ -21,7 +21,6 @@
     width: 50%;
     align-self: flex-start;
     text-align: center;
-    margin-top: 3rem;
 }
 
 .contactInfo {
@@ -36,7 +35,7 @@
     font-size: 2rem;
     line-height: 2.1rem;
     margin-left: 5%;
-    margin-top: 15%;
+    margin-top: 8%;
     padding: 2rem;
 }
 
@@ -62,7 +61,7 @@
     display: flex;
     align-self: center;
     font-family: 'Bauhaus';
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 700;
     padding-bottom: 1rem;
 }
@@ -70,7 +69,7 @@
 .largeForm {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 80%;
     align-self: center;
     border-color: black;
     border-width: 2px;
@@ -82,8 +81,8 @@
 
 .details {
     display: flex;
-    margin: 1rem;
-    padding: 1rem 1.25rem;
+    margin: 0.75rem;
+    padding: 0.5rem 1.25rem;
     font-family: 'Gothic A1', sans-serif;
     font-weight: 600;
     font-size: 1.25rem;
@@ -100,7 +99,7 @@
 }
 
 .message {
-    padding-bottom: 25%;
+    padding-bottom: 15%;
     border-radius: 20px;
 }
 
@@ -131,7 +130,7 @@
     display: none;
 }
 
-@media only screen and (max-width: 1920px) {
+@media only screen and (min-width: 1700px) {
     .snackbar {
         width: 27rem;
         font-size: 1.8rem;
@@ -142,6 +141,7 @@
     }
     .contactHeading {
         font-size: 3rem;
+        padding-bottom: 0.8rem;
     }
     .formHeading {
         font-size: 3rem;
@@ -201,25 +201,153 @@
     }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1050px) {
     .contactInfo {
         font-size: 1rem;
-        line-height: 2rem;
+        line-height: 1.2rem;
+        padding: 1rem;
+    }
+    .contactHeading {
+        font-size: 1.5rem;
     }
     .formHeading {
         font-size: 2rem;
     }
     .details {
-        padding: 0.5rem 1.25rem;
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+    .submitBtn {
+        font-size: 1rem;
+    }
+    .message {
+        padding-bottom: 30%;
     }
 }
 
-@media only screen and (max-width: 880px) {}
+@media only screen and (max-width: 1000px) {
+    .contactInfoContainer {
+        width: 100%;
+        margin-top: 0rem;
+        margin-bottom: 1rem;
+        ;
+    }
+    .contactForm {
+        width: 100%;
+    }
+    .largeForm {
+        width: 80%;
+    }
+    .formHeading {
+        font-size: 3rem;
+    }
+    .contactHeading {
+        font-size: 3rem;
+    }
+    .contactInfo {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        margin: 0% 5%;
+        padding: 1rem;
+    }
+    .submitBtn {
+        font-size: 1.5rem;
+    }
+    .details {
+        padding: 0.5rem 1rem;
+        font-size: 1.5rem;
+    }
+    .message {
+        padding-bottom: 30%;
+    }
+}
 
-@media only screen and (max-width: 735px) {}
+@media only screen and (max-width: 880px) {
+    .contactInfoContainer {
+        width: 100%;
+        margin-top: 0rem;
+    }
+    .contactForm {
+        width: 100%;
+    }
+    .largeForm {
+        width: 80%;
+    }
+    .formHeading {
+        font-size: 3rem;
+    }
+    .contactHeading {
+        font-size: 3rem;
+    }
+    .contactInfo {
+        font-size: 1.5rem;
+        line-height: 2.1rem;
+        margin: 5%;
+        padding: 1rem;
+    }
+    .submitBtn {
+        font-size: 1.5rem;
+    }
+    .details {
+        padding: 0.5rem 1rem;
+        font-size: 1.5rem;
+    }
+    .message {
+        padding-bottom: 30%;
+    }
+}
 
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 735px) {
+    .formHeading {
+        font-size: 2rem;
+    }
+    .contactHeading {
+        font-size: 2rem;
+    }
+    .contactInfo {
+        font-size: 1.5rem;
+        line-height: 2.1rem;
+        margin: 5%;
+        padding: 1rem;
+    }
+}
 
-@media only screen and (max-width: 450px) {}
+@media only screen and (max-width: 600px) {
+    .contactHeading {
+        font-size: 1.5rem;
+        padding-bottom: 0.4rem;
+    }
+    .contactInfo {
+        font-size: 1rem;
+        line-height: 2rem;
+        margin: 5%;
+        padding: 0.5rem;
+    }
+    .details {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+    .message {
+        padding-bottom: 30%;
+    }
+    .submitBtn {
+        width: 10rem;
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .contactHeading {
+        padding: 0rem;
+        font-size: 1rem;
+    }
+    .contactInfo {
+        font-size: 0.8rem;
+    }
+    .submitBtn {
+        width: 10rem;
+        font-size: 1rem;
+    }
+}
 
 @media only screen and (max-width: 376px) {}

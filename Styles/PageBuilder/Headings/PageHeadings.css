@@ -38,23 +38,39 @@
         .pageHeading {
             font-size: 2.5rem;
         }
+        .contact.pageHeading {
+            width: 100vw;
+            font-size: 4rem;
+        }
     }
     
     @media only screen and (max-width: 880px) {
-        .pageHeading {
+        .contact.pageHeading {
             width: 100vw;
             font-size: 3.5rem;
         }
     }
     
     @media only screen and (max-width: 735px) {
-        .pageHeading {
+        .contact.pageHeading {
             font-size: 3rem;
         }
     }
     
     @media only screen and (max-width: 600px) {
-        .pageHeading {
+        .contact.pageHeading {
             font-size: 2.5rem;
+        }
+    }
+    
+    @media only screen and (max-width: 450px) {
+        .contact.pageHeading {
+            font-size: 2rem;
+        }
+    }
+    
+    @media only screen and (max-width: 376px) {
+        .contact.pageHeading {
+            font-size: 1.5rem;
         }
     }
