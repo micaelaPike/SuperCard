@@ -49,10 +49,17 @@
             width: 100vw;
             font-size: 3.5rem;
         }
+        .pageHeading {
+            width: 100vw;
+            font-size: 3.5rem;
+        }
     }
     
     @media only screen and (max-width: 735px) {
         .contact.pageHeading {
+            font-size: 3rem;
+        }
+        .pageHeading {
             font-size: 3rem;
         }
     }
@@ -61,16 +68,25 @@
         .contact.pageHeading {
             font-size: 2.5rem;
         }
+        .pageHeading {
+            font-size: 2.5rem;
+        }
     }
     
     @media only screen and (max-width: 450px) {
         .contact.pageHeading {
             font-size: 2rem;
         }
+        .pageHeading {
+            font-size: 2rem;
+        }
     }
     
     @media only screen and (max-width: 376px) {
         .contact.pageHeading {
+            font-size: 1.5rem;
+        }
+        .pageHeading {
             font-size: 1.5rem;
         }
     }

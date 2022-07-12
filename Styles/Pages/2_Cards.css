@@ -1,88 +1,132 @@
-.cards.mainContainer {
-    width: 100%;
-}
-
-.cardDescription {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    padding-left: 10%;
-    padding-top: 2%;
-    font-family: 'Gothic A1', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 2rem;
-    font-size: 1.75rem;
-    align-content: center;
-    text-align: justify;
-}
-
-.cardDescription p {
-    padding: 1rem 0rem 0rem 2rem;
-}
-
-.cardHeading {
-    display: flex;
-    font-size: 3rem;
-    font-family: 'bauhaus';
-    font-weight: 600;
-    justify-content: center;
-}
-
-.cardHeading p {
-    color: black;
-}
-
-.carouselNext {
-    width: 2.8rem;
-    height: 2.8rem;
-    border-radius: 50%;
-    margin-left: 0.75rem;
-    margin-top: 0.1rem;
-    box-shadow: 6px 8px 17px 0px rgba(0, 0, 0, 0.75);
-}
-
-.registerBar {
-    display: flex;
-    width: 27.5rem;
-    height: 4.25rem;
-    border: 6px solid #cf000e;
-    font-size: 2rem;
-    font-family: 'Gothic A1', sans-serif;
-    font-weight: 700;
-    /* margin: 0rem 32rem 5rem; */
-    align-items: center;
-    justify-self: center;
-}
-
-@media only screen and (min-width: 1920px) {}
-
-@media only screen and (max-width: 1335px) {}
-
-@media only screen and (max-width: 880px) {
+    .cardDescription {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding-left: 10%;
+        padding-top: 2%;
+        font-family: 'Gothic A1', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 2rem;
+        font-size: 1.75rem;
+        align-content: center;
+        text-align: justify;
+    }
+    
+    .cardDescription p {
+        padding: 1rem 0rem 0rem 2rem;
+    }
+    
     .cardHeading {
-        font-size: 2.75rem;
+        display: flex;
+        font-size: 3rem;
+        font-family: 'bauhaus';
+        font-weight: 600;
+        justify-content: center;
     }
-    .cardDescription {
-        width: 100%;
-        margin: 1rem;
-        padding: 0rem 4rem;
+    
+    .cardHeading p {
+        color: black;
     }
+    
+    .carouselNext {
+        width: 2.8rem;
+        height: 2.8rem;
+        border-radius: 50%;
+        margin-left: 0.75rem;
+        margin-top: 0.1rem;
+        box-shadow: 6px 8px 17px 0px rgba(0, 0, 0, 0.75);
+    }
+    
+    .registerBarContainer {
+        width: 100vw;
+    }
+    
     .registerBar {
-        margin: 0rem;
+        display: flex;
+        width: 27.5rem;
+        height: 4.25rem;
+        border: 6px solid #cf000e;
+        font-size: 2rem;
+        font-family: 'Gothic A1', sans-serif;
+        font-weight: 700;
+        align-items: center;
+        justify-content: center;
+        text-align: -webkit-center;
     }
-}
-
-@media only screen and (max-width: 755px) {}
-
-@media only screen and (max-width: 450px) {
-    .cardDescription {
-        width: 100%;
-        padding: 0rem 2rem;
-        font-size: 1rem;
+    
+    @media only screen and (min-width: 1920px) {
+        .cardDescription {
+            padding-left: 8%;
+            padding-top: 1%;
+            line-height: 3rem;
+            font-size: 2.5rem;
+            align-content: center;
+            text-align: justify;
+        }
+        .cardDescription p {
+            padding: 1rem 0rem 0rem 2rem;
+        }
+        .cardHeading {
+            display: flex;
+            font-size: 3rem;
+            font-family: 'bauhaus';
+            font-weight: 600;
+            justify-content: center;
+        }
+        .cardHeading p {
+            color: black;
+        }
+        .carouselNext {
+            width: 2.8rem;
+            height: 2.8rem;
+            border-radius: 50%;
+            margin-left: 0.75rem;
+            margin-top: 0.1rem;
+            box-shadow: 6px 8px 17px 0px rgba(0, 0, 0, 0.75);
+        }
+        .registerBarContainer {
+            width: 100vw;
+        }
+        .registerBar {
+            display: flex;
+            width: 27.5rem;
+            height: 4.25rem;
+            border: 6px solid #cf000e;
+            font-size: 2rem;
+            font-family: 'Gothic A1', sans-serif;
+            font-weight: 700;
+            align-items: center;
+        }
     }
-    .registerBar {
-        margin: 0rem;
-        font-size: 1rem;
+    
+    @media only screen and (max-width: 1335px) {}
+    
+    @media only screen and (max-width: 880px) {
+        .cardHeading {
+            font-size: 2.75rem;
+        }
+        .cardDescription {
+            width: 100%;
+            margin: 1rem;
+            padding: 0rem 4rem;
+        }
+        .registerBar {
+            margin: 0rem;
+        }
     }
-}
+    
+    @media only screen and (max-width: 755px) {}
+    
+    @media only screen and (max-width: 450px) {
+        .cardDescription {
+            padding: 0rem 2rem;
+            font-size: 1rem;
+        }
+        .registerBar {
+            margin: 0rem;
+            font-size: 1rem;
+        }
+    }
+    
+    @media only screen and (max-width: 320px) {}
