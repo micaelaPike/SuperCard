@@ -111,20 +111,20 @@
   
   .change .bar1 {
       position: absolute;
-      transform: rotate(-45deg) translate(14%, -41%);
-      -webkit-transform: rotate(-45deg) translate(14%, -41%);
-      -moz-transform: rotate(-45deg) translate(14%, -41%);
-      -ms-transform: rotate(-45deg) translate(14%, -41%);
-      -o-transform: rotate(-45deg) translate(14%, -41%);
+      transform: rotate(-45deg) translate(-9%, 85%);
+      -webkit-transform: rotate(-45deg) translate(-9%, 85%);
+      -moz-transform: rotate(-45deg) translate(-9%, 85%);
+      -ms-transform: rotate(-45deg) translate(-9%, 85%);
+      -o-transform: rotate(-45deg) translate(-9%, 85%);
   }
   
   .change .bar2 {
       position: absolute;
-      transform: rotate(45deg) translate(-7%, -100%);
-      -webkit-transform: rotate(45deg) translate(-7%, -100%);
-      -moz-transform: rotate(45deg) translate(-7%, -100%);
-      -ms-transform: rotate(45deg) translate(-7%, -100%);
-      -o-transform: rotate(45deg) translate(-7%, -100%);
+      transform: rotate(45deg) translate(15%, 45%);
+      -webkit-transform: rotate(45deg) translate(15%, 45%);
+      -moz-transform: rotate(45deg) translate(15%, 45%);
+      -ms-transform: rotate(45deg) translate(15%, 45%);
+      -o-transform: rotate(45deg) translate(15%, 45%);
   }
   
   .burger.change .menuBar p {
