@@ -1,5 +1,5 @@
 let menuContainer = document.querySelector(".burger");
-
+let hamburgerNavList = document.querySelector(".hamburgerNavList");
 
 function changeHamburger(item) {
     console.log(item.classList);
@@ -8,4 +8,5 @@ function changeHamburger(item) {
 
 menuContainer.addEventListener("click", () => {
     changeHamburger(menuContainer);
+    changeHamburger(hamburgerNavList);
 });
