@@ -138,6 +138,9 @@
                 flex-direction: column-reverse;
                 align-items: center;
             }
+            .cards.mainContainer {
+                flex-direction: column;
+            }
             .register.mainContainer {
                 flex-direction: column;
             }
@@ -147,6 +150,7 @@
             .infoContainer {
                 width: 100%;
                 justify-content: center;
+                margin-left: 0;
             }
             .col1 {
                 margin-left: 5rem;

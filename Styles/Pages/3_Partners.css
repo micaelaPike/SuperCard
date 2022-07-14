@@ -18,7 +18,7 @@
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     font-family: 'Gothic A1', sans-serif;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 650;
 }
 
@@ -56,7 +56,7 @@
     display: flex;
     flex-direction: column;
     width: 50%;
-    padding: 0rem 6rem 0rem 1rem;
+    padding-right: 6%;
     text-align: justify;
 }
 
@@ -64,7 +64,7 @@
     align-items: center;
     font-family: 'Gothic A1', sans-serif;
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1.75rem;
     line-height: 2rem;
     padding: 0 1.5rem;
 }
@@ -83,11 +83,11 @@
 }
 
 .inputSearchStore {
-    font-size: 1rem;
+    font-size: 1.75rem;
     font-weight: 500;
     font-family: 'Gothic-A1', sans-serif;
     width: 60%;
-    padding: 0.25rem;
+    padding: 0.2rem;
     margin: 1rem;
     border-radius: 30px;
     -webkit-border-radius: 30px;
@@ -122,7 +122,7 @@
 .logoContainer {
     display: flex;
     width: 100%;
-    padding-top: 1.5rem;
+    padding-top: 1rem;
     justify-content: center;
 }
 
@@ -154,12 +154,8 @@
     .partnersTextContainer {
         padding: 0rem 8rem 1rem 2rem;
     }
-    .partnersTextContainer p {
-        font-size: 2rem;
-        line-height: 3rem;
-    }
     .logoContainer {
-        padding-top: 2rem;
+        padding-top: 1.2rem;
     }
     .searchInput {
         text-align: -webkit-center;

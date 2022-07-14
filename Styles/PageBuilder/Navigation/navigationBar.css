@@ -1,231 +1,232 @@
-  .navList {
-      all: unset;
-      display: flex;
-      list-style-type: none;
-      gap: 3rem;
-      font-size: 1.25rem;
-      font-family: 'Gothic A1', sans-serif;
-      font-weight: 800;
-      padding: 0.5rem 4rem;
-      border-radius: 15px;
-      -webkit-border-radius: 15px;
-      -moz-border-radius: 15px;
-      -ms-border-radius: 15px;
-      -o-border-radius: 15px;
-  }
-  
-  .navListItem {
-      all: unset;
-      background-color: transparent;
-      color: black;
-  }
-  
-  .active {
-      all: unset;
-      color: #cf000e;
-      border-color: #cf000e;
-      background-color: transparent;
-  }
-  
-  .navList a:visited {
-      all: unset;
-      color: black;
-  }
-  
-  .navBar1 {
-      all: unset;
-      width: 100vw;
-      height: 4.75rem;
-      display: flex;
-      position: relative;
-      align-items: center;
-      justify-content: center;
-      background-color: white;
-      /* border-bottom: 5px solid black; */
-      z-index: auto;
-      box-shadow: 0px 10px 11px 0px rgba(0, 0, 0, 0.5);
-      -webkit-box-shadow: 0px 10px 11px 0px rgba(0, 0, 0, 0.5);
-      -moz-box-shadow: 0px 10px 11px 0px rgba(0, 0, 0, 0.5);
-  }
-  
-  .navBar2 {
-      all: unset;
-      width: 100vw;
-      display: flex;
-      position: relative;
-      align-items: center;
-      justify-content: right;
-      background-color: white;
-      /* border-bottom: 5px solid black; */
-      z-index: auto;
-      box-shadow: 0px 10px 11px 0px rgba(0, 0, 0, 0.5);
-      -webkit-box-shadow: 0px 10px 11px 0px rgba(0, 0, 0, 0.5);
-      -moz-box-shadow: 0px 10px 11px 0px rgba(0, 0, 0, 0.5);
-  }
-  
-  .navLogo {
-      all: unset;
-      display: flex;
-      align-items: center;
-      margin-right: auto;
-      padding: 0.5rem;
-      padding-bottom: 0rem;
-  }
-  
-  .navLogo img {
-      width: 100%;
-      min-height: 3rem;
-      height: 4rem;
-  }
-  
-  .menuContainer {
-      display: none;
-      cursor: pointer;
-      margin-left: auto;
-      margin-right: 1rem;
-      z-index: 9995;
-  }
-  
-  .bar1,
-  .bar2 {
-      width: 35px;
-      height: 5px;
-      background-color: black;
-      margin: 3px 0;
-      transition: 0.4s;
-  }
-  
-  .menuBar {
-      font-family: "Bauhaus";
-      font-weight: 600;
-      margin: 6px 0;
-      margin-top: auto;
-      transition: 0.4s;
-  }
-  
-  .menuBar p {
-      transition: opacity .4s ease-out;
-      -webkit-transition: opacity .4s ease-out;
-      -moz-transition: opacity .4s ease-out;
-      -ms-transition: opacity .4s ease-out;
-      -o-transition: opacity .4s ease-out;
-      -o-transition: opacity .5s ease-out;
-  }
-  
-  .change .bar1 {
-      position: absolute;
-      transform: rotate(-45deg) translate(-9%, 85%);
-      -webkit-transform: rotate(-45deg) translate(-9%, 85%);
-      -moz-transform: rotate(-45deg) translate(-9%, 85%);
-      -ms-transform: rotate(-45deg) translate(-9%, 85%);
-      -o-transform: rotate(-45deg) translate(-9%, 85%);
-  }
-  
-  .change .bar2 {
-      position: absolute;
-      transform: rotate(45deg) translate(15%, 45%);
-      -webkit-transform: rotate(45deg) translate(15%, 45%);
-      -moz-transform: rotate(45deg) translate(15%, 45%);
-      -ms-transform: rotate(45deg) translate(15%, 45%);
-      -o-transform: rotate(45deg) translate(15%, 45%);
-  }
-  
-  .burger.change .menuBar p {
-      opacity: 0;
-  }
-  
-  .burger {
-      flex-direction: column;
-      height: 3rem;
-      justify-content: space-between;
-  }
-  
-  .hamburgerNavList {
-      width: 100vw;
-      display: none;
-      position: absolute;
-      flex-direction: column;
-      color: black;
-      background-color: white;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.25rem;
-      font-family: 'Gothic A1', sans-serif;
-      font-weight: 800;
-      padding: 1rem;
-      z-index: 9990;
-      border: none;
-      box-shadow: none;
-  }
-  
-  .hamburgerNavList.change {
-      display: flex;
-      z-index: 9990;
-  }
-  
-  .hamburgerNavList li {
-      padding: 1rem;
-  }
-  
-  .hamburgerNavList a:visited {
-      all: unset;
-      color: black;
-  }
-  
-  @media only screen and (min-width: 1920px) {
       .navList {
-          font-size: 1.5rem;
+          all: unset;
+          display: flex;
+          list-style-type: none;
+          gap: 3rem;
+          font-size: 1.25rem;
+          font-family: 'Gothic A1', sans-serif;
+          font-weight: 800;
+          padding: 0.5rem 4rem;
+          border-radius: 15px;
+          -webkit-border-radius: 15px;
+          -moz-border-radius: 15px;
+          -ms-border-radius: 15px;
+          -o-border-radius: 15px;
       }
-  }
-  
-  @media only screen and (max-width: 1335px) {
-      .navList {
-          font-size: 1.2rem;
-          gap: 1rem;
-          padding: 0.5rem 3rem;
+      
+      .navListItem {
+          all: unset;
+          background-color: transparent;
+          color: black;
       }
+      
+      .active {
+          all: unset;
+          color: #cf000e;
+          border-color: #cf000e;
+          background-color: transparent;
+      }
+      
+      .navList a:visited {
+          all: unset;
+          color: black;
+      }
+      
+      .navBar1 {
+          all: unset;
+          width: 100vw;
+          height: 4.75rem;
+          display: flex;
+          position: relative;
+          align-items: center;
+          justify-content: center;
+          background-color: white;
+          /* border-bottom: 5px solid black; */
+          z-index: auto;
+          box-shadow: 0px 10px 11px 0px rgba(0, 0, 0, 0.5);
+          -webkit-box-shadow: 0px 10px 11px 0px rgba(0, 0, 0, 0.5);
+          -moz-box-shadow: 0px 10px 11px 0px rgba(0, 0, 0, 0.5);
+      }
+      
+      .navBar2 {
+          all: unset;
+          width: 100vw;
+          display: flex;
+          position: relative;
+          align-items: center;
+          justify-content: right;
+          background-color: white;
+          /* border-bottom: 5px solid black; */
+          z-index: auto;
+          box-shadow: 0px 10px 11px 0px rgba(0, 0, 0, 0.5);
+          -webkit-box-shadow: 0px 10px 11px 0px rgba(0, 0, 0, 0.5);
+          -moz-box-shadow: 0px 10px 11px 0px rgba(0, 0, 0, 0.5);
+      }
+      
+      .navLogo {
+          all: unset;
+          display: flex;
+          align-items: center;
+          margin-right: auto;
+          padding: 0.5rem;
+          padding-bottom: 0rem;
+      }
+      
       .navLogo img {
           width: 100%;
-          height: 3rem;
+          min-height: 3rem;
+          height: 4rem;
       }
-  }
-  
-  @media only screen and (max-width: 1335px) {}
-  
-  @media only screen and (max-width: 880px) {
+      
       .menuContainer {
-          display: inline-block;
+          display: none;
+          cursor: pointer;
+          margin-left: auto;
+          margin-right: 1rem;
+          z-index: 9995;
       }
-      .navList {
+      
+      .bar1,
+      .bar2 {
+          width: 35px;
+          height: 5px;
+          background-color: black;
+          margin: 3px 0;
+          transition: 0.4s;
+      }
+      
+      .menuBar {
+          font-family: "Bauhaus";
+          font-weight: 600;
+          margin: 6px 0;
+          margin-top: auto;
+          transition: 0.4s;
+      }
+      
+      .menuBar p {
+          transition: opacity .4s ease-out;
+          -webkit-transition: opacity .4s ease-out;
+          -moz-transition: opacity .4s ease-out;
+          -ms-transition: opacity .4s ease-out;
+          -o-transition: opacity .4s ease-out;
+          -o-transition: opacity .5s ease-out;
+      }
+      
+      .change .bar1 {
+          position: absolute;
+          transform: rotate(-45deg) translate(-9%, 85%);
+          -webkit-transform: rotate(-45deg) translate(-9%, 85%);
+          -moz-transform: rotate(-45deg) translate(-9%, 85%);
+          -ms-transform: rotate(-45deg) translate(-9%, 85%);
+          -o-transform: rotate(-45deg) translate(-9%, 85%);
+      }
+      
+      .change .bar2 {
+          position: absolute;
+          transform: rotate(45deg) translate(15%, 45%);
+          -webkit-transform: rotate(45deg) translate(15%, 45%);
+          -moz-transform: rotate(45deg) translate(15%, 45%);
+          -ms-transform: rotate(45deg) translate(15%, 45%);
+          -o-transform: rotate(45deg) translate(15%, 45%);
+      }
+      
+      .burger.change .menuBar p {
           opacity: 0;
       }
-      .navBar1,
-      .navBar2 {
+      
+      .burger {
+          flex-direction: column;
+          height: 3rem;
+          justify-content: space-between;
+      }
+      
+      .hamburgerNavList {
+          width: 100vw;
+          display: none;
+          position: absolute;
+          flex-direction: column;
+          color: black;
+          background-color: white;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.25rem;
+          font-family: 'Gothic A1', sans-serif;
+          font-weight: 800;
+          padding: 1rem;
+          z-index: 9990;
           border: none;
           box-shadow: none;
       }
-  }
-  
-  @media only screen and (max-width: 735px) {
-      .navList {
-          font-size: 0.65rem;
-          gap: 1rem;
-          padding: 0.5rem 1rem;
+      
+      .hamburgerNavList li {
+          padding: 1rem;
       }
-      .navLogo img {
-          width: 100%;
-          height: 2rem;
+      
+      .hamburgerNavList a:visited {
+          all: unset;
+          color: black;
       }
-  }
-  
-  @media only screen and (max-width: 600px) {
-      .navList {
-          font-size: 0.65rem;
-          gap: 1rem;
-          padding: 0.5rem 1rem;
+      
+      .hamburgerNavList.change {
+          display: flex;
+          z-index: 9990;
       }
-      .navLogo img {
-          width: 100%;
-          height: 1rem;
+      
+      @media only screen and (min-width: 1920px) {
+          .navList {
+              font-size: 1.5rem;
+          }
       }
-  }
+      
+      @media only screen and (max-width: 1335px) {
+          .navList {
+              font-size: 1.2rem;
+              gap: 1rem;
+              padding: 0.5rem 3rem;
+          }
+          .navLogo img {
+              width: 100%;
+              height: 3rem;
+          }
+      }
+      
+      @media only screen and (min-width: 881px) {
+          .hamburgerNavList.change {
+              display: none;
+          }
+      }
+      
+      @media only screen and (max-width: 880px) {
+          .menuContainer {
+              display: inline-block;
+          }
+          .navList {
+              opacity: 0;
+          }
+          .navBar1,
+          .navBar2 {
+              border: none;
+              box-shadow: none;
+          }
+          /* .hamburgerNavList {
+          display: flex;
+          z-index: 9990;
+      } */
+      }
+      
+      @media only screen and (max-width: 735px) {
+          .navList {
+              font-size: 0rem;
+          }
+          .navLogo img {
+              width: 100%;
+              height: 2rem;
+          }
+      }
+      
+      @media only screen and (max-width: 600px) {
+          .navLogo img {
+              width: 100%;
+              height: 1rem;
+          }
+      }

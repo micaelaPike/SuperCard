@@ -38,29 +38,12 @@
         box-shadow: 6px 8px 17px 0px rgba(0, 0, 0, 0.75);
     }
     
-    .registerBarContainer {
-        width: 100vw;
-    }
-    
-    .registerBar {
-        display: flex;
-        width: 27.5rem;
-        height: 4.25rem;
-        border: 6px solid #cf000e;
-        font-size: 2rem;
-        font-family: 'Gothic A1', sans-serif;
-        font-weight: 700;
-        align-items: center;
-        justify-content: center;
-        text-align: -webkit-center;
-    }
-    
     @media only screen and (min-width: 1920px) {
         .cardDescription {
             padding-left: 8%;
             padding-top: 1%;
-            line-height: 3rem;
-            font-size: 2.5rem;
+            line-height: 2.5rem;
+            font-size: 2rem;
             align-content: center;
             text-align: justify;
         }
@@ -85,19 +68,6 @@
             margin-top: 0.1rem;
             box-shadow: 6px 8px 17px 0px rgba(0, 0, 0, 0.75);
         }
-        .registerBarContainer {
-            width: 100vw;
-        }
-        .registerBar {
-            display: flex;
-            width: 27.5rem;
-            height: 4.25rem;
-            border: 6px solid #cf000e;
-            font-size: 2rem;
-            font-family: 'Gothic A1', sans-serif;
-            font-weight: 700;
-            align-items: center;
-        }
     }
     
     @media only screen and (max-width: 1335px) {}
@@ -105,14 +75,12 @@
     @media only screen and (max-width: 880px) {
         .cardHeading {
             font-size: 2.75rem;
+            margin-top: 1rem;
         }
         .cardDescription {
             width: 100%;
             margin: 1rem;
             padding: 0rem 4rem;
-        }
-        .registerBar {
-            margin: 0rem;
         }
     }
     
@@ -121,10 +89,6 @@
     @media only screen and (max-width: 450px) {
         .cardDescription {
             padding: 0rem 2rem;
-            font-size: 1rem;
-        }
-        .registerBar {
-            margin: 0rem;
             font-size: 1rem;
         }
     }

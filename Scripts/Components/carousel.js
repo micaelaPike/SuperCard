@@ -2,7 +2,7 @@
 
 import { myInterval } from "./timer.js";
 
-export const cards = ["../Assets/Images/Cards/StokvelCard.png", "../Assets/Images/Cards/SavingsCard.png", "../Assets/Images/Cards/GiftCard.png", "../Assets/Images/Cards/StaffCard.png"]
+export const cards = ["../Assets/Images/Cards/SavingsCard.png", "../Assets/Images/Cards/StokvelCard.png", "../Assets/Images/Cards/GiftCard.png", "../Assets/Images/Cards/StaffCard.png"]
 
 export let cardCarousel = document.querySelector(".cardCarousel");
 export let carouselSelect = document.querySelectorAll(".carouselSelect");
