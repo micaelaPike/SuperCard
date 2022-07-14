@@ -8,6 +8,8 @@
     <script type="module" defer src="../Scripts/Components/emailForm.js"></script>
     <link rel="stylesheet" href="../Styles/Global/index.css" />
     <link rel="icon" href="../Assets/Logos/favicon.ico">
+    <script type="module" defer src="../Scripts/Components/navigationBar.js"></script>
+
     <title>Contact Us</title>
 </head>
 
@@ -36,7 +38,15 @@
         </div>
     </nav>
     <div id="Contact" class="redDesktopGradient">
-
+        <div>
+            <ul class="hamburgerNavList">
+                <li class="navListItem"><a href="../Pages/1_Services.html">Services</a></li>
+                <li class="navListItem"><a href="../Pages/2_Cards.html">Cards</a></li>
+                <li class="navListItem"><a href="../Pages/3_Partners.html">Partners</a></li>
+                <li class="navListItem"><a href="../Pages/4_Register.html">Register</a></li>
+                <li class="navListItem active"><a href="../Pages/5_Contact.html">Contact Us</a></li>
+            </ul>
+        </div>
         <div class="pageHeading contact">
             <p>Our <mark>Contact Information</mark></p>
         </div>
@@ -46,22 +56,32 @@
             <div class="contactInfoContainer">
                 <div class="contactInfo">
                     <p class="contactHeading">Customer <mark>Care</mark> & Head <mark>Office</mark></p>
-                    <p>Super<mark>Card</mark> Customer Care: 0800 333 991<br>Email: info@super<mark>card</mark>.co.za</p>
+                    <!-- <p>Super<mark>Card</mark> Customer Care: 0800 333 991<br>Email: info@super<mark>card</mark>.co.za</p> -->
+                    <p>Super<mark>Card</mark> Customer Care: 0800 333 991</p>
                 </div>
             </div>
-            <div class="contactForm">
+            <div class="contactFormContainer">
                 <p class="formHeading">Talk To Us</p>
-                <form id="emailForm" action="#" class="largeForm" method="get" required>
-                    <label for="userName" class="formLabel">Name:</label>
-                    <input type="text" id="name" name="name" placeholder="Name" class="details" required>
-                    <label for="userNumber" class="formLabel">Number:</label>
-                    <input type="text" id="number" name="number" placeholder="Contact Number" class="details" required>
-                    <label for="userEmail" class="formLabel">Email:</label>
-                    <input type="text" id="email" name="email" placeholder="Email" class="details" required>
-                    <label for="userMessage" class="formLabel">Message:</label>
-                    <textarea id="message" name="message" class="details message" placeholder="Message" rows="1" cols="50" required></textarea>
-                    <label for="submitButton" class="formLabel">Submit:</label>
+                <form id="emailForm" action="#" class="form" method="get" required>
+                    <div class="formGroup">
+                        <input type="text" id="name" name="name" placeholder="Name" class="formControl name" required>
+                        <label for="userName" class="formLabel">Name:</label>
+                    </div>
+                    <div class="formGroup">
+                        <input type="text" id="number" name="number" placeholder="Contact Number" class="formControl" required>
+                        <label for="userNumber" class="formLabel">Number:</label>
+                    </div>
+                    <div class="formGroup">
+                        <input type="text" id="email" name="email" placeholder="Email" class="formControl" required>
+                        <label for="userEmail" class="formLabel">Email:</label>
+                    </div>
+                    <div class="formGroup">
+                        <textarea id="message" name="message" class="formControl message" placeholder="Message" rows="1" cols="50" required></textarea>
+                        <label for="userMessage" class="formLabel message">Message:</label>
+                    </div>
                     <button type="submit" name="submit" class="submitBtn">Submit</button>
+                    <label for="submitButton" class="formLabel submit">Submit:</label>
+
                 </form>
             </div>
 

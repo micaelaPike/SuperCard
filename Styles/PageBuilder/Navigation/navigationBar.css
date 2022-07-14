@@ -16,15 +16,12 @@
       
       .navListItem {
           all: unset;
-          background-color: transparent;
           color: black;
+          text-decoration: none;
       }
       
-      .active {
-          all: unset;
-          color: #cf000e;
-          border-color: #cf000e;
-          background-color: transparent;
+      .navListItem.active {
+          color: red;
       }
       
       .navList a:visited {
@@ -162,6 +159,11 @@
           padding: 1rem;
       }
       
+      .hamburgerNavList a {
+          color: black;
+          text-decoration: none;
+      }
+      
       .hamburgerNavList a:visited {
           all: unset;
           color: black;
@@ -208,10 +210,6 @@
               border: none;
               box-shadow: none;
           }
-          /* .hamburgerNavList {
-          display: flex;
-          z-index: 9990;
-      } */
       }
       
       @media only screen and (max-width: 735px) {

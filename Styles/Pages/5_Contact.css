@@ -19,7 +19,6 @@
 .contactInfoContainer {
     display: flex;
     width: 50%;
-    align-self: flex-start;
     text-align: center;
 }
 
@@ -32,18 +31,16 @@
     width: 100%;
     font-family: 'Gothic A1', sans-serif;
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 1.3rem;
     line-height: 2.1rem;
-    margin-left: 5%;
-    margin-top: 8%;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .contactHeading {
     display: flex;
     align-self: center;
     font-family: 'Bauhaus';
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     padding-bottom: 1.5rem;
 }
 
@@ -51,7 +48,7 @@
     padding: 0rem 1rem;
 }
 
-.contactForm {
+.contactFormContainer {
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -61,27 +58,31 @@
     display: flex;
     align-self: center;
     font-family: 'Bauhaus';
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: 700;
-    padding-bottom: 1rem;
+    padding: 0.5rem 0;
 }
 
-.largeForm {
+.form {
+    all: unset;
     display: flex;
     flex-direction: column;
-    width: 80%;
-    align-self: center;
+    width: 100%;
     border-color: black;
     border-width: 2px;
     border-radius: 30px;
     border-style: solid;
     background-color: rgb(214, 200, 200);
     opacity: 70%;
+    gap: 1rem;
 }
 
-.details {
+.formControl {
+    all: unset;
     display: flex;
-    margin: 0.75rem;
+    width: 90%;
+    height: min-content;
+    margin: 0 auto;
     padding: 0.5rem 1.25rem;
     font-family: 'Gothic A1', sans-serif;
     font-weight: 600;
@@ -98,17 +99,97 @@
     overflow: auto;
 }
 
-.message {
-    padding-bottom: 15%;
+.formControl.name {
+    margin-top: 2rem;
+}
+
+.formControl.message {
+    padding-bottom: 10%;
+    margin-bottom: 0;
     border-radius: 20px;
+}
+
+.formGroup {
+    transition: all .3s;
+    height: min-content;
+}
+
+.formLabel {
+    width: min-content;
+    height: min-content;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-left: 2.5rem;
+    color: #aaa;
+    display: block;
+    opacity: 1;
+    transform: translateY(-2rem);
+    -webkit-transform: translateY(-2rem);
+    -moz-transform: translateY(-2rem);
+    -ms-transform: translateY(-2rem);
+    -o-transform: translateY(-2rem);
+    transform-origin: 0 0;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+
+.formLabel.message {
+    transform: translateY(-7.5rem);
+    -webkit-transform: translateY(-7.5rem);
+    -moz-transform: translateY(-7.5rem);
+    -ms-transform: translateY(-7.5rem);
+    -o-transform: translateY(-7.5rem);
+}
+
+.formLabel.submit {
+    display: none;
+}
+
+.formControl::placeholder {
+    color: transparent;
+}
+
+.formControl:focus {
+    border-color: #cf000e;
+}
+
+.formControl:focus+.formLabel,
+.formControl:not(:placeholder-shown)+.formLabel {
+    transform: translateY(-4rem) scale(.8);
+    -webkit-transform: translateY(-4rem) scale(.8);
+    -moz-transform: translateY(-4rem) scale(.8);
+    -ms-transform: translateY(-4rem) scale(.8);
+    -o-transform: translateY(-4rem) scale(.8);
+    color: black;
+}
+
+.formControl.message:focus+.formLabel.message,
+.formControl.message:not(:placeholder-shown)+.formLabel.message {
+    transform: translateY(-10rem) scale(.8);
+    -webkit-transform: translateY(-10rem) scale(.8);
+    -moz-transform: translateY(-10rem) scale(.8);
+    -ms-transform: translateY(-10rem) scale(.8);
+    -o-transform: translateY(-10rem) scale(.8);
+}
+
+.formGroup:focus-within {
+    transform: scale(1.02, 1.02);
+    -webkit-transform: scale(1.02, 1.02);
+    -moz-transform: scale(1.02, 1.02);
+    -ms-transform: scale(1.02, 1.02);
+    -o-transform: scale(1.02, 1.02);
 }
 
 .submitBtn {
     display: flex;
     width: 30%;
     justify-content: center;
-    align-self: center;
-    margin: 1rem 0;
+    margin: auto;
+    margin-bottom: 2rem;
     padding: 1rem;
     color: white;
     font-family: 'Gothic A1', sans-serif;
@@ -126,11 +207,7 @@
     -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.51);
 }
 
-.formLabel {
-    display: none;
-}
-
-@media only screen and (min-width: 1700px) {
+@media only screen and (min-width: 1920px) {
     .snackbar {
         width: 27rem;
         font-size: 1.8rem;
@@ -140,26 +217,14 @@
         line-height: 3rem;
     }
     .contactHeading {
-        font-size: 3rem;
+        font-size: 2.8rem;
         padding-bottom: 0.8rem;
     }
     .formHeading {
-        font-size: 3rem;
-    }
-    .largeForm {
-        width: 80%;
-    }
-    .details {
-        margin: 1rem;
-        padding: 1rem 1.25rem;
-        font-size: 2rem;
-    }
-    .message {
-        padding-bottom: 30%;
-        border-radius: 20px;
+        font-size: 2.8rem;
     }
     .submitBtn {
-        font-size: 2rem;
+        font-size: 1.25rem;
     }
 }
 
@@ -174,7 +239,7 @@
     .formHeading {
         font-size: 2.5rem;
     }
-    .details {
+    .formControl {
         font-size: 1.8rem;
     }
     .submitBtn {
@@ -193,7 +258,7 @@
     .formHeading {
         font-size: 2rem;
     }
-    .details {
+    .formControl {
         font-size: 1.4rem;
     }
     .submitBtn {
@@ -213,7 +278,7 @@
     .formHeading {
         font-size: 2rem;
     }
-    .details {
+    .formControl {
         padding: 0.5rem 1rem;
         font-size: 0.8rem;
     }
@@ -221,7 +286,7 @@
         font-size: 1rem;
     }
     .message {
-        padding-bottom: 30%;
+        /* padding-bottom: 30%; */
     }
 }
 
@@ -230,12 +295,11 @@
         width: 100%;
         margin-top: 0rem;
         margin-bottom: 1rem;
-        ;
     }
     .contactForm {
         width: 100%;
     }
-    .largeForm {
+    .form {
         width: 80%;
     }
     .formHeading {
@@ -253,12 +317,12 @@
     .submitBtn {
         font-size: 1.5rem;
     }
-    .details {
+    .formControl {
         padding: 0.5rem 1rem;
         font-size: 1.5rem;
     }
     .message {
-        padding-bottom: 30%;
+        /* padding-bottom: 30%; */
     }
 }
 
@@ -269,9 +333,6 @@
     }
     .contactForm {
         width: 100%;
-    }
-    .largeForm {
-        width: 80%;
     }
     .formHeading {
         font-size: 3rem;
@@ -288,12 +349,12 @@
     .submitBtn {
         font-size: 1.5rem;
     }
-    .details {
+    .formControl {
         padding: 0.5rem 1rem;
         font-size: 1.5rem;
     }
     .message {
-        padding-bottom: 30%;
+        /* padding-bottom: 30%; */
     }
 }
 
@@ -323,12 +384,12 @@
         margin: 5%;
         padding: 0.5rem;
     }
-    .details {
+    .formControl {
         padding: 0.5rem 1rem;
         font-size: 1rem;
     }
     .message {
-        padding-bottom: 30%;
+        /* padding-bottom: 30%; */
     }
     .submitBtn {
         width: 10rem;

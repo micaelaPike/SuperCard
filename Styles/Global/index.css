@@ -32,6 +32,11 @@
             width: 100%;
         }
         
+        .contact.mainContainer {
+            flex-direction: column;
+            align-items: center;
+        }
+        
         .infoContainer {
             display: flex;
             width: 50%;
