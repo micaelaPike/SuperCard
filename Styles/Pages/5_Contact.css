@@ -28,19 +28,6 @@
     margin: auto;
 }
 
-.closeButton.contact {
-    position: absolute;
-    background-color: transparent;
-    border-color: transparent;
-    top: 0;
-    right: 0;
-}
-
-.closeBtnImg {
-    display: flex;
-    width: 3rem;
-}
-
 .contactInfoContainer {
     display: flex;
     width: 50%;

@@ -3,9 +3,16 @@ let btnLayerChange = document.querySelector("#btnLayerChange");
 let btnZoom = document.querySelector(".btnZoom");
 let featureGroupMarker = new L.FeatureGroup;
 let searchErrorBox = document.querySelector(".searchError");
-let closeButton = document.querySelector(".closeButton");
 let inputSearchStore = document.getElementById("searchStore");
 // debugger;
+
+let closeButton = document.querySelector(".closeButton");
+
+function closeError() {
+    searchErrorBox.style.display = "none";
+}
+
+closeButton.addEventListener("click", closeError);
 
 btnLayerChange.addEventListener("click", changeLayer);
 
@@ -19,7 +26,6 @@ inputSearchStore.addEventListener('keypress', function(event) {
     }
 });
 
-closeButton.addEventListener("click", closeError);
 
 function zoomHome() {
     map.flyTo([-28.0046, 26.7732], 5, { duration: 1.5, easeLinearity: 5 });
@@ -31,9 +37,7 @@ function zoomHome() {
     }
 }
 
-function closeError() {
-    searchErrorBox.style.display = "none";
-}
+
 
 //Import JSON file with coordinates
 async function createMarker() {
@@ -214,8 +218,6 @@ function searchStore() {
 
         //Perfect Matches
         if (!(filteredResults[1] === 0)) {
-            console.log(filteredResults)
-            debugger
             console.log("only one perfect match or No perfect match")
                 //only one perfect match or No perfect match
             let searchMarker = L.marker([filteredResults[0].item.Longitude, filteredResults[0].item.Latitude], { icon: filteredResults[0].item.StoreType === "Spar" ? sparIcon : bmsIcon });
