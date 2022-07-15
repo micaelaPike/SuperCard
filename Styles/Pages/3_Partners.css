@@ -1,5 +1,5 @@
 .searchError {
-    display: none;
+    display: block;
     position: absolute;
     margin-left: auto;
     margin-right: auto;
@@ -24,6 +24,7 @@
 
 .dialogLink {
     all: unset;
+    text-decoration: underline;
     color: white;
 }
 
@@ -64,7 +65,7 @@
     align-items: center;
     font-family: 'Gothic A1', sans-serif;
     font-weight: 600;
-    font-size: 1.75rem;
+    font-size: 1.3rem;
     line-height: 2rem;
     padding: 0 1.5rem;
 }
@@ -123,6 +124,7 @@
     display: flex;
     width: 100%;
     padding-top: 1rem;
+    margin-top: 2rem;
     justify-content: center;
 }
 

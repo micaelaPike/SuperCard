@@ -28,8 +28,7 @@
     display: flex;
     flex-direction: row;
     justify-items: right;
-    /* margin-top: 1rem; */
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .carouselSelect {

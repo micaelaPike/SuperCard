@@ -18,8 +18,7 @@
     font-family: 'Gothic A1', sans-serif;
     font-weight: 600;
     font-size: 1.3rem;
-    line-height: 2.1rem;
-    /* margin-right: 5%; */
+    line-height: 2rem;
     padding: 0rem 5% 1rem 1rem;
     align-content: center;
     text-align: justify;
@@ -51,10 +50,8 @@
 }
 
 .footer {
-    min-height: calc(100vh - 7.07% - 59.63%);
-    /* padding: 2rem; */
+    min-height: 25.01%;
     text-align: -webkit-center;
-    /* padding: 5rem; */
 }
 
 .poweredBy {
@@ -69,6 +66,7 @@
     border-radius: 55px;
     opacity: 80%;
     justify-content: center;
+    margin-top: 2rem;
 }
 
 .poweredBy p {
@@ -97,18 +95,9 @@
 
 @media only screen and (min-width: 1920px) {
     .servicesContainer {
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        align-items: center;
-        font-family: 'Gothic A1', sans-serif;
-        font-weight: 600;
         font-size: 2rem;
         line-height: 2.5rem;
-        /* margin-right: 5%; */
         padding: 0rem 5% 1rem 1rem;
-        align-content: center;
-        text-align: justify;
     }
 }
 

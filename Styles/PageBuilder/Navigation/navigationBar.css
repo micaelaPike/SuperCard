@@ -14,19 +14,32 @@
           -o-border-radius: 15px;
       }
       
+      .navList a {
+          all: unset;
+          text-decoration: none;
+      }
+      
       .navListItem {
           all: unset;
           color: black;
           text-decoration: none;
+          transition: all .2s;
+          -webkit-transition: all .2s;
+          -moz-transition: all .2s;
+          -ms-transition: all .2s;
+          -o-transition: all .2s;
       }
       
       .navListItem.active {
           color: red;
       }
       
-      .navList a:visited {
-          all: unset;
-          color: black;
+      .navListItem:hover {
+          transform: scale(1.5, 1.5);
+          -webkit-transform: scale(1.5, 1.5);
+          -moz-transform: scale(1.5, 1.5);
+          -ms-transform: scale(1.5, 1.5);
+          -o-transform: scale(1.5, 1.5);
       }
       
       .navBar1 {
@@ -138,11 +151,11 @@
       }
       
       .hamburgerNavList {
+          all: unset;
           width: 100vw;
           display: none;
           position: absolute;
           flex-direction: column;
-          color: black;
           background-color: white;
           align-items: center;
           justify-content: center;
@@ -160,13 +173,8 @@
       }
       
       .hamburgerNavList a {
-          color: black;
-          text-decoration: none;
-      }
-      
-      .hamburgerNavList a:visited {
           all: unset;
-          color: black;
+          text-decoration: none;
       }
       
       .hamburgerNavList.change {

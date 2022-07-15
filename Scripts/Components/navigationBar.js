@@ -4,7 +4,6 @@ let heightOutput = window.innerHeight;
 let widthOutput = window.innerWidth;
 
 function changeHamburger(item) {
-    console.log(item.classList);
     item.classList.toggle("change");
 }
 
@@ -13,7 +12,7 @@ function reportWindowSize() {
     widthOutput = window.innerWidth;
 
     if (widthOutput >= 880) {
-        debugger
+        //debugger
         removeChange(menuContainer);
         removeChange(hamburgerNavList);
     }

@@ -11,6 +11,11 @@
         color: black;
     }
     
+    .contact.pageHeading {
+        width: 100%;
+        padding-left: 0;
+    }
+    
     mark {
         all: unset;
         color: #cf000e;

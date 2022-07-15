@@ -160,11 +160,7 @@ function searchStore() {
 
     let result = fuse.search(inputSearchStoreValue);
 
-    console.log(result)
-
     let arr = Object.values(result);
-
-    console.log(arr)
 
     let filteredResults = [];
 
@@ -188,14 +184,13 @@ function searchStore() {
         searchErrorBox.style.setZIndex = "9999";
         searchErrorBox.style.display = "block";
     } else {
-        console.log(filteredResults)
-
         map.removeLayer(markerCluster);
 
         //Perfect Match
         if (filteredResults[0].score === 0) {
+
             let searchMarker = L.marker([filteredResults[0].item.Longitude, filteredResults[0].item.Latitude], { icon: filteredResults[0].item.StoreType === "Spar" ? sparIcon : bmsIcon });
-            console.log(searchMarker)
+
             if (filteredResults[0].item.StoreType === "Spar") {
                 searchMarker.bindPopup(`${ filteredResults[0].item.StoreName.bold() } <br> ${ filteredResults[0].item.Address }`);
                 featureGroupMarker.addLayer(searchMarker);
@@ -207,10 +202,9 @@ function searchStore() {
 
             featureGroupMarker.addLayer(searchMarker);
 
-
             map.flyTo([filteredResults[0].item.Longitude, filteredResults[0].item.Latitude], 17, { duration: 2, easeLinearity: 5 });
         } else {
-            console.log("close")
+
             filteredResults.forEach((item, index) => {
                 // debugger;
 
@@ -240,13 +234,4 @@ function searchStore() {
         }
 
     }
-
-
 }
-
-// var element = document.getElementById('searchStore');
-// var topPos = element.getBoundingClientRect().top + window.scrollY;
-// var leftPos = element.getBoundingClientRect().left + window.scrollX;
-// var d = document.getElementById("div1");
-// var topPos = d.offsetTop;
-// console.log(leftPos);

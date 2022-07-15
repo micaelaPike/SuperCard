@@ -37,7 +37,6 @@ export function changeStateTimer() {
     cardCarousel.src = cards[carouselCounter];
 
     changeSelectedBtn(carouselCounter);
-    console.log(carouselCounter);
 }
 
 export function changeSelectedBtn(selectedBtnIndex) {
@@ -68,7 +67,6 @@ function changeState(btnIndex) {
 
     cardCarousel.src = cards[btnIndex];
     carouselCounter = btnIndex;
-    console.log(btnIndex);
     changeSelectedBtn(btnIndex);
     if (window.location.pathname === "/index.html") {
         intervalId = myInterval();

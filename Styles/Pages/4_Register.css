@@ -7,17 +7,16 @@
     font-weight: 600;
     font-size: 1.3rem;
     line-height: 2rem;
-    margin-top: 1%;
     margin-left: 7%;
 }
 
 .heading {
     font-size: 2rem;
-    padding: 1rem 3rem 1rem 3rem;
+    padding: 1rem 3rem;
 }
 
 .registerList {
-    padding: 1rem 3rem 1rem 3rem;
+    padding: 1rem 3rem;
 }
 
 .registerList li {
@@ -28,16 +27,15 @@
 .kioskImageContainer {
     display: flex;
     width: 50%;
+    height: auto;
     justify-content: center;
-    /* align-items: center; */
 }
 
 .kioskImage {
     display: flex;
-    width: 35rem;
-    height: 37rem;
-    padding: 10%;
-    padding-bottom: 15%;
+    width: 30rem;
+    height: 30rem;
+    padding: 5%;
 }
 
 @media only screen and (min-width: 1920px) {
@@ -50,11 +48,9 @@
         padding: 2rem 3rem;
     }
     .kioskImage {
-        width: 720px;
-        height: 752px;
-        /* width: 90%;
-        height: 90%; */
-        margin-top: 2%;
+        width: 45rem;
+        height: 47rem;
+        /* margin-top: 2%; */
         padding: 10%;
     }
 }

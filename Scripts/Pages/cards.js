@@ -16,20 +16,15 @@ let cardDescription = document.querySelector(".cardDescription");
 let carouselNext = document.querySelector('.carouselNext')
 
 carouselNext.onclick = () => {
-    //debugger;
-    console.log(carouselCounter)
-    console.log('clicked')
     nextButtonClick();
 }
 
 function changeContent(cardIndex) {
-    console.log("changeContent");
 
     if (cardCarousel.classList.contains("animation")) {
         cardCarousel.classList.remove("animation");
     }
     setCounter();
-    console.log(carouselCounter);
     cardCarousel.src = cards[cardIndex];
     changeSelectedBtn(cardIndex);
 
@@ -58,7 +53,6 @@ function selectbtnAddClickCards() {
         });
 }
 document.addEventListener("DOMContentLoaded", function() {
-    console.log(carouselCounter);
     cardDescription.innerHTML = cardDesciptionArr[0];
     selectbtnAddClickCards();
 });
