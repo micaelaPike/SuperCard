@@ -5,9 +5,8 @@
             background-size: cover;
             background-position-y: center;
             width: 100vw;
-            min-height: calc(100vh - 4.78rem);
+            min-height: calc(100vh - 4rem);
             height: auto;
-            /* height: calc(100vh - 7.07%); */
         }
         
         .landingPage {

@@ -251,6 +251,30 @@
     .submitBtn {
         font-size: 2rem;
     }
+    .form {
+        gap: 0.5rem;
+    }
+    .formLabel {
+        margin-left: 2.5rem;
+    }
+    .formLabel.message {
+        transform: translateY(-7.5rem);
+        -webkit-transform: translateY(-7.5rem);
+        -moz-transform: translateY(-7.5rem);
+        -ms-transform: translateY(-7.5rem);
+        -o-transform: translateY(-7.5rem);
+    }
+    .formControl.message {
+        padding-bottom: 10%;
+    }
+    .formControl.message:focus+.formLabel.message,
+    .formControl.message:not(:placeholder-shown)+.formLabel.message {
+        transform: translateY(-9.5rem) scale(.7);
+        -webkit-transform: translateY(-9.5rem) scale(.7);
+        -moz-transform: translateY(-9.5rem) scale(.7);
+        -ms-transform: translateY(-9.5rem) scale(.7);
+        -o-transform: translateY(-9.5rem) scale(.7);
+    }
 }
 
 @media only screen and (max-width: 1335px) {

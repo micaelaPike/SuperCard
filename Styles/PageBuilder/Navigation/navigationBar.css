@@ -42,16 +42,16 @@
           -o-transform: scale(1.5, 1.5);
       }
       
-      .navBar1 {
+      .navBar1,
+      .navBar2 {
           all: unset;
           width: 100vw;
-          height: 4.75rem;
+          height: 4rem;
           display: flex;
           position: relative;
           align-items: center;
           justify-content: center;
           background-color: white;
-          /* border-bottom: 5px solid black; */
           z-index: auto;
           box-shadow: 0px 10px 11px 0px rgba(0, 0, 0, 0.5);
           -webkit-box-shadow: 0px 10px 11px 0px rgba(0, 0, 0, 0.5);
@@ -59,18 +59,7 @@
       }
       
       .navBar2 {
-          all: unset;
-          width: 100vw;
-          display: flex;
-          position: relative;
-          align-items: center;
           justify-content: right;
-          background-color: white;
-          /* border-bottom: 5px solid black; */
-          z-index: auto;
-          box-shadow: 0px 10px 11px 0px rgba(0, 0, 0, 0.5);
-          -webkit-box-shadow: 0px 10px 11px 0px rgba(0, 0, 0, 0.5);
-          -moz-box-shadow: 0px 10px 11px 0px rgba(0, 0, 0, 0.5);
       }
       
       .navLogo {
