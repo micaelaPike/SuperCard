@@ -64,6 +64,7 @@
       
       .navLogo {
           all: unset;
+          width: 10remrem;
           display: flex;
           align-items: center;
           margin-right: auto;
@@ -73,8 +74,6 @@
       
       .navLogo img {
           width: 100%;
-          min-height: 3rem;
-          height: 4rem;
       }
       
       .menuContainer {
@@ -184,8 +183,8 @@
               padding: 0.5rem 3rem;
           }
           .navLogo img {
-              width: 100%;
-              height: 3rem;
+              /* width: 100%;
+              height: 3rem; */
           }
       }
       
@@ -214,8 +213,8 @@
               font-size: 0rem;
           }
           .navLogo img {
-              width: 100%;
-              height: 2rem;
+              /* width: 100%;
+              height: 2rem; */
           }
       }
       

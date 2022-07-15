@@ -61,7 +61,8 @@
     }
     
     @media only screen and (min-width: 1920px) {
-        .btnMapView {
+        .btnMapView,
+        .btnZoom {
             font-size: 1.3rem;
         }
     }

@@ -182,10 +182,14 @@
     .partnersTextContainer {
         padding: 0rem 8rem 1rem 2rem;
     }
+    .partnersTextContainer p {
+        font-size: 2rem;
+    }
     .logoContainer {
         padding-top: 1.2rem;
     }
     .searchInput {
+        font-size: 2rem;
         text-align: -webkit-center;
         margin-top: auto;
     }

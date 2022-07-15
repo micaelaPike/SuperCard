@@ -27,11 +27,8 @@ closeButton.addEventListener("click", () => {
 window.onload = function() {
     document.getElementById("emailForm").addEventListener("submit", function(event) {
         event.preventDefault();
-        // debugger;
-        // validateNumber(number);
-        // validateEmail(email);
 
-        if (validateEmail(email)) {
+        if ((validateEmail(email) === true) && (validateNumber(number) === true)) {
             console.log('SUCCESS!');
             snackbarAlert.innerHTML = "Message sent successfully!"
             snackbar.style.display = "flex";
@@ -39,21 +36,22 @@ window.onload = function() {
             snackbar.style.borderStyle = "solid";
             snackbar.style.borderWidth = "3px";
             snackBarImage.src = arrMessage[0];
-            // emailjs.sendForm('service_cnprkth', 'template_fqsuwrr', this)
-            //     .then(function(response) {
-            //         console.log('SUCCESS!', response.status, response.text);
-            //         snackbar.style.display = "flex";
-            //         snackbar.style.backgroundColor = "#aaa";
-            //         snackbar.style.color = "black";
-            //         snackBarImage.src = arrMessage[0];
-            //     }, function(error) {
-            //         console.log('FAILED...', error);
-            //         failure.style.display = "flex";
-            //         snackbar.style.backgroundColor = "#aaa";
-            //         snackbar.style.color = "black";
-            //         snackBarImage.src = arrMessage[1];
 
-            //     })
+            emailjs.sendForm('service_cnprkth', 'template_fqsuwrr', this)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    snackbar.style.display = "flex";
+                    snackbar.style.backgroundColor = "#aaa";
+                    snackbar.style.color = "black";
+                    snackBarImage.src = arrMessage[0];
+                }, function(error) {
+                    console.log('FAILED...', error);
+                    failure.style.display = "flex";
+                    snackbar.style.backgroundColor = "#aaa";
+                    snackbar.style.color = "black";
+                    snackBarImage.src = arrMessage[1];
+
+                })
 
             inputs.forEach(input => {
                 input.value = "";
@@ -70,15 +68,14 @@ window.onload = function() {
     })
 };
 
-function validateNumber(input) {
-    let number = /^\+?([0-9]{2})\)?[-. ]?([0-9]{4})[-. ]?([0-9]{4})$/;
-    if (input.value.match(number)) {
-        console.log("valid number")
 
+function validateNumber(inputNumber) {
+    let phoneNum = /^\+?([0-9]{2})\)?[-. ]?([0-9]{4})[-. ]?([0-9]{4})$/;
+    if (inputNumber.value.match(phoneNum)) {
+        console.log("valid number")
         return true;
     } else {
         console.log("invalid number")
-
         return false;
     }
 }
