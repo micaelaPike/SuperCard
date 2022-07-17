@@ -94,9 +94,9 @@
 
 @media only screen and (max-width: 880px) {
     .registerTextContainer {
-        width: 100%;
-        padding: 5%;
-        margin: 0;
+        width: 90%;
+        margin: 1rem;
+        margin-top: 0;
         font-size: 1.5rem;
     }
     .kioskImageContainer {
@@ -105,8 +105,10 @@
         padding: 0;
     }
     .kioskImage {
+        margin: 1rem;
         width: 720px;
         height: 752px;
+        padding: 8%;
     }
 }
 
@@ -114,11 +116,6 @@
     .kioskImage {
         width: 720px;
         height: 752px;
-        margin-top: 2%;
-        padding: 10%;
-    }
-    .registerTextContainer {
-        line-height: 3rem;
     }
 }
 
@@ -134,22 +131,30 @@
 
 @media only screen and (max-width: 450px) {
     .kioskImage {
-        width: 460px;
-        height: 480px;
+        width: 420px;
+        height: 440px;
     }
     .registerTextContainer {
         font-size: 1rem;
-        line-height: 2rem;
+        line-height: 1.5rem;
     }
 }
 
 @media only screen and (max-width: 376px) {
     .kioskImage {
-        width: 410px;
-        height: 430px;
+        width: 360px;
+        height: 380px;
     }
-    .registerTextContainer {
-        font-size: 1rem;
-        line-height: 2rem;
+    .heading {
+        font-size: 1.25rem;
+        padding: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .kioskImage {
+        width: 280px;
+        height: 300px;
+        padding: 5%;
     }
 }

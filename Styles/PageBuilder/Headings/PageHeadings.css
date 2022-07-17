@@ -50,30 +50,23 @@
         }
         .pageHeading {
             width: 100vw;
+            padding: 0;
+            margin: 0;
             font-size: 3.5rem;
-        }
-    }
-    
-    @media only screen and (max-width: 735px) {
-        .contact.pageHeading {
-            font-size: 3rem;
-        }
-        .pageHeading {
-            font-size: 3rem;
-        }
-    }
-    
-    @media only screen and (max-width: 600px) {
-        .contact.pageHeading {
-            font-size: 2.5rem;
-        }
-        .pageHeading {
-            font-size: 2.5rem;
         }
     }
     
     @media only screen and (max-width: 450px) {
         .contact.pageHeading {
+            font-size: 2.5rem;
+        }
+        .pageHeading {
+            font-size: 2.5rem;
+        }
+    }
+    
+    @media only screen and (max-width: 376px) {
+        .contact.pageHeading {
             font-size: 2rem;
         }
         .pageHeading {
@@ -81,11 +74,11 @@
         }
     }
     
-    @media only screen and (max-width: 376px) {
+    @media only screen and (max-width: 320px) {
         .contact.pageHeading {
-            font-size: 1.5rem;
+            font-size: 1.75rem;
         }
         .pageHeading {
-            font-size: 1.5rem;
+            font-size: 1.75rem;
         }
     }

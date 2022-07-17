@@ -447,12 +447,13 @@
     }
     .contactHeading {
         font-size: 1.5rem;
+        padding-bottom: 0.5rem;
     }
     .contactInfo {
         font-size: 1rem;
         line-height: 1rem;
         margin: 5%;
-        padding: 0.5rem;
+        padding: 1rem;
     }
     .formControl {
         width: 85%;
@@ -499,9 +500,7 @@
         -ms-transform: translateY(-9.5rem) scale(.7);
         -o-transform: translateY(-9.5rem) scale(.7);
     }
-    .contactHeading {
-        font-size: 2rem;
-    }
+    .contactHeading {}
 }
 
 @media only screen and (max-width: 376px) {
@@ -528,6 +527,9 @@
     }
     .submitBtn {
         font-size: 1rem;
+    }
+    .contactHeading mark {
+        padding: 0rem 0.5rem;
     }
 }
 
@@ -574,5 +576,9 @@
     }
     .formHeading {
         font-size: 1.5rem;
+    }
+    .contactInfo {
+        font-size: 0.8rem;
+        line-height: 1rem;
     }
 }

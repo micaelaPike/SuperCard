@@ -11,9 +11,8 @@ export let carouselCounter = 0;
 
 export function setCounter() {
     carouselCounter++;
-    if (carouselCounter === cards.length) {
-        carouselCounter = 0;
-        return;
+    if (carouselCounter === (cards.length)) {
+        return carouselCounter = 0;
     }
 }
 
@@ -40,15 +39,14 @@ export function changeStateTimer() {
 }
 
 export function changeSelectedBtn(selectedBtnIndex) {
+    // debugger
 
-    if (carouselSelect[0].classList.contains("selected")) {
-        carouselSelect[0].classList.remove("selected");
-    } else
-        for (let i = 0; i < (carouselSelect.length); i++) {
-            if (carouselSelect[i].classList.contains("selected")) {
-                carouselSelect[i].classList.remove("selected");
-            }
+
+    for (let i = 0; i < (carouselSelect.length); i++) {
+        if (carouselSelect[i].classList.contains("selected")) {
+            carouselSelect[i].classList.remove("selected");
         }
+    }
     carouselSelect[selectedBtnIndex].classList.add("selected");
 }
 

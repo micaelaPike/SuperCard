@@ -13,11 +13,12 @@ const cardHeadingArr = ["Savings <mark class='cardHeadingRed'>Card</mark>", "Sto
 
 let cardHeading = document.querySelector(".cardHeading");
 let cardDescription = document.querySelector(".cardDescription");
-let carouselNext = document.querySelector('.carouselNext')
+let carouselNext = document.querySelector('.carouselNext');
 
-carouselNext.onclick = () => {
-    nextButtonClick();
-}
+
+
+
+carouselNext.addEventListener("click", nextButtonClick);
 
 function changeContent(cardIndex) {
 
@@ -38,12 +39,33 @@ function nextButtonClick() {
     if (cardCarousel.classList.contains("animation")) {
         cardCarousel.classList.remove("animation");
     }
-    setCounter();
-    cardCarousel.src = cards[carouselCounter];
-    changeSelectedBtn(carouselCounter);
 
-    cardDescription.innerHTML = cardDesciptionArr[carouselCounter];
-    cardHeading.innerHTML = cardHeadingArr[carouselCounter];
+    let finalItemIndex = carouselSelect.length;
+    console.log(finalItemIndex)
+
+    if (carouselSelect[carouselSelect.length - 1].classList.contains("selected")) {
+        cardCarousel.src = cards[0];
+        changeSelectedBtn(0);
+        cardDescription.innerHTML = cardDesciptionArr[0];
+        cardHeading.innerHTML = cardHeadingArr[0];
+        return;
+    }
+
+    for (let z = 0; z < (carouselSelect.length); z++) {
+
+        if (carouselSelect[z].classList.contains("selected")) {
+            cardCarousel.src = cards[z + 1];
+            changeSelectedBtn((z + 1));
+            cardDescription.innerHTML = cardDesciptionArr[z + 1];
+            cardHeading.innerHTML = cardHeadingArr[z + 1];
+            return;
+        }
+
+    }
+
+
+    // setCounter();
+
 }
 
 function selectbtnAddClickCards() {

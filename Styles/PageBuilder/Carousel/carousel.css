@@ -27,6 +27,7 @@
     flex-direction: row;
     justify-items: right;
     padding: 2rem;
+    align-items: center;
 }
 
 .carouselSelect {

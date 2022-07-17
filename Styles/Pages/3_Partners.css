@@ -125,7 +125,7 @@
 
 .btnFindStore {
     display: flex;
-    width: 10rem;
+    width: min-content;
     text-align: center;
     justify-content: center;
     padding: 0.8rem 1.2rem;
@@ -150,7 +150,7 @@
     display: flex;
     width: 100%;
     padding-top: 1rem;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     justify-content: center;
 }
 
@@ -158,23 +158,24 @@
     display: flex;
     width: 100%;
     padding: 0rem 1rem;
+    margin: auto;
 }
 
 .sparLogo {
     display: flex;
-    width: 25%;
+    width: 30%;
     aspect-ratio: 5.66 / 1;
 }
 
 .topsLogo {
     display: flex;
-    width: 10%;
+    width: 15%;
     aspect-ratio: 2 / 1;
 }
 
 .bmsLogo {
     display: flex;
-    width: 10%;
+    width: 15%;
     aspect-ratio: 2 / 1;
 }
 
@@ -188,7 +189,7 @@
     .logoContainer {
         padding-top: 1.2rem;
     }
-    .searchInput {
+    .inputSearchStore {
         font-size: 2rem;
         text-align: -webkit-center;
         margin-top: auto;
@@ -196,24 +197,30 @@
     .lblSearchStore {
         font-size: 3rem;
     }
+    .footerParters {
+        padding: 2rem;
+    }
 }
 
 @media only screen and (max-width: 1500px) {
     .partnersTextContainer {
-        padding: 0rem 7rem 3rem 1rem;
+        padding: 0rem 7rem 0rem 1rem;
     }
     .partnersTextContainer p {
-        font-size: 1.8rem;
+        font-size: 1.3rem;
         line-height: 2rem;
     }
-    .searchInput {
-        padding-top: 2rem;
+    .lblSearchStore {
+        font-size: 2rem;
+    }
+    .inputSearchStore {
+        font-size: 1.5rem;
     }
     .logoContainer {
-        padding-top: 4rem;
+        padding-top: 1rem;
     }
     .btnFindStore {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 }
 
@@ -244,13 +251,20 @@
         padding: 0 0rem;
     }
     .lblSearchStore {
-        font-size: 1.2rem;
+        font-size: 1.8rem;
     }
     .inputSearchStore {
-        font-size: 1rem;
+        width: 80%;
+        font-size: 1.3rem;
     }
-    .logoContainer {
-        padding-top: 3rem;
+    .sparLogo {
+        width: 30%;
+    }
+    .topsLogo {
+        width: 15%;
+    }
+    .bmsLogo {
+        width: 15%;
     }
 }
 
@@ -261,35 +275,37 @@
         padding: 1rem 4rem 0rem 4rem;
     }
     .partnersTextContainer p {
-        font-size: 2rem;
-        line-height: 2.5rem;
+        font-size: 1.5rem;
+        line-height: 2.2rem;
     }
     .lblSearchStore {
-        font-size: 3rem;
+        font-size: 2.2rem;
     }
     .inputSearchStore {
         width: 80%;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .btnFindStore {
-        font-size: 2rem;
+        font-size: 1.25rem;
+    }
+    .footerParters {
+        padding-top: 0;
     }
     .logoContainer {
         width: 100%;
-        padding-top: 2rem;
+        padding-top: 0rem;
+        margin-top: 0rem;
     }
     .sparLogo {
-        width: 45%;
+        width: 40%;
     }
     .topsLogo {
-        width: 25%;
+        width: 20%;
     }
     .bmsLogo {
-        width: 25%;
+        width: 20%;
     }
 }
-
-@media only screen and (max-width: 735px) {}
 
 @media only screen and (max-width: 600px) {
     .logoContainer {
@@ -302,7 +318,7 @@
     }
     .inputSearchStore {
         width: 90%;
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     .sparLogo {
         width: 70%;
@@ -322,7 +338,13 @@
         padding: 1rem 2rem 0rem;
     }
     .partnersTextContainer p {
-        font-size: 1.5rem;
-        line-height: 2rem;
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+    .lblSearchStore {
+        font-size: 1.6rem;
+    }
+    .btnFindStore {
+        font-size: 1rem;
     }
 }

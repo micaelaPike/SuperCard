@@ -22,6 +22,7 @@
     .btnMapView,
     .btnZoom {
         display: flex;
+        width: max-content;
         position: relative;
         z-index: 9999;
         margin: 0.5rem 3.5rem;
@@ -68,7 +69,8 @@
     }
     
     @media only screen and (max-width: 1335px) {
-        .btnMapView {
+        .btnMapView,
+        .btnZoom {
             margin: 0.3rem 3rem;
             font-size: 1.3rem;
         }
@@ -82,12 +84,26 @@
             padding: 2rem;
             align-self: center;
         }
+        .btnMapView,
+        .btnZoom {
+            margin: -0.99rem 0.95rem;
+            font-size: 1rem;
+        }
     }
     
-    @media only screen and (max-width: 735px) {}
+    @media only screen and (max-width: 450px) {
+        .btnMapView {
+            font-size: 0.8rem;
+        }
+        .btnZoom {
+            margin: -0.99rem -0.1rem;
+            font-size: 0.8rem;
+        }
+    }
     
-    @media only screen and (max-width: 600px) {}
-    
-    @media only screen and (max-width: 450px) {}
-    
-    @media only screen and (max-width: 376px) {}
+    @media only screen and (max-width: 376px) {
+        .btnMapView,
+        .btnZoom {
+            font-size: 0.75rem;
+        }
+    }
