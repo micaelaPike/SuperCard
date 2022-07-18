@@ -1203,32 +1203,32 @@
         "StoreType": "Mndeni",
         "Group": "",
         "Address": "287 Church St, Pietermaritzburg, 3200",
-        "Longitude": "-29.49631156",
-        "Latitude": 30.37872757
+        "Longitude": "-29.600480248667374",
+        "Latitude": 30.37968734332143
     },
     {
         "StoreName": "Mndeni Meats Port Shepstone",
         "StoreType": "Mndeni",
         "Group": "",
-        "Address": "3A Laura St, Gandhinagar, Tongaat, 4400",
-        "Longitude": "-29.5698005",
-        "Latitude": 31.11501963
+        "Address": "49 Bazley St, Port Shepstone, 4240",
+        "Longitude": "-30.738728640852358",
+        "Latitude": 30.447896446014386
     },
     {
         "StoreName": "Mndeni Meats Tongaat",
         "StoreType": "Mndeni",
         "Group": "",
-        "Address": "George Sewpersadh St, Verulam, Durban, 4340",
-        "Longitude": "-29.64078523",
-        "Latitude": 31.04586591
+        "Address": "3A Laura St, Gandhinagar, Tongaat, 4400",
+        "Longitude": "-29.57066044090804",
+        "Latitude": 31.11507331348928
     },
     {
         "StoreName": "Mndeni Meats Verulam",
         "StoreType": "Mndeni",
         "Group": "",
-        "Address": "49 Bazley St, Port Shepstone, 4240",
-        "Longitude": "-30.73783155",
-        "Latitude": 30.44783404
+        "Address": "George Sewpersadh St, Verulam, Durban, 4340",
+        "Longitude": "-29.6414784657528",
+        "Latitude": 31.046016157668635
     },
     {
         "StoreName": "Moratiwe Superspar",

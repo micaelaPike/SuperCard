@@ -1,46 +1,23 @@
-        .landingPage,
-        .steelDesktopGradient,
-        .redDesktopGradient {
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position-y: center;
-            width: 100vw;
-            min-height: calc(100vh - 4rem);
-            height: auto;
-        }
-        
-        .landingPage {
-            background-image: url('/Assets/Backgrounds/LandingPage.png');
-        }
-        
-        .steelDesktopGradient {
-            background-image: url('/Assets/Backgrounds/SteelDesktopGradient.png');
-        }
-        
-        .redDesktopGradient {
-            background-image: url('/Assets/Backgrounds/RedDesktopGradient.png');
-        }
-        
-        @media only screen and (max-width: 1345px) {
-            .landingPage {
-                min-height: 100vh;
-                height: auto;
-                background-position-x: center;
-            }
-        }
-        
-        @media only screen and (max-width: 1345px) {
-            .steelDesktopGradient {
-                min-height: 100vh;
-                height: auto;
-                background-position-x: center;
-            }
-        }
-        
-        @media only screen and (max-width: 1345px) {
-            .redDesktopGradient {
-                min-height: 100vh;
-                height: auto;
-                background-position-x: center;
-            }
-        }
+.landingPage,
+.steelDesktopGradient,
+.redDesktopGradient {
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    width: 100vw;
+    min-height: calc(100vh - 4rem);
+    height: auto;
+}
+
+.landingPage {
+    background-image: url('/Assets/Backgrounds/LandingPage.png');
+}
+
+.steelDesktopGradient {
+    background-image: url('/Assets/Backgrounds/SteelDesktopGradient.png');
+}
+
+.redDesktopGradient {
+    background-image: url('/Assets/Backgrounds/RedDesktopGradient.png');
+}

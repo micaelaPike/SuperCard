@@ -27,9 +27,6 @@ function removeChange(element) {
     }
 }
 
-
-
-
 menuContainer.addEventListener("click", () => {
     changeHamburger(menuContainer);
     changeHamburger(hamburgerNavList);
