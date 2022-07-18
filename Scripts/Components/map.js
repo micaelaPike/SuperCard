@@ -177,8 +177,48 @@ function displayMarkers(arrayLocations) {
     });
 }
 
-function storeTypeCheck(marker, markerArray, index) {
+function storeTypeCheck(markerArray, index) {
 
+    if (markerArray[index].item.StoreType == "Spar") {
+
+        let searchMarker = new L.marker([markerArray[index].item.Longitude, markerArray[index].item.Latitude], { icon: sparIcon });
+        if (markerArray[index].item.Group == '') {
+            searchMarker.bindPopup(`${ markerArray[index].item.StoreName.bold() } <br> ${ markerArray[index].item.Address }`);
+        } else {
+            searchMarker.bindPopup(`${ markerArray[index].item.StoreName.bold() } <br> ${ markerArray[index].item.Group.fontcolor("red") } <br> ${ markerArray[index].item.Address }`);
+        }
+        featureGroupMarker.addLayer(searchMarker);
+        featureGroupMarker.addTo(map);
+        map.flyTo([markerArray[index].item.Longitude, markerArray[index].item.Latitude], 16, { duration: 1.5, easeLinearity: 5 });
+        return;
+
+    } else if (markerArray[index].item.StoreType == "BMS") {
+
+        let searchMarker = new L.marker([markerArray[index].item.Longitude, markerArray[index].item.Latitude], { icon: bmsIcon });
+        if (markerArray[index].item.Group == '') {
+            searchMarker.bindPopup(`${ markerArray[index].item.StoreName.bold() } <br> ${ markerArray[index].item.Address }`);
+        } else {
+            searchMarker.bindPopup(`${ markerArray[index].item.StoreName.bold() } <br> ${ markerArray[index].item.Group.fontcolor("red") } <br> ${ markerArray[index].item.Address }`);
+        }
+        featureGroupMarker.addLayer(searchMarker);
+        featureGroupMarker.addTo(map);
+        map.flyTo([markerArray[index].item.Longitude, markerArray[index].item.Latitude], 16, { duration: 1.5, easeLinearity: 5 });
+        return;
+
+    } else if (markerArray[index].item.StoreType == "Mndeni") {
+
+        let searchMarker = new L.marker([markerArray[index].item.Longitude, markerArray[index].item.Latitude], { icon: mndeniIcon });
+        if (markerArray[index].item.Group == '') {
+            searchMarker.bindPopup(`${ markerArray[index].item.StoreName.bold() } <br> ${ markerArray[index].item.Address }`);
+        } else {
+            searchMarker.bindPopup(`${ markerArray[index].item.StoreName.bold() } <br> ${ markerArray[index].item.Group.fontcolor("red") } <br> ${ markerArray[index].item.Address }`);
+        }
+        map.addLayer(searchMarker);
+        featureGroupMarker.addTo(map);
+        map.flyTo([markerArray[index].item.Longitude, markerArray[index].item.Latitude], 16, { duration: 1.5, easeLinearity: 5 });
+        return;
+
+    }
 }
 
 const fuse = new Fuse(markerLocations, options)
@@ -234,121 +274,22 @@ function searchStore() {
 
         //Perfect Matches
         if (filteredResults[0].score == 0) {
-            //only one perfect match or No perfect match
-            if (filteredResults[0].item.StoreType == "Spar") {
-                let searchMarker = new L.marker([filteredResults[0].item.Longitude, filteredResults[0].item.Latitude], { icon: sparIcon });
-                if (filteredResults[0].item.Group == '') {
-                    searchMarker.bindPopup(`${ filteredResults[0].item.StoreName.bold() } <br> ${ filteredResults[0].item.Address }`);
-                } else {
-                    searchMarker.bindPopup(`${ filteredResults[0].item.StoreName.bold() } <br> ${ filteredResults[0].item.Group.fontcolor("red") } <br> ${ filteredResults[0].Address }`);
-                }
-                map.addLayer(searchMarker);
+            console.log(filteredResults)
 
-            } else if (filteredResults[0].item.StoreType == "BMS") {
-                let searchMarker = new L.marker([filteredResults[0].item.Longitude, filteredResults[0].item.Latitude], { icon: bmsIcon });
-                if (filteredResults[0].item.Group == '') {
-                    searchMarker.bindPopup(`${ filteredResults[0].item.StoreName.bold() } <br> ${ filteredResults[0].item.Address }`);
-                } else {
-                    searchMarker.bindPopup(`${ filteredResults[0].item.StoreName.bold() } <br> ${ filteredResults[0].item.Group.fontcolor("red") } <br> ${ filteredResults[0].item.Address }`);
-                }
-                map.addLayer(searchMarker);
-            } else if (filteredResults[0].item.StoreType == "Mndeni") {
-                let searchMarker = new L.marker([filteredResults[0].item.Longitude, filteredResults[0].item.Latitude], { icon: mndeniIcon });
-                if (filteredResults[0].item.Group == '') {
-                    searchMarker.bindPopup(`${ filteredResults[0].item.StoreName.bold() } <br> ${ filteredResults[0].item.Address }`);
-                } else {
-                    searchMarker.bindPopup(`${ filteredResults[0].item.StoreName.bold() } <br> ${ filteredResults[0].item.Group.fontcolor("red") } <br> ${ filteredResults[0].item.Address }`);
-                }
-                map.addLayer(searchMarker);
-            }
-            map.flyTo(searchMarker.getLatLng(), 16, { duration: 1.5, easeLinearity: 5 });
+            //only one perfect match or No perfect match
+            storeTypeCheck(filteredResults, 0);
+
         } else {
             //more than one perfect match or no perfect match
             filteredResults.forEach((item, index) => {
+
                 if (filteredResults[index].score == 0) {
-
-                    if (filteredResults[index].item.StoreType == "Spar") {
-
-                        let searchMarker = new L.marker([filteredResults[index].item.Longitude, filteredResults[index].item.Latitude], { icon: sparIcon });
-                        if (filteredResults[index].item.Group == '') {
-                            searchMarker.bindPopup(`${ filteredResults[index].item.StoreName.bold() } <br> ${ filteredResults[index].item.Address }`);
-                        } else {
-                            searchMarker.bindPopup(`${ filteredResults[index].item.StoreName.bold() } <br> ${ filteredResults[index].item.Group.fontcolor("red") } <br> ${ filteredResults[index].item.Address }`);
-                        }
-                        featureGroupMarker.addLayer(searchMarker);
-                        map.flyTo([filteredResults[index].item.Longitude, filteredResults[index].item.Latitude], 16, { duration: 1.5, easeLinearity: 5 });
-                        return;
-
-                    } else if (filteredResults[index].item.StoreType == "BMS") {
-
-                        let searchMarker = new L.marker([filteredResults[index].item.Longitude, filteredResults[index].item.Latitude], { icon: bmsIcon });
-                        if (filteredResults[index].item.Group == '') {
-                            searchMarker.bindPopup(`${ filteredResults[index].item.StoreName.bold() } <br> ${ filteredResults[index].item.Address }`);
-                        } else {
-                            searchMarker.bindPopup(`${ filteredResults[index].item.StoreName.bold() } <br> ${ filteredResults[index].item.Group.fontcolor("red") } <br> ${ filteredResults[index].item.Address }`);
-                        }
-                        featureGroupMarker.addLayer(searchMarker);
-                        map.flyTo([filteredResults[index].item.Longitude, filteredResults[index].item.Latitude], 16, { duration: 1.5, easeLinearity: 5 });
-                        return;
-
-                    } else if (filteredResults[index].item.StoreType == "Mndeni") {
-
-                        let searchMarker = new L.marker([filteredResults[index].item.Longitude, filteredResults[index].item.Latitude], { icon: mndeniIcon });
-                        if (filteredResults[index].item.Group == '') {
-                            searchMarker.bindPopup(`${ filteredResults[index].item.StoreName.bold() } <br> ${ filteredResults[index].item.Address }`);
-                        } else {
-                            searchMarker.bindPopup(`${ filteredResults[index].item.StoreName.bold() } <br> ${ filteredResults[index].item.Group.fontcolor("red") } <br> ${ filteredResults[index].item.Address }`);
-                        }
-                        map.addLayer(searchMarker);
-                        map.flyTo([filteredResults[index].item.Longitude, filteredResults[index].item.Latitude], 16, { duration: 1.5, easeLinearity: 5 });
-                        return;
-
-                    }
+                    storeTypeCheck(filteredResults, index);
                 } else if (filteredResults[index].score <= 0.1) {
-
-                    debugger
-
-                    if (filteredResults[index].item.StoreType == "Spar") {
-                        console.log("spar type")
-                        let searchMarker = new L.marker([filteredResults[index].item.Longitude, filteredResults[index].item.Latitude], { icon: sparIcon });
-                        if (filteredResults[index].item.Group == '') {
-                            searchMarker.bindPopup(`${ filteredResults[index].item.StoreName.bold() } <br> ${ filteredResults[index].item.Address }`);
-                        } else {
-                            searchMarker.bindPopup(`${ filteredResults[index].item.StoreName.bold() } <br> ${ filteredResults[index].item.Group.fontcolor("red") } <br> ${ filteredResults[index].item.Address }`);
-                        }
-
-                        featureGroupMarker.addLayer(searchMarker);
-
-                    }
-                    if (filteredResults[index].item.StoreType == "BMS") {
-                        console.log("bms type")
-
-                        let searchMarker = new L.marker([filteredResults[index].item.Longitude, filteredResults[index].item.Latitude], { icon: bmsIcon });
-                        if (filteredResults[index].item.Group == '') {
-                            searchMarker.bindPopup(`${ filteredResults[index].item.StoreName.bold() } <br> ${ filteredResults[index].item.Address }`);
-                        } else {
-                            searchMarker.bindPopup(`${ filteredResults[index].item.StoreName.bold() } <br> ${ filteredResults[index].item.Group.fontcolor("red") } <br> ${ filteredResults[index].item.Address }`);
-                        }
-
-                        featureGroupMarker.addLayer(searchMarker);
-
-                    }
-                    if (filteredResults[index].item.StoreType == "Mndeni") {
-                        console.log("mndeni type")
-
-                        let searchMarker = new L.marker([filteredResults[index].item.Longitude, filteredResults[index].item.Latitude], { icon: mndeniIcon });
-                        if (filteredResults[index].item.Group == '') {
-                            searchMarker.bindPopup(`${ filteredResults[index].item.StoreName.bold() } <br> ${ filteredResults[index].item.Address }`);
-                        } else {
-                            searchMarker.bindPopup(`${ filteredResults[index].item.StoreName.bold() } <br> ${ filteredResults[index].item.Group.fontcolor("red") } <br> ${ filteredResults[index].item.Address }`);
-                        }
-                        featureGroupMarker.addLayer(searchMarker);
-                    }
+                    storeTypeCheck(filteredResults, index);
                 }
-
                 featureGroupMarker.addTo(map).on('click', function(e) {
                     map.flyTo(e.latlng, 16, { duration: 1.5, easeLinearity: 5 });
-
                 });
                 map.flyToBounds(featureGroupMarker.getBounds(), { padding: [50, 50] }, { maxZoom: 25 });
             })
