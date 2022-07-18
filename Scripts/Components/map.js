@@ -177,7 +177,9 @@ function displayMarkers(arrayLocations) {
     });
 }
 
+function storeTypeCheck(marker, markerArray, index) {
 
+}
 
 const fuse = new Fuse(markerLocations, options)
 
