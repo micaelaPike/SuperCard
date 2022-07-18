@@ -29,13 +29,13 @@ function failSnackBar(message) {
     snackBarImage.src = arrMessage[1];
 }
 
-// function sendingSnackBar() {
-//     snackbarAlert.innerHTML = "Sending...";
-//     // failure.style.display = "flex";
-//     snackbar.style.backgroundColor = "black";
-//     snackbar.style.color = "black";
-//     // snackBarImage.src = arrMessage[1];
-// }
+function sendingSnackBar() {
+    snackbarAlert.innerHTML = "Sending...";
+    failure.style.display = "flex";
+    snackbar.style.backgroundColor = "black";
+    snackbar.style.color = "black";
+    // snackBarImage.src = arrMessage[1];
+}
 
 closeButton.addEventListener("click", () => {
     snackbar.style.display = "none";
@@ -52,7 +52,7 @@ window.onload = function() {
             // if ((validateEmail(email) === true) && (validateNumber(number) === true)) {
             console.log('SUCCESS!');
 
-            // sendingSnackBar();
+            sendingSnackBar();
             emailjs.sendForm('service_cnprkth', 'template_fqsuwrr', this)
                 .then(function(response) {
                     console.log('SUCCESS!', response.status, response.text);
