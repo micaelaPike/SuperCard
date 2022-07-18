@@ -145,7 +145,7 @@
           all: unset;
           width: 100vw;
           display: none;
-          position: absolute;
+          position: fixed;
           flex-direction: column;
           background-color: white;
           align-items: center;
@@ -156,7 +156,7 @@
           padding: 1rem;
           z-index: 9990;
           border: none;
-          box-shadow: none;
+          box-shadow: 0px 10px 11px 0px rgba(0, 0, 0, 0.5);
       }
       
       .hamburgerNavList li {
@@ -197,11 +197,7 @@
           }
       }
       
-      @media only screen and (min-width: 881px) {
-          .hamburgerNavList.change {
-              display: none;
-          }
-      }
+      @media only screen and (min-width: 881px) {}
       
       @media only screen and (max-width: 880px) {
           .menuContainer {
@@ -212,11 +208,6 @@
               padding: 0;
               margin: 0;
               font-size: 0rem;
-          }
-          .navBar1,
-          .navBar2 {
-              border: none;
-              box-shadow: none;
           }
       }
       

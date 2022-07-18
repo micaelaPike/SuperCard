@@ -12,12 +12,25 @@ let email = document.querySelector(".email");
 
 // debugger;
 
-function vanish(element) {
-    element.style.display = "none";
+function successSnackBar() {
+    snackbarAlert.innerHTML = "Message sent successfully!"
+    snackbar.style.display = "flex";
+    snackbar.style.borderColor = "#008000";
+    snackbar.style.borderStyle = "solid";
+    snackbar.style.borderWidth = "3px";
+    snackBarImage.src = arrMessage[0];
+}
+
+function failSnackBar(message) {
+    snackbarAlert.innerHTML = "";
+    failure.style.display = "flex";
+    snackbar.style.backgroundColor = "#aaa";
+    snackbar.style.color = "black";
+    snackBarImage.src = arrMessage[1];
 }
 
 closeButton.addEventListener("click", () => {
-    vanish(snackbar);
+    snackbar.style.display = "none";
 });
 
 (function() {
@@ -30,27 +43,15 @@ window.onload = function() {
 
         if ((validateEmail(email) === true) && (validateNumber(number) === true)) {
             console.log('SUCCESS!');
-            snackbarAlert.innerHTML = "Message sent successfully!"
-            snackbar.style.display = "flex";
-            snackbar.style.borderColor = "#008000";
-            snackbar.style.borderStyle = "solid";
-            snackbar.style.borderWidth = "3px";
-            snackBarImage.src = arrMessage[0];
+
 
             emailjs.sendForm('service_cnprkth', 'template_fqsuwrr', this)
                 .then(function(response) {
                     console.log('SUCCESS!', response.status, response.text);
-                    snackbar.style.display = "flex";
-                    snackbar.style.backgroundColor = "#aaa";
-                    snackbar.style.color = "black";
-                    snackBarImage.src = arrMessage[0];
+                    successSnackBar();
                 }, function(error) {
                     console.log('FAILED...', error);
-                    failure.style.display = "flex";
-                    snackbar.style.backgroundColor = "#aaa";
-                    snackbar.style.color = "black";
-                    snackBarImage.src = arrMessage[1];
-
+                    failSnackBar("Message failed to send.<br>Contact Customer Care.");
                 })
 
             inputs.forEach(input => {
@@ -58,12 +59,7 @@ window.onload = function() {
             });
         } else {
             console.log('FAILED...');
-            snackbarAlert.innerHTML = "Message failed!<br> Invalid details.";
-            snackbar.style.display = "flex";
-            snackbar.style.borderColor = "#FF0000";
-            snackbar.style.borderStyle = "solid";
-            snackbar.style.borderWidth = "3px";
-            snackBarImage.src = arrMessage[1];
+            failSnackBar("Message failed. Invalid details.");
         }
     })
 };
@@ -79,7 +75,6 @@ function validateNumber(inputNumber) {
         return false;
     }
 }
-
 
 function validateEmail(input) {
 
