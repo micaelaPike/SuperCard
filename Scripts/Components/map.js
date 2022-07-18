@@ -43,7 +43,7 @@ function zoomHome() {
 async function createMarker() {
 
     const { default: storeMarker } = await
-    import ("/Scripts/Pages/MapMarkersV4.json", {
+    import ("/Scripts/Pages/MapMarkersV5.json", {
         assert: {
             type: "json",
         },
@@ -151,11 +151,6 @@ function displayMarkers(arrayLocations) {
             } else {
                 marker.bindPopup(`${ arrayLocations[index].StoreName.bold() } <br> ${ arrayLocations[index].Group.fontcolor("red") } <br> ${ arrayLocations[index].Address }`);
             }
-            markerCluster.addLayer(marker);
-
-            markerCluster.addTo(map).on('click', function(e) {
-                map.flyTo(e.latlng, 16, { duration: 1.5, easeLinearity: 5 });
-            });
 
         } else if (item.StoreType == "BMS") {
             marker = L.marker([arrayLocations[index].Longitude, arrayLocations[index].Latitude], { icon: bmsIcon });
@@ -164,11 +159,7 @@ function displayMarkers(arrayLocations) {
             } else {
                 marker.bindPopup(`${ arrayLocations[index].StoreName.bold() } <br> ${ arrayLocations[index].Group.fontcolor("red") } <br> ${ arrayLocations[index].Address }`);
             }
-            markerCluster.addLayer(marker);
 
-            markerCluster.addTo(map).on('click', function(e) {
-                map.flyTo(e.latlng, 16, { duration: 1.5, easeLinearity: 5 });
-            });
         } else if (item.StoreType == "Mndeni") {
             marker = L.marker([arrayLocations[index].Longitude, arrayLocations[index].Latitude], { icon: mndeniIcon });
             if (arrayLocations[index].Group == '') {
@@ -176,14 +167,17 @@ function displayMarkers(arrayLocations) {
             } else {
                 marker.bindPopup(`${ arrayLocations[index].StoreName.bold() } <br> ${ arrayLocations[index].Group.fontcolor("red") } <br> ${ arrayLocations[index].Address }`);
             }
-            markerCluster.addLayer(marker);
 
-            markerCluster.addTo(map).on('click', function(e) {
-                map.flyTo(e.latlng, 16, { duration: 1.5, easeLinearity: 5 });
-            });
         }
+        markerCluster.addLayer(marker);
+
+        markerCluster.addTo(map).on('click', function(e) {
+            map.flyTo(e.latlng, 16, { duration: 1.5, easeLinearity: 5 });
+        });
     });
 }
+
+
 
 const fuse = new Fuse(markerLocations, options)
 
@@ -228,7 +222,7 @@ function searchStore() {
 
     //If they don't search the store type/////////////////////////////////
     //No Match
-    if (filteredResults.length == 0) {
+    if (filteredResults == []) {
         searchErrorBox.style.setZIndex = "9999";
         searchErrorBox.style.display = "block";
     } else {
