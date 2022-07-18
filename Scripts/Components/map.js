@@ -43,7 +43,7 @@ function zoomHome() {
 async function createMarker() {
 
     const { default: storeMarker } = await
-    import ("/Scripts/Pages/MapMarkersV3.json", {
+    import ("/Scripts/Pages/MapMarkersV4.json", {
         assert: {
             type: "json",
         },
@@ -173,9 +173,24 @@ const fuse = new Fuse(markerLocations, options)
 //Displays the original set of markers
 displayMarkers(markerLocations);
 
+let iconList = {
+    spar: sparIcon,
+    bms: bmsIcon
+}
+
+function getKeyByValue(object, value) {
+    return Object.keys(object).find(key => object[key] === value);
+}
+
+
+const imap = { "first": "1", "second": "2" };
+console.log(getKeyByValue(imap, "2"));
+
+
 //Fires when users clicks the button to search for a store
 function searchStore() {
     //clear the old search group
+    debugger;
     map.removeLayer(featureGroupMarker);
 
     featureGroupMarker = new L.FeatureGroup;
@@ -200,12 +215,13 @@ function searchStore() {
             filteredResults = [];
             if (arr[index].item.StoreName.toLowerCase().includes(inputSearchStoreValue) || arr[index].item.Address.toLowerCase().includes(inputSearchStoreValue)) {
                 filteredResults.push(arr[index]);
+
             } else {
                 filteredResults = result;
             }
         });
     }
-
+    console.log(filteredResults)
 
     //If they don't search the store type/////////////////////////////////
     //No Match
@@ -213,92 +229,112 @@ function searchStore() {
         searchErrorBox.style.setZIndex = "9999";
         searchErrorBox.style.display = "block";
     } else {
+
         //If they get a match of some kind
         map.removeLayer(markerCluster);
 
         //Perfect Matches
-        if (!(filteredResults[1] === 0)) {
-            console.log("only one perfect match or No perfect match")
-                //only one perfect match or No perfect match
+        if (!filteredResults[1].score === 0) {
+            //only one perfect match or No perfect match
             let searchMarker = L.marker([filteredResults[0].item.Longitude, filteredResults[0].item.Latitude], { icon: filteredResults[0].item.StoreType === "Spar" ? sparIcon : bmsIcon });
 
             if (filteredResults[0].item.StoreType === "Spar") {
-                if (markerLocations[0].Group === '') {
-                    searchMarker.bindPopup(`${ markerLocations[0].StoreName.bold() } <br> ${ markerLocations[0].Address }`);
+                if (filteredResults[0].item.Group === '') {
+                    searchMarker.bindPopup(`${ filteredResults[0].item.StoreName.bold() } <br> ${ filteredResults[0].item.Address }`);
                 } else {
-                    searchMarker.bindPopup(`${ markerLocations[0].StoreName.bold() } <br> ${ markerLocations[0].Group.fontcolor("red") } <br> ${ markerLocations[0].Address }`);
+                    searchMarker.bindPopup(`${ filteredResults[0].item.StoreName.bold() } <br> ${ filteredResults[0].item.Group.fontcolor("red") } <br> ${ filteredResults[0].Address }`);
                 }
                 featureGroupMarker.addLayer(searchMarker);
 
             } else if (filteredResults[0].item.StoreType === "BMS") {
-                if (markerLocations[0].Group === '') {
-                    searchMarker.bindPopup(`${ markerLocations[0].StoreName.bold() } <br> ${ markerLocations[0].Address }`);
+                if (filteredResults[0].Group === '') {
+                    searchMarker.bindPopup(`${ filteredResults[0].item.StoreName.bold() } <br> ${ filteredResults[0].item.Address }`);
                 } else {
-                    searchMarker.bindPopup(`${ markerLocations[0].StoreName.bold() } <br> ${ markerLocations[0].Group.fontcolor("red") } <br> ${ markerLocations[0].Address }`);
+                    searchMarker.bindPopup(`${ filteredResults[0].item.StoreName.bold() } <br> ${ filteredResults[0].item.Group.fontcolor("red") } <br> ${ filteredResults[0].item.Address }`);
                 }
                 featureGroupMarker.addLayer(searchMarker);
             }
-
             featureGroupMarker.addLayer(searchMarker);
             map.flyTo([filteredResults[0].item.Longitude, filteredResults[0].item.Latitude], 18, { duration: 1.5, easeLinearity: 5 });
 
         } else {
-
             //more than one perfect match or no perfect match
-            console.log("more than one perfect match or no perfect match")
             filteredResults.forEach((item, index) => {
                 if (filteredResults[index].score === 0) {
                     let searchMarker = L.marker([filteredResults[index].item.Longitude, filteredResults[index].item.Latitude], { icon: filteredResults[index].item.StoreType === "Spar" ? sparIcon : bmsIcon });
 
                     if (filteredResults[index].item.StoreType === "Spar") {
-                        if (markerLocations[index].Group === '') {
-                            searchMarker.bindPopup(`${ markerLocations[index].StoreName.bold() } <br> ${ markerLocations[index].Address }`);
+                        if (filteredResults[index].item.Group === '') {
+                            searchMarker.bindPopup(`${ filteredResults[index].item.StoreName.bold() } <br> ${ filteredResults[index].item.Address }`);
                         } else {
-                            searchMarker.bindPopup(`${ markerLocations[index].StoreName.bold() } <br> ${ markerLocations[index].Group.fontcolor("red") } <br> ${ markerLocations[index].Address }`);
+                            searchMarker.bindPopup(`${ filteredResults[index].item.StoreName.bold() } <br> ${ filteredResults[index].item.Group.fontcolor("red") } <br> ${ filteredResults[index].item.Address }`);
                         }
                         featureGroupMarker.addLayer(searchMarker);
 
                     } else if (filteredResults[index].item.StoreType === "BMS") {
-                        if (markerLocations[index].Group === '') {
-                            searchMarker.bindPopup(`${ markerLocations[index].StoreName.bold() } <br> ${ markerLocations[index].Address }`);
+                        if (filteredResults[index].item.Group === '') {
+                            searchMarker.bindPopup(`${ filteredResults[index].item.StoreName.bold() } <br> ${ filteredResults[index].item.Address }`);
                         } else {
-                            searchMarker.bindPopup(`${ markerLocations[index].StoreName.bold() } <br> ${ markerLocations[index].Group.fontcolor("red") } <br> ${ markerLocations[index].Address }`);
+                            searchMarker.bindPopup(`${ filteredResults[index].item.StoreName.bold() } <br> ${ filteredResults[index].item.Group.fontcolor("red") } <br> ${ filteredResults[index].item.Address }`);
                         }
                         featureGroupMarker.addLayer(searchMarker);
                     }
-
                     featureGroupMarker.addLayer(searchMarker);
                     map.flyTo([filteredResults[index].item.Longitude, filteredResults[index].item.Latitude], 18, { duration: 1.5, easeLinearity: 5 });
                 }
             })
         }
         //if the match isn't perfect
+        // debugger
         filteredResults.forEach((item, index) => {
             if (filteredResults[index].score <= 0.1) {
                 let searchMarker = L.marker([filteredResults[index].item.Longitude, filteredResults[index].item.Latitude], { icon: filteredResults[index].item.StoreType === "Spar" ? sparIcon : bmsIcon });
 
                 if (filteredResults[index].item.StoreType === "Spar") {
-                    if (markerLocations[index].Group === '') {
-                        searchMarker.bindPopup(`${ markerLocations[index].StoreName.bold() } <br> ${ markerLocations[index].Address }`);
+                    if (filteredResults[index].item.Group === '') {
+                        searchMarker.bindPopup(`${ filteredResults[index].item.StoreName.bold() } <br> ${ filteredResults[index].item.Address }`);
                     } else {
-                        searchMarker.bindPopup(`${ markerLocations[index].StoreName.bold() } <br> ${ markerLocations[index].Group.fontcolor("red") } <br> ${ markerLocations[index].Address }`);
+                        searchMarker.bindPopup(`${ filteredResults[index].item.StoreName.bold() } <br> ${ filteredResults[index].item.Group.fontcolor("red") } <br> ${ filteredResults[index].item.Address }`);
                     }
                     featureGroupMarker.addLayer(searchMarker);
 
                 } else if (filteredResults[index].item.StoreType === "BMS") {
-                    if (markerLocations[index].Group === '') {
-                        searchMarker.bindPopup(`${ markerLocations[index].StoreName.bold() } <br> ${ markerLocations[index].Address }`);
+                    if (filteredResults[index].Group === '') {
+                        searchMarker.bindPopup(`${ filteredResults[index].item.StoreName.bold() } <br> ${ filteredResults[index].item.Address }`);
                     } else {
-                        searchMarker.bindPopup(`${ markerLocations[index].StoreName.bold() } <br> ${ markerLocations[index].Group.fontcolor("red") } <br> ${ markerLocations[index].Address }`);
+                        searchMarker.bindPopup(`${ filteredResults[index].item.StoreName.bold() } <br> ${ filteredResults[index].item.Group.fontcolor("red") } <br> ${ filteredResults[index].item.Address }`);
                     }
+
                     featureGroupMarker.addLayer(searchMarker);
                 }
-                featureGroupMarker.addLayer(searchMarker);
+            } else {
+                for (let x = 0; x < 3; x++) {
+                    console.log(filteredResults[x].item.StoreName + " " + filteredResults[x].score)
+                    let searchMarker = L.marker([filteredResults[x].item.Longitude, filteredResults[x].item.Latitude], { icon: filteredResults[x].item.StoreType === "Spar" ? sparIcon : bmsIcon });
+
+                    if (filteredResults[x].item.StoreType === "Spar") {
+                        if (filteredResults[x].item.Group === '') {
+                            searchMarker.bindPopup(`${ filteredResults[x].item.StoreName.bold() } <br> ${ filteredResults[x].item.Address }`);
+                        } else {
+                            searchMarker.bindPopup(`${ filteredResults[x].item.StoreName.bold() } <br> ${ filteredResults[x].item.Group.fontcolor("red") } <br> ${ filteredResults[x].item.Address }`);
+                        }
+                        featureGroupMarker.addLayer(searchMarker);
+
+                    } else if (filteredResults[x].item.StoreType === "BMS") {
+                        if (filteredResults[x].Group === '') {
+                            searchMarker.bindPopup(`${ filteredResults[x].item.StoreName.bold() } <br> ${ filteredResults[x].item.Address }`);
+                        } else {
+                            searchMarker.bindPopup(`${ filteredResults[x].item.StoreName.bold() } <br> ${ filteredResults[x].item.Group.fontcolor("red") } <br> ${ filteredResults[x].item.Address }`);
+                        }
+
+                        featureGroupMarker.addLayer(searchMarker);
+                    }
+                }
             }
             featureGroupMarker.addTo(map).on('click', function(e) {
                 map.flyTo(e.latlng, 18, { duration: 1.5, easeLinearity: 5 });
             });
-            featureGroupMarker.addTo(map);
+
             map.flyToBounds(featureGroupMarker.getBounds(), { maxZoom: 20 });
         });
     }

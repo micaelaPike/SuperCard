@@ -75,8 +75,8 @@
         "StoreType": "Spar",
         "Group": "",
         "Address": "22 Hill St, Stutterheim, 4930",
-        "Longitude": "-32.569788",
-        "Latitude": 27.4259663
+        "Longitude": "-32.569787",
+        "Latitude": 27.4259662
     },
     {
         "StoreName": "Bergville Spar",
@@ -235,8 +235,8 @@
         "StoreType": "Spar",
         "Group": "Power Group",
         "Address": "Nogwaja Street Bridge City shopping centre, Bridge city Boulevard, Durban, 4071",
-        "Longitude": "-29.726354",
-        "Latitude": 30.9843223
+        "Longitude": "-29.726353",
+        "Latitude": 30.9843222
     },
     {
         "StoreName": "Brighton Spar",
@@ -611,8 +611,8 @@
         "StoreType": "Spar",
         "Group": "",
         "Address": "69 Voortrekker St, Heidelberg, Heidelberg - GP, 1441",
-        "Longitude": "-26.50128095",
-        "Latitude": 28.35981827
+        "Longitude": "-26.50128094",
+        "Latitude": 28.35981826
     },
     {
         "StoreName": "Highway Superspar",
@@ -683,8 +683,8 @@
         "StoreType": "Spar",
         "Group": "EC DC",
         "Address": " 148 Richardson Rd, Idutywa, 5000",
-        "Longitude": "-32.0997174",
-        "Latitude": 28.3023262
+        "Longitude": "-32.0997173",
+        "Latitude": 28.3023261
     },
     {
         "StoreName": "Indlovu Superspar",
@@ -739,8 +739,8 @@
         "StoreType": "Spar",
         "Group": "Vele",
         "Address": "157 Rahima Moosa St, Johannesburg, 2000",
-        "Longitude": "-26.20136",
-        "Latitude": 28.0399713
+        "Longitude": "-26.20135",
+        "Latitude": 28.0399712
     },
     {
         "StoreName": "Jimmys Superspar",
@@ -851,8 +851,8 @@
         "StoreType": "Spar",
         "Group": "KwaWicks",
         "Address": "Ugie, 5470",
-        "Longitude": "-31.16530612",
-        "Latitude": 28.23039291
+        "Longitude": "-31.16530611",
+        "Latitude": 28.2303929
     },
     {
         "StoreName": "Ladysmith Superspar",
@@ -915,8 +915,8 @@
         "StoreType": "Spar",
         "Group": "KwaNongoma",
         "Address": "Madadeni, Newcastle",
-        "Longitude": "-27.7548141",
-        "Latitude": 30.0454704
+        "Longitude": "-27.754814",
+        "Latitude": 30.0454703
     },
     {
         "StoreName": "Madalas SaveMor",
@@ -1075,8 +1075,8 @@
         "StoreType": "Spar",
         "Group": "",
         "Address": "11 Hawkins St, Harding, 4680",
-        "Longitude": "-30.5766468",
-        "Latitude": 29.878396
+        "Longitude": "-30.5766467",
+        "Latitude": 29.878395
     },
     {
         "StoreName": "Mega Ixopo Superspar",
@@ -1259,8 +1259,8 @@
         "StoreType": "Spar",
         "Group": "Power Group",
         "Address": "Lot 23, John Ross Highway, Mtubatuba, 3936",
-        "Longitude": "-28.4139716",
-        "Latitude": 32.182748
+        "Longitude": "-28.4139715",
+        "Latitude": 32.182747
     },
     {
         "StoreName": "Myezo Superspar",
@@ -1363,8 +1363,8 @@
         "StoreType": "Spar",
         "Group": "Vele",
         "Address": "81 Rahima Moosa St, Newtown, Johannesburg, 2113",
-        "Longitude": "-26.2023379",
-        "Latitude": 28.0328902
+        "Longitude": "-26.2023378",
+        "Latitude": 28.0328901
     },
     {
         "StoreName": "Ngqamakhwe Spar ",
@@ -1395,24 +1395,24 @@
         "StoreType": "Spar",
         "Group": "",
         "Address": "1 Glaston St, Berea, East London, 5241",
-        "Longitude": "-32.99140678",
-        "Latitude": 27.91081721
+        "Longitude": "-32.99227",
+        "Latitude": 27.9108171
     },
     {
         "StoreName": "Nick's Foods Berea Tops",
         "StoreType": "Spar",
         "Group": "",
         "Address": "1 Glaston St, Berea, East London, 5241",
-        "Longitude": "-32.99140678",
-        "Latitude": 27.91081721
+        "Longitude": "-32.99229",
+        "Latitude": 27.91116
     },
     {
         "StoreName": "Nick's Foods Berlin Spar",
         "StoreType": "Spar",
         "Group": "",
         "Address": "21 Legion St, Berlin General, Ntabozuko, 5660",
-        "Longitude": "-32.8841598",
-        "Latitude": 27.580551
+        "Longitude": "-32.8841597",
+        "Latitude": 27.58055
     },
     {
         "StoreName": "Nick's Foods Berlin Tops ",
@@ -1435,8 +1435,8 @@
         "StoreType": "Spar",
         "Group": "",
         "Address": "Queens Rd, Qonce, 5602",
-        "Longitude": "-32.87418797",
-        "Latitude": 27.40370346
+        "Longitude": "-32.87418796",
+        "Latitude": 27.40370345
     },
     {
         "StoreName": "Nick's Foods EL Superspar",
@@ -1467,8 +1467,8 @@
         "StoreType": "Spar",
         "Group": "",
         "Address": "Gilwell Rd, East London Cbd, East London, 5209",
-        "Longitude": "-33.01898872",
-        "Latitude": 27.90313134
+        "Longitude": "-33.01898871",
+        "Latitude": 27.90313133
     },
     {
         "StoreName": "Nick's Foods KWT Superspar",
@@ -1499,8 +1499,8 @@
         "StoreType": "Spar",
         "Group": "",
         "Address": "Queens Rd, Qonce, 5602",
-        "Longitude": "-32.87284891",
-        "Latitude": 27.40350971
+        "Longitude": "-32.8728489",
+        "Latitude": 27.4035097
     },
     {
         "StoreName": "Nongoma 1 Spar",
@@ -1531,8 +1531,8 @@
         "StoreType": "Spar",
         "Group": "KwaNongoma",
         "Address": "Nongoma, 3950",
-        "Longitude": "-27.90797928",
-        "Latitude": 31.64589036
+        "Longitude": "-27.90797927",
+        "Latitude": 31.64589035
     },
     {
         "StoreName": "Nongoma Spar",
@@ -1587,8 +1587,8 @@
         "StoreType": "Spar",
         "Group": "Supatrade",
         "Address": "R22, Hluhluwe, 3960",
-        "Longitude": "-28.02267033",
-        "Latitude": 32.27924201
+        "Longitude": "-28.02267032",
+        "Latitude": 32.279242
     },
     {
         "StoreName": "Oak Cottage Spar",
@@ -1667,8 +1667,8 @@
         "StoreType": "Spar",
         "Group": "Renckens",
         "Address": "Amajuba St 15 Old Mutual Centre, Renckens, Mandini, 4490",
-        "Longitude": "-29.1430965",
-        "Latitude": 31.4020113
+        "Longitude": "-29.1430964",
+        "Latitude": 31.4020112
     },
     {
         "StoreName": "Richmond Superspar",
