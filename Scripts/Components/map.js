@@ -279,20 +279,26 @@ function searchStore() {
             //only one perfect match or No perfect match
             storeTypeCheck(filteredResults, 0);
 
-        } else {
-            //more than one perfect match or no perfect match
-            filteredResults.forEach((item, index) => {
-
+        }
+        filteredResults.forEach((item, index) => {
+            debugger
+            //group match
+            if (inputSearchStoreValue == filteredResults[index].item.Group.toLowerCase()) {
+                console.log(filteredResults);
+                //more than one perfect match or no perfect match
                 if (filteredResults[index].score == 0) {
                     storeTypeCheck(filteredResults, index);
-                } else if (filteredResults[index].score <= 0.1) {
+                }
+                if (filteredResults[index].score <= 0.1) {
                     storeTypeCheck(filteredResults, index);
                 }
-                featureGroupMarker.addTo(map).on('click', function(e) {
-                    map.flyTo(e.latlng, 16, { duration: 1.5, easeLinearity: 5 });
-                });
-                map.flyToBounds(featureGroupMarker.getBounds(), { padding: [50, 50] }, { maxZoom: 25 });
-            })
-        }
-    };
+
+
+            }
+        })
+        featureGroupMarker.addTo(map).on('click', function(e) {
+            map.flyTo(e.latlng, 16, { duration: 1.5, easeLinearity: 5 });
+        });
+        map.flyToBounds(featureGroupMarker.getBounds(), { padding: [50, 50] }, { maxZoom: 25 });
+    }
 }
