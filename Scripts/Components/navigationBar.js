@@ -12,7 +12,6 @@ function reportWindowSize() {
     widthOutput = window.innerWidth;
 
     if (widthOutput >= 880) {
-        //debugger
         removeChange(menuContainer);
         removeChange(hamburgerNavList);
     }

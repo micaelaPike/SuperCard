@@ -281,7 +281,6 @@ function searchStore() {
 
         }
         filteredResults.forEach((item, index) => {
-            debugger
             //group match
             if (inputSearchStoreValue == filteredResults[index].item.Group.toLowerCase()) {
                 console.log(filteredResults);
