@@ -8,7 +8,7 @@
     text-align: center;
     background-color: #d3d3d3;
     color: #cf000e;
-    width: 80%;
+    width: 50%;
     align-self: center;
     z-index: 9999;
     padding: 1rem;
@@ -31,16 +31,12 @@
 
 .markHeading {
     all: unset;
-    font-size: 2rem;
+    font-size: 3rem;
     font-family: 'bauhaus';
-    font-weight: 800;
+    font-weight: 900;
     padding: 0.5rem 0px 0.5rem 4rem;
     text-align: center;
-}
-
-.markBlack {
-    all: unset;
-    color: black;
+    text-decoration: underline solid #cf000e 3px;
 }
 
 .closeButton {
@@ -270,6 +266,7 @@
 
 @media only screen and (max-width: 880px) {
     .partnersTextContainer {
+        flex-direction: column-reverse;
         width: 100%;
         justify-content: center;
         padding: 1rem 4rem 0rem 4rem;
@@ -304,6 +301,9 @@
     }
     .bmsLogo {
         width: 20%;
+    }
+    .searchError {
+        width: 80%;
     }
 }
 

@@ -63,7 +63,7 @@ const options = {
 
 //Create Icon Objects/////////////////////////////////////////
 let SuperCardIcon = L.icon({
-    iconUrl: "/Assets/Logos/SuperCardFavicon.png",
+    iconUrl: "/Assets/Logos/SuperCard.ico",
     iconSize: [20, 20],
     iconAnchor: [10, 0],
     popUpAnchor: [20, 0]
@@ -228,6 +228,7 @@ displayMarkers(markerLocations);
 
 //Fires when users clicks the button to search for a store
 function searchStore() {
+    debugger
     //clear the old search group
 
     map.removeLayer(featureGroupMarker);
@@ -261,12 +262,13 @@ function searchStore() {
             }
         });
     }
-
-    //If they don't search the store type/////////////////////////////////
-    //No Match
-    if (filteredResults == []) {
+    console.log(filteredResults)
+        //If they don't search the store type/////////////////////////////////
+        //No Match
+    if (filteredResults.length == 0) {
         searchErrorBox.style.setZIndex = "9999";
         searchErrorBox.style.display = "block";
+        return;
     } else {
 
         //If they get a match of some kind

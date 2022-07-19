@@ -83,16 +83,16 @@
         "Group": "Nick's Foods",
         "StoreType": "Spar",
         "Address": "1 Glaston St, Berea, East London, 5241",
-        "Longitude": "-32.99183652496652",
-        "Latitude": "27.91096345767205"
+        "Longitude": "-32.9914077800000",
+        "Latitude": "27.9107172100000"
     },
     {
         "StoreName": "Berea Tops",
         "Group": "Nick's Foods",
         "StoreType": "Spar",
         "Address": "1 Glaston St, Berea, East London, 5241",
-        "Longitude": "-32.99132452496652",
-        "Latitude": "27.91091765767205"
+        "Longitude": "-32.9914067800000",
+        "Latitude": "27.9108172100000"
     },
     {
         "StoreName": "Bergville Spar",
@@ -115,8 +115,8 @@
         "Group": "Nick's Foods",
         "StoreType": "Spar",
         "Address": "21 Legion St, Berlin General, Ntabozuko, 5660",
-        "Longitude": "-32.8841598000000",
-        "Latitude": "27.5805510000000"
+        "Longitude": "-32.8841579800000",
+        "Latitude": "27.5803510000000"
     },
     {
         "StoreName": "Berlin Tops ",
@@ -523,8 +523,8 @@
         "Group": "Nick's Foods",
         "StoreType": "Spar",
         "Address": "Gilwell Rd, East London Cbd, East London, 5209",
-        "Longitude": "-33.0189887200000",
-        "Latitude": "27.9031313400000"
+        "Longitude": "-33.0189877200000",
+        "Latitude": "27.9015329600000"
     },
     {
         "StoreName": "EL Tops 3",
@@ -1019,7 +1019,7 @@
         "Group": "KwaWicks",
         "StoreType": "Spar",
         "Address": "Ugie, 5470",
-        "Longitude": "-31.1653061180287",
+        "Longitude": "-31.1652061180287",
         "Latitude": "28.2303929107321"
     },
     {
@@ -1028,7 +1028,7 @@
         "StoreType": "Spar",
         "Address": "Ugie, 5470",
         "Longitude": "-31.1653061180286",
-        "Latitude": "28.2303929107320"
+        "Latitude": "28.2303329107320"
     },
     {
         "StoreName": "KWT Superspar",
