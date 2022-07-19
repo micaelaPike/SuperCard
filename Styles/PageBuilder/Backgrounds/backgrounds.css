@@ -5,6 +5,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;
+    background-position-x: center;
     width: 100vw;
     min-height: calc(100vh - 4rem);
     height: auto;
@@ -21,3 +22,5 @@
 .redDesktopGradient {
     background-image: url('/Assets/Backgrounds/RedDesktopGradient.png');
 }
+
+@media only screen and (max-width: 880px) {}
