@@ -50,31 +50,32 @@ async function createMarker() {
             type: "json",
         },
     })
-    //witchcraft
-    storeMarker = storeMarker.map(arrItem => {
-
-        arrItem.StoreName = arrItem.StoreName.toLowerCase();
-        arrItem.StoreType = arrItem.StoreType.toLowerCase();
-        arrItem.Address = arrItem.Address.toLowerCase();
-        arrItem.Group = arrItem.Group.toLowerCase();
-        return arrItem;
-    });
     return storeMarker;
 }
 
+
+//witchcraft
+// storeMarker = storeMarker.map(arrItem => {
+
+//     arrItem.StoreName = arrItem.StoreName.toLowerCase();
+//     arrItem.StoreType = arrItem.StoreType.toLowerCase();
+//     arrItem.Address = arrItem.Address.toLowerCase();
+//     arrItem.Group = arrItem.Group.toLowerCase();
+//     return arrItem;
+// });
 //Options for fuse search
 const options = {
     includeScore: true,
     // Search in these properties
     keys: [{
         name: 'Group',
-        weight: 3
+        weight: 0.1
     }, {
         name: 'StoreName',
-        weight: 2
+        weight: 0.2
     }, {
         name: 'Address',
-        weight: 1
+        weight: 0.3
     }],
     shouldSort: true,
     ignoreLocation: true,
@@ -146,6 +147,7 @@ function changeLayer() {
     }
 }
 const markerLocations = await createMarker();
+console.log(markerLocations)
 
 let markerCluster = new L.MarkerClusterGroup({
     iconCreateFunction: function() {
@@ -162,26 +164,23 @@ let markerCluster = new L.MarkerClusterGroup({
 
 function displayMarkers(arrayLocations) {
     // markerCluster = new L.MarkerClusterGroup;
-    arrayLocations.forEach(function(item, index) {
+    arrayLocations.forEach((store, index) => {
         let marker = L.marker([arrayLocations[index].Longitude, arrayLocations[index].Latitude], { icon: SuperCardIcon });
-
-        if (item.StoreType == "spar") {
+        if (store.StoreType == "spar") {
             marker = L.marker([arrayLocations[index].Longitude, arrayLocations[index].Latitude], { icon: sparIcon });
             if (arrayLocations[index].Group == '') {
                 marker.bindPopup(`${ arrayLocations[index].StoreName.bold() } <br> ${ arrayLocations[index].Address }`);
             } else {
                 marker.bindPopup(`${ arrayLocations[index].StoreName.bold() } <br> ${ arrayLocations[index].Group.fontcolor("red") } <br> ${ arrayLocations[index].Address }`);
             }
-
-        } else if (item.StoreType == "bms") {
+        } else if (store.StoreType == "bms") {
             marker = L.marker([arrayLocations[index].Longitude, arrayLocations[index].Latitude], { icon: bmsIcon });
             if (arrayLocations[index].Group == '') {
                 marker.bindPopup(`${ arrayLocations[index].StoreName.bold() } <br> ${ arrayLocations[index].Address }`);
             } else {
                 marker.bindPopup(`${ arrayLocations[index].StoreName.bold() } <br> ${ arrayLocations[index].Group.fontcolor("red") } <br> ${ arrayLocations[index].Address }`);
             }
-
-        } else if (item.StoreType == "mndeni") {
+        } else if (store.StoreType == "mndeni") {
             marker = L.marker([arrayLocations[index].Longitude, arrayLocations[index].Latitude], { icon: mndeniIcon });
             if (arrayLocations[index].Group == '') {
                 marker.bindPopup(`${ arrayLocations[index].StoreName.bold() } <br> ${ arrayLocations[index].Address }`);
@@ -255,8 +254,6 @@ function searchStore() {
 
     //Take out the results if they search the storeType
     completeArr.forEach((arrItem, arrIndex) => {
-
-
         // if (inputSearchStoreValue == storeTypesArr[arrIndex]) {
         //     
         //     filteredResults = completeArr.filter((arrItem) => arrItem.StoreType.includes(inputSearchStoreValue));
@@ -269,14 +266,21 @@ function searchStore() {
         //     });
         // } else 
         // if (inputSearchStoreValue == storeGroupsArr[arrIndex]) {
-        //     console.log(storeGroupsArr)
-        //     console.log(arrItem)
-        //     console.log(arrItem.Group)
         //     filteredResults = completeArr.filter((arrItem) => arrItem.Group.includes(inputSearchStoreValue));
         //     map.removeLayer(markerCluster);
         //     filteredResults.forEach((arrItem, index) => {
         //         addIconAndPopUp(filteredResults, index);
         //     })
+        //     featureGroupMarker.addTo(map).on('click', function(e) {
+        //         map.flyTo(e.latlng, 16, { duration: 1.5, easeLinearity: 5 });
+        //     });
+        // } else
+        let fuseArr = fuse.search(inputSearchStoreValue);
+        console.log(fuseArr);
+        // if (fuseArr[0].score == 0) {
+        //     filteredResults = completeArr.filter((arrItem) => arrItem);
+        //     map.removeLayer(markerCluster);
+        //     addIconAndPopUp(filteredResults, 0);
         //     featureGroupMarker.addTo(map).on('click', function(e) {
         //         map.flyTo(e.latlng, 16, { duration: 1.5, easeLinearity: 5 });
         //     });

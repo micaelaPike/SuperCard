@@ -9,7 +9,7 @@ const cardDesciptionArr = ["This is our most popular card, perfectly replacing t
     "This card offers a retailer the opportunity to upload funds for their staff members and ensure that funds are spent in the store. <br/><br/><a> Super<mark>Card</mark> will make these cards available upon the individual store’s request and will set up the rules of the card as per the store’s instruction.</a>"
 ];
 
-const cardHeadingArr = ["Savings <mark class='cardHeadingRed'>Card</mark>", "Stokvel <mark class='cardHeadingRed'>Card</mark>", "Gift <mark class='cardHeadingRed'>Card</mark>", "Staff <mark class='cardHeadingRed'>Card</mark>"];
+const cardHeadingArr = ["Savings <mark class='cardHeadingRed'>Card</mark>", "Stokvel <mark class='cardHeadingRed'> Card</mark>", "Gift <mark class='cardHeadingRed'> Card</mark>", "Staff <mark class='cardHeadingRed'> Card</mark>"];
 
 let cardHeading = document.querySelector(".cardHeading");
 let cardDescription = document.querySelector(".cardDescription");
