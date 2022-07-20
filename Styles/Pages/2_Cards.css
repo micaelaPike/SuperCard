@@ -3,13 +3,12 @@
         flex-direction: column;
         width: 50%;
         padding-left: 7%;
-        padding-top: 2%;
         font-family: 'Gothic A1', sans-serif;
         font-style: normal;
         font-weight: 600;
         line-height: 2rem;
         font-size: 1.3rem;
-        align-content: center;
+        align-self: center;
         text-align: justify;
     }
     
@@ -33,7 +32,6 @@
     @media only screen and (min-width: 1920px) {
         .cardDescription {
             padding-left: 7%;
-            padding-top: 1%;
             line-height: 2.5rem;
             font-size: 2rem;
         }
