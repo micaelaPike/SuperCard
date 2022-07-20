@@ -146,6 +146,7 @@ function changeLayer() {
     }
 }
 const markerLocations = await createMarker();
+
 let markerCluster = new L.MarkerClusterGroup({
     iconCreateFunction: function() {
         return L.divIcon({
@@ -208,9 +209,6 @@ function addIconAndPopUp(markerArray, index) {
         }
         featureGroupMarker.addLayer(searchMarker);
 
-        // map.flyTo([markerArray[index].item.Longitude, markerArray[index].item.Latitude], 16, { duration: 1.5, easeLinearity: 5 });
-        // return;
-
     } else if (markerArray[index].StoreType == "bms") {
 
         let searchMarker = new L.marker([markerArray[index].Longitude, markerArray[index].Latitude], { icon: bmsIcon });
@@ -220,10 +218,6 @@ function addIconAndPopUp(markerArray, index) {
             searchMarker.bindPopup(`${ markerArray[index].StoreName.bold() } <br> ${ markerArray[index].Group.fontcolor("red") } <br> ${ markerArray[index].Address }`);
         }
         featureGroupMarker.addLayer(searchMarker);
-
-        // map.flyTo([markerArray[index].item.Longitude, markerArray[index].item.Latitude], 16, { duration: 1.5, easeLinearity: 5 });
-        // return;
-
     } else if (markerArray[index].StoreType == "mndeni") {
 
         let searchMarker = new L.marker([markerArray[index].Longitude, markerArray[index].Latitude], { icon: mndeniIcon });
@@ -232,17 +226,10 @@ function addIconAndPopUp(markerArray, index) {
         } else {
             searchMarker.bindPopup(`${ markerArray[index].StoreName.bold() } <br> ${ markerArray[index].Group.fontcolor("red") } <br> ${ markerArray[index].Address }`);
         }
-
-        // map.flyTo([markerArray[index].item.Longitude, markerArray[index].item.Latitude], 16, { duration: 1.5, easeLinearity: 5 });
-        // return;
         featureGroupMarker.addLayer(searchMarker);
-
     }
     featureGroupMarker.addTo(map);
-
-
 }
-
 const fuse = new Fuse(markerLocations, options)
 
 //Displays the original set of markers
@@ -256,7 +243,6 @@ function searchStore() {
 
     featureGroupMarker = new L.FeatureGroup;
 
-
     let inputSearchStoreValue = document.getElementById("searchStore").value;
 
     inputSearchStoreValue = inputSearchStoreValue.toLowerCase();
@@ -264,10 +250,6 @@ function searchStore() {
     //this is the fuzzy search
     // let arr = fuse.search(inputSearchStoreValue);
     let completeArr = markerLocations;
-    console.log(completeArr)
-        // 
-        // let arr = Object.values(result);
-
 
     let filteredResults = [];
 
@@ -275,21 +257,22 @@ function searchStore() {
     completeArr.forEach((arrItem, arrIndex) => {
 
 
-        if (inputSearchStoreValue == storeTypesArr[arrIndex]) {
-            console.log(storeTypesArr)
-            console.log(arrItem)
-            console.log(arrItem.StoreType)
-            filteredResults = completeArr.filter((arrItem) => arrItem.StoreType.includes(inputSearchStoreValue));
-            map.removeLayer(markerCluster);
-            filteredResults.forEach((arrItem, index) => {
-                addIconAndPopUp(filteredResults, index);
-            })
-            featureGroupMarker.addTo(map).on('click', function(e) {
-                map.flyTo(e.latlng, 16, { duration: 1.5, easeLinearity: 5 });
-            });
-        }
-        // else if (inputSearchStoreValue == storeGroupsArr[arrIndex]) {
-        //     filteredResults = completeArr.filter((arrItem) => arrItem.group.includes(inputSearchStoreValue));
+        // if (inputSearchStoreValue == storeTypesArr[arrIndex]) {
+        //     
+        //     filteredResults = completeArr.filter((arrItem) => arrItem.StoreType.includes(inputSearchStoreValue));
+        //     map.removeLayer(markerCluster);
+        //     filteredResults.forEach((arrItem, index) => {
+        //         addIconAndPopUp(filteredResults, index);
+        //     })
+        //     featureGroupMarker.addTo(map).on('click', function(e) {
+        //         map.flyTo(e.latlng, 16, { duration: 1.5, easeLinearity: 5 });
+        //     });
+        // } else 
+        // if (inputSearchStoreValue == storeGroupsArr[arrIndex]) {
+        //     console.log(storeGroupsArr)
+        //     console.log(arrItem)
+        //     console.log(arrItem.Group)
+        //     filteredResults = completeArr.filter((arrItem) => arrItem.Group.includes(inputSearchStoreValue));
         //     map.removeLayer(markerCluster);
         //     filteredResults.forEach((arrItem, index) => {
         //         addIconAndPopUp(filteredResults, index);
