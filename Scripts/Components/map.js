@@ -34,7 +34,6 @@ inputSearchStore.addEventListener('keypress', function(event) {
     }
 });
 
-
 function zoomHome() {
     map.flyTo([-28.0046, 26.7732], 5, { duration: 1.5, easeLinearity: 5 });
     inputSearchStore.value = "";
@@ -56,16 +55,6 @@ async function createMarker() {
     })
     return storeMarker;
 }
-
-// witchcraft
-// storeMarker = storeMarker.map(arrItem => {
-
-//     arrItem.StoreName = arrItem.StoreName.toLowerCase();
-//     arrItem.StoreType = arrItem.StoreType.toLowerCase();
-//     arrItem.Address = arrItem.Address.toLowerCase();
-//     arrItem.Group = arrItem.Group.toLowerCase();
-//     return arrItem;
-// });
 
 //Options for fuse search
 const options = {
@@ -141,17 +130,6 @@ function changeLayer() {
 }
 const markerLocations = await createMarker();
 
-let lowerArr = markerLocations.map(arrItem => {
-    let locationsCopy = {...arrItem };
-
-    locationsCopy.StoreName = arrItem.StoreName.toLowerCase();
-    locationsCopy.StoreType = arrItem.StoreType.toLowerCase();
-    locationsCopy.Address = arrItem.Address.toLowerCase();
-    locationsCopy.Group = arrItem.Group.toLowerCase();
-
-    return locationsCopy;
-})
-
 let markerCluster = new L.MarkerClusterGroup({
     iconCreateFunction: function() {
         return L.divIcon({
@@ -166,10 +144,8 @@ let markerCluster = new L.MarkerClusterGroup({
 });
 
 function displayMarkers(arrayLocations) {
-    // markerCluster = new L.MarkerClusterGroup;
     arrayLocations.forEach((store, index) => {
         let marker = L.marker([arrayLocations[index].Longitude, arrayLocations[index].Latitude], { icon: SuperCardIcon });
-        // console.log(store.StoreType)
         if (store.StoreType == "Spar") {
             marker = L.marker([arrayLocations[index].Longitude, arrayLocations[index].Latitude], { icon: sparIcon });
             if (arrayLocations[index].Group == '') {
@@ -193,17 +169,14 @@ function displayMarkers(arrayLocations) {
             }
         }
         markerCluster.addLayer(marker);
-
         markerCluster.addTo(map).on('click', function(e) {
-            console.log(map.getZoom());
-            map.flyTo(e.latlng, 17, { duration: 1.5, easeLinearity: 5 });
+            map.flyTo(e.latlng, 18, { duration: 1.5, easeLinearity: 5 });
         });
     });
 }
 
 function addIconAndPopUp(markerArray, index) {
-
-    if (markerArray[index].StoreType == "spar") {
+    if (markerArray[index].StoreType.toLowerCase() == "spar") {
 
         let searchMarker = new L.marker([markerArray[index].Longitude, markerArray[index].Latitude], { icon: sparIcon });
         if (markerArray[index].Group == '') {
@@ -212,8 +185,7 @@ function addIconAndPopUp(markerArray, index) {
             searchMarker.bindPopup(`${ markerArray[index].StoreName.bold() } <br> ${ markerArray[index].Group.fontcolor("red") } <br> ${ markerArray[index].Address }`);
         }
         featureGroupMarker.addLayer(searchMarker);
-
-    } else if (markerArray[index].StoreType == "bms") {
+    } else if (markerArray[index].StoreType.toLowerCase() == "bms") {
 
         let searchMarker = new L.marker([markerArray[index].Longitude, markerArray[index].Latitude], { icon: bmsIcon });
         if (markerArray[index].Group == '') {
@@ -222,8 +194,10 @@ function addIconAndPopUp(markerArray, index) {
             searchMarker.bindPopup(`${ markerArray[index].StoreName.bold() } <br> ${ markerArray[index].Group.fontcolor("red") } <br> ${ markerArray[index].Address }`);
         }
         featureGroupMarker.addLayer(searchMarker);
-    } else if (markerArray[index].StoreType == "mndeni") {
-
+    } else if (markerArray[index].StoreType.toLowerCase() == "mndeni") {
+        console.log(
+            markerArray[index].StoreType
+        )
         let searchMarker = new L.marker([markerArray[index].Longitude, markerArray[index].Latitude], { icon: mndeniIcon });
         if (markerArray[index].Group == '') {
             searchMarker.bindPopup(`${ markerArray[index].StoreName.bold() } <br> ${ markerArray[index].Address }`);
@@ -236,8 +210,9 @@ function addIconAndPopUp(markerArray, index) {
 }
 
 function addIconAndPopUpFuse(markerArray, index) {
+    console.log(markerArray);
 
-    if (markerArray[index].item.StoreType == "spar") {
+    if (markerArray[index].item.StoreType.toLowerCase() == "spar") {
 
         let searchMarker = new L.marker([markerArray[index].item.Longitude, markerArray[index].item.Latitude], { icon: sparIcon });
         if (markerArray[index].Group == '') {
@@ -247,7 +222,7 @@ function addIconAndPopUpFuse(markerArray, index) {
         }
         featureGroupMarker.addLayer(searchMarker);
 
-    } else if (markerArray[index].item.StoreType == "bms") {
+    } else if (markerArray[index].item.StoreType.toLowerCase() == "bms") {
 
         let searchMarker = new L.marker([markerArray[index].item.Longitude, markerArray[index].item.Latitude], { icon: bmsIcon });
         if (markerArray[index].item.Group == '') {
@@ -256,7 +231,7 @@ function addIconAndPopUpFuse(markerArray, index) {
             searchMarker.bindPopup(`${ markerArray[index].item.StoreName.bold() } <br> ${ markerArray[index].item.Group.fontcolor("red") } <br> ${ markerArray[index].item.Address }`);
         }
         featureGroupMarker.addLayer(searchMarker);
-    } else if (markerArray[index].item.StoreType == "mndeni") {
+    } else if (markerArray[index].item.StoreType.toLowerCase() == "mndeni") {
 
         let searchMarker = new L.marker([markerArray[index].item.Longitude, markerArray[index].item.Latitude], { icon: mndeniIcon });
         if (markerArray[index].Group == '') {
@@ -268,15 +243,20 @@ function addIconAndPopUpFuse(markerArray, index) {
     }
     featureGroupMarker.addTo(map);
 }
-const fuse = new Fuse(lowerArr, options)
+const fuse = new Fuse(markerLocations, options)
 
 //Displays the original set of markers
 displayMarkers(markerLocations);
 
 //Fires when users clicks the button to search for a store
 function searchStore() {
+
     let inputSearchStoreValue = document.getElementById("searchStore").value;
     inputSearchStoreValue = inputSearchStoreValue.toLowerCase();
+    if (inputSearchStoreValue == undefined) {
+        inputSearchStoreValue = "";
+    }
+
 
     if (!inputSearchStoreValue == "") {
         //clear the old search group
@@ -286,61 +266,60 @@ function searchStore() {
 
         //this is the fuzzy search
         // let arr = fuse.search(inputSearchStoreValue);
-        let completeArr = lowerArr;
+        //let completeArr = lowerArr;
 
         let filteredResults = [];
 
         let fuseArr = fuse.search(inputSearchStoreValue);
         //Take out the results if they search the storeType
-        debugger
-        completeArr.forEach((arrItem, arrIndex) => {
-            if (fuseArr.length == 0) {
-                inputSearchStore.value = "";
-                searchErrorBox.style.setZIndex = "9999";
-                searchErrorBox.style.display = "block";
-                return;
-            } else
+        if (fuseArr.length == 0) {
+            inputSearchStore.value = "";
+            searchErrorBox.style.setZIndex = "9999";
+            searchErrorBox.style.display = "block";
+            return;
+        }
+        markerLocations.forEach((arrItem, arrIndex) => {
             if (inputSearchStoreValue == storeTypesArr[arrIndex]) {
-                filteredResults = completeArr.filter((arrItem) => arrItem.StoreType.includes(inputSearchStoreValue));
+                filteredResults = markerLocations.filter((arrItem) => arrItem.StoreType.toLowerCase().includes(inputSearchStoreValue));
                 map.removeLayer(markerCluster);
                 filteredResults.forEach((arrItem, index) => {
                     addIconAndPopUp(filteredResults, index);
                 })
                 featureGroupMarker.addTo(map).on('click', function(e) {
-                    map.flyTo(e.latlng, 17, { duration: 1.5, easeLinearity: 5 });
+                    map.flyTo(e.latlng, 18, { duration: 1.5, easeLinearity: 5 });
                 });
             } else
             if (inputSearchStoreValue == storeGroupsArr[arrIndex]) {
-                filteredResults = completeArr.filter((arrItem) => arrItem.Group.includes(inputSearchStoreValue));
+                filteredResults = markerLocations.filter((arrItem) => arrItem.Group.toLowerCase().includes(inputSearchStoreValue));
                 map.removeLayer(markerCluster);
                 filteredResults.forEach((arrItem, index) => {
                     addIconAndPopUp(filteredResults, index);
                 })
                 featureGroupMarker.addTo(map).on('click', function(e) {
-                    map.flyTo(e.latlng, 17, { duration: 1.5, easeLinearity: 5 });
+                    map.flyTo(e.latlng, 18, { duration: 1.5, easeLinearity: 5 });
                 });
-            } else
-            if (fuseArr[0].score == 0) {
-                map.removeLayer(markerCluster);
-                let fuseObj = Object.values(fuseArr);
-                addIconAndPopUpFuse(fuseObj, 0);
-                featureGroupMarker.addTo(map).on('click', function(e) {
-                    map.flyTo(e.latlng, 17, { duration: 1.5, easeLinearity: 5 });
-                });
-            } else {
-                map.removeLayer(markerCluster);
-                let fuseObj = Object.values(fuseArr);
-                fuseObj.forEach((arrItem, index) => {
-                    addIconAndPopUp(fuseObj, index);
-                    featureGroupMarker.addTo(map).on('click', function(e) {
-                        map.flyTo(e.latlng, 17, { duration: 1.5, easeLinearity: 5 });
-                    })
-
-                })
             }
         })
+        if (fuseArr[0].score == 0) {
+            map.removeLayer(markerCluster);
+            let fuseObj = Object.values(fuseArr);
+            addIconAndPopUpFuse(fuseObj, 0);
+            featureGroupMarker.addTo(map).on('click', function(e) {
+                map.flyTo(e.latlng, 18, { duration: 1.5, easeLinearity: 5 });
+            });
+        } else {
+            map.removeLayer(markerCluster);
+            let fuseObj = Object.values(fuseArr);
+            fuseObj.forEach((arrItem, index) => {
+                addIconAndPopUpFuse(fuseObj, index);
+                featureGroupMarker.addTo(map).on('click', function(e) {
+                    map.flyTo(e.latlng, 18, { duration: 1.5, easeLinearity: 5 });
+                })
+
+            })
+        }
         map.flyToBounds(featureGroupMarker.getBounds(), { padding: [15, 15] }, {
-            maxZoom: 20
+            maxZoom: 18
         });
     }
 }
