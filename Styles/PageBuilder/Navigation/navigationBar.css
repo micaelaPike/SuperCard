@@ -2,7 +2,7 @@
           all: unset;
           display: flex;
           list-style-type: none;
-          gap: 3rem;
+          gap: 1rem;
           font-size: 1.25rem;
           font-family: 'Gothic A1', sans-serif;
           font-weight: 800;
@@ -28,6 +28,10 @@
           -moz-transition: all .2s;
           -ms-transition: all .2s;
           -o-transition: all .2s;
+      }
+      
+      .navList li {
+          padding: 1rem;
       }
       
       .navListItem.active {
@@ -141,10 +145,9 @@
           justify-content: space-between;
       }
       
-      .hamburgerNavList {
+      .navList.mobile {
           all: unset;
           width: 100vw;
-          display: none;
           position: fixed;
           flex-direction: column;
           background-color: white;
@@ -159,16 +162,12 @@
           box-shadow: 0px 10px 11px 0px rgba(0, 0, 0, 0.5);
       }
       
-      .hamburgerNavList li {
-          padding: 1rem;
-      }
-      
-      .hamburgerNavList a {
+      .navList.mobile a {
           all: unset;
           text-decoration: none;
       }
       
-      .hamburgerNavList.change {
+      .navList.mobile.change {
           display: flex;
           z-index: 9990;
       }
