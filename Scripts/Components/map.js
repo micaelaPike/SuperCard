@@ -97,7 +97,7 @@ let sparIcon = L.icon({
     //Map View on Load
 let map = L.map('map', {
     minZoom: 0,
-    maxZoom: 20
+    maxZoom: 15
 });
 map.setView([-28.0046, 26.7732], 5);
 
@@ -170,7 +170,7 @@ function displayMarkers(arrayLocations) {
         }
         markerCluster.addLayer(marker);
         markerCluster.addTo(map).on('click', function(e) {
-            map.flyTo(e.latlng, 18, { duration: 1.5, easeLinearity: 5 });
+            map.flyTo(e.latlng, 15, { duration: 1.5, easeLinearity: 5 });
         });
     });
 }
@@ -195,9 +195,7 @@ function addIconAndPopUp(markerArray, index) {
         }
         featureGroupMarker.addLayer(searchMarker);
     } else if (markerArray[index].StoreType.toLowerCase() == "mndeni") {
-        console.log(
-            markerArray[index].StoreType
-        )
+
         let searchMarker = new L.marker([markerArray[index].Longitude, markerArray[index].Latitude], { icon: mndeniIcon });
         if (markerArray[index].Group == '') {
             searchMarker.bindPopup(`${ markerArray[index].StoreName.bold() } <br> ${ markerArray[index].Address }`);
@@ -210,7 +208,6 @@ function addIconAndPopUp(markerArray, index) {
 }
 
 function addIconAndPopUpFuse(markerArray, index) {
-    console.log(markerArray);
 
     if (markerArray[index].item.StoreType.toLowerCase() == "spar") {
 
@@ -286,7 +283,7 @@ function searchStore() {
                     addIconAndPopUp(filteredResults, index);
                 })
                 featureGroupMarker.addTo(map).on('click', function(e) {
-                    map.flyTo(e.latlng, 18, { duration: 1.5, easeLinearity: 5 });
+                    map.flyTo(e.latlng, 15, { duration: 1.5, easeLinearity: 5 });
                 });
             } else
             if (inputSearchStoreValue == storeGroupsArr[arrIndex]) {
@@ -296,7 +293,7 @@ function searchStore() {
                     addIconAndPopUp(filteredResults, index);
                 })
                 featureGroupMarker.addTo(map).on('click', function(e) {
-                    map.flyTo(e.latlng, 18, { duration: 1.5, easeLinearity: 5 });
+                    map.flyTo(e.latlng, 15, { duration: 1.5, easeLinearity: 5 });
                 });
             }
         })
@@ -305,7 +302,7 @@ function searchStore() {
             let fuseObj = Object.values(fuseArr);
             addIconAndPopUpFuse(fuseObj, 0);
             featureGroupMarker.addTo(map).on('click', function(e) {
-                map.flyTo(e.latlng, 18, { duration: 1.5, easeLinearity: 5 });
+                map.flyTo(e.latlng, 15, { duration: 1.5, easeLinearity: 5 });
             });
         } else {
             map.removeLayer(markerCluster);
@@ -313,13 +310,13 @@ function searchStore() {
             fuseObj.forEach((arrItem, index) => {
                 addIconAndPopUpFuse(fuseObj, index);
                 featureGroupMarker.addTo(map).on('click', function(e) {
-                    map.flyTo(e.latlng, 18, { duration: 1.5, easeLinearity: 5 });
+                    map.flyTo(e.latlng, 15, { duration: 1.5, easeLinearity: 5 });
                 })
 
             })
         }
         map.flyToBounds(featureGroupMarker.getBounds(), { padding: [15, 15] }, {
-            maxZoom: 18
+            maxZoom: 15
         });
     }
 }
