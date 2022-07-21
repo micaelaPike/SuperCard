@@ -4,7 +4,7 @@ let snackBarImage = document.querySelector(".snackBarImage");
 let snackbarAlert = document.querySelector(".snackbarAlert");
 
 let closeButton = document.querySelector(".closeButton");
-let arrMessage = ["/Assets/Images/success-tick.png", "/Assets/Images/failure-cross.png", "/Assets/Images/sending.png"]
+let snackBarImgArr = ["/Assets/Images/success-tick.png", "/Assets/Images/failure-cross.png", "/Assets/Images/sending.png"]
 const inputs = document.querySelectorAll(".formControl");
 let number = document.querySelector(".number");
 let email = document.querySelector(".email");
@@ -12,26 +12,24 @@ let email = document.querySelector(".email");
 
 function successSnackBar() {
     closeButton.style.display = "flex";
-
     snackbarAlert.innerHTML = "Message sent successfully!"
     snackbar.style.display = "flex";
     snackbar.style.borderColor = "#008000";
     snackbar.style.borderStyle = "solid";
     snackbar.style.borderWidth = "3px";
-    snackBarImage.src = arrMessage[0];
+    snackBarImage.src = snackBarImgArr[0];
 }
 
 function failSnackBar(message) {
     closeButton.style.display = "flex";
-
     snackbarAlert.innerHTML = message;
-    failure.style.display = "flex";
+    snackbar.style.display = "flex";
     snackbar.style.backgroundColor = "#aaa";
     snackbar.style.color = "black";
-    snackbar.style.borderColor = "#FFFFFF";
+    snackbar.style.borderColor = "#cf000e";
     snackbar.style.borderStyle = "solid";
     snackbar.style.borderWidth = "3px";
-    snackBarImage.src = arrMessage[1];
+    snackBarImage.src = snackBarImgArr[1];
 }
 
 function sendingSnackBar() {
@@ -43,7 +41,7 @@ function sendingSnackBar() {
     snackbar.style.borderColor = "#3f48cc";
     snackbar.style.borderStyle = "solid";
     snackbar.style.borderWidth = "3px";
-    snackBarImage.src = arrMessage[2];
+    snackBarImage.src = snackBarImgArr[2];
     snackBarImage.style.width = "100px";
 }
 
@@ -91,7 +89,7 @@ window.onload = function() {
                     successSnackBar();
                 }, function(error) {
                     console.log('FAILED...', error);
-                    failSnackBar("Message failed to send.<br>Contact Customer Care.");
+                    failSnackBar("Message failed to send.<br> Error: " + error.status + " <br>Contact Customer Care.");
                 })
             inputs.forEach(input => {
                 input.value = "";

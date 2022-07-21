@@ -9,13 +9,17 @@ const cardDesciptionArr = ["This is our most popular card, perfectly replacing t
     "This card offers a retailer the opportunity to upload funds for their staff members and ensure that funds are spent in the store. <br/><br/><a> Super<mark>Card</mark> will make these cards available upon the individual store’s request and will set up the rules of the card as per the store’s instruction.</a>"
 ];
 
-const cardHeadingArr = ["Savings <mark class='cardHeadingRed'>Card</mark>", "Stokvel <mark class='cardHeadingRed'> Card</mark>", "Gift <mark class='cardHeadingRed'> Card</mark>", "Staff <mark class='cardHeadingRed'> Card</mark>"];
+const cardHeadingArr = ["Savings", "Stokvel", "Gift", "Staff"];
 
-let cardHeading = document.querySelector(".cardHeading");
+let cardHeadingType = document.querySelector(".type");
 let cardDescription = document.querySelector(".cardDescription");
 let carouselNext = document.querySelector('.carouselNext');
 
 
+function cardData(index) {
+    cardHeadingType.innerHTML = cardHeadingArr[index] + "&nbsp";
+    cardDescription.innerHTML = cardDesciptionArr[index];
+}
 
 
 carouselNext.addEventListener("click", nextButtonClick);
@@ -29,52 +33,44 @@ function changeContent(cardIndex) {
     cardCarousel.src = cards[cardIndex];
     changeSelectedBtn(cardIndex);
 
-    cardDescription.innerHTML = cardDesciptionArr[cardIndex];
-    cardHeading.innerHTML = cardHeadingArr[cardIndex];
+
+    cardData(cardIndex);
 
     clearInterval(myInterval);
 }
 
 function nextButtonClick() {
-    if (cardCarousel.classList.contains("animation")) {
-        cardCarousel.classList.remove("animation");
-    }
 
-    let finalItemIndex = carouselSelect.length;
-    console.log(finalItemIndex)
 
     if (carouselSelect[carouselSelect.length - 1].classList.contains("selected")) {
         cardCarousel.src = cards[0];
         changeSelectedBtn(0);
-        cardDescription.innerHTML = cardDesciptionArr[0];
-        cardHeading.innerHTML = cardHeadingArr[0];
+        cardData(0);
         return;
     }
-
     for (let z = 0; z < (carouselSelect.length); z++) {
-
         if (carouselSelect[z].classList.contains("selected")) {
             cardCarousel.src = cards[z + 1];
             changeSelectedBtn((z + 1));
-            cardDescription.innerHTML = cardDesciptionArr[z + 1];
-            cardHeading.innerHTML = cardHeadingArr[z + 1];
+            cardData(z + 1);
             return;
         }
-
     }
-
-
-    // setCounter();
-
 }
 
 function selectbtnAddClickCards() {
     carouselSelect.forEach(
         function(item, index) {
             item.addEventListener("click", function() { changeContent(index) });
+            cardData(index);
+
         });
 }
 document.addEventListener("DOMContentLoaded", function() {
-    cardDescription.innerHTML = cardDesciptionArr[0];
+    if (cardCarousel.classList.contains("animation")) {
+        cardCarousel.classList.remove("animation");
+    }
     selectbtnAddClickCards();
+    cardData(0);
+
 });

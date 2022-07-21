@@ -20,6 +20,10 @@
         justify-content: center;
     }
     
+    .markRed {
+        color: #cf000e;
+    }
+    
     .carouselNext {
         width: 2.8rem;
         height: 2.8rem;

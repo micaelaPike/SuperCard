@@ -11,7 +11,7 @@ export let carouselCounter = 0;
 
 export function setCounter() {
     carouselCounter++;
-    if (carouselCounter === (cards.length)) {
+    if (carouselCounter == (cards.length)) {
         return carouselCounter = 0;
     }
 }
@@ -19,7 +19,7 @@ export function setCounter() {
 
 let intervalId = 0;
 
-if (window.location.pathname === "/index.html" || window.location.pathname === "/") {
+if (window.location.pathname == "/index.html" || window.location.pathname == "/") {
     intervalId = myInterval();
 
 }
@@ -39,9 +39,6 @@ export function changeStateTimer() {
 }
 
 export function changeSelectedBtn(selectedBtnIndex) {
-    // debugger
-
-
     for (let i = 0; i < (carouselSelect.length); i++) {
         if (carouselSelect[i].classList.contains("selected")) {
             carouselSelect[i].classList.remove("selected");
@@ -51,8 +48,7 @@ export function changeSelectedBtn(selectedBtnIndex) {
 }
 
 function changeState(btnIndex) {
-    //debugger;
-    if (window.location.pathname === "/index.html" || window.location.pathname === "/") {
+    if (window.location.pathname == "/index.html" || window.location.pathname == "/") {
         clearInterval(intervalId);
     }
     cardCarousel.classList.remove("animation");
@@ -66,7 +62,7 @@ function changeState(btnIndex) {
     cardCarousel.src = cards[btnIndex];
     carouselCounter = btnIndex;
     changeSelectedBtn(btnIndex);
-    if (window.location.pathname === "/index.html") {
+    if (window.location.pathname == "/index.html" || window.location.pathname == "/") {
         intervalId = myInterval();
     }
 }
