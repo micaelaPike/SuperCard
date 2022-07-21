@@ -48,10 +48,8 @@ function sendingSnackBar() {
 function validateNumber(inputNumber) {
     let phoneNum = /^\+?([0-9]{2})\)?[-. ]?([0-9]{4})[-. ]?([0-9]{4})$/;
     if (inputNumber.value.match(phoneNum)) {
-        console.log("valid number")
         return true;
     } else {
-        console.log("invalid number")
         return false;
     }
 }
@@ -61,10 +59,8 @@ function validateEmail(input) {
     let validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
     if (input.value.match(validRegex)) {
-        console.log("valid email")
         return true;
     } else {
-        console.log("invalid email")
         return false;
 
     }

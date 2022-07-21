@@ -22,5 +22,3 @@
 .redDesktopGradient {
     background-image: url('/Assets/Backgrounds/RedDesktopGradient.png');
 }
-
-@media only screen and (max-width: 880px) {}
