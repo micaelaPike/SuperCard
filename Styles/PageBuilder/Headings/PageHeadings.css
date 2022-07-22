@@ -1,84 +1,81 @@
-    .pageHeading {
-        font-size: 3.5rem;
-        font-family: 'bauhaus';
-        font-weight: 800;
-        width: 50vw;
-        text-align: center;
-        padding: 1.2rem 0rem 0rem 8%;
-    }
-    
-    .pageHeading p {
-        color: black;
-    }
-    
-    .contact.pageHeading {
-        width: 100%;
-        padding-left: 0;
-    }
-    
-    mark {
-        all: unset;
-        color: #cf000e;
-    }
-    
-    @media only screen and (min-width: 1920px) {
-        .pageHeading {
-            font-size: 4rem;
-        }
-    }
-    
-    @media only screen and (max-width: 1335px) {
-        .pageHeading {
-            font-size: 3rem;
-        }
-    }
-    
-    @media only screen and (max-width: 1000px) {
-        .pageHeading {
-            font-size: 2.5rem;
-        }
-        .contact.pageHeading {
-            width: 100vw;
-            font-size: 4rem;
-        }
-    }
-    
-    @media only screen and (max-width: 880px) {
-        .contact.pageHeading {
-            width: 100vw;
-            font-size: 3.5rem;
-        }
-        .pageHeading {
-            width: 100vw;
-            padding: 0;
-            margin: 0;
-            font-size: 3.5rem;
-        }
-    }
-    
-    @media only screen and (max-width: 450px) {
-        .contact.pageHeading {
-            font-size: 2.5rem;
-        }
-        .pageHeading {
-            font-size: 2.5rem;
-        }
-    }
-    
-    @media only screen and (max-width: 376px) {
-        .contact.pageHeading {
-            font-size: 2rem;
-        }
-        .pageHeading {
-            font-size: 2rem;
-        }
-    }
-    
-    @media only screen and (max-width: 320px) {
-        .contact.pageHeading {
-            font-size: 1.75rem;
-        }
-        .pageHeading {
-            font-size: 1.75rem;
-        }
-    }
+          #pageHeadingID {
+              font-size: 3.5rem;
+              font-family: 'Bauhaus';
+              font-weight: 800;
+              width: 50vw;
+              text-align: center;
+              padding: 1.2rem 0rem 0rem 8%;
+          }
+          
+          .pageHeadingClass p {
+              color: black;
+          }
+          
+          .contact.pageHeadingClass {
+              width: 100%;
+              padding-left: 0;
+          }
+          
+          mark {
+              all: unset;
+              color: #cf000e;
+          }
+          
+          @media only screen and (min-width: 1920px) {
+              #pageHeadingID {
+                  font-size: 4rem;
+              }
+          }
+          
+          @media only screen and (max-width: 1335px) {
+              #pageHeadingID {
+                  font-size: 3rem;
+              }
+          }
+          
+          @media only screen and (max-width: 1000px) {
+              #pageHeadingID {
+                  font-size: 2.5rem;
+              }
+              .contact.pageHeadingClass {
+                  width: 100vw;
+                  font-size: 4rem;
+              }
+          }
+          
+          @media only screen and (max-width: 880px) {
+              .contact.pageHeadingClass {
+                  width: 100vw;
+                  font-size: 3.5rem;
+              }
+              #pageHeadingID {
+                  font-size: 3.5rem;
+              }
+          }
+          
+          @media only screen and (max-width: 450px) {
+              .contact.pageHeadingClass {
+                  font-size: 2.5rem;
+              }
+              #pageHeadingID {
+                  font-size: 2.5rem;
+              }
+          }
+          
+          @media only screen and (max-width: 376px) {
+              .contact.pageHeadingClass {
+                  font-size: 2rem;
+              }
+              #pageHeadingID {
+                  font-size: 2rem;
+              }
+          }
+          
+          @media only screen and (max-width: 320px) {
+              .contact.pageHeadingClass {
+                  font-size: 1.75rem;
+              }
+              #pageHeadingID {
+                  font-size: 1.75rem;
+              }
+          }

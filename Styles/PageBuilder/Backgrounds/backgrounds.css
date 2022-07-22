@@ -12,13 +12,13 @@
 }
 
 .landingPage {
-    background-image: url('/Assets/Backgrounds/LandingPage.png');
+    background-image: url('/Assets/Backgrounds/LandingPage.webp');
 }
 
 .steelDesktopGradient {
-    background-image: url('/Assets/Backgrounds/SteelDesktopGradient.png');
+    background-image: url('/Assets/Backgrounds/SteelDesktopGradient.webp');
 }
 
 .redDesktopGradient {
-    background-image: url('/Assets/Backgrounds/RedDesktopGradient.png');
+    background-image: url('/Assets/Backgrounds/RedDesktopGradient.webp');
 }
