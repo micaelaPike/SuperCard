@@ -9,15 +9,15 @@
         @import "../Pages/3_Partners.css";
         @import "../Pages/4_Register.css";
         @import "../Pages/5_Contact.css";
-        @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@600;700;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap');
         @font-face {
-            src: url('Assets/FontsBauhaus-Font-Family/BauhausBold.ttf');
+            src: url('/Assets/Fonts/Bauhaus-Font-Family/BauhausRegular.ttf'), url('Assets/FontsBauhaus-Font-Family/BauhausBold.ttf'), url('Assets/Fonts/Bauhaus-Font-Family/BauhausBoldItalic.ttf'), url('Assets/Fonts/Bauhaus-Font-Family/BauhausItalic.ttf'), url('Assets/Fonts/Bauhaus-Font-Family/BAUHHL.ttf'), url('Assets/Fonts/Bauhaus-Font-Family/BROOKH2.ttf');
             font-family: 'Bauhaus';
         }
         
         * {
             font-weight: 600;
-            font-family: 'Gothic-A1', sans-serif;
+            font-family: 'Gothic A1', sans-serif;
         }
         
         .scLogoIndex {
@@ -74,7 +74,8 @@
             width: 43%;
         }
         
-        .btnRegister {
+        .btnRegister,
+        .btnServices {
             width: 100%;
             font-size: 1.5rem;
             background-color: white;
@@ -88,20 +89,9 @@
         }
         
         .btnServices {
-            width: 100%;
-            font-size: 1.5rem;
-            font-weight: 600;
-            font-family: 'Gothic-A1', sans-serif;
             background-color: #cf000e;
             color: white;
             border-color: #cf000e;
-            border-radius: 25px;
-            padding: 1rem 2.25rem;
-            box-shadow: 8px 5px 5px 0px rgba(0, 0, 0, 0.75);
-            justify-content: right;
-            margin-right: auto;
-            margin-left: auto;
-            cursor: pointer;
         }
         
         .infoContainer p {
@@ -109,7 +99,6 @@
             width: 100%;
             font-size: 2rem;
             font-family: 'Bauhaus';
-            font-weight: 600;
             align-items: center;
             justify-content: center;
         }

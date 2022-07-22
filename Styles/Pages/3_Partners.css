@@ -14,13 +14,7 @@
     padding: 1rem;
     border: #cf000e solid 3px;
     border-radius: 10px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    font-family: 'Gothic A1', sans-serif;
     font-size: 1.8rem;
-    font-weight: 650;
 }
 
 .dialogLink {
@@ -33,7 +27,7 @@
     all: unset;
     font-size: 3rem;
     font-family: 'bauhaus';
-    font-weight: 900;
+    font-weight: 800;
     padding: 0.5rem 0px 0.5rem 4rem;
     text-align: center;
     text-decoration: underline solid #cf000e 3px;
@@ -85,8 +79,6 @@
 
 .partnersTextContainer p {
     align-items: center;
-    font-family: 'Gothic A1', sans-serif;
-    font-weight: 600;
     font-size: 1.3rem;
     line-height: 2rem;
     padding: 0 1.5rem;
@@ -101,14 +93,11 @@
 
 .lblSearchStore {
     font-size: 2rem;
-    font-weight: 600;
     font-family: 'Bauhaus';
 }
 
 .inputSearchStore {
     font-size: 1.75rem;
-    font-weight: 500;
-    font-family: 'Gothic-A1', sans-serif;
     width: 60%;
     padding: 0.2rem 0.7rem;
     margin: 1rem;
@@ -127,8 +116,6 @@
     padding: 0.8rem 1.2rem;
     margin-top: 0.5rem;
     color: #cf000e;
-    font-family: 'Gothic A1', sans-serif;
-    font-weight: 800;
     font-size: 1.25rem;
     background-color: white;
     border-color: white;

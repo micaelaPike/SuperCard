@@ -16,19 +16,11 @@
     flex-direction: column;
     width: 50%;
     align-items: center;
-    font-family: 'Gothic A1', sans-serif;
-    font-weight: 600;
     font-size: 1.3rem;
     line-height: 2rem;
     padding: 0rem 5% 1rem 1rem;
     align-content: center;
     text-align: justify;
-}
-
-.servicesParagraph {
-    display: flex;
-    width: 100%;
-    padding: 1rem;
 }
 
 .servicesListContainer {
@@ -59,7 +51,6 @@
     display: flex;
     width: 50%;
     align-items: center;
-    font-family: 'Gothic A1', sans-serif;
     font-weight: 800;
     font-size: 1.6rem;
     background-color: aliceblue;

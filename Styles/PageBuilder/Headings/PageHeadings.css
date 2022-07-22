@@ -1,81 +1,81 @@
-          #pageHeadingID {
-              font-size: 3.5rem;
-              font-family: 'Bauhaus';
-              font-weight: 800;
-              width: 50vw;
-              text-align: center;
-              padding: 1.2rem 0rem 0rem 8%;
-          }
-          
-          .pageHeadingClass p {
-              color: black;
-          }
-          
-          .contact.pageHeadingClass {
-              width: 100%;
-              padding-left: 0;
-          }
-          
-          mark {
-              all: unset;
-              color: #cf000e;
-          }
-          
-          @media only screen and (min-width: 1920px) {
-              #pageHeadingID {
-                  font-size: 4rem;
-              }
-          }
-          
-          @media only screen and (max-width: 1335px) {
-              #pageHeadingID {
-                  font-size: 3rem;
-              }
-          }
-          
-          @media only screen and (max-width: 1000px) {
-              #pageHeadingID {
-                  font-size: 2.5rem;
-              }
-              .contact.pageHeadingClass {
-                  width: 100vw;
-                  font-size: 4rem;
-              }
-          }
-          
-          @media only screen and (max-width: 880px) {
-              .contact.pageHeadingClass {
-                  width: 100vw;
-                  font-size: 3.5rem;
-              }
-              #pageHeadingID {
-                  font-size: 3.5rem;
-              }
-          }
-          
-          @media only screen and (max-width: 450px) {
-              .contact.pageHeadingClass {
-                  font-size: 2.5rem;
-              }
-              #pageHeadingID {
-                  font-size: 2.5rem;
-              }
-          }
-          
-          @media only screen and (max-width: 376px) {
-              .contact.pageHeadingClass {
-                  font-size: 2rem;
-              }
-              #pageHeadingID {
-                  font-size: 2rem;
-              }
-          }
-          
-          @media only screen and (max-width: 320px) {
-              .contact.pageHeadingClass {
-                  font-size: 1.75rem;
-              }
-              #pageHeadingID {
-                  font-size: 1.75rem;
-              }
-          }
+#pageHeading {
+    width: 50vw;
+    text-align: center;
+    padding: 1.2rem 0rem 0rem 8%;
+}
+
+#pageHeading p {
+    font-size: 3.5rem;
+    font-family: 'Bauhaus';
+    font-weight: 800;
+    color: black;
+}
+
+#pageHeading.contact {
+    width: 100%;
+    padding-left: 0;
+}
+
+mark {
+    all: unset;
+    color: #cf000e;
+}
+
+@media only screen and (min-width: 1920px) {
+    #pageHeadingID {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width: 1335px) {
+    #pageHeadingID {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #pageHeadingID {
+        font-size: 2.5rem;
+    }
+    #pageHeading.contact {
+        width: 100vw;
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    #pageHeading.contact {
+        width: 100vw;
+        font-size: 3.5rem;
+    }
+    #pageHeadingID {
+        font-size: 3.5rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #pageHeading.contact {
+        font-size: 2.5rem;
+    }
+    #pageHeadingID {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    #pageHeading.contact {
+        font-size: 2rem;
+    }
+    #pageHeadingID {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #pageHeading.contact {
+        font-size: 1.75rem;
+    }
+    #pageHeadingID {
+        font-size: 1.75rem;
+    }
+}

@@ -14,9 +14,7 @@
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
-    font-family: 'Gothic A1', sans-serif;
     font-size: 1.3rem;
-    font-weight: 600;
     z-index: 9999;
 }
 
@@ -41,8 +39,6 @@
     background-color: black;
     border-radius: 15px;
     width: 100%;
-    font-family: 'Gothic A1', sans-serif;
-    font-weight: 600;
     font-size: 1.3rem;
     line-height: 0.8rem;
     padding: 1rem;
@@ -56,10 +52,6 @@
     padding-bottom: 1.5rem;
 }
 
-.contactHeading mark {
-    padding: 0rem 1rem;
-}
-
 .contactFormContainer {
     display: flex;
     flex-direction: column;
@@ -70,8 +62,8 @@
     display: flex;
     align-self: center;
     font-family: 'Bauhaus';
+    font-weight: 800;
     font-size: 2rem;
-    font-weight: 700;
     padding: 0.5rem 0;
 }
 
@@ -96,8 +88,6 @@
     height: min-content;
     margin: 0 auto;
     padding: 0.2rem 1.25rem;
-    font-family: 'Gothic A1', sans-serif;
-    font-weight: 600;
     font-size: 1.3rem;
     color: gray;
     border-color: black;
@@ -129,8 +119,6 @@
 .formLabel {
     width: min-content;
     height: min-content;
-    font-family: 'Gothic A1', sans-serif;
-    font-weight: 600;
     font-size: 1.5rem;
     margin-left: 2rem;
     color: #aaa;
@@ -203,8 +191,6 @@
     margin-bottom: 2rem;
     padding: 0.5rem 0.1rem;
     color: white;
-    font-family: 'Gothic A1', sans-serif;
-    font-weight: 600;
     font-size: 1.25rem;
     background-color: #cf000e;
     border-color: #cf000e;
