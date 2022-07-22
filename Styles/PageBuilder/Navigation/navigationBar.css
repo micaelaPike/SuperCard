@@ -1,223 +1,224 @@
-      .navList {
-          all: unset;
-          display: flex;
-          list-style-type: none;
-          gap: 1rem;
-          font-size: 1.25rem;
-          font-family: 'Gothic A1', sans-serif;
-          font-weight: 800;
-          padding: 0.5rem 4rem;
-          border-radius: 15px;
-          -webkit-border-radius: 15px;
-          -moz-border-radius: 15px;
-          -ms-border-radius: 15px;
-          -o-border-radius: 15px;
-      }
-      
-      .navList a {
-          all: unset;
-          text-decoration: none;
-      }
-      
-      .navListItem {
-          all: unset;
-          color: black;
-          text-decoration: none;
-          transition: all .2s;
-          -webkit-transition: all .2s;
-          -moz-transition: all .2s;
-          -ms-transition: all .2s;
-          -o-transition: all .2s;
-      }
-      
-      .navList li {
-          padding: 1rem;
-      }
-      
-      .navListItem.active {
-          color: red;
-      }
-      
-      .navListItem:hover {
-          cursor: pointer;
-          transform: scale(1.5, 1.5);
-          -webkit-transform: scale(1.5, 1.5);
-          -moz-transform: scale(1.5, 1.5);
-          -ms-transform: scale(1.5, 1.5);
-          -o-transform: scale(1.5, 1.5);
-      }
-      
-      .navBar1,
-      .navBar2 {
-          all: unset;
-          width: 100vw;
-          height: 4rem;
-          display: flex;
-          position: -webkit-sticky;
-          position: sticky;
-          top: 0;
-          align-items: center;
-          justify-content: center;
-          background-color: white;
-          z-index: 9990;
-          box-shadow: 0px 10px 11px 0px rgba(0, 0, 0, 0.5);
-          -webkit-box-shadow: 0px 10px 11px 0px rgba(0, 0, 0, 0.5);
-          -moz-box-shadow: 0px 10px 11px 0px rgba(0, 0, 0, 0.5);
-      }
-      
-      .navBar2 {
-          justify-content: right;
-      }
-      
-      .navLogo {
-          all: unset;
-          width: 13rem;
-          display: flex;
-          align-items: center;
-          margin-right: auto;
-          padding: 0.5rem;
-          padding-bottom: 0rem;
-      }
-      
-      .navLogo img {
-          width: 100%;
-      }
-      
-      .menuContainer {
-          display: none;
-          cursor: pointer;
-          margin-left: auto;
-          margin-right: 1rem;
-          z-index: 9995;
-      }
-      
-      .bar1,
-      .bar2 {
-          width: 35px;
-          height: 5px;
-          background-color: black;
-          margin: 3px 0;
-          transition: 0.4s;
-      }
-      
-      .menuBar {
-          font-family: "Bauhaus";
-          font-weight: 600;
-          margin: 6px 0;
-          margin-top: auto;
-          transition: 0.4s;
-      }
-      
-      .menuBar p {
-          transition: opacity .4s ease-out;
-          -webkit-transition: opacity .4s ease-out;
-          -moz-transition: opacity .4s ease-out;
-          -ms-transition: opacity .4s ease-out;
-          -o-transition: opacity .4s ease-out;
-          -o-transition: opacity .5s ease-out;
-      }
-      
-      .change .bar1 {
-          position: absolute;
-          transform: rotate(-45deg) translate(-9%, 85%);
-          -webkit-transform: rotate(-45deg) translate(-9%, 85%);
-          -moz-transform: rotate(-45deg) translate(-9%, 85%);
-          -ms-transform: rotate(-45deg) translate(-9%, 85%);
-          -o-transform: rotate(-45deg) translate(-9%, 85%);
-      }
-      
-      .change .bar2 {
-          position: absolute;
-          transform: rotate(45deg) translate(15%, 45%);
-          -webkit-transform: rotate(45deg) translate(15%, 45%);
-          -moz-transform: rotate(45deg) translate(15%, 45%);
-          -ms-transform: rotate(45deg) translate(15%, 45%);
-          -o-transform: rotate(45deg) translate(15%, 45%);
-      }
-      
-      .burger.change .menuBar p {
-          opacity: 0;
-      }
-      
-      .burger {
-          flex-direction: column;
-          height: 3rem;
-          justify-content: space-between;
-      }
-      
-      .navList.mobile {
-          all: unset;
-          width: 100vw;
-          position: fixed;
-          flex-direction: column;
-          background-color: white;
-          align-items: center;
-          justify-content: center;
-          font-size: 1.25rem;
-          font-family: 'Gothic A1', sans-serif;
-          font-weight: 800;
-          padding: 1rem;
-          z-index: 9990;
-          border: none;
-          box-shadow: 0px 10px 11px 0px rgba(0, 0, 0, 0.5);
-      }
-      
-      .navList.mobile a {
-          all: unset;
-          text-decoration: none;
-      }
-      
-      .navList.mobile.change {
-          display: flex;
-          z-index: 9990;
-      }
-      
-      @media only screen and (min-width: 1920px) {
-          .navList {
-              font-size: 1.5rem;
-          }
-      }
-      
-      @media only screen and (max-width: 1335px) {
-          .navList {
-              font-size: 1.2rem;
-              gap: 1rem;
-              padding: 0.5rem 3rem;
-          }
-          .navListItem {
-              padding: 0 0.15rem
-          }
-          .navListItem:hover {
-              transform: scale(1.3, 1.3);
-              -webkit-transform: scale(1.3, 1.);
-              -moz-transform: scale(1.3, 1.);
-              -ms-transform: scale(1.3, 1.);
-              -o-transform: scale(1.3, 1.);
-          }
-      }
-      
-      @media only screen and (max-width: 880px) {
-          .menuContainer {
-              display: inline-block;
-          }
-          .navList {
-              opacity: 0;
-              padding: 0;
-              margin: 0;
-              font-size: 0rem;
-          }
-      }
-      
-      @media only screen and (max-width: 735px) {
-          /* .navList {
-              padding: 0;
-              margin: 0;
-              font-size: 0rem;
-          } */
-      }
-      
-      @media only screen and (max-width: 425px) {
-          .navLogo img {
-              width: 10rem;
-          }
-      }
+.navList {
+    all: unset;
+    display: flex;
+    list-style-type: none;
+    gap: 3rem;
+    font-size: 1.25rem;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 800;
+    padding: 0.5rem 4rem;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.navList a {
+    all: unset;
+    text-decoration: none;
+}
+
+.navListItem {
+    all: unset;
+    color: black;
+    text-decoration: none;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+}
+
+.navListItem.active {
+    color: red;
+}
+
+.navListItem:hover {
+    cursor: pointer;
+    transform: scale(1.5, 1.5);
+    -webkit-transform: scale(1.5, 1.5);
+    -moz-transform: scale(1.5, 1.5);
+    -ms-transform: scale(1.5, 1.5);
+    -o-transform: scale(1.5, 1.5);
+}
+
+.navBar1,
+.navBar2 {
+    all: unset;
+    width: 100vw;
+    height: 4rem;
+    display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    z-index: 9990;
+    box-shadow: 0px 10px 11px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 10px 11px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 10px 11px 0px rgba(0, 0, 0, 0.5);
+}
+
+.navBar2 {
+    justify-content: right;
+}
+
+.navLogo {
+    all: unset;
+    width: 13rem;
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    padding: 0.5rem;
+    padding-bottom: 0rem;
+}
+
+.navLogo img {
+    width: 100%;
+}
+
+.menuContainer {
+    display: none;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 1rem;
+    z-index: 9995;
+}
+
+.bar1,
+.bar2 {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+.menuBar {
+    font-family: "Bauhaus";
+    font-weight: 600;
+    margin: 6px 0;
+    margin-top: auto;
+    transition: 0.4s;
+}
+
+.menuBar p {
+    transition: opacity .4s ease-out;
+    -webkit-transition: opacity .4s ease-out;
+    -moz-transition: opacity .4s ease-out;
+    -ms-transition: opacity .4s ease-out;
+    -o-transition: opacity .4s ease-out;
+    -o-transition: opacity .5s ease-out;
+}
+
+.change .bar1 {
+    position: absolute;
+    transform: rotate(-45deg) translate(-9%, 85%);
+    -webkit-transform: rotate(-45deg) translate(-9%, 85%);
+    -moz-transform: rotate(-45deg) translate(-9%, 85%);
+    -ms-transform: rotate(-45deg) translate(-9%, 85%);
+    -o-transform: rotate(-45deg) translate(-9%, 85%);
+}
+
+.change .bar2 {
+    position: absolute;
+    transform: rotate(45deg) translate(15%, 45%);
+    -webkit-transform: rotate(45deg) translate(15%, 45%);
+    -moz-transform: rotate(45deg) translate(15%, 45%);
+    -ms-transform: rotate(45deg) translate(15%, 45%);
+    -o-transform: rotate(45deg) translate(15%, 45%);
+}
+
+.burger.change .menuBar p {
+    opacity: 0;
+}
+
+.burger {
+    flex-direction: column;
+    height: 3rem;
+    justify-content: space-between;
+}
+
+.hamburgerNavList {
+    all: unset;
+    width: 100vw;
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 800;
+    padding: 1rem;
+    z-index: 9990;
+    border: none;
+    box-shadow: 0px 10px 11px 0px rgba(0, 0, 0, 0.5);
+}
+
+.hamburgerNavList li {
+    padding: 1rem;
+}
+
+.hamburgerNavList a {
+    all: unset;
+    text-decoration: none;
+}
+
+.hamburgerNavList.change {
+    display: flex;
+    z-index: 9990;
+}
+
+@media only screen and (min-width: 1920px) {
+    .navList {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 1335px) {
+    .navList {
+        font-size: 1.2rem;
+        gap: 1rem;
+        padding: 0.5rem 3rem;
+    }
+    .navListItem {
+        padding: 0 0.15rem
+    }
+    .navListItem:hover {
+        transform: scale(1.3, 1.3);
+        -webkit-transform: scale(1.3, 1.);
+        -moz-transform: scale(1.3, 1.);
+        -ms-transform: scale(1.3, 1.);
+        -o-transform: scale(1.3, 1.);
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .menuContainer {
+        display: inline-block;
+    }
+    .navList {
+        opacity: 0;
+        padding: 0;
+        margin: 0;
+        font-size: 0rem;
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    /* .navList {
+        padding: 0;
+        margin: 0;
+        font-size: 0rem;
+    } */
+}
+
+@media only screen and (max-width: 425px) {
+    .navLogo img {
+        width: 10rem;
+    }
+}
