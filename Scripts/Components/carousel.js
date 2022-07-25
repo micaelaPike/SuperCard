@@ -16,7 +16,6 @@ export function setCounter() {
     }
 }
 
-
 let intervalId = 0;
 
 if (window.location.pathname == "/index.html" || window.location.pathname == "/") {

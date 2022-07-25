@@ -182,27 +182,95 @@
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.51);
 }
 
-@media only screen and (min-width: 2560px) {
+@media only screen and (min-width: 2560px),
+(max-width: 2560px) {
     .formLabel {
+        transform: translateY(-110%);
         margin-left: 3.5rem;
-    }
-    .formLabel {
-        transform: translateY(-1.9rem);
-        margin-left: 2.5rem;
-        -webkit-transform: translateY(-1.9rem);
+        -webkit-transform: translateY(-110%);
+        -moz-transform: translateY(-110%);
+        -ms-transform: translateY(-110%);
+        -o-transform: translateY(-110%);
     }
     .formLabel.message {
-        transform: translateY(-9.5rem);
-        -webkit-transform: translateY(-9.5rem);
+        transform: translateY(-550%);
+        -webkit-transform: translateY(-550%);
+        -moz-transform: translateY(-550%);
+        -ms-transform: translateY(-550%);
+        -o-transform: translateY(-550%);
+    }
+    .formControl.message {
+        padding-bottom: 10%;
     }
     .formControl.message:focus+.formLabel.message,
     .formControl.message:not(:placeholder-shown)+.formLabel.message {
-        transform: translateY(-11.5rem) scale(.7);
-        -webkit-transform: translateY(-11.5rem) scale(.7);
+        transform: translateY(-650%) scale(.7);
+        -webkit-transform: translateY(-650%) scale(.7);
+        -moz-transform: translateY(-650%) scale(.7);
+        -ms-transform: translateY(-650%) scale(.7);
+        -o-transform: translateY(-650%) scale(.7);
     }
 }
 
-@media only screen and (min-width: 1920px) {
+@media only screen and (max-width: 2540px) {
+    .formLabel {
+        transform: translateY(-110%);
+        margin-left: 3.5rem;
+        -webkit-transform: translateY(-110%);
+        -moz-transform: translateY(-110%);
+        -ms-transform: translateY(-110%);
+        -o-transform: translateY(-110%);
+    }
+    .formLabel.message {
+        transform: translateY(-550%);
+        -webkit-transform: translateY(-550%);
+        -moz-transform: translateY(-550%);
+        -ms-transform: translateY(-550%);
+        -o-transform: translateY(-550%);
+    }
+    .formControl.message {
+        padding-bottom: 10%;
+    }
+    .formControl.message:focus+.formLabel.message,
+    .formControl.message:not(:placeholder-shown)+.formLabel.message {
+        transform: translateY(-650%) scale(.7);
+        -webkit-transform: translateY(-650%) scale(.7);
+        -moz-transform: translateY(-650%) scale(.7);
+        -ms-transform: translateY(-650%) scale(.7);
+        -o-transform: translateY(-650%) scale(.7);
+    }
+}
+
+@media only screen and (max-width: 2150px) {
+    .formLabel {
+        transform: translateY(-100%);
+        margin-left: 3rem;
+        -webkit-transform: translateY(-100%);
+        -moz-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        -o-transform: translateY(-100%);
+    }
+    .formLabel.message {
+        transform: translateY(-475%);
+        -webkit-transform: translateY(-475%);
+        -moz-transform: translateY(-475%);
+        -ms-transform: translateY(-475%);
+        -o-transform: translateY(-475%);
+    }
+    .formControl.message {
+        padding-bottom: 10%;
+    }
+    .formControl.message:focus+.formLabel.message,
+    .formControl.message:not(:placeholder-shown)+.formLabel.message {
+        transform: translateY(-575%) scale(.7);
+        -webkit-transform: translateY(-575%) scale(.7);
+        -moz-transform: translateY(-575%) scale(.7);
+        -ms-transform: translateY(-575%) scale(.7);
+        -o-transform: translateY(-575%) scale(.7);
+    }
+}
+
+@media only screen and (max-width: 1920px) {
     .snackbar {
         width: 30rem;
         font-size: 2rem;
@@ -225,44 +293,62 @@
         gap: 0.5rem;
     }
     .formLabel {
-        transform: translateY(-1.9rem);
+        transform: translateY(-110%);
         margin-left: 2.5rem;
-        -webkit-transform: translateY(-1.9rem);
+        -webkit-transform: translateY(-110%);
+        -moz-transform: translateY(-110%);
+        -ms-transform: translateY(-110%);
+        -o-transform: translateY(-110%);
     }
     .formLabel.message {
-        transform: translateY(-7.5rem);
-        -webkit-transform: translateY(-7.5rem);
+        transform: translateY(-425%);
+        -webkit-transform: translateY(-425%);
+        -moz-transform: translateY(-425%);
+        -ms-transform: translateY(-425%);
+        -o-transform: translateY(-425%);
     }
     .formControl.message {
         padding-bottom: 10%;
     }
     .formControl.message:focus+.formLabel.message,
     .formControl.message:not(:placeholder-shown)+.formLabel.message {
-        transform: translateY(-9.5rem) scale(.7);
-        -webkit-transform: translateY(-9.5rem) scale(.7);
+        transform: translateY(-525%) scale(.7);
+        -webkit-transform: translateY(-525%) scale(.7);
+        -moz-transform: translateY(-525%) scale(.7);
+        -ms-transform: translateY(-525%) scale(.7);
+        -o-transform: translateY(-525%) scale(.7);
     }
 }
 
-@media only screen and (max-width: 1335px) {
+@media only screen and (max-width: 1440px) {
     .form {
         gap: 0.5rem;
     }
     .formLabel {
-        margin-left: 2rem;
+        margin-left: 1.5rem;
         transform: translateY(-1.9rem);
         -webkit-transform: translateY(-1.9rem);
+        -moz-transform: translateY(-1.9rem);
+        -ms-transform: translateY(-1.9rem);
+        -o-transform: translateY(-1.9rem);
     }
     .formLabel.message {
-        transform: translateY(-13.5rem);
-        -webkit-transform: translateY(-13.5rem);
+        transform: translateY(-850%);
+        -webkit-transform: translateY(-850%);
+        -moz-transform: translateY(-850%);
+        -ms-transform: translateY(-850%);
+        -o-transform: translateY(-850%);
     }
     .formControl.message {
         padding-bottom: 30%;
     }
     .formControl.message:focus+.formLabel.message,
     .formControl.message:not(:placeholder-shown)+.formLabel.message {
-        transform: translateY(-16rem) scale(.7);
-        -webkit-transform: translateY(-16rem) scale(.7);
+        transform: translateY(-1000%) scale(.7);
+        -webkit-transform: translateY(-1000%) scale(.7);
+        -moz-transform: translateY(-1000%) scale(.7);
+        -ms-transform: translateY(-1000%) scale(.7);
+        -o-transform: translateY(-1000%) scale(.7);
     }
 }
 
@@ -396,13 +482,19 @@
         margin-left: 1.5rem;
     }
     .formLabel.message {
-        transform: translateY(-7.5rem);
-        -webkit-transform: translateY(-7.5rem);
+        transform: translateY(-450%);
+        -webkit-transform: translateY(-450%);
+        -moz-transform: translateY(-450%);
+        -ms-transform: translateY(-450%);
+        -o-transform: translateY(-450%);
     }
     .formControl.message:focus+.formLabel.message,
     .formControl.message:not(:placeholder-shown)+.formLabel.message {
-        transform: translateY(-9.5rem) scale(.7);
-        -webkit-transform: translateY(-9.5rem) scale(.7);
+        transform: translateY(-550%) scale(.7);
+        -webkit-transform: translateY(-550%) scale(.7);
+        -moz-transform: translateY(-550%) scale(.7);
+        -ms-transform: translateY(-550%) scale(.7);
+        -o-transform: translateY(-550%) scale(.7);
     }
 }
 
