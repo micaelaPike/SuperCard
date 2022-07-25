@@ -41,6 +41,7 @@
     border-color: #cf000e;
     box-shadow: 6px 8px 17px 0px rgba(0, 0, 0, 0.75);
     cursor: pointer;
+    color: transparent;
 }
 
 .selected {

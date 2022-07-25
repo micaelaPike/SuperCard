@@ -126,9 +126,6 @@
     .footer {
         padding: 2rem;
     }
-    .scVideo {
-        /* aspect-ratio: unset; */
-    }
 }
 
 @media only screen and (max-width: 880px) {
