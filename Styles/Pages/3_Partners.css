@@ -42,9 +42,6 @@
     border-color: transparent;
     transition: all .3s;
     -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    -ms-transition: all .3s;
-    -o-transition: all .3s;
 }
 
 .closeBtnImg {
@@ -59,14 +56,6 @@
     -moz-transform: scale(1.2);
     -ms-transform: scale(1.2);
     -o-transform: scale(1.2);
-}
-
-.closeButton:active {
-    transform: translate(.5px, .5px);
-    -webkit-transform: translate(.5px, .5px);
-    -moz-transform: translate(.5px, .5px);
-    -ms-transform: translate(.5px, .5px);
-    -o-transform: translate(.5px, .5px);
 }
 
 .partnersTextContainer {
@@ -150,12 +139,7 @@
     aspect-ratio: 5.66 / 1;
 }
 
-.topsLogo {
-    display: flex;
-    width: 15%;
-    aspect-ratio: 2 / 1;
-}
-
+.topsLogo,
 .bmsLogo {
     display: flex;
     width: 15%;
@@ -216,7 +200,7 @@
     }
     .btnFindStore {
         font-size: 1rem;
-        padding: 0.6rem 1.2rem 0.6rem 1.2rem;
+        padding: 0.6rem 1.2rem 0.6rem;
     }
     .lblSearchStore {
         font-size: 2rem;
@@ -255,7 +239,7 @@
         flex-direction: column-reverse;
         width: 100%;
         justify-content: center;
-        padding: 1rem 4rem 0rem 4rem;
+        padding: 1rem 4rem 0rem;
     }
     .partnersTextContainer p {
         font-size: 1.5rem;
@@ -282,9 +266,7 @@
     .sparLogo {
         width: 40%;
     }
-    .topsLogo {
-        width: 20%;
-    }
+    .topsLogo,
     .bmsLogo {
         width: 20%;
     }
@@ -309,9 +291,7 @@
     .sparLogo {
         width: 70%;
     }
-    .topsLogo {
-        width: 45%;
-    }
+    .topsLogo,
     .bmsLogo {
         width: 45%;
     }

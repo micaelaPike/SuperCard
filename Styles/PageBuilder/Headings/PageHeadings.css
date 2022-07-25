@@ -22,60 +22,53 @@ mark {
 }
 
 @media only screen and (min-width: 1920px) {
-    #pageHeadingID {
+    #pageHeading p {
         font-size: 4rem;
     }
 }
 
 @media only screen and (max-width: 1335px) {
-    #pageHeadingID {
+    #pageHeading p {
         font-size: 3rem;
     }
 }
 
-@media only screen and (max-width: 1000px) {
-    #pageHeadingID {
-        font-size: 2.5rem;
-    }
-    #pageHeading.contact {
+@media only screen and (max-width: 1024px) {
+    #pageHeading {
         width: 100vw;
-        font-size: 4rem;
+        padding: 0;
+    }
+    #pageHeading p {
+        font-size: 3.5rem;
     }
 }
 
 @media only screen and (max-width: 880px) {
-    #pageHeading.contact {
-        width: 100vw;
-        font-size: 3.5rem;
-    }
-    #pageHeadingID {
+    #pageHeading p {
         font-size: 3.5rem;
     }
 }
 
-@media only screen and (max-width: 450px) {
-    #pageHeading.contact {
-        font-size: 2.5rem;
+@media only screen and (max-width: 550px) {
+    #pageHeading p {
+        font-size: 3rem;
     }
-    #pageHeadingID {
+}
+
+@media only screen and (max-width: 450px) {
+    #pageHeading p {
         font-size: 2.5rem;
     }
 }
 
 @media only screen and (max-width: 376px) {
-    #pageHeading.contact {
-        font-size: 2rem;
-    }
-    #pageHeadingID {
+    #pageHeading p {
         font-size: 2rem;
     }
 }
 
 @media only screen and (max-width: 320px) {
-    #pageHeading.contact {
-        font-size: 1.75rem;
-    }
-    #pageHeadingID {
+    #pageHeading p {
         font-size: 1.75rem;
     }
 }

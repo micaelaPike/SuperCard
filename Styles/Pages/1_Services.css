@@ -1,7 +1,7 @@
 .videoContainer {
     display: flex;
     width: 50%;
-    padding: 0rem 0rem 0rem 3rem;
+    padding-left: 3rem;
     align-items: center;
 }
 
@@ -9,6 +9,7 @@
     width: 100%;
     height: 100%;
     border-radius: 15px;
+    aspect-ratio: 2 / 1;
 }
 
 .servicesContainer {
@@ -97,8 +98,7 @@
     .videoContainer {
         width: 80%;
         padding-left: 2rem;
-        align-items: baseline;
-        margin-top: 5rem;
+        margin-bottom: 5rem;
     }
     .servicesContainer {
         font-size: 1rem;
@@ -117,7 +117,7 @@
 
 @media only screen and (max-width: 1000px) {
     .videoContainer {
-        padding: 0rem 0rem 0rem 1rem;
+        padding-left: 1rem;
     }
     .servicesContainer {
         font-size: 1rem;
@@ -125,6 +125,9 @@
     }
     .footer {
         padding: 2rem;
+    }
+    .scVideo {
+        /* aspect-ratio: unset; */
     }
 }
 
@@ -135,7 +138,7 @@
     .videoContainer {
         margin-top: 0rem;
         width: 90%;
-        padding: 0rem 1rem 0rem 1rem;
+        padding: 0rem 1rem;
         align-self: center;
     }
     .servicesContainer {
@@ -162,6 +165,9 @@
     .poweredBy {
         width: 80%;
         font-size: 1.2rem;
+    }
+    .videoContainer {
+        margin: 0;
     }
 }
 
