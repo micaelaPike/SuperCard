@@ -11,6 +11,7 @@
         @import "../Pages/5_Contact.css";
         @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@600;800&display=swap');
         @font-face {
+            font-family: "Bauhaus";
             src: url('/Assets/Fonts/Bauhaus-Font-Family/BauhausRegular.ttf'), url('Assets/FontsBauhaus-Font-Family/BauhausBold.ttf');
         }
         
