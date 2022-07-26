@@ -2,12 +2,35 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- HTML Meta Tags -->
+    <title>SuperCard</title>
+    <meta name="description" content="SuperCard is an integrated and technologically advanced leader in card development systems that provides the end user with a simple yet futuristic experience. We provide a multi functioning card system that understands, reacts and suits the needs of our customers in a simple yet forward thinking way. SuperCard provides its customers with the opportunity to store their cash safely.">
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="SuperCard">
+    <meta itemprop="description" content="SuperCard is an integrated and technologically advanced leader in card development systems that provides the end user with a simple yet futuristic experience. We provide a multi functioning card system that understands, reacts and suits the needs of our customers in a simple yet forward thinking way. SuperCard provides its customers with the opportunity to store their cash safely.">
+    <meta itemprop="image" content="/Assets/Logos/SuperCard.webp">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="http://supercard.co.za">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SuperCard">
+    <meta property="og:description" content="SuperCard is an integrated and technologically advanced leader in card development systems that provides the end user with a simple yet futuristic experience. We provide a multi functioning card system that understands, reacts and suits the needs of our customers in a simple yet forward thinking way. SuperCard provides its customers with the opportunity to store their cash safely.">
+    <meta property="og:image" content="/Assets/Logos/SuperCard.webp">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SuperCard">
+    <meta name="twitter:description" content="SuperCard is an integrated and technologically advanced leader in card development systems that provides the end user with a simple yet futuristic experience. We provide a multi functioning card system that understands, reacts and suits the needs of our customers in a simple yet forward thinking way. SuperCard provides its customers with the opportunity to store their cash safely.">
+    <meta name="twitter:image" content="/Assets/Logos/SuperCard.webp">
+
+    <!-- Meta Tags Generated via http://heymeta.com -->
     <script type="module" defer src="../Scripts/Components/emailForm.js"></script>
     <link rel="stylesheet" href="../Styles/Global/index.css" />
-    <link rel="icon" href="../Assets/Logos/SuperCard.ico">
+    <link rel="icon" href="../Assets/Logos/SuperCard.ico" />
     <script type="module" defer src="../Scripts/Components/navigationBar.js"></script>
 
     <title>Contact Us</title>
@@ -19,14 +42,21 @@
             <a href="../index.html"><img src="../Assets/Logos/SuperCard.webp" alt="Home" /></a>
         </div>
         <ul class="navList">
-            <li class="navListItem"><a href="../Pages/1_Services.html">Services</a></li>
+            <li class="navListItem">
+                <a href="../Pages/1_Services.html">Services</a>
+            </li>
             <li class="navListItem"><a href="../Pages/2_Cards.html">Cards</a></li>
-            <li class="navListItem"><a href="../Pages/3_Partners.html">Partners</a></li>
-            <li class="navListItem"><a href="../Pages/4_Register.html">Register</a></li>
-            <li class="navListItem active"><a href="../Pages/5_Contact.html">Contact Us</a></li>
+            <li class="navListItem">
+                <a href="../Pages/3_Partners.html">Partners</a>
+            </li>
+            <li class="navListItem">
+                <a href="../Pages/4_Register.html">Register</a>
+            </li>
+            <li class="navListItem active">
+                <a href="../Pages/5_Contact.html">Contact Us</a>
+            </li>
         </ul>
         <div class="menuContainer">
-
             <div class="burger">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
@@ -34,24 +64,36 @@
                     <p>Menu</p>
                 </div>
             </div>
-
         </div>
     </nav>
     <div id="Contact" class="redDesktopGradient">
         <div>
             <ul class="hamburgerNavList">
-                <li class="navListItem active"><a href="../Pages/1_Services.html">Services</a></li>
+                <li class="navListItem">
+                    <a href="../Pages/1_Services.html">Services</a>
+                </li>
                 <li class="navListItem"><a href="../Pages/2_Cards.html">Cards</a></li>
-                <li class="navListItem"><a href="../Pages/3_Partners.html">Partners</a></li>
-                <li class="navListItem"><a href="../Pages/4_Register.html">Register</a></li>
-                <li class="navListItem"><a href="../Pages/5_Contact.html">Contact Us</a></li>
+                <li class="navListItem">
+                    <a href="../Pages/3_Partners.html">Partners</a>
+                </li>
+                <li class="navListItem">
+                    <a href="../Pages/4_Register.html">Register</a>
+                </li>
+                <li class="navListItem active">
+                    <a href="../Pages/5_Contact.html">Contact Us</a>
+                </li>
             </ul>
         </div>
         <div id="pageHeading" class="contact">
             <p>Our <mark>Contact Information</mark></p>
         </div>
         <div class="snackbar">
-            <button class="closeButton contact" type="button"><img src="/Assets/Images/CloseButton.png" class="closeBtnImg contact"/></button>
+            <button class="closeButton contact" type="button">
+          <img
+            src="/Assets/Images/CloseButton.png"
+            class="closeBtnImg contact"
+          />
+        </button>
             <img class="snackBarImage" src="../Assets/Images/failure-cross.png" alt=" Success Tick" />
             <p class="snackbarAlert">Message sent successfully!</p>
         </div>
@@ -60,37 +102,35 @@
             <div class="contactInfoContainer">
                 <div class="contactInfo">
                     <p class="contactHeading">Customer Care & Head Office</p>
-                    <!-- <p>Super<mark>Card</mark> Customer Care: 0800 333 991<br>Email: info@super<mark>card</mark>.co.za</p> -->
                     <p>SuperCard Customer Care: 0800 333 991</p>
                 </div>
             </div>
             <div class="contactFormContainer">
-                <p class="formHeading ">Talk To Us</p>
+                <p class="formHeading">Talk To Us</p>
                 <form id="emailForm" action="#" class="form" method="get" required>
                     <div class="formGroup">
-                        <input type="text" id="name" name="name" placeholder="Name" class="formControl name" required>
+                        <input type="text" id="name" name="name" placeholder="Name" class="formControl name" required />
                         <label for="userName" class="formLabel">Name</label>
                     </div>
                     <div class="formGroup">
-                        <input type="text" id="number" name="number" placeholder="Contact Number" class="formControl number" required>
+                        <input type="text" id="number" name="number" placeholder="Contact Number" class="formControl number" required />
                         <label for="userNumber" class="formLabel">Number</label>
                     </div>
                     <div class="formGroup">
-                        <input type="text" id="email" name="email" placeholder="Email" class="formControl email" required>
-                        <label for="userEmail" class="formLabel ">Email</label>
+                        <input type="text" id="email" name="email" placeholder="Email" class="formControl email" required />
+                        <label for="userEmail" class="formLabel">Email</label>
                     </div>
                     <div class="formGroup">
                         <textarea id="message" name="message" class="formControl message" placeholder="Message" rows="1" cols="50" required></textarea>
                         <label for="userMessage" class="formLabel message">Message</label>
                     </div>
-                    <button type="submit" name="submit" class="submitBtn">Submit</button>
+                    <button type="submit" name="submit" class="submitBtn">
+              Submit
+            </button>
                     <label for="submitButton" class="formLabel submit">Submit</label>
-
                 </form>
             </div>
-
         </div>
-
     </div>
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>

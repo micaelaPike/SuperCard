@@ -4,7 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- HTML Meta Tags -->
+    <title>SuperCard</title>
+    <meta name="description" content="SuperCard is an integrated and technologically advanced leader in card development systems that provides the end user with a simple yet futuristic experience. We provide a multi functioning card system that understands, reacts and suits the needs of our customers in a simple yet forward thinking way. SuperCard provides its customers with the opportunity to store their cash safely.">
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="SuperCard">
+    <meta itemprop="description" content="SuperCard is an integrated and technologically advanced leader in card development systems that provides the end user with a simple yet futuristic experience. We provide a multi functioning card system that understands, reacts and suits the needs of our customers in a simple yet forward thinking way. SuperCard provides its customers with the opportunity to store their cash safely.">
+    <meta itemprop="image" content="/Assets/Logos/SuperCard.webp">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="http://supercard.co.za">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SuperCard">
+    <meta property="og:description" content="SuperCard is an integrated and technologically advanced leader in card development systems that provides the end user with a simple yet futuristic experience. We provide a multi functioning card system that understands, reacts and suits the needs of our customers in a simple yet forward thinking way. SuperCard provides its customers with the opportunity to store their cash safely.">
+    <meta property="og:image" content="/Assets/Logos/SuperCard.webp">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SuperCard">
+    <meta name="twitter:description" content="SuperCard is an integrated and technologically advanced leader in card development systems that provides the end user with a simple yet futuristic experience. We provide a multi functioning card system that understands, reacts and suits the needs of our customers in a simple yet forward thinking way. SuperCard provides its customers with the opportunity to store their cash safely.">
+    <meta name="twitter:image" content="/Assets/Logos/SuperCard.webp">
+
+    <!-- Meta Tags Generated via http://heymeta.com -->
     <script type="module" defer src="./Scripts/Components/carousel.js"></script>
     <script type="module" defer src="./Scripts/Components/navigationBar.js"></script>
     <link rel="stylesheet" href="./Styles/Global/index.css" />
@@ -36,55 +58,55 @@
         </div>
         </div>
     </nav>
-    <div id="home" class="landingPage">
-        <div>
-            <ul class="hamburgerNavList">
-                <li class="navListItem"><a href="./Pages/1_Services.html">Services</a></li>
-                <li class="navListItem"><a href="./Pages/2_Cards.html">Cards</a></li>
-                <li class="navListItem"><a href="./Pages/3_Partners.html">Partners</a></li>
-                <li class="navListItem"><a href="./Pages/4_Register.html">Register</a></li>
-                <li class="navListItem"><a href="./Pages/5_Contact.html">Contact Us</a></li>
-            </ul>
-        </div>
-        <div class="scLogoIndex">
-            <a href="./index.html"><img src="../Assets/Logos/SuperCard.webp" alt="Home" /></a>
-        </div>
-        <div class="mainContainer index">
-            <div class="infoContainer">
-                <div class="col1">
-                    <button class="btnRegister" onclick='window.location.href="Pages/4_Register.html";'>Get a SuperCard</button>
-                    <p class="centered">1 000 000 +</p>
-                    <p>Active Shoppers</p>
+    <img id="home" class="landingPage" src="./Assets/Backgrounds/LandingPage.webp" alt="Landing Page Background"></img>
+    <div>
+        <ul class="hamburgerNavList">
+            <li class="navListItem"><a href="./Pages/1_Services.html">Services</a></li>
+            <li class="navListItem"><a href="./Pages/2_Cards.html">Cards</a></li>
+            <li class="navListItem"><a href="./Pages/3_Partners.html">Partners</a></li>
+            <li class="navListItem"><a href="./Pages/4_Register.html">Register</a></li>
+            <li class="navListItem"><a href="./Pages/5_Contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="scLogoIndex">
+        <a href="./index.html"><img src="../Assets/Logos/SuperCard.webp" alt="Home" /></a>
+    </div>
+    <div class="mainContainer index">
+        <div class="infoContainer">
+            <div class="col1">
+                <button class="btnRegister" onclick='window.location.href="Pages/4_Register.html";'>Get a SuperCard</button>
+                <p class="centered">1 000 000 +</p>
+                <p>Active Shoppers</p>
 
-                </div>
-                <div class="col2">
-                    <div class="spacer"></div>
-                </div>
-
-                <div class="col3">
-                    <button class="btnServices" onclick='window.location.href="Pages/1_Services.html";'>How it Works</button>
-                    <p class="centered">200 +</p>
-                    <p>Locations Nationwide</p>
-                </div>
+            </div>
+            <div class="col2">
+                <div class="spacer"></div>
             </div>
 
-            <div id="imageCarouselContainer" class="cardCarouselContainer">
+            <div class="col3">
+                <button class="btnServices" onclick='window.location.href="Pages/1_Services.html";'>How it Works</button>
+                <p class="centered">200 +</p>
+                <p>Locations Nationwide</p>
+            </div>
+        </div>
 
-                <img id="imageCarousel" class="cardCarousel animation" src="./Assets/Images/Cards/SavingsCard.png" alt="SuperCard Card Designs"></img>
+        <div id="imageCarouselContainer" class="cardCarouselContainer">
 
-                <div class="carouselSelectContainer">
+            <img id="imageCarousel" class="cardCarousel animation" src="./Assets/Images/Cards/SavingsCard.webp" alt="SuperCard Card Designs"></img>
 
-                    <button id="savingsCard" class="carouselSelect selected">Savings Card</button>
-                    <button id="stokvelCard" class="carouselSelect">Stokvel Card</button>
-                    <button id="giftCard" class="carouselSelect">Gift Card</button>
-                    <button id="staffCard" class="carouselSelect">Staff Card</button>
+            <div class="carouselSelectContainer">
 
-                </div>
-
+                <button id="savingsCard" class="carouselSelect selected">Savings Card</button>
+                <button id="stokvelCard" class="carouselSelect">Stokvel Card</button>
+                <button id="giftCard" class="carouselSelect">Gift Card</button>
+                <button id="staffCard" class="carouselSelect">Staff Card</button>
 
             </div>
 
+
         </div>
+
+    </div>
 
 </body>
 
