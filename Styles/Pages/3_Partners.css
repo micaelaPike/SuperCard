@@ -42,10 +42,6 @@
     border-color: transparent;
     transition: all .3s;
     -webkit-transition: all .3s;
-}
-
-.closeBtnImg {
-    display: flex;
     width: 2rem;
     margin: 0.5rem;
 }
@@ -58,11 +54,15 @@
     -o-transform: scale(1.2);
 }
 
+.closeButton:active {
+    content: url("/Assets/Images/CloseButtonClicked.png");
+}
+
 .partnersTextContainer {
     display: flex;
     flex-direction: column;
     width: 50%;
-    padding-right: 5%;
+    padding: 1rem 5% 1rem 1rem;
     text-align: justify;
 }
 
@@ -76,7 +76,7 @@
     width: 100%;
     text-align: -webkit-center;
     margin-top: auto;
-    padding: 1rem 0;
+    padding: 1rem;
 }
 
 .lblSearchStore {
@@ -115,6 +115,7 @@
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
+    cursor: pointer;
 }
 
 .logoContainer {

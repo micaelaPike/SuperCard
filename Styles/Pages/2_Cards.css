@@ -34,6 +34,10 @@
         box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.55);
     }
     
+    .carouselNext:active {
+        content: url("/Assets/Images/ArrowClicked.png");
+    }
+    
     @media only screen and (min-width: 1920px) {
         .cardDescription {
             padding-left: 7%;
