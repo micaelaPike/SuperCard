@@ -45,7 +45,7 @@
 .navBar2 {
     all: unset;
     width: 100vw;
-    height: 8.1%;
+    height: 4rem;
     display: flex;
     position: -webkit-sticky;
     position: sticky;

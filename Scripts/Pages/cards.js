@@ -9,7 +9,7 @@ const cardDesciptionArr = ["This is our most popular card, perfectly replacing t
     "This card offers a retailer the opportunity to upload funds for their staff members and ensure that funds are spent in the store.<br><br>SuperCard will make these cards available upon the individual store’s request and will set up the rules of the card as per the store’s instruction."
 ];
 
-const cardHeadingArr = ["Savings", "Stokvel", "Gift", "Staff"];
+const cardHeadingArr = ["Shopper's", "Stokvel", "Gift", "Staff"];
 
 let cardHeadingType = document.querySelector(".type");
 let cardDescription = document.querySelector(".cardDescription");

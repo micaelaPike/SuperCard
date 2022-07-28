@@ -4,6 +4,12 @@
     flex-direction: column;
     align-items: center;
     overflow: hidden;
+    /* background-color: aquamarine; */
+}
+
+.cards.cardCarouselContainer {
+    width: 43%;
+    /* align-self: center; */
 }
 
 .cardCarousel {

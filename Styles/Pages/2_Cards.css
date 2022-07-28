@@ -1,12 +1,14 @@
     .cardDescription {
         display: flex;
         flex-direction: column;
-        width: 50%;
+        width: 57%;
         padding-left: 7%;
         line-height: 2rem;
         font-size: 1.3rem;
-        align-self: center;
+        /* align-self: center; */
         text-align: justify;
+        margin-top: 1rem;
+        /* background-color: aqua; */
     }
     
     #cardHeading {
