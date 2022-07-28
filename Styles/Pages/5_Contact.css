@@ -234,6 +234,27 @@
     }
 }
 
+@media only screen and (max-width: 1300px) {
+    .formLabel {
+        margin-left: 2rem;
+    }
+    .formLabel.message {
+        transform: translateY(-700%);
+        -webkit-transform: translateY(-700%);
+        -moz-transform: translateY(-700%);
+        -ms-transform: translateY(-700%);
+        -o-transform: translateY(-700%);
+    }
+    .formControl.message:focus+.formLabel.message,
+    .formControl.message:not(:placeholder-shown)+.formLabel.message {
+        transform: translateY(-850%) scale(.7);
+        -webkit-transform: translateY(-850%) scale(.7);
+        -moz-transform: translateY(-850%) scale(.7);
+        -ms-transform: translateY(-850%) scale(.7);
+        -o-transform: translateY(-850%) scale(.7);
+    }
+}
+
 @media only screen and (max-width: 1200px) {
     .contactInfo {
         font-size: 2rem;
@@ -276,6 +297,27 @@
         -moz-transform: translateY(-1100%) scale(.7);
         -ms-transform: translateY(-1100%) scale(.7);
         -o-transform: translateY(-1100%) scale(.7);
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .formLabel {
+        margin-left: 1.8rem;
+    }
+    .formLabel.message {
+        transform: translateY(-900%);
+        -webkit-transform: translateY(-900%);
+        -moz-transform: translateY(-900%);
+        -ms-transform: translateY(-900%);
+        -o-transform: translateY(-900%);
+    }
+    .formControl.message:focus+.formLabel.message,
+    .formControl.message:not(:placeholder-shown)+.formLabel.message {
+        transform: translateY(-1000%) scale(.7);
+        -webkit-transform: translateY(-1000%) scale(.7);
+        -moz-transform: translateY(-1000%) scale(.7);
+        -ms-transform: translateY(-1000%) scale(.7);
+        -o-transform: translateY(-1000%) scale(.7);
     }
 }
 
@@ -557,6 +599,24 @@
     }
 }
 
+@media only screen and (max-width: 720px) {
+    .formLabel.message {
+        transform: translateY(-640%);
+        -webkit-transform: translateY(-640%);
+        -moz-transform: translateY(-640%);
+        -ms-transform: translateY(-640%);
+        -o-transform: translateY(-640%);
+    }
+    .formControl.message:focus+.formLabel.message,
+    .formControl.message:not(:placeholder-shown)+.formLabel.message {
+        transform: translateY(-790%) scale(.7);
+        -webkit-transform: translateY(-790%) scale(.7);
+        -moz-transform: translateY(-790%) scale(.7);
+        -ms-transform: translateY(-790%) scale(.7);
+        -o-transform: translateY(-790%) scale(.7);
+    }
+}
+
 @media only screen and (max-width: 670px) {
     .contactInfoContainer {
         width: 90%;
@@ -653,6 +713,30 @@
         -moz-transform: translateY(-650%) scale(.7);
         -ms-transform: translateY(-650%) scale(.7);
         -o-transform: translateY(-650%) scale(.7);
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .formHeading {
+        font-size: 1.8rem;
+    }
+    .contactHeading {
+        font-size: 1.8rem;
+    }
+    .formLabel.message {
+        transform: translateY(-490%);
+        -webkit-transform: translateY(-490%);
+        -moz-transform: translateY(-490%);
+        -ms-transform: translateY(-490%);
+        -o-transform: translateY(-490%);
+    }
+    .formControl.message:focus+.formLabel.message,
+    .formControl.message:not(:placeholder-shown)+.formLabel.message {
+        transform: translateY(-600%) scale(.7);
+        -webkit-transform: translateY(-600%) scale(.7);
+        -moz-transform: translateY(-600%) scale(.7);
+        -ms-transform: translateY(-600%) scale(.7);
+        -o-transform: translateY(-600%) scale(.7);
     }
 }
 
