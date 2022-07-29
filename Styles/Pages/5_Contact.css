@@ -140,11 +140,11 @@
     color: black;
     bottom: auto;
     top: 5.5%;
-    transform: scale(0.7, 0.7);
-    -webkit-transform: scale(0.7, 0.7);
-    -moz-transform: scale(0.7, 0.7);
-    -ms-transform: scale(0.7, 0.7);
-    -o-transform: scale(0.7, 0.7);
+    transform: scale(0.8, 0.8);
+    -webkit-transform: scale(0.8, 0.8);
+    -moz-transform: scale(0.8, 0.8);
+    -ms-transform: scale(0.8, 0.8);
+    -o-transform: scale(0.8, 0.8);
 }
 
 .formControl:focus+.formLabel.message,
@@ -152,11 +152,11 @@
     transition: top 0.2s ease;
     bottom: auto;
     top: 5.5%;
-    transform: scale(0.7, 0.7);
-    -webkit-transform: scale(0.7, 0.7);
-    -moz-transform: scale(0.7, 0.7);
-    -ms-transform: scale(0.7, 0.7);
-    -o-transform: scale(0.7, 0.7);
+    transform: scale(0.8, 0.8);
+    -webkit-transform: scale(0.8, 0.8);
+    -moz-transform: scale(0.8, 0.8);
+    -ms-transform: scale(0.8, 0.8);
+    -o-transform: scale(0.8, 0.8);
 }
 
 .formGroup:focus-within {
@@ -198,77 +198,12 @@
     }
 }
 
-@media only screen and (max-width: 1200px) {
-    .formControl {
-        margin: 5% 5% 0%;
-    }
-    .formLabel {
-        top: 65%;
-    }
-    .formControl:focus+.formLabel,
-    .formControl:not(:placeholder-shown)+.formLabel {
-        top: 25%;
-    }
-    .formControl:focus+.formLabel.message,
-    .formControl:not(:placeholder-shown)+.formLabel.message {
-        top: 15%;
-    }
-}
-
 @media only screen and (max-width: 1024px) {
     .formLabel {
         top: 60%;
     }
     .formLabel.message {
         top: 40%;
-    }
-}
-
-@media only screen and (max-width: 1000px) {
-    .formLabel {
-        top: 60%;
-    }
-    .formLabel.message {
-        top: 35%;
-    }
-    .formControl.message {
-        padding-bottom: 10%;
-        border-radius: 20px;
-    }
-    .formControl:focus+.formLabel,
-    .formControl:not(:placeholder-shown)+.formLabel {
-        top: 20%;
-    }
-    .formControl:focus+.formLabel.message,
-    .formControl:not(:placeholder-shown)+.formLabel.message {
-        top: 10%;
-    }
-}
-
-@media only screen and (max-width: 950px) {
-    .formLabel.message {
-        top: 25%;
-    }
-    .formControl.message {
-        padding-bottom: 10%;
-        border-radius: 20px;
-    }
-}
-
-@media only screen and (max-width: 880px) {
-    .contactInfoContainer {
-        width: 80%;
-    }
-    .formLabel.message {
-        top: 30%;
-    }
-    .formControl:focus+.formLabel,
-    .formControl:not(:placeholder-shown)+.formLabel {
-        top: 10%;
-    }
-    .formControl:focus+.formLabel.message,
-    .formControl:not(:placeholder-shown)+.formLabel.message {
-        top: 5%;
     }
 }
 
@@ -288,10 +223,6 @@
     }
     .formControl.message {
         padding-bottom: 30%;
-    }
-    .formControl:focus+.formLabel.message,
-    .formControl:not(:placeholder-shown)+.formLabel.message {
-        top: 2%;
     }
 }
 
@@ -314,36 +245,8 @@
     .contactInfoContainer {
         width: 80%;
     }
-    .formLabel {
-        left: 9.5%;
-    }
-    .formControl.message {
-        padding-bottom: 30%;
-    }
     .submitBtn {
         font-size: 1rem;
-    }
-}
-
-@media only screen and (max-width: 570px) {
-    .formHeading {
-        font-size: 2.2rem;
-    }
-    .contactHeading {
-        font-size: 1.5rem;
-    }
-    .contactInfo {
-        font-size: 1rem;
-        line-height: 1.5rem;
-        margin: 5%;
-        padding: 1rem;
-    }
-    .formLabel {
-        left: 9.5%;
-        top: 55%;
-    }
-    .formControl.message {
-        padding-bottom: 30%;
     }
 }
 
@@ -358,13 +261,11 @@
         font-size: 1rem;
         line-height: 1.2rem;
         margin: 5%;
-        padding: 1rem;
     }
     .contactInfoContainer {
         width: 90%;
     }
     .formLabel {
-        top: 55%;
         left: 12%;
     }
     .formLabel.message {
@@ -372,11 +273,7 @@
     }
     .formControl:focus+.formLabel,
     .formControl:not(:placeholder-shown)+.formLabel {
-        top: 0%;
-    }
-    .formControl:focus+.formLabel.message,
-    .formControl:not(:placeholder-shown)+.formLabel.message {
-        top: 0%;
+        top: 5%;
     }
     .formControl {
         width: 82%;
@@ -391,7 +288,11 @@
     .submitBtn {
         font-size: 1rem;
     }
-    .form.formControl {
+    .formLabel {
+        top: 45%;
+        left: 15%;
+    }
+    .formControl {
         width: 80%;
     }
     .contactInfo {
@@ -418,19 +319,12 @@
     .contactFormContainer {
         width: 90%;
     }
-    .form.formLabel {
-        margin-left: 1.5rem;
+    .formLabel {
         font-size: 1.5rem;
-    }
-    .form.formControl {
-        width: 80%;
-        font-size: 1.5rem;
-    }
-    .formControl.message {
-        padding-bottom: 30%;
     }
     .formControl {
-        font-size: 0.8rem;
+        width: 80%;
+        font-size: 1.5rem;
     }
     .contactHeading {
         font-size: 1rem;
@@ -448,23 +342,8 @@
 }
 
 @media only screen and (min-width: 1920px) {
-    .formLabel {
-        top: 65%;
-        left: 6%;
-    }
-    .formLabel.message {
-        top: 25%;
-    }
     .formControl.message {
         padding-bottom: 10%;
-    }
-    .formControl:focus+.formLabel,
-    .formControl:not(:placeholder-shown)+.formLabel {
-        top: 25%;
-    }
-    .formControl:focus+.formLabel.message,
-    .formControl:not(:placeholder-shown)+.formLabel.message {
-        top: 10%;
     }
 }
 
@@ -497,7 +376,7 @@
     .formControl {
         font-size: 2rem;
     }
-    .formControl.message {
-        padding-bottom: 10%;
+    .submitBtn {
+        font-size: 2rem;
     }
 }
