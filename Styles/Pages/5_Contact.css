@@ -109,7 +109,7 @@
 }
 
 .formLabel {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     position: absolute;
     display: flex;
     left: 6.5%;
@@ -188,10 +188,10 @@
         margin: 3% auto 0;
     }
     .formLabel {
-        top: 60%;
+        top: 55%;
     }
     .formLabel.message {
-        top: 40%;
+        top: 35%;
     }
     .formControl.message {
         padding-bottom: 5%;
@@ -200,29 +200,10 @@
 
 @media only screen and (max-width: 1024px) {
     .formLabel {
-        top: 60%;
+        top: 50%;
     }
     .formLabel.message {
-        top: 40%;
-    }
-}
-
-@media only screen and (max-width: 820px) {
-    .contactInfoContainer {
-        width: 80%;
-    }
-    .formLabel {
-        top: 60%;
-        left: 9.5%;
-    }
-    .formLabel.message {
-        top: 15%;
-    }
-    .formControl {
-        width: 85%;
-    }
-    .formControl.message {
-        padding-bottom: 30%;
+        top: 30%;
     }
 }
 
@@ -248,6 +229,19 @@
     .submitBtn {
         font-size: 1rem;
     }
+    .formLabel {
+        top: 60%;
+    }
+    .formLabel.message {
+        top: 50%;
+    }
+    .formControl {
+        margin: 8% auto 0;
+    }
+    .formControl:focus+.formLabel,
+    .formControl:not(:placeholder-shown)+.formLabel {
+        top: 25%;
+    }
 }
 
 @media only screen and (max-width: 426px) {
@@ -268,16 +262,18 @@
     .formLabel {
         left: 12%;
     }
+    .formLabel {
+        top: 50%;
+    }
     .formLabel.message {
-        top: 25%;
+        top: 40%;
     }
     .formControl:focus+.formLabel,
     .formControl:not(:placeholder-shown)+.formLabel {
-        top: 5%;
+        top: 2%;
     }
     .formControl {
         width: 82%;
-        margin: 8% auto 0;
     }
 }
 
@@ -345,11 +341,18 @@
     .formControl.message {
         padding-bottom: 10%;
     }
-}
-
-@media only screen and (min-width: 2100px) {
     .submitBtn {
         margin: 2rem auto;
+    }
+    .formLabel {
+        top: 60%;
+    }
+    .formLabel.message {
+        top: 25%;
+    }
+    .formControl:focus+.formLabel,
+    .formControl:not(:placeholder-shown)+.formLabel {
+        top: 20%;
     }
 }
 
