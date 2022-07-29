@@ -73,71 +73,53 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    border-color: black;
-    border-width: 2px;
+    border: 2px solid black;
     border-radius: 30px;
-    border-style: solid;
     background-color: rgb(214, 200, 200);
     opacity: 70%;
-    gap: 0.2rem;
-}
-
-.formControl {
-    all: unset;
-    display: flex;
-    width: 90%;
-    height: min-content;
-    margin: 0 auto;
-    padding: 0.2rem 1.25rem;
-    font-size: 1.3rem;
-    color: gray;
-    border-color: black;
-    border-width: 2px;
-    border-radius: 30px;
-    border-style: solid;
-    background-color: whitesmoke;
-    white-space: normal;
-    text-overflow: clip;
-    overflow-wrap: break-word;
-    overflow: auto;
-}
-
-.formControl.name {
-    margin-top: 2rem;
-}
-
-.formControl.message {
-    padding-bottom: 5%;
-    margin-bottom: 0;
-    border-radius: 20px;
+    gap: 0.5rem;
 }
 
 .formGroup {
     transition: all .3s;
-    height: min-content;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.formControl {
+    width: 90%;
+    height: 100%;
+    margin: 3% auto 0;
+    font-size: 1rem;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    white-space: normal;
+    text-overflow: clip;
+    overflow-wrap: break-word;
+    overflow: auto;
+    padding: 5px;
+}
+
+.formControl.message {
+    padding-bottom: 2%;
+    border-radius: 20px;
 }
 
 .formLabel {
-    width: min-content;
-    height: min-content;
-    font-size: 1.5rem;
-    margin-left: 3rem;
+    font-size: 1.2rem;
+    position: absolute;
+    display: flex;
+    left: 6.5%;
+    top: 55%;
     color: #aaa;
-    display: block;
-    transform: translateY(-110%);
-    -webkit-transform: translateY(-110%);
-    transform-origin: 0 0;
-    transition: all .3s;
-    -webkit-transition: all .3s;
-    -webkit-transition: all .3s;
+    pointer-events: none;
 }
 
 .formLabel.message {
-    transform: translateY(-290%);
-    -webkit-transform: translateY(-290%);
-    -moz-transform: translateY(-290%);
-    -ms-transform: translateY(-290%);
-    -o-transform: translateY(-290%);
+    top: 50%;
 }
 
 .formLabel.submit {
@@ -148,40 +130,48 @@
     color: transparent;
 }
 
-.formControl:focus {
-    border-color: #cf000e;
+.formControl:focus-visible {
+    outline-color: #cf000e;
 }
 
 .formControl:focus+.formLabel,
 .formControl:not(:placeholder-shown)+.formLabel {
-    transform: translateY(-210%) scale(.7);
-    -webkit-transform: translateY(-210%) scale(.7);
+    transition: top 0.2s ease;
     color: black;
-    -moz-transform: translateY(-210%) scale(.7);
-    -ms-transform: translateY(-210%) scale(.7);
-    -o-transform: translateY(-210%) scale(.7);
+    bottom: auto;
+    top: 5.5%;
+    transform: scale(0.7, 0.7);
+    -webkit-transform: scale(0.7, 0.7);
+    -moz-transform: scale(0.7, 0.7);
+    -ms-transform: scale(0.7, 0.7);
+    -o-transform: scale(0.7, 0.7);
 }
 
-.formControl.message:focus+.formLabel.message,
-.formControl.message:not(:placeholder-shown)+.formLabel.message {
-    transform: translateY(-390%) scale(.7);
-    -webkit-transform: translateY(-390%) scale(.7);
-    -moz-transform: translateY(-390%) scale(.7);
-    -ms-transform: translateY(-390%) scale(.7);
-    -o-transform: translateY(-390%) scale(.7);
+.formControl:focus+.formLabel.message,
+.formControl:not(:placeholder-shown)+.formLabel.message {
+    transition: top 0.2s ease;
+    bottom: auto;
+    top: 5.5%;
+    transform: scale(0.7, 0.7);
+    -webkit-transform: scale(0.7, 0.7);
+    -moz-transform: scale(0.7, 0.7);
+    -ms-transform: scale(0.7, 0.7);
+    -o-transform: scale(0.7, 0.7);
 }
 
 .formGroup:focus-within {
-    transform: scale(1.02, 1.02);
-    -webkit-transform: scale(1.02, 1.02);
+    transform: scale(1.01, 1.01);
+    -webkit-transform: scale(1.01, 1.01);
+    -moz-transform: scale(1.01, 1.01);
+    -ms-transform: scale(1.01, 1.01);
+    -o-transform: scale(1.01, 1.01);
 }
 
 .submitBtn {
     display: flex;
     width: 30%;
     justify-content: center;
-    margin: auto;
-    margin-bottom: 2rem;
+    margin: 1rem auto;
     padding: 0.5rem 0.1rem;
     color: white;
     font-size: 1.25rem;
@@ -194,266 +184,74 @@
 }
 
 @media only screen and (max-width: 1440px) {
-    .form {
-        gap: 0.5rem;
+    .formControl {
+        margin: 3% auto 0;
+    }
+    .formLabel {
+        top: 60%;
+    }
+    .formLabel.message {
+        top: 40%;
     }
     .formControl.message {
-        padding-bottom: 20%;
-    }
-    .formLabel {
-        margin-left: 2.5rem;
-        transform: translateY(-1.9rem);
-        -webkit-transform: translateY(-1.9rem);
-        -moz-transform: translateY(-1.9rem);
-        -ms-transform: translateY(-1.9rem);
-        -o-transform: translateY(-1.9rem);
-    }
-    .formControl:focus+.formLabel,
-    .formControl:not(:placeholder-shown)+.formLabel {
-        transform: translateY(-200%) scale(.7);
-        -webkit-transform: translateY(-200%) scale(.7);
-        color: black;
-        -moz-transform: translateY(-200%) scale(.7);
-        -ms-transform: translateY(-200%) scale(.7);
-        -o-transform: translateY(-200%) scale(.7);
-    }
-    .formLabel.message {
-        transform: translateY(-800%);
-        -webkit-transform: translateY(-800%);
-        -moz-transform: translateY(-800%);
-        -ms-transform: translateY(-800%);
-        -o-transform: translateY(-800%);
-    }
-    .formControl.message:focus+.formLabel.message,
-    .formControl.message:not(:placeholder-shown)+.formLabel.message {
-        transform: translateY(-950%) scale(.7);
-        -webkit-transform: translateY(-950%) scale(.7);
-        -moz-transform: translateY(-950%) scale(.7);
-        -ms-transform: translateY(-950%) scale(.7);
-        -o-transform: translateY(-950%) scale(.7);
-    }
-}
-
-@media only screen and (max-width: 1300px) {
-    .formLabel {
-        margin-left: 2rem;
-    }
-    .formLabel.message {
-        transform: translateY(-700%);
-        -webkit-transform: translateY(-700%);
-        -moz-transform: translateY(-700%);
-        -ms-transform: translateY(-700%);
-        -o-transform: translateY(-700%);
-    }
-    .formControl.message:focus+.formLabel.message,
-    .formControl.message:not(:placeholder-shown)+.formLabel.message {
-        transform: translateY(-850%) scale(.7);
-        -webkit-transform: translateY(-850%) scale(.7);
-        -moz-transform: translateY(-850%) scale(.7);
-        -ms-transform: translateY(-850%) scale(.7);
-        -o-transform: translateY(-850%) scale(.7);
+        padding-bottom: 5%;
     }
 }
 
 @media only screen and (max-width: 1200px) {
-    .contactInfo {
-        font-size: 2rem;
-        line-height: 2.2rem;
-        padding: 1rem;
-        margin: 2% 5%;
-    }
-    .contactHeading {
-        font-size: 2.2rem;
-    }
-    .formHeading {
-        font-size: 2.2rem;
+    .formControl {
+        margin: 5% 5% 0%;
     }
     .formLabel {
-        margin-left: 2rem;
+        top: 65%;
     }
     .formControl:focus+.formLabel,
     .formControl:not(:placeholder-shown)+.formLabel {
-        transform: translateY(-200%) scale(.7);
-        -webkit-transform: translateY(-200%) scale(.7);
-        color: black;
-        -moz-transform: translateY(-200%) scale(.7);
-        -ms-transform: translateY(-200%) scale(.7);
-        -o-transform: translateY(-200%) scale(.7);
+        top: 25%;
     }
-    .formLabel.message {
-        transform: translateY(-1000%);
-        -webkit-transform: translateY(-1000%);
-        -moz-transform: translateY(-1000%);
-        -ms-transform: translateY(-1000%);
-        -o-transform: translateY(-1000%);
-    }
-    .formControl.message {
-        padding-bottom: 30%;
-    }
-    .formControl.message:focus+.formLabel.message,
-    .formControl.message:not(:placeholder-shown)+.formLabel.message {
-        transform: translateY(-1100%) scale(.7);
-        -webkit-transform: translateY(-1100%) scale(.7);
-        -moz-transform: translateY(-1100%) scale(.7);
-        -ms-transform: translateY(-1100%) scale(.7);
-        -o-transform: translateY(-1100%) scale(.7);
-    }
-}
-
-@media only screen and (max-width: 1100px) {
-    .formLabel {
-        margin-left: 1.8rem;
-    }
-    .formLabel.message {
-        transform: translateY(-900%);
-        -webkit-transform: translateY(-900%);
-        -moz-transform: translateY(-900%);
-        -ms-transform: translateY(-900%);
-        -o-transform: translateY(-900%);
-    }
-    .formControl.message:focus+.formLabel.message,
-    .formControl.message:not(:placeholder-shown)+.formLabel.message {
-        transform: translateY(-1000%) scale(.7);
-        -webkit-transform: translateY(-1000%) scale(.7);
-        -moz-transform: translateY(-1000%) scale(.7);
-        -ms-transform: translateY(-1000%) scale(.7);
-        -o-transform: translateY(-1000%) scale(.7);
+    .formControl:focus+.formLabel.message,
+    .formControl:not(:placeholder-shown)+.formLabel.message {
+        top: 15%;
     }
 }
 
 @media only screen and (max-width: 1024px) {
-    .contactInfo {
-        font-size: 1.5rem;
-        line-height: 1.2rem;
-        padding: 1rem;
-    }
-    .contactInfoContainer {
-        width: 70%;
-    }
-    .contactHeading {
-        font-size: 1.8rem;
-    }
-    .formHeading {
-        font-size: 2rem;
-    }
-    .formControl {
-        padding: 0.5rem 1rem;
-        font-size: 1rem;
-    }
     .formLabel {
-        margin-left: 2rem;
-        transform: translateY(-1.9rem);
-        -webkit-transform: translateY(-1.9rem);
-        -moz-transform: translateY(-1.9rem);
-        -ms-transform: translateY(-1.9rem);
-        -o-transform: translateY(-1.9rem);
-    }
-    .formControl:focus+.formLabel,
-    .formControl:not(:placeholder-shown)+.formLabel {
-        transform: translateY(-200%) scale(.7);
-        -webkit-transform: translateY(-200%) scale(.7);
-        color: black;
-        -moz-transform: translateY(-200%) scale(.7);
-        -ms-transform: translateY(-200%) scale(.7);
-        -o-transform: translateY(-200%) scale(.7);
-    }
-    .formControl.message {
-        padding-bottom: 30%;
+        top: 60%;
     }
     .formLabel.message {
-        transform: translateY(-850%);
-        -webkit-transform: translateY(-850%);
-        -moz-transform: translateY(-850%);
-        -ms-transform: translateY(-850%);
-        -o-transform: translateY(-850%);
-    }
-    .formControl.message:focus+.formLabel.message,
-    .formControl.message:not(:placeholder-shown)+.formLabel.message {
-        transform: translateY(-975%) scale(.7);
-        -webkit-transform: translateY(-975%) scale(.7);
-        -moz-transform: translateY(-975%) scale(.7);
-        -ms-transform: translateY(-975%) scale(.7);
-        -o-transform: translateY(-975%) scale(.7);
+        top: 40%;
     }
 }
 
 @media only screen and (max-width: 1000px) {
-    .contactInfoContainer {
-        width: 100%;
-        margin-top: 0rem;
-        margin-bottom: 1rem;
-    }
-    .formHeading {
-        font-size: 3rem;
-    }
-    .contactHeading {
-        font-size: 3rem;
-    }
-    .contactInfo {
-        font-size: 2rem;
-        line-height: 2.5rem;
-        margin: 5%;
-        padding: 1rem;
-    }
-    .submitBtn {
-        font-size: 2rem;
-    }
     .formLabel {
-        margin-left: 2rem;
-    }
-    .formControl.message {
-        padding-bottom: 30%;
+        top: 60%;
     }
     .formLabel.message {
-        transform: translateY(-850%);
-        -webkit-transform: translateY(-850%);
-        -moz-transform: translateY(-850%);
-        -ms-transform: translateY(-850%);
-        -o-transform: translateY(-850%);
+        top: 35%;
     }
-    .formControl.message:focus+.formLabel.message,
-    .formControl.message:not(:placeholder-shown)+.formLabel.message {
-        transform: translateY(-950%) scale(.7);
-        -webkit-transform: translateY(-950%) scale(.7);
-        -moz-transform: translateY(-950%) scale(.7);
-        -ms-transform: translateY(-950%) scale(.7);
-        -o-transform: translateY(-950%) scale(.7);
+    .formControl.message {
+        padding-bottom: 10%;
+        border-radius: 20px;
+    }
+    .formControl:focus+.formLabel,
+    .formControl:not(:placeholder-shown)+.formLabel {
+        top: 20%;
+    }
+    .formControl:focus+.formLabel.message,
+    .formControl:not(:placeholder-shown)+.formLabel.message {
+        top: 10%;
     }
 }
 
 @media only screen and (max-width: 950px) {
-    .formControl {
-        width: 85%;
-    }
-    .formControl:focus+.formLabel,
-    .formControl:not(:placeholder-shown)+.formLabel {
-        transform: translateY(-200%) scale(.7);
-        -webkit-transform: translateY(-200%) scale(.7);
-        color: black;
-        -moz-transform: translateY(-200%) scale(.7);
-        -ms-transform: translateY(-200%) scale(.7);
-        -o-transform: translateY(-200%) scale(.7);
+    .formLabel.message {
+        top: 25%;
     }
     .formControl.message {
-        padding-bottom: 30%;
-    }
-    .formLabel {
-        margin-left: 3rem;
-    }
-    .formLabel.message {
-        transform: translateY(-800%);
-        -webkit-transform: translateY(-800%);
-        -moz-transform: translateY(-800%);
-        -ms-transform: translateY(-800%);
-        -o-transform: translateY(-800%);
-    }
-    .formControl.message:focus+.formLabel.message,
-    .formControl.message:not(:placeholder-shown)+.formLabel.message {
-        transform: translateY(-925%) scale(.7);
-        -webkit-transform: translateY(-925%) scale(.7);
-        -moz-transform: translateY(-925%) scale(.7);
-        -ms-transform: translateY(-925%) scale(.7);
-        -o-transform: translateY(-925%) scale(.7);
+        padding-bottom: 10%;
+        border-radius: 20px;
     }
 }
 
@@ -461,45 +259,16 @@
     .contactInfoContainer {
         width: 80%;
     }
-    .formLabel {
-        font-size: 1.5rem;
-        margin-left: 2.8rem;
-        transform: translateY(-125%);
-        -webkit-transform: translateY(-125%);
-        -moz-transform: translateY(-125%);
-        -ms-transform: translateY(-125%);
-        -o-transform: translateY(-125%);
-    }
-    .formControl {
-        width: 85%;
-        font-size: 1.5rem;
-    }
-    .formControl.message {
-        padding-bottom: 30%;
+    .formLabel.message {
+        top: 30%;
     }
     .formControl:focus+.formLabel,
     .formControl:not(:placeholder-shown)+.formLabel {
-        transform: translateY(-250%) scale(.7);
-        -webkit-transform: translateY(-250%) scale(.7);
-        color: black;
-        -moz-transform: translateY(-250%) scale(.7);
-        -ms-transform: translateY(-250%) scale(.7);
-        -o-transform: translateY(-250%) scale(.7);
+        top: 10%;
     }
-    .formLabel.message {
-        transform: translateY(-750%);
-        -webkit-transform: translateY(-750%);
-        -moz-transform: translateY(-750%);
-        -ms-transform: translateY(-750%);
-        -o-transform: translateY(-750%);
-    }
-    .formControl.message:focus+.formLabel.message,
-    .formControl.message:not(:placeholder-shown)+.formLabel.message {
-        transform: translateY(-900%) scale(.7);
-        -webkit-transform: translateY(-900%) scale(.7);
-        -moz-transform: translateY(-900%) scale(.7);
-        -ms-transform: translateY(-900%) scale(.7);
-        -o-transform: translateY(-900%) scale(.7);
+    .formControl:focus+.formLabel.message,
+    .formControl:not(:placeholder-shown)+.formLabel.message {
+        top: 5%;
     }
 }
 
@@ -508,7 +277,11 @@
         width: 80%;
     }
     .formLabel {
-        margin-left: 2.5rem;
+        top: 60%;
+        left: 9.5%;
+    }
+    .formLabel.message {
+        top: 15%;
     }
     .formControl {
         width: 85%;
@@ -516,29 +289,9 @@
     .formControl.message {
         padding-bottom: 30%;
     }
-    .formControl:focus+.formLabel,
-    .formControl:not(:placeholder-shown)+.formLabel {
-        transform: translateY(-200%) scale(.7);
-        -webkit-transform: translateY(-200%) scale(.7);
-        color: black;
-        -moz-transform: translateY(-200%) scale(.7);
-        -ms-transform: translateY(-200%) scale(.7);
-        -o-transform: translateY(-200%) scale(.7);
-    }
-    .formLabel.message {
-        transform: translateY(-750%);
-        -webkit-transform: translateY(-750%);
-        -moz-transform: translateY(-750%);
-        -ms-transform: translateY(-750%);
-        -o-transform: translateY(-750%);
-    }
-    .formControl.message:focus+.formLabel.message,
-    .formControl.message:not(:placeholder-shown)+.formLabel.message {
-        transform: translateY(-850%) scale(.7);
-        -webkit-transform: translateY(-850%) scale(.7);
-        -moz-transform: translateY(-850%) scale(.7);
-        -ms-transform: translateY(-850%) scale(.7);
-        -o-transform: translateY(-850%) scale(.7);
+    .formControl:focus+.formLabel.message,
+    .formControl:not(:placeholder-shown)+.formLabel.message {
+        top: 2%;
     }
 }
 
@@ -562,109 +315,13 @@
         width: 80%;
     }
     .formLabel {
-        margin-left: 2.5rem;
-    }
-    .formControl {
-        width: 85%;
+        left: 9.5%;
     }
     .formControl.message {
         padding-bottom: 30%;
-    }
-    .formControl:focus+.formLabel,
-    .formControl:not(:placeholder-shown)+.formLabel {
-        transform: translateY(-250%) scale(.7);
-        -webkit-transform: translateY(-250%) scale(.7);
-        color: black;
-        -moz-transform: translateY(-250%) scale(.7);
-        -ms-transform: translateY(-250%) scale(.7);
-        -o-transform: translateY(-250%) scale(.7);
     }
     .submitBtn {
         font-size: 1rem;
-    }
-    .formLabel.message {
-        transform: translateY(-700%);
-        -webkit-transform: translateY(-700%);
-        -moz-transform: translateY(-700%);
-        -ms-transform: translateY(-700%);
-        -o-transform: translateY(-700%);
-    }
-    .formControl.message:focus+.formLabel.message,
-    .formControl.message:not(:placeholder-shown)+.formLabel.message {
-        transform: translateY(-800%) scale(.7);
-        -webkit-transform: translateY(-800%) scale(.7);
-        -moz-transform: translateY(-800%) scale(.7);
-        -ms-transform: translateY(-800%) scale(.7);
-        -o-transform: translateY(-800%) scale(.7);
-    }
-}
-
-@media only screen and (max-width: 720px) {
-    .formLabel.message {
-        transform: translateY(-640%);
-        -webkit-transform: translateY(-640%);
-        -moz-transform: translateY(-640%);
-        -ms-transform: translateY(-640%);
-        -o-transform: translateY(-640%);
-    }
-    .formControl.message:focus+.formLabel.message,
-    .formControl.message:not(:placeholder-shown)+.formLabel.message {
-        transform: translateY(-790%) scale(.7);
-        -webkit-transform: translateY(-790%) scale(.7);
-        -moz-transform: translateY(-790%) scale(.7);
-        -ms-transform: translateY(-790%) scale(.7);
-        -o-transform: translateY(-790%) scale(.7);
-    }
-}
-
-@media only screen and (max-width: 670px) {
-    .contactInfoContainer {
-        width: 90%;
-    }
-    .formHeading {
-        font-size: 2.5rem;
-    }
-    .contactHeading {
-        font-size: 2.5rem;
-    }
-    .contactInfo {
-        font-size: 1.5rem;
-        line-height: 2.5rem;
-        margin: 3%;
-        padding: 1rem;
-    }
-    .formLabel {
-        margin-left: 3rem;
-    }
-    .formControl {
-        width: 80%;
-    }
-    .formControl.message {
-        padding-bottom: 30%;
-    }
-    .formControl:focus+.formLabel,
-    .formControl:not(:placeholder-shown)+.formLabel {
-        transform: translateY(-200%) scale(.7);
-        -webkit-transform: translateY(-200%) scale(.7);
-        color: black;
-        -moz-transform: translateY(-200%) scale(.7);
-        -ms-transform: translateY(-200%) scale(.7);
-        -o-transform: translateY(-200%) scale(.7);
-    }
-    .formLabel.message {
-        transform: translateY(-600%);
-        -webkit-transform: translateY(-600%);
-        -moz-transform: translateY(-600%);
-        -ms-transform: translateY(-600%);
-        -o-transform: translateY(-600%);
-    }
-    .formControl.message:focus+.formLabel.message,
-    .formControl.message:not(:placeholder-shown)+.formLabel.message {
-        transform: translateY(-725%) scale(.7);
-        -webkit-transform: translateY(-725%) scale(.7);
-        -moz-transform: translateY(-725%) scale(.7);
-        -ms-transform: translateY(-725%) scale(.7);
-        -o-transform: translateY(-725%) scale(.7);
     }
 }
 
@@ -672,89 +329,21 @@
     .formHeading {
         font-size: 2.2rem;
     }
+    .contactHeading {
+        font-size: 1.5rem;
+    }
     .contactInfo {
         font-size: 1rem;
-        line-height: 1rem;
+        line-height: 1.5rem;
         margin: 5%;
         padding: 1rem;
     }
-    .contactInfoContainer {
-        width: 85%;
-    }
     .formLabel {
-        margin-left: 2rem;
-    }
-    .formControl {
-        width: 80%;
+        left: 9.5%;
+        top: 55%;
     }
     .formControl.message {
         padding-bottom: 30%;
-    }
-    .formControl:focus+.formLabel,
-    .formControl:not(:placeholder-shown)+.formLabel {
-        transform: translateY(-250%) scale(.7);
-        -webkit-transform: translateY(-250%) scale(.7);
-        color: black;
-        -moz-transform: translateY(-250%) scale(.7);
-        -ms-transform: translateY(-250%) scale(.7);
-        -o-transform: translateY(-250%) scale(.7);
-    }
-    .formLabel.message {
-        transform: translateY(-550%);
-        -webkit-transform: translateY(-550%);
-        -moz-transform: translateY(-550%);
-        -ms-transform: translateY(-550%);
-        -o-transform: translateY(-550%);
-    }
-    .formControl.message:focus+.formLabel.message,
-    .formControl.message:not(:placeholder-shown)+.formLabel.message {
-        transform: translateY(-650%) scale(.7);
-        -webkit-transform: translateY(-650%) scale(.7);
-        -moz-transform: translateY(-650%) scale(.7);
-        -ms-transform: translateY(-650%) scale(.7);
-        -o-transform: translateY(-650%) scale(.7);
-    }
-}
-
-@media only screen and (max-width: 520px) {
-    .formHeading {
-        font-size: 1.8rem;
-    }
-    .contactHeading {
-        font-size: 1.8rem;
-    }
-    .formLabel.message {
-        transform: translateY(-490%);
-        -webkit-transform: translateY(-490%);
-        -moz-transform: translateY(-490%);
-        -ms-transform: translateY(-490%);
-        -o-transform: translateY(-490%);
-    }
-    .formControl.message:focus+.formLabel.message,
-    .formControl.message:not(:placeholder-shown)+.formLabel.message {
-        transform: translateY(-600%) scale(.7);
-        -webkit-transform: translateY(-600%) scale(.7);
-        -moz-transform: translateY(-600%) scale(.7);
-        -ms-transform: translateY(-600%) scale(.7);
-        -o-transform: translateY(-600%) scale(.7);
-    }
-}
-
-@media only screen and (max-width: 470px) {
-    .formLabel.message {
-        transform: translateY(-475%);
-        -webkit-transform: translateY(-475%);
-        -moz-transform: translateY(-475%);
-        -ms-transform: translateY(-475%);
-        -o-transform: translateY(-475%);
-    }
-    .formControl.message:focus+.formLabel.message,
-    .formControl.message:not(:placeholder-shown)+.formLabel.message {
-        transform: translateY(-575%) scale(.7);
-        -webkit-transform: translateY(-575%) scale(.7);
-        -moz-transform: translateY(-575%) scale(.7);
-        -ms-transform: translateY(-575%) scale(.7);
-        -o-transform: translateY(-575%) scale(.7);
     }
 }
 
@@ -775,54 +364,34 @@
         width: 90%;
     }
     .formLabel {
-        margin-left: 2rem;
+        top: 55%;
+        left: 12%;
+    }
+    .formLabel.message {
+        top: 25%;
+    }
+    .formControl:focus+.formLabel,
+    .formControl:not(:placeholder-shown)+.formLabel {
+        top: 0%;
+    }
+    .formControl:focus+.formLabel.message,
+    .formControl:not(:placeholder-shown)+.formLabel.message {
+        top: 0%;
     }
     .formControl {
         width: 82%;
-    }
-    .formLabel {
-        margin-left: 1.5rem;
-    }
-    .formLabel.message {
-        transform: translateY(-450%);
-        -webkit-transform: translateY(-450%);
-        -moz-transform: translateY(-450%);
-        -ms-transform: translateY(-450%);
-        -o-transform: translateY(-450%);
-    }
-    .formControl.message:focus+.formLabel.message,
-    .formControl.message:not(:placeholder-shown)+.formLabel.message {
-        transform: translateY(-550%) scale(.7);
-        -webkit-transform: translateY(-550%) scale(.7);
-        -moz-transform: translateY(-550%) scale(.7);
-        -ms-transform: translateY(-550%) scale(.7);
-        -o-transform: translateY(-550%) scale(.7);
+        margin: 8% auto 0;
     }
 }
 
 @media only screen and (max-width: 376px) {
-    .formLabel.message {
-        transform: translateY(-400%);
-        -webkit-transform: translateY(-400%);
-        -moz-transform: translateY(-400%);
-        -ms-transform: translateY(-400%);
-        -o-transform: translateY(-400%);
-    }
-    .formControl.message:focus+.formLabel.message,
-    .formControl.message:not(:placeholder-shown)+.formLabel.message {
-        transform: translateY(-525%) scale(.7);
-        -webkit-transform: translateY(-525%) scale(.7);
-        -moz-transform: translateY(-525%) scale(.7);
-        -ms-transform: translateY(-525%) scale(.7);
-        -o-transform: translateY(-525%) scale(.7);
-    }
     .contactHeading {
         font-size: 1.2rem;
     }
     .submitBtn {
         font-size: 1rem;
     }
-    .formControl {
+    .form.formControl {
         width: 80%;
     }
     .contactInfo {
@@ -834,25 +403,7 @@
 }
 
 @media only screen and (max-width: 345px) {
-    .formLabel.message {
-        transform: translateY(-350%);
-        -webkit-transform: translateY(-350%);
-        -moz-transform: translateY(-350%);
-        -ms-transform: translateY(-350%);
-        -o-transform: translateY(-350%);
-    }
-    .formControl.message:focus+.formLabel.message,
-    .formControl.message:not(:placeholder-shown)+.formLabel.message {
-        transform: translateY(-525%) scale(.7);
-        -webkit-transform: translateY(-525%) scale(.7);
-        -moz-transform: translateY(-525%) scale(.7);
-        -ms-transform: translateY(-525%) scale(.7);
-        -o-transform: translateY(-525%) scale(.7);
-    }
-    .formLabel {
-        margin-left: 1.3rem;
-    }
-    .formControl {
+    .form.formControl {
         width: 75%;
     }
     .contactInfoContainer {
@@ -867,48 +418,19 @@
     .contactFormContainer {
         width: 90%;
     }
-    .formLabel {
+    .form.formLabel {
         margin-left: 1.5rem;
         font-size: 1.5rem;
-        transform: translateY(-110%);
-        -webkit-transform: translateY(-110%);
-        -moz-transform: translateY(-110%);
-        -ms-transform: translateY(-110%);
-        -o-transform: translateY(-110%);
     }
-    .formControl {
+    .form.formControl {
         width: 80%;
         font-size: 1.5rem;
     }
     .formControl.message {
         padding-bottom: 30%;
     }
-    .formControl:focus+.formLabel,
-    .formControl:not(:placeholder-shown)+.formLabel {
-        transform: translateY(-210%) scale(.7);
-        -webkit-transform: translateY(-210%) scale(.7);
-        color: black;
-        -moz-transform: translateY(-210%) scale(.7);
-        -ms-transform: translateY(-210%) scale(.7);
-        -o-transform: translateY(-210%) scale(.7);
-    }
     .formControl {
         font-size: 0.8rem;
-    }
-    .formLabel.message {
-        transform: translateY(-380%);
-        -webkit-transform: translateY(-380%);
-        -moz-transform: translateY(-380%);
-        -ms-transform: translateY(-380%);
-        -o-transform: translateY(-380%);
-    }
-    .formControl.message:focus+.formLabel.message,
-    .formControl.message:not(:placeholder-shown)+.formLabel.message {
-        transform: translateY(-520%) scale(.7);
-        -webkit-transform: translateY(-500%) scale(.7);
-        -moz-transform: translateY(-520%) scale(.7);
-        -ms-transform: translateY(-520%) scale(.7);
-        -o-transform: translateY(-520%) scale(.7);
     }
     .contactHeading {
         font-size: 1rem;
@@ -927,85 +449,28 @@
 
 @media only screen and (min-width: 1920px) {
     .formLabel {
-        margin-left: 3.5rem;
+        top: 65%;
+        left: 6%;
+    }
+    .formLabel.message {
+        top: 25%;
+    }
+    .formControl.message {
+        padding-bottom: 10%;
     }
     .formControl:focus+.formLabel,
     .formControl:not(:placeholder-shown)+.formLabel {
-        transform: translateY(-200%) scale(.7);
-        -webkit-transform: translateY(-200%) scale(.7);
-        color: black;
-        -moz-transform: translateY(-200%) scale(.7);
-        -ms-transform: translateY(-200%) scale(.7);
-        -o-transform: translateY(-200%) scale(.7);
+        top: 25%;
     }
-    .formLabel.message {
-        transform: translateY(-800%);
-        -webkit-transform: translateY(-800%);
-        -moz-transform: translateY(-800%);
-        -ms-transform: translateY(-800%);
-        -o-transform: translateY(-800%);
-    }
-    .formControl.message {
-        padding-bottom: 15%;
-    }
-    .formControl.message:focus+.formLabel.message,
-    .formControl.message:not(:placeholder-shown)+.formLabel.message {
-        transform: translateY(-940%) scale(.7);
-        -webkit-transform: translateY(-940%) scale(.7);
-        -moz-transform: translateY(-940%) scale(.7);
-        -ms-transform: translateY(-940%) scale(.7);
-        -o-transform: translateY(-940%) scale(.7);
+    .formControl:focus+.formLabel.message,
+    .formControl:not(:placeholder-shown)+.formLabel.message {
+        top: 10%;
     }
 }
 
 @media only screen and (min-width: 2100px) {
-    .formLabel {
-        margin-left: 4rem;
-    }
-    .formControl:focus+.formLabel,
-    .formControl:not(:placeholder-shown)+.formLabel {
-        transform: translateY(-200%) scale(.7);
-        -webkit-transform: translateY(-200%) scale(.7);
-        color: black;
-        -moz-transform: translateY(-200%) scale(.7);
-        -ms-transform: translateY(-200%) scale(.7);
-        -o-transform: translateY(-200%) scale(.7);
-    }
-    .formLabel.message {
-        transform: translateY(-350%);
-        -webkit-transform: translateY(-350%);
-        -moz-transform: translateY(-350%);
-        -ms-transform: translateY(-350%);
-        -o-transform: translateY(-350%);
-    }
-    .formControl.message:focus+.formLabel.message,
-    .formControl.message:not(:placeholder-shown)+.formLabel.message {
-        transform: translateY(-450%) scale(.7);
-        -webkit-transform: translateY(-450%) scale(.7);
-        -moz-transform: translateY(-450%) scale(.7);
-        -ms-transform: translateY(-450%) scale(.7);
-        -o-transform: translateY(-450%) scale(.7);
-    }
-}
-
-@media only screen and (min-width: 2250px) {
-    .formLabel {
-        margin-left: 9rem;
-    }
-    .formLabel.message {
-        transform: translateY(-450%);
-        -webkit-transform: translateY(-450%);
-        -moz-transform: translateY(-450%);
-        -ms-transform: translateY(-450%);
-        -o-transform: translateY(-450%);
-    }
-    .formControl.message:focus+.formLabel.message,
-    .formControl.message:not(:placeholder-shown)+.formLabel.message {
-        transform: translateY(-550%) scale(.7);
-        -webkit-transform: translateY(-550%) scale(.7);
-        -moz-transform: translateY(-550%) scale(.7);
-        -ms-transform: translateY(-550%) scale(.7);
-        -o-transform: translateY(-550%) scale(.7);
+    .submitBtn {
+        margin: 2rem auto;
     }
 }
 
@@ -1027,44 +492,12 @@
         font-size: 3.5rem;
     }
     .formLabel {
-        margin-left: 7rem;
         font-size: 2rem;
     }
     .formControl {
         font-size: 2rem;
     }
-    .formLabel {
-        transform: translateY(-125%);
-        -webkit-transform: translateY(-125%);
-        -moz-transform: translateY(-125%);
-        -ms-transform: translateY(-125%);
-        -o-transform: translateY(-125%);
-    }
-    .formControl:focus+.formLabel,
-    .formControl:not(:placeholder-shown)+.formLabel {
-        transform: translateY(-200%) scale(.7);
-        -webkit-transform: translateY(-200%) scale(.7);
-        color: black;
-        -moz-transform: translateY(-200%) scale(.7);
-        -ms-transform: translateY(-200%) scale(.7);
-        -o-transform: translateY(-200%) scale(.7);
-    }
-    .formLabel.message {
-        transform: translateY(-625%);
-        -webkit-transform: translateY(-625%);
-        -moz-transform: translateY(-625%);
-        -ms-transform: translateY(-625%);
-        -o-transform: translateY(-625%);
-    }
     .formControl.message {
         padding-bottom: 10%;
-    }
-    .formControl.message:focus+.formLabel.message,
-    .formControl.message:not(:placeholder-shown)+.formLabel.message {
-        transform: translateY(-750%) scale(.7);
-        -webkit-transform: translateY(-750%) scale(.7);
-        -moz-transform: translateY(-750%) scale(.7);
-        -ms-transform: translateY(-750%) scale(.7);
-        -o-transform: translateY(-750%) scale(.7);
     }
 }
