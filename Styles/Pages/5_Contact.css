@@ -939,22 +939,22 @@
         -o-transform: translateY(-200%) scale(.7);
     }
     .formLabel.message {
-        transform: translateY(-300%);
-        -webkit-transform: translateY(-300%);
-        -moz-transform: translateY(-300%);
-        -ms-transform: translateY(-300%);
-        -o-transform: translateY(-300%);
+        transform: translateY(-800%);
+        -webkit-transform: translateY(-800%);
+        -moz-transform: translateY(-800%);
+        -ms-transform: translateY(-800%);
+        -o-transform: translateY(-800%);
     }
     .formControl.message {
-        padding-bottom: 5%;
+        padding-bottom: 15%;
     }
     .formControl.message:focus+.formLabel.message,
     .formControl.message:not(:placeholder-shown)+.formLabel.message {
-        transform: translateY(-450%) scale(.7);
-        -webkit-transform: translateY(-450%) scale(.7);
-        -moz-transform: translateY(-450%) scale(.7);
-        -ms-transform: translateY(-450%) scale(.7);
-        -o-transform: translateY(-450%) scale(.7);
+        transform: translateY(-940%) scale(.7);
+        -webkit-transform: translateY(-940%) scale(.7);
+        -moz-transform: translateY(-940%) scale(.7);
+        -ms-transform: translateY(-940%) scale(.7);
+        -o-transform: translateY(-940%) scale(.7);
     }
 }
 
