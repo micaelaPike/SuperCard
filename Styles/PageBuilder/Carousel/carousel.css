@@ -9,7 +9,7 @@
 
 .cards.cardCarouselContainer {
     width: 43%;
-    /* align-self: center; */
+    align-self: center;
 }
 
 .cardCarousel {
