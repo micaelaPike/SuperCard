@@ -66,6 +66,9 @@
     .cardCarouselContainer {
         width: 100%;
     }
+    .cards.cardCarouselContainer {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 735px) {

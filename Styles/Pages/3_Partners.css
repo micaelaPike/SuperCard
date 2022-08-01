@@ -151,43 +151,68 @@
     aspect-ratio: 2 / 1;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 1500px) {
     .partnersTextContainer {
-        width: 100%;
-        justify-content: center;
-        padding: 1rem 2rem 0rem;
+        padding: 0rem 7rem 0rem 1rem;
     }
     .partnersTextContainer p {
-        font-size: 1rem;
-        line-height: 1.3rem;
+        font-size: 1.3rem;
+        line-height: 2rem;
     }
     .lblSearchStore {
-        font-size: 1.6rem;
+        font-size: 2rem;
+    }
+    .inputSearchStore {
+        font-size: 1.5rem;
+    }
+    .logoContainer {
+        padding-top: 1rem;
     }
     .btnFindStore {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 }
 
-@media only screen and (max-width: 600px) {
-    .logoContainer {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
+@media only screen and (max-width: 1335px) {
+    .partnersTextContainer {
+        padding: 1rem 5rem 0rem 2rem;
     }
-    .logoContainer img {
-        padding: 1rem;
+    .partnersTextContainer p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .btnFindStore {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem 0.6rem;
+    }
+    .lblSearchStore {
+        font-size: 2rem;
     }
     .inputSearchStore {
-        width: 90%;
-        font-size: 1rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .partnersTextContainer p {
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+    }
+    .lblSearchStore {
+        font-size: 1.8rem;
+    }
+    .inputSearchStore {
+        width: 80%;
+        font-size: 1.3rem;
     }
     .sparLogo {
-        width: 70%;
+        width: 30%;
     }
-    .topsLogo,
+    .topsLogo {
+        width: 15%;
+    }
     .bmsLogo {
-        width: 45%;
+        width: 15%;
     }
 }
 
@@ -232,68 +257,43 @@
     }
 }
 
-@media only screen and (max-width: 1050px) {
-    .partnersTextContainer p {
-        font-size: 1.3rem;
-        line-height: 1.8rem;
+@media only screen and (max-width: 600px) {
+    .logoContainer {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
     }
-    .lblSearchStore {
-        font-size: 1.8rem;
+    .logoContainer img {
+        padding: 1rem;
     }
     .inputSearchStore {
-        width: 80%;
-        font-size: 1.3rem;
+        width: 90%;
+        font-size: 1rem;
     }
     .sparLogo {
-        width: 30%;
+        width: 70%;
     }
-    .topsLogo {
-        width: 15%;
-    }
+    .topsLogo,
     .bmsLogo {
-        width: 15%;
+        width: 45%;
     }
 }
 
-@media only screen and (max-width: 1335px) {
+@media only screen and (max-width: 450px) {
     .partnersTextContainer {
-        padding: 1rem 5rem 0rem 2rem;
+        width: 100%;
+        justify-content: center;
+        padding: 1rem 2rem 0rem;
     }
     .partnersTextContainer p {
-        font-size: 1.5rem;
-        line-height: 2rem;
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+    .lblSearchStore {
+        font-size: 1.6rem;
     }
     .btnFindStore {
         font-size: 1rem;
-        padding: 0.6rem 1.2rem 0.6rem;
-    }
-    .lblSearchStore {
-        font-size: 2rem;
-    }
-    .inputSearchStore {
-        font-size: 1.5rem;
-    }
-}
-
-@media only screen and (max-width: 1500px) {
-    .partnersTextContainer {
-        padding: 0rem 7rem 0rem 1rem;
-    }
-    .partnersTextContainer p {
-        font-size: 1.3rem;
-        line-height: 2rem;
-    }
-    .lblSearchStore {
-        font-size: 2rem;
-    }
-    .inputSearchStore {
-        font-size: 1.5rem;
-    }
-    .logoContainer {
-        padding-top: 1rem;
-    }
-    .btnFindStore {
-        font-size: 1.3rem;
     }
 }
 
