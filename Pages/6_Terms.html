@@ -2,8 +2,10 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- HTML Meta Tags -->
-    <title>SuperCard</title>
     <meta name="description" content="SuperCard is an integrated and technologically advanced leader in card development systems that provides the end user with a simple yet futuristic experience. We provide a multi functioning card system that understands, reacts and suits the needs of our customers in a simple yet forward thinking way. SuperCard provides its customers with the opportunity to store their cash safely.">
 
     <!-- Google / Search Engine Tags -->
@@ -30,10 +32,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../Styles/Global/index.css" />
     <link rel="icon" href="../Assets/Logos/SuperCard.ico" />
-    <script type="module" defer src="../Scripts/Components/emailForm.js"></script>
-    <script type="module" defer src="../Scripts/Components/navigationBar.js"></script>
 
-    <title>Contact Us</title>
+    <title>Terms & Conditions</title>
 </head>
 
 <body>
@@ -66,7 +66,7 @@
             </div>
         </div>
     </nav>
-    <img id="Contact" class="redDesktopGradient" src="/Assets/Backgrounds/RedDesktopGradient.webp" alt="Background"></img>
+    <img id="Contact" class="steelDesktopGradient" src="/Assets/Backgrounds/SteelDesktopGradient.webp" alt="Background"></img>
     <div>
         <ul class="hamburgerNavList">
             <li class="navListItem">
@@ -85,53 +85,14 @@
         </ul>
     </div>
     <div id="pageHeading" class="contact">
-        <p>Our <mark>Contact Information</mark></p>
-    </div>
-    <div class="snackbar">
-        <img class="closeButton" src="/Assets/Images/CloseButton.png" class="closeBtnImg" />
-
-        <img class="snackBarImage" src="../Assets/Images/failure-cross.png" alt=" Success Tick" />
-        <p class="snackbarAlert">Message sent successfully!</p>
+        <p>Terms<mark> & </mark> Conditions</p>
     </div>
 
-    <div class="mainContainer contact">
-        <div class="contactInfoContainer">
-            <div class="contactInfo">
-                <p class="contactHeading">Customer Care & Head Office</p>
-                <p>SuperCard Customer Care: 0800 333 991</p>
-            </div>
-        </div>
-        <div class="contactFormContainer">
-            <p class="formHeading">Talk To Us</p>
-            <form id="emailForm" action="#" class="form" method="get" required>
-                <div class="formGroup">
-                    <input type="text" id="name" name="name" placeholder="Name" class="formControl name" required />
-                    <label for="userName" class="formLabel">Name</label>
-                </div>
-                <div class="formGroup">
-                    <input type="text" id="number" name="number" placeholder="Contact Number" class="formControl number" minlength="10" required />
-                    <label for="userNumber" class="formLabel">Number</label>
-                </div>
-                <div class="formGroup">
-                    <input type="text" id="email" name="email" placeholder="Email" class="formControl email" required />
-                    <label for="userEmail" class="formLabel">Email</label>
-                </div>
-                <div class="formGroup">
-                    <textarea id="message" name="message" class="formControl message" placeholder="Message" rows="1" cols="50" required></textarea>
-                    <label for="userMessage" class="formLabel message">Message</label>
-                </div>
-                <button type="submit" name="submit" class="submitBtn">
-              Submit
-            </button>
-                <label for="submitButton" class="formLabel submit">Submit</label>
-            </form>
+    <div class="textContainer">
+        <div class="termsText">
+
         </div>
     </div>
-    <div class="footer contact">
-        <a href="../Pages/6_Terms.html">Terms & Conditions</a>
-    </div>
-
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </body>
 
 </html>

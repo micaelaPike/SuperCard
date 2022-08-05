@@ -183,6 +183,11 @@
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.51);
 }
 
+.footer.contact {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+
 @media only screen and (max-width: 1440px) {
     .formControl {
         margin: 3% auto 0;
@@ -244,7 +249,7 @@
     }
 }
 
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 427px) {
     .formHeading {
         font-size: 1.5rem;
     }
@@ -381,5 +386,9 @@
     }
     .submitBtn {
         font-size: 2rem;
+    }
+    .footer.contact {
+        font-size: 1.7rem;
+        margin-top: 2rem;
     }
 }
