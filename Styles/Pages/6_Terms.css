@@ -15,20 +15,60 @@
     background-color: whitesmoke;
     opacity: 70%;
     margin: auto;
-    padding: 1rem;
+    padding: 2rem;
+    padding-top: 1rem;
     white-space: normal;
     text-overflow: clip;
     overflow-wrap: break-word;
     overflow: auto;
 }
 
+.termsText h2 {
+    padding: 1rem;
+}
+
+.termsText ul {
+    padding-left: 2rem;
+    line-height: 2.1rem;
+}
+
+.termsText li {
+    padding-left: 2rem;
+}
+
+.conditionTypeContainer {
+    align-self: center;
+}
+
 .conditionType {
+    all: unset;
+    display: flex;
     padding: 2rem;
     align-self: center;
+    list-style-type: none;
+    gap: 3rem;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .conditionType a {
     padding: 1rem;
     font-size: 1.5rem;
     color: black;
+}
+
+.conditionType a:active {
+    color: #cf000e;
+}
+
+.footer.terms {
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+}
+
+@media only screen and (min-width:2560px) {
+    .footer.terms {
+        font-size: 1.7rem;
+        margin-top: 2rem;
+    }
 }
