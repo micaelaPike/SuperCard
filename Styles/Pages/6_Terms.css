@@ -11,7 +11,7 @@
     width: 70%;
     max-height: 30rem;
     border: 2px solid black;
-    border-radius: 30px;
+    border-radius: 10px;
     background-color: whitesmoke;
     opacity: 70%;
     margin: auto;
@@ -21,6 +21,10 @@
     text-overflow: clip;
     overflow-wrap: break-word;
     overflow: auto;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 .termsText h2 {
@@ -64,7 +68,7 @@
 .footer.terms {
     all: unset;
     font-size: 1.3rem;
-    margin-top: auto;
+    margin-top: 1rem;
 }
 
 @media only screen and (min-width:2560px) {
