@@ -40,6 +40,10 @@
         content: url("/Assets/Images/ArrowClicked.png");
     }
     
+    .cardDescription .footer.terms {
+        place-self: center;
+    }
+    
     @media only screen and (min-width: 1920px) {
         .cardDescription {
             padding-left: 7%;

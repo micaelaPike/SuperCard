@@ -1,3 +1,7 @@
+.partners.mainContainer {
+    height: min-content;
+}
+
 .searchError {
     display: none;
     position: absolute;
@@ -125,8 +129,8 @@
 .logoContainer {
     display: flex;
     width: 100%;
-    padding-top: 1rem;
-    margin-top: 1rem;
+    padding-top: auto;
+    margin-top: auto;
     justify-content: center;
 }
 
@@ -139,15 +143,19 @@
 
 .sparLogo {
     display: flex;
-    width: 30%;
+    width: 25%;
     aspect-ratio: 5.66 / 1;
 }
 
 .topsLogo,
 .bmsLogo {
     display: flex;
-    width: 15%;
+    width: 13%;
     aspect-ratio: 2 / 1;
+}
+
+.searchInput .footer.terms {
+    margin-top: 1rem;
 }
 
 @media only screen and (max-width: 1500px) {
