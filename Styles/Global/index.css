@@ -19,6 +19,7 @@
         * {
             font-weight: 600;
             font-family: 'Gothic A1', sans-serif;
+            /* outline: black solid thin; */
         }
         
         .scLogoIndex {
@@ -57,16 +58,24 @@
         .infoContainer {
             display: flex;
             width: 50%;
-            margin-left: 5%;
-            margin-top: 8%;
+            margin: 5% auto 0 5%;
+            /* margin-top: 8%; */
             text-align: center;
+            /* background-color: aqua; */
+            flex-direction: column;
+        }
+        
+        .mainCol {
+            display: flex;
+            flex-direction: row;
+            align-self: center;
         }
         
         .col1,
         .col3 {
             display: flex;
             flex-direction: column;
-            width: 43%;
+            width: 50%;
             align-items: center;
         }
         
@@ -86,7 +95,7 @@
             padding: 1rem;
             box-shadow: 8px 5px 5px 0px rgba(0, 0, 0, 0.75);
             cursor: pointer;
-            justify-content: left;
+            /* justify-content: left; */
         }
         
         .btnServices {
