@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>http://www.supercard.co.za/</loc>
+  <lastmod>2022-08-11T13:05:41+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://www.supercard.co.za/Pages/1_Services.html</loc>
+  <lastmod>2022-08-15T06:06:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.supercard.co.za/Pages/2_Cards.html</loc>
+  <lastmod>2022-08-15T06:06:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.supercard.co.za/Pages/3_Partners.html</loc>
+  <lastmod>2022-08-15T06:06:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.supercard.co.za/Pages/4_Register.html</loc>
+  <lastmod>2022-08-11T11:37:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.supercard.co.za/Pages/5_Contact.html</loc>
+  <lastmod>2022-08-05T12:58:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.supercard.co.za/index.html</loc>
+  <lastmod>2022-08-11T13:05:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.supercard.co.za/Pages/6_Terms.html</loc>
+  <lastmod>2022-08-11T06:47:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
