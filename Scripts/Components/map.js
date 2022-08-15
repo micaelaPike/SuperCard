@@ -262,9 +262,6 @@ function searchStore() {
         featureGroupMarker = new L.FeatureGroup;
 
         //this is the fuzzy search
-        // let arr = fuse.search(inputSearchStoreValue);
-        //let completeArr = lowerArr;
-
         let filteredResults = [];
 
         let fuseArr = fuse.search(inputSearchStoreValue);

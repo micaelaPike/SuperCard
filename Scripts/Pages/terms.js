@@ -6,7 +6,6 @@ let textBox = document.querySelector(".termsText");
 
 //Import JSON file with coordinates
 async function TermsAndConditionsContent() {
-    // was const
     let { default: terms } = await
     import ("/Scripts/Pages/TermsContent.json", {
         assert: {
