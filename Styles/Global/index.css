@@ -1,225 +1,229 @@
-        @import "../Vendors/normalize.css";
-        @import "../PageBuilder/Navigation/navigationBar.css";
-        @import "../PageBuilder/Headings/PageHeadings.css";
-        @import "../PageBuilder/Backgrounds/backgrounds.css";
-        @import "../PageBuilder/Carousel/carousel.css";
-        @import "../PageBuilder/Map/map.css";
-        @import "../Pages/1_Services.css";
-        @import "../Pages/2_Cards.css";
-        @import "../Pages/3_Partners.css";
-        @import "../Pages/4_Register.css";
-        @import "../Pages/5_Contact.css";
-        @import "../Pages/6_Terms.css";
-        @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@600;800&display=swap');
-        @font-face {
-            font-family: "Bauhaus";
-            src: url('/Assets/Fonts/Bauhaus-Font-Family/BauhausRegular.ttf'), url('Assets/FontsBauhaus-Font-Family/BauhausBold.ttf');
-        }
-        
-        * {
-            font-weight: 600;
-            font-family: 'Gothic A1', sans-serif;
-            /* outline: black solid thin; */
-        }
-        
-        .scLogoIndex {
-            display: flex;
-            width: 100%;
-            padding-top: 1rem;
-            text-align: center;
-        }
-        
-        .scLogoIndex img {
-            width: 80%
-        }
-        
-        .cards.mainContainer {
-            min-height: calc(100vh - 13rem);
-        }
-        
-        .mainContainer {
-            margin-top: 1rem;
-            display: flex;
-            width: 100%;
-        }
-        
-        .partners.mainContainer {
-            position: relative;
-        }
-        
-        .contact.mainContainer {
-            flex-direction: column;
-            align-items: center;
-            position: relative;
-        }
-        
-        .infoContainer {
-            display: flex;
-            width: 50%;
-            margin: 3% auto 0 5%;
-            text-align: center;
-            flex-direction: column;
-        }
-        
-        .mainCol {
-            display: flex;
-            flex-direction: row;
-            align-self: center;
-        }
-        
-        .col1,
-        .col3 {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            align-items: center;
-        }
-        
-        .col2 {
-            display: flex;
-            width: 13%;
-        }
-        
-        .btnRegister,
-        .btnServices {
-            width: 100%;
-            font-size: 1.5rem;
-            background-color: white;
-            color: #cf000e;
-            border-color: white;
-            border-radius: 25px;
-            padding: 1rem;
-            box-shadow: 8px 5px 5px 0px rgba(0, 0, 0, 0.75);
-            cursor: pointer;
-        }
-        
-        .btnServices {
-            background-color: #cf000e;
-            color: white;
-            border-color: #cf000e;
-        }
-        
-        .infoContainer p {
-            display: flex;
-            width: 100%;
-            font-size: 2rem;
-            font-family: 'Bauhaus';
-            align-items: center;
-            justify-content: center;
-            margin: 0 2rem;
-        }
-        
-        .infoContainer .footer.terms a {
-            color: #cf000e;
-            font-size: 1rem;
-            margin-top: 1rem;
-        }
-        
-        .centered {
-            display: flex;
-            color: #cf000e;
-            justify-content: center;
-            padding-top: 2rem;
-        }
-        
-        .spacer {
-            display: flex;
-            width: 16px;
-            height: 75%;
-            background-color: grey;
-            border-radius: 15px;
-            opacity: 90%;
-            justify-content: center;
-            margin: 10% 46% 0% 46%;
-        }
-        
-        @media only screen and (min-width: 1920px) {
-            .infoContainer p {
-                font-size: 2.5rem;
-            }
-        }
-        
-        @media only screen and (max-width: 880px) {
-            .scLogoIndex {
-                width: 100%;
-            }
-            .index.mainContainer {
-                flex-direction: column-reverse;
-                align-items: center;
-            }
-            .cards.mainContainer {
-                flex-direction: column;
-            }
-            .register.mainContainer {
-                flex-direction: column;
-            }
-            .partners.mainContainer {
-                flex-direction: column;
-            }
-            .infoContainer {
-                width: 100%;
-                justify-content: center;
-                margin-left: 0;
-            }
-            .col1 {
-                margin-left: 5rem;
-            }
-            .col2 {
-                width: 15%;
-            }
-            .col3 {
-                margin-right: 5rem;
-            }
-            .infoContainer p {
-                font-size: 2rem;
-            }
-            .btnRegister {
-                font-size: 1.75rem;
-            }
-            .btnServices {
-                font-size: 1.75rem;
-            }
-        }
-        
-        @media only screen and (max-width: 735px) {
-            .infoContainer p {
-                font-size: 1.5rem;
-            }
-            .btnRegister {
-                font-size: 1.3rem;
-                padding: 0.5rem;
-            }
-            .btnServices {
-                font-size: 1.3rem;
-                padding: 0.5rem 1.75rem;
-            }
-        }
-        
-        @media only screen and (max-width: 600px) {
-            .btnRegister {
-                font-size: 1.2rem;
-                padding: 0.5rem;
-            }
-            .btnServices {
-                font-size: 1.2rem;
-                padding: 0.5rem 1.75rem;
-            }
-        }
-        
-        @media only screen and (max-width: 450px) {
-            .infoContainer p {
-                font-size: 1rem;
-            }
-            .btnRegister {
-                font-size: 0.8rem;
-                padding: 0.5rem;
-            }
-            .btnServices {
-                font-size: 0.8rem;
-                padding: 0.5rem 1.75rem;
-            }
-            .spacer {
-                width: 2rem;
-                margin: 10% 46% 0% 46%;
-            }
-        }
+@import "../Vendors/normalize.css";
+@import "../PageBuilder/Navigation/navigationBar.css";
+@import "../PageBuilder/Headings/PageHeadings.css";
+@import "../PageBuilder/Backgrounds/backgrounds.css";
+@import "../PageBuilder/Carousel/carousel.css";
+@import "../PageBuilder/Map/map.css";
+@import "../Pages/1_Services.css";
+@import "../Pages/2_Cards.css";
+@import "../Pages/3_Partners.css";
+@import "../Pages/4_Register.css";
+@import "../Pages/5_Contact.css";
+@import "../Pages/6_Terms.css";
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@600;800&display=swap');
+@font-face {
+    font-family: "Bauhaus";
+    src: url('/Assets/Fonts/Bauhaus-Font-Family/BauhausRegular.ttf'), url('Assets/FontsBauhaus-Font-Family/BauhausBold.ttf');
+}
+
+* {
+    font-weight: 600;
+    font-family: 'Gothic A1', sans-serif;
+    /* outline: black solid thin; */
+}
+
+.scLogoIndex {
+    display: flex;
+    width: 100%;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.scLogoIndex img {
+    width: 80%
+}
+
+.cards.mainContainer {
+    min-height: calc(100vh - 13rem);
+}
+
+.mainContainer {
+    margin-top: 1rem;
+    display: flex;
+    width: 100%;
+    /* height: 91.93%; */
+    /* background-color: aquamarine */
+}
+
+.partners.mainContainer {
+    position: relative;
+}
+
+.contact.mainContainer {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.infoContainer {
+    display: flex;
+    width: 50%;
+    margin: 5% auto 0 5%;
+    /* margin-top: 8%; */
+    text-align: center;
+    /* background-color: aqua; */
+    flex-direction: column;
+}
+
+.infoContainer .footer.terms a {
+    color: #cf000e;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.mainCol {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+.col1,
+.col3 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+}
+
+.col2 {
+    display: flex;
+    width: 13%;
+}
+
+.btnRegister,
+.btnServices {
+    width: 100%;
+    font-size: 1.5rem;
+    background-color: white;
+    color: #cf000e;
+    border-color: white;
+    border-radius: 25px;
+    padding: 1rem;
+    box-shadow: 8px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+    /* justify-content: left; */
+}
+
+.btnServices {
+    background-color: #cf000e;
+    color: white;
+    border-color: #cf000e;
+}
+
+.infoContainer p {
+    display: flex;
+    width: 100%;
+    font-size: 2rem;
+    font-family: 'Bauhaus';
+    align-items: center;
+    justify-content: center;
+}
+
+.centered {
+    display: flex;
+    color: #cf000e;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.spacer {
+    display: flex;
+    width: 16px;
+    height: 75%;
+    background-color: grey;
+    border-radius: 15px;
+    opacity: 90%;
+    justify-content: center;
+    margin: 10% 46% 0% 46%;
+}
+
+@media only screen and (min-width: 1920px) {
+    .infoContainer p {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .scLogoIndex {
+        width: 100%;
+    }
+    .index.mainContainer {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .cards.mainContainer {
+        flex-direction: column;
+    }
+    .register.mainContainer {
+        flex-direction: column;
+    }
+    .partners.mainContainer {
+        flex-direction: column;
+    }
+    .infoContainer {
+        width: 100%;
+        justify-content: center;
+        margin-left: 0;
+    }
+    .col1 {
+        margin-left: 5rem;
+    }
+    .col2 {
+        width: 15%;
+    }
+    .col3 {
+        margin-right: 5rem;
+    }
+    .infoContainer p {
+        font-size: 2rem;
+    }
+    .btnRegister {
+        font-size: 1.75rem;
+    }
+    .btnServices {
+        font-size: 1.75rem;
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .infoContainer p {
+        font-size: 1.5rem;
+    }
+    .btnRegister {
+        font-size: 1.3rem;
+        padding: 0.5rem;
+    }
+    .btnServices {
+        font-size: 1.3rem;
+        padding: 0.5rem 1.75rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .btnRegister {
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+    .btnServices {
+        font-size: 1.2rem;
+        padding: 0.5rem 1.75rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .infoContainer p {
+        font-size: 1rem;
+    }
+    .btnRegister {
+        font-size: 0.8rem;
+        padding: 0.5rem;
+    }
+    .btnServices {
+        font-size: 0.8rem;
+        padding: 0.5rem 1.75rem;
+    }
+    .spacer {
+        width: 2rem;
+        margin: 10% 46% 0% 46%;
+    }
+}
