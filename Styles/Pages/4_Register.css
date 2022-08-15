@@ -39,6 +39,7 @@
     width: 30rem;
     height: 30rem;
     padding: 5%;
+    align-self: center;
 }
 
 @media only screen and (min-width: 1920px) {
@@ -74,8 +75,8 @@
         line-height: 1.8rem;
     }
     .kioskImage {
-        width: 522.99px;
-        height: 544.3px;
+        width: 430px;
+        height: 420px;
     }
     .heading {
         font-size: 2rem;
@@ -89,8 +90,8 @@
         line-height: 1.6rem;
     }
     .kioskImage {
-        width: 500px;
-        height: 528px;
+        width: 430px;
+        height: 400px;
     }
 }
 
@@ -124,18 +125,25 @@
 
 @media only screen and (max-width: 600px) {
     .kioskImage {
-        width: 558px;
-        height: 584.29px;
+        width: 500px;
+        height: 480px;
     }
     .registerTextContainer {
         line-height: 2.8rem;
     }
 }
 
+@media only screen and (max-width: 500px) {
+    .kioskImage {
+        width: 400px;
+        height: 380px;
+    }
+}
+
 @media only screen and (max-width: 450px) {
     .kioskImage {
-        width: 420px;
-        height: 440px;
+        width: 330px;
+        height: 300px;
     }
     .registerTextContainer {
         font-size: 1rem;
@@ -145,8 +153,8 @@
 
 @media only screen and (max-width: 376px) {
     .kioskImage {
-        width: 360px;
-        height: 380px;
+        width: 300px;
+        height: 260px;
     }
     .heading {
         font-size: 1.25rem;
@@ -156,8 +164,8 @@
 
 @media only screen and (max-width: 320px) {
     .kioskImage {
-        width: 280px;
-        height: 300px;
+        width: 260px;
+        height: 240px;
         padding: 5%;
     }
 }

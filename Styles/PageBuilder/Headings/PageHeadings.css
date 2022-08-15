@@ -48,6 +48,10 @@ mark {
     #pageHeading p {
         font-size: 3.5rem;
     }
+    #pageHeading {
+        padding-left: 0;
+        margin-left: 0;
+    }
 }
 
 @media only screen and (max-width: 550px) {
