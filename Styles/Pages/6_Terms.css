@@ -15,7 +15,7 @@
     background-color: whitesmoke;
     opacity: 70%;
     margin: auto;
-    padding: 2rem;
+    padding: 1.6rem;
     padding-top: 1rem;
     white-space: normal;
     text-overflow: clip;
@@ -40,6 +40,10 @@
     padding-left: 2rem;
 }
 
+.termsHeader {
+    text-align: center;
+}
+
 .conditionTypeContainer {
     align-self: center;
 }
@@ -49,18 +53,21 @@
     display: flex;
     padding: 1rem;
     align-self: center;
+    text-align: center;
     list-style-type: none;
     gap: 3rem;
     text-decoration: underline;
     cursor: pointer;
 }
 
-.conditionType a {
+.shopperType,
+.stokvelType,
+.giftType {
     font-size: 1.5rem;
     color: black;
 }
 
-.conditionType a:active {
+li.conditionTypeItem li a:active {
     color: #cf000e;
 }
 
@@ -74,6 +81,52 @@
     margin-top: 1rem;
     display: flex;
     justify-content: center;
+}
+
+.footer.terms.register1 {
+    display: flex;
+    margin-top: auto;
+}
+
+.footer.terms.register2 {
+    display: none;
+}
+
+@media only screen and (max-width: 1440px) {
+    .termsText {
+        max-height: 25rem;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .footer.terms.register1 {
+        display: none;
+    }
+    .footer.terms.register2 {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .shopperType,
+    .stokvelType,
+    .giftType {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 645px) {
+    .shopperType,
+    .stokvelType,
+    .giftType {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    .termsHeader {
+        font-size: 1.5rem;
+    }
 }
 
 @media only screen and (min-width:2560px) {

@@ -11,7 +11,8 @@
     color: black;
 }
 
-#pageHeading.contact {
+#pageHeading.contact,
+#pageHeading.terms {
     width: 100%;
     padding-left: 0;
 }

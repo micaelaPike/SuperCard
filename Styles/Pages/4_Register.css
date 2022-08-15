@@ -1,5 +1,6 @@
 .register.mainContainer {
     height: min-content;
+    align-items: center;
 }
 
 .registerTextContainer {
@@ -52,7 +53,7 @@
     .kioskImage {
         width: 45rem;
         height: 47rem;
-        padding: 10%;
+        padding: 5%;
     }
 }
 
@@ -104,19 +105,20 @@
         width: 100%;
         margin: 0;
         padding: 0;
+        flex-direction: column;
     }
     .kioskImage {
         margin: 1rem;
         width: 720px;
         height: 752px;
-        padding: 8%;
+        padding: 5%;
     }
 }
 
 @media only screen and (max-width: 735px) {
     .kioskImage {
-        width: 720px;
-        height: 752px;
+        width: 600px;
+        height: 580px;
     }
 }
 
