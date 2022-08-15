@@ -19,12 +19,13 @@
         * {
             font-weight: 600;
             font-family: 'Gothic A1', sans-serif;
+            /* outline: black solid thin; */
         }
         
         .scLogoIndex {
             display: flex;
             width: 100%;
-            padding-top: 2rem;
+            padding-top: 1rem;
             text-align: center;
         }
         

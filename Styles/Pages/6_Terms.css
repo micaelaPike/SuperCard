@@ -47,7 +47,7 @@
 .conditionType {
     all: unset;
     display: flex;
-    padding: 2rem;
+    padding: 1rem;
     align-self: center;
     list-style-type: none;
     gap: 3rem;
@@ -56,7 +56,6 @@
 }
 
 .conditionType a {
-    padding: 1rem;
     font-size: 1.5rem;
     color: black;
 }
