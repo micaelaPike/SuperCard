@@ -11,10 +11,19 @@
     color: black;
 }
 
-#pageHeading.contact,
-#pageHeading.terms {
-    width: 100%;
+#pageHeading.contact {
+    width: 100vw;
     padding-left: 0;
+}
+
+#pageHeading.pageHeading_terms {
+    width: 100vw;
+    padding-left: 0;
+}
+
+.pageHeading_terms p {
+    width: 100vw;
+    margin: 0;
 }
 
 mark {

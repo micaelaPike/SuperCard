@@ -335,6 +335,10 @@
         font-size: 0.8rem;
         line-height: 1rem;
     }
+    .formControl:focus+.formLabel.message,
+    .formControl:not(:placeholder-shown)+.formLabel.message {
+        top: 0%;
+    }
 }
 
 @media only screen and (min-width: 1920px) {
