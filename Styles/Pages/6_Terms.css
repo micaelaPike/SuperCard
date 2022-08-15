@@ -65,6 +65,10 @@
     color: #cf000e;
 }
 
+.footer.terms a {
+    color: rgb(56, 56, 56);
+}
+
 .footer.terms {
     all: unset;
     font-size: 1.3rem;
