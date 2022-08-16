@@ -67,13 +67,15 @@
     content: url("/Assets/Images/CloseButtonClicked.png");
 }
 
-.partnersTextContainer {
+.partnersContainer {
     display: flex;
     flex-direction: column;
     width: 50%;
     padding: 1rem 5% 1rem 1rem;
     text-align: justify;
 }
+
+.partnersTextContainer {}
 
 .partnersTextContainer p {
     align-items: center;
@@ -159,7 +161,7 @@
 }
 
 @media only screen and (max-width: 1500px) {
-    .partnersTextContainer {
+    .partnersContainer {
         padding: 0rem 7rem 0rem 1rem;
     }
     .partnersTextContainer p {
@@ -181,7 +183,7 @@
 }
 
 @media only screen and (max-width: 1335px) {
-    .partnersTextContainer {
+    .partnersContainer {
         padding: 1rem 5rem 0rem 2rem;
     }
     .partnersTextContainer p {
@@ -224,8 +226,8 @@
 }
 
 @media only screen and (max-width: 880px) {
-    .partnersTextContainer {
-        flex-direction: column-reverse;
+    .partnersContainer {
+        flex-direction: column;
         width: 100%;
         justify-content: center;
         padding: 1rem 4rem 0rem;
@@ -238,7 +240,7 @@
         font-size: 2.2rem;
     }
     .inputSearchStore {
-        width: 80%;
+        width: 70%;
         font-size: 1.5rem;
     }
     .btnFindStore {
@@ -274,7 +276,7 @@
         padding: 1rem;
     }
     .inputSearchStore {
-        width: 90%;
+        width: 70%;
         font-size: 1rem;
     }
     .sparLogo {
@@ -287,7 +289,7 @@
 }
 
 @media only screen and (max-width: 450px) {
-    .partnersTextContainer {
+    .partnersContainer {
         width: 100%;
         justify-content: center;
         padding: 1rem 2rem 0rem;
@@ -305,7 +307,7 @@
 }
 
 @media only screen and (min-width: 1920px) {
-    .partnersTextContainer {
+    .partnersContainer {
         padding: 0rem 8rem 1rem 2rem;
     }
     .partnersTextContainer p {
