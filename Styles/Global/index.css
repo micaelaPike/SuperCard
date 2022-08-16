@@ -34,7 +34,6 @@
 }
 
 .cards.mainContainer {
-    flex-direction: column;
     min-height: calc(100vh - 13rem);
 }
 
