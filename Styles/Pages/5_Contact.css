@@ -244,6 +244,38 @@
     }
 }
 
+@media only screen and (max-width: 655px) {
+    .formLabel {
+        top: 60%;
+    }
+    .formLabel.message {
+        top: 50%;
+    }
+    .formControl {
+        margin: 8% auto 0;
+    }
+    .formControl:focus+.formLabel,
+    .formControl:not(:placeholder-shown)+.formLabel {
+        top: 20%;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .formLabel {
+        top: 55%;
+    }
+    .formLabel.message {
+        top: 50%;
+    }
+    .formControl {
+        margin: 8% auto 0;
+    }
+    .formControl:focus+.formLabel,
+    .formControl:not(:placeholder-shown)+.formLabel {
+        top: 10%;
+    }
+}
+
 @media only screen and (max-width: 427px) {
     .formHeading {
         font-size: 1.5rem;
@@ -296,6 +328,10 @@
     }
     .contactInfoContainer {
         width: 100%;
+    }
+    .formControl:focus+.formLabel.message,
+    .formControl:not(:placeholder-shown)+.formLabel.message {
+        top: 0%;
     }
 }
 

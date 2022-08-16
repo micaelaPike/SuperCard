@@ -44,11 +44,6 @@
         }
         
         @media only screen and (min-width: 1920px) {
-            .cardDescription {
-                padding-left: 7%;
-                line-height: 2.5rem;
-                font-size: 2rem;
-            }
             .carouselNext {
                 width: 2.8rem;
                 height: 2.8rem;
@@ -56,6 +51,12 @@
                 margin-left: 0.75rem;
                 margin-top: 0.1rem;
                 box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.75);
+            }
+            .descriptionContainer {
+                margin-top: 0;
+                font-size: 1.7rem;
+                padding-left: 7%;
+                line-height: 2.5rem;
             }
         }
         
