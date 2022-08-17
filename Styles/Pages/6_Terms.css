@@ -61,14 +61,16 @@
     cursor: pointer;
 }
 
-.shopperType,
-.stokvelType,
-.giftType {
+.conditionTypeItemShopper a,
+.conditionTypeItemStokvel a,
+.conditionTypeItemGift a {
     font-size: 1.5rem;
     color: black;
 }
 
-.conditionTypeItem li a:active {
+.conditionTypeItemShopper a:active,
+.conditionTypeItemStokvel a:active,
+.conditionTypeItemGift a:active {
     color: #cf000e;
 }
 
