@@ -121,9 +121,6 @@ li.conditionTypeItem li a:active {
     .giftType {
         font-size: 1rem;
     }
-    .footer.terms {
-        /* margin-top: 0rem; */
-    }
 }
 
 @media only screen and (max-width: 426px) {

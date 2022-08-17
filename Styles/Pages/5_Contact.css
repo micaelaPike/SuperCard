@@ -109,7 +109,7 @@
 }
 
 .formLabel {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     position: absolute;
     display: flex;
     left: 6.5%;
@@ -137,26 +137,28 @@
 .formControl:focus+.formLabel,
 .formControl:not(:placeholder-shown)+.formLabel {
     transition: top 0.2s ease;
+    font-weight: bold;
     color: black;
     bottom: auto;
     top: 5.5%;
-    transform: scale(0.8, 0.8);
-    -webkit-transform: scale(0.8, 0.8);
-    -moz-transform: scale(0.8, 0.8);
-    -ms-transform: scale(0.8, 0.8);
-    -o-transform: scale(0.8, 0.8);
+    transform: scale(0.9, 0.9);
+    -webkit-transform: scale(0.9, 0.9);
+    -moz-transform: scale(0.9, 0.9);
+    -ms-transform: scale(0.9, 0.9);
+    -o-transform: scale(0.9, 0.9);
 }
 
 .formControl:focus+.formLabel.message,
 .formControl:not(:placeholder-shown)+.formLabel.message {
     transition: top 0.2s ease;
     bottom: auto;
+    font-weight: bold;
     top: 5.5%;
-    transform: scale(0.8, 0.8);
-    -webkit-transform: scale(0.8, 0.8);
-    -moz-transform: scale(0.8, 0.8);
-    -ms-transform: scale(0.8, 0.8);
-    -o-transform: scale(0.8, 0.8);
+    transform: scale(0.9, 0.9);
+    -webkit-transform: scale(0.9, 0.9);
+    -moz-transform: scale(0.9, 0.9);
+    -ms-transform: scale(0.9, 0.9);
+    -o-transform: scale(0.9, 0.9);
 }
 
 .formGroup:focus-within {

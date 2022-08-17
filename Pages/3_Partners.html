@@ -86,9 +86,11 @@
         <div class="searchError">
             <img class="closeButton" src="/Assets/Images/CloseButton.png" class="closeBtnImg" />
             <mark class=markHeading>We can't find your store!</mark><br>Check that you spelled the name correctly, otherwise let us know that you'd like your store to be a Super<mark class="markBlack">Card</mark> store <a class="dialogLink" href="../Pages/5_Contact.html">HERE!</a></div>
-        <div id="map" class="mapContainer">
-            <div class="layerBtn"><button id="btnLayerChange" class="btnMapView">Change Map View</button></div>
-            <div class="zoomBtn"><button class="btnZoom">Reset</button></div>
+        <div class="mapContainer">
+            <div id="map">
+                <div class="layerBtn"><button id="btnLayerChange" class="btnMapView">Change Map View</button></div>
+                <div class="zoomBtn"><button class="btnZoom">Reset</button></div>
+            </div>
         </div>
         <div class="partnersContainer">
             <div class="partnersTextContainer">
@@ -97,8 +99,10 @@
             </div>
             <div class="searchInput">
                 <label class="lblSearchStore" for="searchStore">Is your store a Super<mark>Card</mark> store?</label><br>
-                <input class="inputSearchStore" type="text" id="searchStore" name="searchStore" placeholder="Type your store here..." />
-                <button id="btnSearchStore" class="btnFindStore" type="submit" value="Search">Search</button>
+                <div class="inputContainer">
+                    <input class="inputSearchStore" type="text" id="searchStore" name="searchStore" placeholder="Type your store here..." />
+                    <button id="btnSearchStore" class="btnFindStore" type="submit" value="Search">Search</button>
+                </div>
             </div>
         </div>
     </div>
