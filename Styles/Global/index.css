@@ -34,7 +34,7 @@
 }
 
 .cards.mainContainer {
-    min-height: calc(100vh - 10rem);
+    min-height: calc(100vh - 11rem);
     /* background-color: blueviolet; */
 }
 
