@@ -19,7 +19,7 @@
 * {
     font-weight: 600;
     font-family: 'Gothic A1', sans-serif;
-    /* outline: 1px solid black; */
+    outline: 1px solid black;
 }
 
 .scLogoIndex {
@@ -59,6 +59,7 @@
     margin: 5% auto 0 5%;
     text-align: center;
     flex-direction: column;
+    background-color: blue;
 }
 
 .infoContainer .footer.terms a {
@@ -71,19 +72,23 @@
     display: flex;
     flex-direction: row;
     align-self: center;
+    background-color: blueviolet;
+    width: 100%;
 }
 
 .col1,
 .col3 {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 43.5%;
     align-items: center;
+    background-color: aqua;
 }
 
 .col2 {
     display: flex;
     width: 13%;
+    background-color: purple;
 }
 
 .btnRegister,
@@ -161,14 +166,11 @@
         justify-content: center;
         margin-left: 0;
     }
-    .col1 {
-        margin-left: 5rem;
-    }
     .col2 {
         width: 15%;
     }
-    .col3 {
-        margin-right: 5rem;
+    .mainCol {
+        padding: 0 2rem;
     }
     .infoContainer p {
         font-size: 2rem;

@@ -200,7 +200,7 @@
     }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1148px) {
     .formLabel {
         top: 53%;
     }
@@ -377,7 +377,7 @@
     }
     .formControl {
         width: 80%;
-        font-size: 1.5rem;
+        padding: 2px;
     }
     .contactHeading {
         font-size: 1rem;
