@@ -19,7 +19,7 @@
 * {
     font-weight: 600;
     font-family: 'Gothic A1', sans-serif;
-    outline: 1px solid black;
+    /* outline: 1px solid black; */
 }
 
 .scLogoIndex {
@@ -34,7 +34,8 @@
 }
 
 .cards.mainContainer {
-    min-height: calc(100vh - 13rem);
+    min-height: calc(100vh - 10rem);
+    background-color: blueviolet;
 }
 
 .mainContainer {
@@ -59,7 +60,7 @@
     margin: 5% auto 0 5%;
     text-align: center;
     flex-direction: column;
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 .infoContainer .footer.terms a {
@@ -72,7 +73,7 @@
     display: flex;
     flex-direction: row;
     align-self: center;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     width: 100%;
 }
 
@@ -82,13 +83,13 @@
     flex-direction: column;
     width: 43.5%;
     align-items: center;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 .col2 {
     display: flex;
     width: 13%;
-    background-color: purple;
+    /* background-color: purple; */
 }
 
 .btnRegister,
