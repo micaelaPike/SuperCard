@@ -22,6 +22,12 @@
     /* outline: 1px solid black; */
 }
 
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
 .scLogoIndex {
     display: flex;
     width: 100%;
