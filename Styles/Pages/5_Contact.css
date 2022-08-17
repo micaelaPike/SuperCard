@@ -113,7 +113,7 @@
     position: absolute;
     display: flex;
     left: 6.5%;
-    top: 55%;
+    top: 60%;
     color: #aaa;
     pointer-events: none;
 }
@@ -140,7 +140,7 @@
     font-weight: bold;
     color: black;
     bottom: auto;
-    top: 5.5%;
+    top: 15%;
     transform: scale(0.9, 0.9);
     -webkit-transform: scale(0.9, 0.9);
     -moz-transform: scale(0.9, 0.9);
@@ -202,10 +202,21 @@
 
 @media only screen and (max-width: 1024px) {
     .formLabel {
-        top: 50%;
+        top: 53%;
     }
     .formLabel.message {
         top: 30%;
+    }
+    .formControl:focus+.formLabel,
+    .formControl:not(:placeholder-shown)+.formLabel {
+        top: 5%;
+    }
+    .formControl:focus+.formLabel.message,
+    .formControl:not(:placeholder-shown)+.formLabel.message {
+        top: 0%;
+    }
+    .formLabel {
+        font-size: 1rem;
     }
 }
 
@@ -232,7 +243,7 @@
         font-size: 1rem;
     }
     .formLabel {
-        top: 60%;
+        top: 65%;
     }
     .formLabel.message {
         top: 50%;
@@ -243,6 +254,10 @@
     .formControl:focus+.formLabel,
     .formControl:not(:placeholder-shown)+.formLabel {
         top: 25%;
+    }
+    .formControl:focus+.formLabel.message,
+    .formControl:not(:placeholder-shown)+.formLabel.formLabel.message {
+        top: 20%;
     }
 }
 
@@ -264,7 +279,8 @@
 
 @media only screen and (max-width: 530px) {
     .formLabel {
-        top: 55%;
+        top: 60%;
+        left: 8%;
     }
     .formLabel.message {
         top: 50%;
@@ -274,6 +290,10 @@
     }
     .formControl:focus+.formLabel,
     .formControl:not(:placeholder-shown)+.formLabel {
+        top: 10%;
+    }
+    .formControl:focus+.formLabel.message,
+    .formControl:not(:placeholder-shown)+.formLabel.formLabel.message {
         top: 10%;
     }
 }
@@ -295,16 +315,18 @@
     }
     .formLabel {
         left: 12%;
-    }
-    .formLabel {
-        top: 50%;
+        top: 55%;
     }
     .formLabel.message {
-        top: 40%;
+        top: 45%;
     }
     .formControl:focus+.formLabel,
     .formControl:not(:placeholder-shown)+.formLabel {
         top: 2%;
+    }
+    .formControl:focus+.formLabel.message,
+    .formControl:not(:placeholder-shown)+.formLabel.formLabel.message {
+        top: 5%;
     }
     .formControl {
         width: 82%;
@@ -319,7 +341,7 @@
         font-size: 1rem;
     }
     .formLabel {
-        top: 45%;
+        top: 55%;
         left: 15%;
     }
     .formControl {
@@ -353,9 +375,6 @@
     .contactFormContainer {
         width: 90%;
     }
-    .formLabel {
-        font-size: 1.5rem;
-    }
     .formControl {
         width: 80%;
         font-size: 1.5rem;
@@ -372,6 +391,13 @@
     .contactInfo {
         font-size: 0.8rem;
         line-height: 1rem;
+    }
+    .formLabel {
+        left: 15%;
+        top: 55%;
+    }
+    .formLabel.message {
+        top: 40%;
     }
     .formControl:focus+.formLabel.message,
     .formControl:not(:placeholder-shown)+.formLabel.message {
