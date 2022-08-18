@@ -34,6 +34,8 @@
     <link rel="icon" href="../Assets/Logos/SuperCard.ico" />
     <script type="module" defer src="../Scripts/Components/emailForm.js"></script>
     <script type="module" defer src="../Scripts/Components/navigationBar.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 
     <title>Contact Us</title>
 </head>
@@ -122,10 +124,18 @@
                     <textarea id="message" name="message" class="formControl message" placeholder="Message" rows="1" cols="50" required></textarea>
                     <label for="userMessage" class="formLabel message">Message</label>
                 </div>
-                <button type="submit" name="submit" class="submitBtn">
-              Submit
-            </button>
-                <label for="submitButton" class="formLabel submit">Submit</label>
+                <div class="captchaSubmit">
+                    <div class="captcha">
+                        <form action="?" method="POST">
+                            <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+                            <br/>
+                            <!-- <input type="submit" value="Submit"> -->
+                        </form>
+                    </div>
+                    <div class="submit">
+                        <button type="submit" name="submit" class="submitBtn">Submit</button>
+                        <label for="submitButton" class="formLabel submit"></label></div>
+                </div>
             </form>
         </div>
         <div class='footer terms'><a href='../Pages/6_Terms.html'> Terms & Conditions </a></div>
