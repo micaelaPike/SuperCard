@@ -30,13 +30,11 @@
     <meta name="google-site-verification" content="idkAhI2h_QHRMXPjRuK6fXPLD_2K9PlCb09F_bz6nLM" />
     <meta name="msvalidate.01" content="AF87EC45AF218D57B310096FC0A9D9AB" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <link rel="stylesheet" href="../Styles/Global/index.css" />
     <link rel="icon" href="../Assets/Logos/SuperCard.ico" />
-    <script type="module" defer src="../Scripts/Components/emailForm.js"></script>
+    <script defer src="../Scripts/Components/emailForm.js"></script>
     <script type="module" defer src="../Scripts/Components/navigationBar.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
-
     <title>Contact Us</title>
 </head>
 
@@ -127,13 +125,13 @@
                 <div class="captchaSubmit">
                     <div class="captcha">
                         <form action="?" method="POST">
-                            <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+                            <div class="g-recaptcha" data-callback="recaptchaCallback" data-sitekey="6Lf8gochAAAAABslKkIj1Dai_5VoGmhGZZzFiD79"></div>
                             <br/>
                             <!-- <input type="submit" value="Submit"> -->
                         </form>
                     </div>
                     <div class="submit">
-                        <button type="submit" name="submit" class="submitBtn">Submit</button>
+                        <button type="submit" name="submit" class="submitBtn" disabled>Submit</button>
                         <label for="submitButton" class="formLabel submit"></label></div>
                 </div>
             </form>

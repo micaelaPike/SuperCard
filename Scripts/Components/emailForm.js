@@ -9,6 +9,8 @@ const inputs = document.querySelectorAll(".formControl");
 let number = document.querySelector(".number");
 let email = document.querySelector(".email");
 
+let submitBtn = document.querySelector(".submitBtn");
+
 
 function successSnackBar() {
     closeButton.style.display = "flex";
@@ -69,6 +71,13 @@ closeButton.addEventListener("click", () => {
     snackbar.style.display = "none";
 });
 
+function recaptchaCallback() {
+    submitBtn.disabled = false;
+    submitBtn.style.backgroundColor = "#cf000e";
+    submitBtn.style.borderColor = "#cf000e"
+    console.log("hello")
+}
+
 (function() {
     emailjs.init("eylt68t36B7sf7Baf");
 })();
@@ -88,6 +97,7 @@ window.onload = function() {
                 })
             inputs.forEach(input => {
                 input.value = "";
+                grecaptcha.reset();
             });
         } else {
             console.log('FAILED...');

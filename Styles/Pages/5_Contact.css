@@ -104,8 +104,12 @@
 }
 
 .formControl.message {
-    padding-bottom: 5px;
+    padding-bottom: 5%;
     border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 
 .formLabel {
@@ -119,7 +123,7 @@
 }
 
 .formLabel.message {
-    top: 50%;
+    top: 30%;
 }
 
 .formLabel.submit {
@@ -171,7 +175,7 @@
 
 .captchaSubmit {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -183,10 +187,10 @@
 .captcha {
     display: flex;
     width: 50%;
-    /* margin-right: 1rem; */
+    margin-right: 1rem;
     /* margin-left: 5%; */
     /* background-color: aqua; */
-    justify-content: center;
+    justify-content: right;
 }
 
 .g-recaptcha {
@@ -194,7 +198,7 @@
     width: min-content;
     border-radius: 8px;
     outline: black solid 2px;
-    /* justify-content: center; */
+    justify-content: center;
 }
 
 .submit {
@@ -202,9 +206,9 @@
     width: 50%;
     margin-top: 0.8rem;
     /* margin-right: 5%; */
-    /* margin-left: 1rem; */
+    margin-left: 1rem;
     /* background-color: chartreuse; */
-    justify-content: center;
+    justify-content: left;
 }
 
 .submitBtn {
@@ -212,11 +216,11 @@
     width: 45%;
     justify-content: center;
     align-items: center;
-    padding: 0.25rem 1rem;
+    padding: 0.5rem 1rem;
     color: white;
     font-size: 1.25rem;
-    background-color: #cf000e;
-    border-color: #cf000e;
+    background-color: #7c7c7c;
+    border-color: #7c7c7c;
     border-radius: 30px;
     -webkit-border-radius: 30px;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.51);
@@ -460,6 +464,9 @@
     .formControl:focus+.formLabel.message,
     .formControl:not(:placeholder-shown)+.formLabel.message {
         top: 2%;
+    }
+    .captcha {
+        width: 50%;
     }
 }
 
