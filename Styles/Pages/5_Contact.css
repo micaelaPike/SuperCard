@@ -213,7 +213,7 @@
 
 .submitBtn {
     display: flex;
-    width: 45%;
+    width: 10em;
     justify-content: center;
     align-items: center;
     padding: 0.5rem 1rem;
@@ -244,11 +244,8 @@
         width: 50%;
         justify-content: left;
     }
-    .submitBtn {
-        width: 60%;
-    }
     .captcha {
-        margin-left: 15%;
+        margin-left: 8%;
     }
 }
 
@@ -269,6 +266,12 @@
     }
     .formLabel {
         font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .captcha {
+        justify-content: center;
     }
 }
 
@@ -363,6 +366,16 @@
     }
 }
 
+@media only screen and (max-width: 450px) {
+    .g-recaptcha {
+        transform: scale(0.77);
+        -webkit-transform: scale(0.77);
+        -moz-transform: scale(0.77);
+        -ms-transform: scale(0.77);
+        -o-transform: scale(0.77);
+    }
+}
+
 @media only screen and (max-width: 427px) {
     .formHeading {
         font-size: 1.5rem;
@@ -421,6 +434,13 @@
     .formControl:focus+.formLabel.message,
     .formControl:not(:placeholder-shown)+.formLabel.message {
         top: 0%;
+    }
+    .g-recaptcha {
+        transform: scale(0.7);
+        -webkit-transform: scale(0.7);
+        -moz-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+        -o-transform: scale(0.7);
     }
 }
 
