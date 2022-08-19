@@ -240,6 +240,16 @@
     .formControl.message {
         padding-bottom: 5%;
     }
+    .submit {
+        width: 50%;
+        justify-content: left;
+    }
+    .submitBtn {
+        width: 60%;
+    }
+    .captcha {
+        margin-left: 15%;
+    }
 }
 
 @media only screen and (max-width: 1148px) {
@@ -259,6 +269,19 @@
     }
     .formLabel {
         font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .captchaSubmit {
+        flex-direction: column;
+    }
+    .submit {
+        justify-content: center;
+    }
+    .captcha {
+        justify-content: center;
+        margin: 0;
     }
 }
 
