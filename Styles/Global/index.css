@@ -28,10 +28,18 @@ body {
     height: 100vh;
 }
 
+.page {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: calc(100vh - 4rem);
+    justify-content: center;
+}
+
 .scLogoIndex {
     display: flex;
     width: 100%;
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
     text-align: center;
 }
 
@@ -139,12 +147,6 @@ body {
     margin: 10% 46% 0% 46%;
 }
 
-@media only screen and (min-width: 1920px) {
-    .infoContainer p {
-        font-size: 2.5rem;
-    }
-}
-
 @media only screen and (min-width: 1366px) {
     .scLogoIndex img {
         width: 60%
@@ -242,5 +244,11 @@ body {
     .spacer {
         width: 2rem;
         margin: 10% 46% 0% 46%;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .infoContainer p {
+        font-size: 2rem;
     }
 }
