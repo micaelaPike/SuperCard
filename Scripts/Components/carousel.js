@@ -18,6 +18,7 @@ export function setCounter() {
 
 let intervalId = 0;
 
+//Because the carousel behaves differently on 2 different pages
 if (window.location.pathname == "/index.html" || window.location.pathname == "/") {
     intervalId = myInterval();
 

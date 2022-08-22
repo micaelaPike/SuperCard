@@ -99,6 +99,25 @@
     }
 }
 
+@media only screen and (max-width:1366px) {
+    .servicesContainer {
+        font-size: 1rem;
+    }
+    .servicesList li {
+        background-size: 1.5rem;
+    }
+    .poweredBy {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+    .scLogoServices {
+        width: 30%;
+    }
+    .sabissLogo {
+        width: 20%
+    }
+}
+
 @media only screen and (max-width: 1335px) {
     .videoContainer {
         width: 80%;

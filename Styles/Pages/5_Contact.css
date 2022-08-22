@@ -175,21 +175,17 @@
 
 .captchaSubmit {
     display: flex;
-    /* flex-direction: column; */
     width: 100%;
     justify-content: center;
     align-items: center;
     margin-top: -0.5rem;
     padding: 0.8rem 0;
-    /* background-color: blueviolet; */
 }
 
 .captcha {
     display: flex;
     width: 50%;
     margin-right: 1rem;
-    /* margin-left: 5%; */
-    /* background-color: aqua; */
     justify-content: right;
 }
 
@@ -205,9 +201,7 @@
     display: flex;
     width: 50%;
     margin-top: 0.8rem;
-    /* margin-right: 5%; */
     margin-left: 1rem;
-    /* background-color: chartreuse; */
     justify-content: left;
 }
 
@@ -246,6 +240,40 @@
     }
     .captcha {
         margin-left: 8%;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    .formControl.message {
+        padding-bottom: 5%;
+    }
+    .formLabel.message {
+        top: 33%;
+    }
+    .formControl:focus+.formLabel,
+    .formControl:not(:placeholder-shown)+.formLabel {
+        transition: top 0.2s ease;
+        font-weight: bold;
+        color: black;
+        bottom: auto;
+        top: 10%;
+        transform: scale(0.9, 0.9);
+        -webkit-transform: scale(0.9, 0.9);
+        -moz-transform: scale(0.9, 0.9);
+        -ms-transform: scale(0.9, 0.9);
+        -o-transform: scale(0.9, 0.9);
+    }
+    .formControl:focus+.formLabel.message,
+    .formControl:not(:placeholder-shown)+.formLabel.message {
+        transition: top 0.2s ease;
+        bottom: auto;
+        font-weight: bold;
+        top: 3%;
+        transform: scale(0.9, 0.9);
+        -webkit-transform: scale(0.9, 0.9);
+        -moz-transform: scale(0.9, 0.9);
+        -ms-transform: scale(0.9, 0.9);
+        -o-transform: scale(0.9, 0.9);
     }
 }
 

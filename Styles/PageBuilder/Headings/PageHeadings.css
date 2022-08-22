@@ -40,9 +40,12 @@ mark {
 }
 
 @media only screen and (max-width: 1367px) {
+    #pageHeading {
+        padding-top: 0.5rem;
+    }
     #pageHeading p {
         padding: 0;
-        margin-bottom: 1rem;
+        margin-bottom: 0rem;
         font-size: 2.5rem;
     }
 }

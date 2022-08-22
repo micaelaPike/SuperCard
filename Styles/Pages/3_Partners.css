@@ -190,6 +190,24 @@
     }
 }
 
+@media only screen and (max-width: 1366px) {
+    .partnersTextContainer p {
+        font-size: 1.1rem;
+    }
+    .lblSearchStore {
+        font-size: 1.8rem;
+    }
+    .inputSearchStore {
+        font-size: 1.3rem;
+        width: 50%;
+        margin: 0.8rem 0.8rem 0 0;
+    }
+    .btnFindStore {
+        font-size: 1.1rem;
+        padding: 0.3rem 0.8rem;
+    }
+}
+
 @media only screen and (max-width: 1335px) {
     .partnersContainer {
         padding: 0 5rem 0rem 2rem;
