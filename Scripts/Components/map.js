@@ -48,7 +48,7 @@ function zoomHome() {
 async function createMarker() {
     // was const
     let { default: storeMarker } = await
-    import ("/Scripts/Pages/MapMarkersV5.json", {
+    import ("/Assets/Data/MapMarkersV5.json", {
         assert: {
             type: "json",
         },
