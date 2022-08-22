@@ -3,7 +3,7 @@ let btnStokvel = document.querySelector(".conditionTypeItemStokvel");
 let btnGift = document.querySelector(".conditionTypeItemGift");
 let textBox = document.querySelector(".termsText");
 
-//Import JSON file with coordinates
+//Import JSON file
 async function TermsAndConditionsContent() {
     let { default: terms } = await
     import ("/Assets/Data/TermsContent.json", {
