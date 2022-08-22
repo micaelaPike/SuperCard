@@ -108,13 +108,17 @@
     }
     .poweredBy {
         font-size: 1.1rem;
-        margin-bottom: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
     }
     .scLogoServices {
         width: 30%;
     }
     .sabissLogo {
         width: 20%
+    }
+    .footer {
+        min-height: 15%;
     }
 }
 

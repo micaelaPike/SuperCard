@@ -41,7 +41,6 @@ body {
 
 .cards.mainContainer {
     min-height: calc(100vh - 11rem);
-    /* background-color: blueviolet; */
 }
 
 .mainContainer {
@@ -66,12 +65,10 @@ body {
     margin: 5% auto 0 5%;
     text-align: center;
     flex-direction: column;
-    /* background-color: blue; */
 }
 
 .infoContainer .footer.terms a {
     color: #cf000e;
-    font-size: 1rem;
     margin-top: 1rem;
 }
 
@@ -79,7 +76,6 @@ body {
     display: flex;
     flex-direction: row;
     align-self: center;
-    /* background-color: blueviolet; */
     width: 100%;
 }
 
@@ -89,13 +85,11 @@ body {
     flex-direction: column;
     width: 43.5%;
     align-items: center;
-    /* background-color: aqua; */
 }
 
 .col2 {
     display: flex;
     width: 13%;
-    /* background-color: purple; */
 }
 
 .btnRegister,
@@ -109,7 +103,6 @@ body {
     padding: 1rem;
     box-shadow: 8px 5px 5px 0px rgba(0, 0, 0, 0.75);
     cursor: pointer;
-    /* justify-content: left; */
 }
 
 .btnServices {

@@ -1,4 +1,5 @@
 // "use strict";
+
 let snackbar = document.querySelector(".snackbar");
 let snackBarImage = document.querySelector(".snackBarImage");
 let snackbarAlert = document.querySelector(".snackbarAlert");
@@ -11,6 +12,9 @@ let email = document.querySelector(".email");
 
 let submitBtn = document.querySelector(".submitBtn");
 
+// let myTimeout = () => setTimeout((disableButton), 120000)
+
+// let timeoutId = myTimeout();
 
 function successSnackBar() {
     closeButton.style.display = "flex";
@@ -71,11 +75,20 @@ closeButton.addEventListener("click", () => {
     snackbar.style.display = "none";
 });
 
+
+
 function recaptchaCallback() {
     submitBtn.disabled = false;
     submitBtn.style.backgroundColor = "#cf000e";
     submitBtn.style.borderColor = "#cf000e"
-    console.log("hello")
+    console.log(IsCaptchaValid)
+
+}
+
+function disableButton() {
+    submitBtn.disabled = true;
+    submitBtn.style.backgroundColor = "#7C7C7C";
+    submitBtn.style.borderColor = "#D3D3D3"
 }
 
 (function() {

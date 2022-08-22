@@ -101,6 +101,12 @@
     }
 }
 
+@media only screen and (max-width: 1366px) {
+    .footer.terms {
+        margin: 0.5rem;
+    }
+}
+
 @media only screen and (max-width: 880px) {
     .footer.terms.register1 {
         display: none;
