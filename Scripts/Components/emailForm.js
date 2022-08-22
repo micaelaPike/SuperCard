@@ -1,20 +1,16 @@
-// "use strict";
-
 let snackbar = document.querySelector(".snackbar");
 let snackBarImage = document.querySelector(".snackBarImage");
 let snackbarAlert = document.querySelector(".snackbarAlert");
-
 let closeButton = document.querySelector(".closeButton");
 let snackBarImgArr = ["/Assets/Images/success-tick.png", "/Assets/Images/failure-cross.png", "/Assets/Images/sending.png"]
 const inputs = document.querySelectorAll(".formControl");
 let number = document.querySelector(".number");
 let email = document.querySelector(".email");
-
 let submitBtn = document.querySelector(".submitBtn");
 
-// let myTimeout = () => setTimeout((disableButton), 120000)
-
-// let timeoutId = myTimeout();
+closeButton.addEventListener("click", () => {
+    snackbar.style.display = "none";
+});
 
 function successSnackBar() {
     closeButton.style.display = "flex";
@@ -71,12 +67,7 @@ function validateEmail(input) {
     }
 }
 
-closeButton.addEventListener("click", () => {
-    snackbar.style.display = "none";
-});
-
-
-
+//Turns button on
 function recaptchaCallback() {
     submitBtn.disabled = false;
     submitBtn.style.backgroundColor = "#cf000e";
@@ -91,14 +82,17 @@ function disableButton() {
     submitBtn.style.borderColor = "#D3D3D3"
 }
 
+//EmailJS initialisation
 (function() {
     emailjs.init("eylt68t36B7sf7Baf");
 })();
 
+//Submits Email
 window.onload = function() {
     document.getElementById("emailForm").addEventListener("submit", function(event) {
         event.preventDefault();
-        sendingSnackBar();
+        sendingSnackBar(); //Blue sending snackbar while loading...
+
         if (validateEmail(email) == true) {
             emailjs.sendForm('service_cnprkth', 'template_fqsuwrr', this)
                 .then(function(response) {
@@ -108,10 +102,12 @@ window.onload = function() {
                     console.log('FAILED...', error);
                     failSnackBar("Message failed to send.<br> Error: " + error.status + " <br>Contact Customer Care.");
                 })
+
             inputs.forEach(input => {
                 input.value = "";
                 grecaptcha.reset();
             });
+
         } else {
             console.log('FAILED...');
             failSnackBar("Message failed. Invalid details.");
@@ -119,7 +115,7 @@ window.onload = function() {
     })
 }
 
-
+//Number Verification
 const isNumericInput = (event) => {
     const key = event.keyCode;
     return ((key >= 48 && key <= 57) || // Allow number line

@@ -4,10 +4,10 @@ let heightOutput = window.innerHeight;
 let widthOutput = window.innerWidth;
 
 
-
 function changeHamburger(item) {
     item.classList.toggle("change");
 }
+
 
 function reportWindowSize() {
     heightOutput = window.innerHeight;

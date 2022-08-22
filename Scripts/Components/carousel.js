@@ -2,6 +2,7 @@
 
 import { myInterval } from "./timer.js";
 
+//This is where the src for each of the cards is stored. It is used to switch between cards.
 export const cards = ["../Assets/Images/Cards/SavingsCard.webp", "../Assets/Images/Cards/StokvelCard.webp", "../Assets/Images/Cards/GiftCard.webp", "../Assets/Images/Cards/StaffCard.webp"]
 
 export let cardCarousel = document.querySelector(".cardCarousel");
@@ -18,7 +19,7 @@ export function setCounter() {
 
 let intervalId = 0;
 
-//Because the carousel behaves differently on 2 different pages
+//Because the carousel behaves differently on 2 different pages - This checks if the page is the index page
 if (window.location.pathname == "/index.html" || window.location.pathname == "/") {
     intervalId = myInterval();
 

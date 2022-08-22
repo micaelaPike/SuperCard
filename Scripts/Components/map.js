@@ -4,16 +4,10 @@ let btnZoom = document.querySelector(".btnZoom");
 let featureGroupMarker = new L.FeatureGroup;
 let searchErrorBox = document.querySelector(".searchError");
 let inputSearchStore = document.getElementById("searchStore");
+let closeButton = document.querySelector(".closeButton");
 
 let storeGroupsArr = ["aer", "christie group", "ec dc", "erite", "fiznef", "kwanongoma", "kwawicks", "kzn dc", "lowveld dc", "mega", "moldenhauer group", "nick's foods", "pacina", "power group", "queenrose", "renckens", "supatrade", "vele"];
 let storeTypesArr = ["spar", "bms", "mndeni"];
-
-let closeButton = document.querySelector(".closeButton");
-
-function closeError() {
-    searchErrorBox.style.display = "none";
-}
-
 
 closeButton.addEventListener("click", closeError);
 
@@ -28,11 +22,16 @@ btnSearchStore.addEventListener("click", () => {
     }
 });
 
+//Pressing ENTER triggers the search
 inputSearchStore.addEventListener('keypress', function(event) {
     if (event.key == 'Enter') {
         searchStore();
     }
 });
+
+function closeError() {
+    searchErrorBox.style.display = "none";
+}
 
 function zoomHome() {
     map.flyTo([-28.0046, 26.7732], 5, { duration: 1.5, easeLinearity: 5 });
@@ -128,6 +127,7 @@ function changeLayer() {
         mapLayer = "osMap";
     }
 }
+//Creating populating map with Map Icons
 const markerLocations = await createMarker();
 
 let markerCluster = new L.MarkerClusterGroup({
@@ -142,7 +142,7 @@ let markerCluster = new L.MarkerClusterGroup({
         });
     },
 });
-
+//Adds Marker and PopUp to map for each type
 function displayMarkers(arrayLocations) {
     arrayLocations.forEach((store, index) => {
         let marker = L.marker([arrayLocations[index].Longitude, arrayLocations[index].Latitude], { icon: SuperCardIcon });
@@ -174,7 +174,7 @@ function displayMarkers(arrayLocations) {
         });
     });
 }
-
+//Adds markers and PopUps if the array is not sorted 
 function addIconAndPopUp(markerArray, index) {
     if (markerArray[index].StoreType.toLowerCase() == "spar") {
 
@@ -207,6 +207,7 @@ function addIconAndPopUp(markerArray, index) {
     featureGroupMarker.addTo(map);
 }
 
+//Adds markers and PopUps if the array is sorted by Fuse 
 function addIconAndPopUpFuse(markerArray, index) {
 
     if (markerArray[index].item.StoreType.toLowerCase() == "spar") {
