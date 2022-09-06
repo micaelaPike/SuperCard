@@ -29,6 +29,7 @@ inputSearchStore.addEventListener('keypress', function(event) {
     }
 });
 
+
 function closeError() {
     searchErrorBox.style.display = "none";
 }
@@ -53,6 +54,18 @@ async function createMarker() {
         },
     })
     return storeMarker;
+}
+
+//Import Search Results Dictionary
+async function createStores() {
+    // was const
+    let { default: storeList } = await
+    import ("/Assets/Data/Assets/SearchDictionary.json", {
+        assert: {
+            type: "json",
+        },
+    })
+    return storeList;
 }
 
 //Options for fuse search
@@ -129,6 +142,12 @@ function changeLayer() {
 }
 //Creating populating map with Map Icons
 const markerLocations = await createMarker();
+debugger
+const storeDictionary = await createStores();
+
+fs = FuzzySet(storeDictionary);
+console.log(storeDictionary);
+console.log(fs);
 
 let markerCluster = new L.MarkerClusterGroup({
     iconCreateFunction: function() {
