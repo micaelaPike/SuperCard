@@ -60,7 +60,7 @@ async function createMarker() {
 async function createStores() {
     // was const
     let { default: storeList } = await
-    import ("/Assets/Data/Assets/SearchDictionary.json", {
+    import ("/Assets/Data/SearchDictionary.json", {
         assert: {
             type: "json",
         },
@@ -142,12 +142,10 @@ function changeLayer() {
 }
 //Creating populating map with Map Icons
 const markerLocations = await createMarker();
-debugger
+//debugger
 const storeDictionary = await createStores();
 
-fs = FuzzySet(storeDictionary);
 console.log(storeDictionary);
-console.log(fs);
 
 let markerCluster = new L.MarkerClusterGroup({
     iconCreateFunction: function() {
