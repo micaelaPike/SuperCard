@@ -1,5 +1,12 @@
 {
-  "dependencies": {
-    "string-similarity": "^4.0.4"
-  }
+    "dependencies": {
+        "file-saver": "^2.0.5",
+        "file-system": "^1.2.2",
+        "sheetjs": "^2.0.0",
+        "string-similarity": "^4.0.4",
+        "xlsx": "^0.18.5"
+    },
+    "devDependencies": {
+        "webpack": "^5.74.0"
+    }
 }

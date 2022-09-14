@@ -1,205 +1,607 @@
 [{
-    "Store_Name": ["1000 Hills",
-        "1000 Hills Tops",
-        "Abaqulusi Superspar",
-        "Acornhook Superspar",
-        "Aliwal North Spar",
-        "Amahlati Spar",
-        "Benoni Spar",
-        "Bergville Spar",
-        "Bhambanana Savemor",
-        "BIX Trading",
-        "Bluewater Bay Superspar",
-        "Bluff Meats Beach Road",
-        "Bluff Meats Durban North",
-        "Bluff Meats Kingsburgh",
-        "Bluff Meats Port Shepstone",
-        "Bluff Meats Queensburgh",
-        "Bluff Meats Suffert Street",
-        "Bluff Meats Verulem",
-        "Bluff Meats Victoria Str",
-        "BMS Berea",
-        "BMS Central",
-        "BMS Chatsworth",
-        "BMS Empangeni",
-        "BMS Galleria",
-        "BMS Head Office",
-        "BMS Henwood Drive",
-        "BMS Hillcrest",
-        "BMS Meukertan",
-        "BMS Richards Bay",
-        "BMS Rosedale",
-        "BMS Value Center",
-        "Brays",
-        "Bridge City",
-        "Bridge City Tops",
-        "Butterworth KWIKSPAR",
-        "Butterworth SuperSpar",
-        "Cala Spar",
-        "Cambridge Spar",
-        "Cambridge West Kwikspar",
-        "Centani Spar",
-        "Charlesville Tops",
-        "Circle Spar",
-        "Circle Spar Elliotdale",
-        "Cofimvaba Superspar",
-        "Crawford Tops",
-        "Dagbreek Spar",
-        "Debilee",
-        "Diphagane SaveMor",
-        "Dreamteam",
-        "Durban Mega Superspar",
-        "Edendale Spar",
-        "Eerste River Superspar",
-        "Elliott Superspar",
-        "Elukwatini Spar",
-        "Empangeni Superspar",
-        "Empangeni Tops",
-        "Engcobo Buildit",
-        "Engcobo Spar",
-        "Engcobo Tops 2",
-        "Ermelo Spar",
-        "Esikhaweni Superspar",
-        "Esikhaweni Tops",
-        "Galvendale Spar",
-        "Gateway Superspar",
-        "Georgious Superspar",
-        "Ghandi Spar",
-        "Ghandi Tops",
-        "Gonubie Spar",
-        "Gugulethu Superspar",
-        "Gugulethu Tops",
-        "Gullsway Spar",
-        "Harding Mega Superspar",
-        "Hardware Kwa Fetting",
-        "Heidelberg Spar",
-        "Highgate Hotel",
-        "Highway Superspar",
-        "Hluhluwe Superspar",
-        "Hluhluwe Tops",
-        "HR Focus",
-        "Idutywa Spar",
-        "Indlovu SuperSpar",
-        "Indwe Spar",
-        "Ixopo Mega Superspar",
-        "Jeppe Kwikspar",
-        "Jeppe Tops",
-        "Jimmys Spar",
-        "Junction 14",
-        "Khayelitsha Superspar",
-        "Kielitcha Spar",
-        "Kings Road Spar",
-        "Kokstad Spar",
-        "Kwamashu Superspar",
-        "Kwamashu Tops",
-        "Kwano Spar",
-        "Kwantu Superspar",
-        "Lady Frere Spar",
-        "Ladysmith Spar",
-        "Ladysmith Tops",
-        "Legacy Life Office",
-        "Lighthouse Spar",
-        "Lusikisiki Spar",
-        "Maclear Spar",
-        "MADADENI SUPERSPAR",
-        "Madalas Hardware",
-        "Madalas SaveMor",
-        "Maluti Superspar",
-        "Maluti Tops",
-        "Mandela Park Spar",
-        "Mandini Spar",
-        "Mandini Tops",
-        "Mapumulo Spar",
-        "Mapumulo Tops",
-        "Matatiele Spar",
-        "Mdantsane SuperSpar",
-        "Mduku SaveMor",
-        "Mega Hammersdale Superspar",
-        "Melmoth Superspar",
-        "Mkuze Superspar",
-        "Mndeni Meats Housewives",
-        "Mndeni Meats Tongaat",
-        "Mooiplaas Savemor",
-        "Moratiwe Spar",
-        "Mtuba Superspar",
-        "Mtuba Tops",
-        "Myezo Spar",
-        "Naas Spar",
-        "Nahoon Spar",
-        "Ndu Spar",
-        "Nemato Spar",
-        "Newcastle Corner Superspar",
-        "Newtown Spar",
-        "Newtown Tops",
-        "Ngqeleni Spar",
-        "Nicks Berea SuperSpar",
-        "Nicks Berea Tops",
-        "Nicks Daily Spar",
-        "Nicks EL",
-        "Nicks Foods Berlin",
-        "Nicks Foods Berlin Tops",
-        "Nicks Foods Spar KWT",
-        "NONGOMA 1 SPAR",
-        "NONGOMA 2 SUPERSPAR",
-        "Northcrest Spar",
-        "NQUTHU SUPERSPAR",
-        "Nyakaza Savemor",
-        "Oak Cottage Spar",
-        "OK Algoa Park",
-        "OK Bonza Bay",
-        "OK Cambridge",
-        "OK Linton Grange",
-        "Paul Pietersburg Superspar",
-        "PEDDIE SPAR",
-        "Philani Valley Mega SuperSpar",
-        "Piet Retief Superspar",
-        "Pinetown Mega Superspar",
-        "Plaza Superspar",
-        "Pongola Spar",
-        "Power-Inanda Spar",
-        "President Hyper",
-        "President Hyper Vaal",
-        "Protea SuperSpar",
-        "Renckens Superspar",
-        "Renckens Tops",
-        "Richmond Superspar",
-        "Rink Street",
-        "Riverbend Spar",
-        "Rolyats Spar",
-        "Savoy Spar",
-        "Seven Oaks Superspar",
-        "Skinny Clinic",
-        "Sondela Savemor",
-        "Spar Kwa Fetting",
-        "Stanford Square",
-        "Supatrade Ephondweni Spar",
-        "Supatrade Hlabisa Spar",
-        "Supatrade Ingwavuma Spar",
-        "Supatrade Jozini Spar",
-        "Supatrade Kosi Bay Superspar",
-        "Supatrade Mbazwana Superspar",
-        "Supatrade Ndumu Spar",
-        "Supatrade Nongoma Spar",
-        "Sutherland Spar",
-        "Taxi City Superspar",
-        "The Coffee Society",
-        "Tintswalo Spar",
-        "TOPS MADADENI SUPERSPAR",
-        "TOPS NONGOMA SPAR",
-        "TOPS NONGOMA SUPERSPAR",
-        "TOPS NQUTHU SUPERSPAR",
-        "Tsolo Spar",
-        "Tubatse Superspar",
-        "Ugie Spar",
-        "Ulundi Spar",
-        "Umfolozi Savemor",
-        "Umlazi Mega SuperSpar",
-        "Umzimkhulu Spar",
-        "Uniondale Foodzone",
-        "Vangate Superspar",
-        "Vryheid Spar",
-        "Willowvale Spar",
-        "Winterton Superspar",
-        "Winterton Tops"
-    ]
-}]
+        "Name": "1000 Hills"
+    },
+    {
+        "Name": "1000 Hills Tops"
+    },
+    {
+        "Name": "Abaqulusi Superspar"
+    },
+    {
+        "Name": "Acornhook Superspar"
+    },
+    {
+        "Name": "Aliwal North Spar"
+    },
+    {
+        "Name": "Amahlati Spar"
+    },
+    {
+        "Name": "Benoni Spar"
+    },
+    {
+        "Name": "Bergville Spar"
+    },
+    {
+        "Name": "Bhambanana Savemor"
+    },
+    {
+        "Name": "BIX Trading"
+    },
+    {
+        "Name": "Bluewater Bay Superspar"
+    },
+    {
+        "Name": "Bluff Meats Beach Road"
+    },
+    {
+        "Name": "Bluff Meats Durban North"
+    },
+    {
+        "Name": "Bluff Meats Kingsburgh"
+    },
+    {
+        "Name": "Bluff Meats Port Shepstone"
+    },
+    {
+        "Name": "Bluff Meats Queensburgh"
+    },
+    {
+        "Name": "Bluff Meats Suffert Street"
+    },
+    {
+        "Name": "Bluff Meats Verulem"
+    },
+    {
+        "Name": "Bluff Meats Victoria Str"
+    },
+    {
+        "Name": "BMS Berea"
+    },
+    {
+        "Name": "BMS Central"
+    },
+    {
+        "Name": "BMS Chatsworth"
+    },
+    {
+        "Name": "BMS Empangeni"
+    },
+    {
+        "Name": "BMS Galleria"
+    },
+    {
+        "Name": "BMS Head Office"
+    },
+    {
+        "Name": "BMS Henwood Drive"
+    },
+    {
+        "Name": "BMS Hillcrest"
+    },
+    {
+        "Name": "BMS Meukertan"
+    },
+    {
+        "Name": "BMS Richards Bay"
+    },
+    {
+        "Name": "BMS Rosedale"
+    },
+    {
+        "Name": "BMS Value Center"
+    },
+    {
+        "Name": "Brays"
+    },
+    {
+        "Name": "Bridge City"
+    },
+    {
+        "Name": "Bridge City Tops"
+    },
+    {
+        "Name": "Butterworth KWIKSPAR"
+    },
+    {
+        "Name": "Butterworth SuperSpar"
+    },
+    {
+        "Name": "Cala Spar"
+    },
+    {
+        "Name": "Cambridge Spar"
+    },
+    {
+        "Name": "Cambridge West Kwikspar"
+    },
+    {
+        "Name": "Centani Spar"
+    },
+    {
+        "Name": "Charlesville Tops"
+    },
+    {
+        "Name": "Circle Spar"
+    },
+    {
+        "Name": "Circle Spar Elliotdale"
+    },
+    {
+        "Name": "Cofimvaba Superspar"
+    },
+    {
+        "Name": "Crawford Tops"
+    },
+    {
+        "Name": "Dagbreek Spar"
+    },
+    {
+        "Name": "Debilee"
+    },
+    {
+        "Name": "Diphagane SaveMor"
+    },
+    {
+        "Name": "Dreamteam"
+    },
+    {
+        "Name": "Durban Mega Superspar"
+    },
+    {
+        "Name": "Edendale Spar"
+    },
+    {
+        "Name": "Eerste River Superspar"
+    },
+    {
+        "Name": "Elliott Superspar"
+    },
+    {
+        "Name": "Elukwatini Spar"
+    },
+    {
+        "Name": "Empangeni Superspar"
+    },
+    {
+        "Name": "Empangeni Tops"
+    },
+    {
+        "Name": "Engcobo Buildit"
+    },
+    {
+        "Name": "Engcobo Spar"
+    },
+    {
+        "Name": "Engcobo Tops 2"
+    },
+    {
+        "Name": "Ermelo Spar"
+    },
+    {
+        "Name": "Esikhaweni Superspar"
+    },
+    {
+        "Name": "Esikhaweni Tops"
+    },
+    {
+        "Name": "Galvendale Spar"
+    },
+    {
+        "Name": "Gateway Superspar"
+    },
+    {
+        "Name": "Georgious Superspar"
+    },
+    {
+        "Name": "Ghandi Spar"
+    },
+    {
+        "Name": "Ghandi Tops"
+    },
+    {
+        "Name": "Gonubie Spar"
+    },
+    {
+        "Name": "Gugulethu Superspar"
+    },
+    {
+        "Name": "Gugulethu Tops"
+    },
+    {
+        "Name": "Gullsway Spar"
+    },
+    {
+        "Name": "Harding Mega Superspar"
+    },
+    {
+        "Name": "Hardware Kwa Fetting"
+    },
+    {
+        "Name": "Heidelberg Spar"
+    },
+    {
+        "Name": "Highgate Hotel"
+    },
+    {
+        "Name": "Highway Superspar"
+    },
+    {
+        "Name": "Hluhluwe Superspar"
+    },
+    {
+        "Name": "Hluhluwe Tops"
+    },
+    {
+        "Name": "HR Focus"
+    },
+    {
+        "Name": "Idutywa Spar"
+    },
+    {
+        "Name": "Indlovu SuperSpar"
+    },
+    {
+        "Name": "Indwe Spar"
+    },
+    {
+        "Name": "Ixopo Mega Superspar"
+    },
+    {
+        "Name": "Jeppe Kwikspar"
+    },
+    {
+        "Name": "Jeppe Tops"
+    },
+    {
+        "Name": "Jimmys Spar"
+    },
+    {
+        "Name": "Junction 14"
+    },
+    {
+        "Name": "Khayelitsha Superspar"
+    },
+    {
+        "Name": "Kielitcha Spar"
+    },
+    {
+        "Name": "Kings Road Spar"
+    },
+    {
+        "Name": "Kokstad Spar"
+    },
+    {
+        "Name": "Kwamashu Superspar"
+    },
+    {
+        "Name": "Kwamashu Tops"
+    },
+    {
+        "Name": "Kwano Spar"
+    },
+    {
+        "Name": "Kwantu Superspar"
+    },
+    {
+        "Name": "Lady Frere Spar"
+    },
+    {
+        "Name": "Ladysmith Spar"
+    },
+    {
+        "Name": "Ladysmith Tops"
+    },
+    {
+        "Name": "Legacy Life Office"
+    },
+    {
+        "Name": "Lighthouse Spar"
+    },
+    {
+        "Name": "Lusikisiki Spar"
+    },
+    {
+        "Name": "Maclear Spar"
+    },
+    {
+        "Name": "MADADENI SUPERSPAR"
+    },
+    {
+        "Name": "Madalas Hardware"
+    },
+    {
+        "Name": "Madalas SaveMor"
+    },
+    {
+        "Name": "Maluti Superspar"
+    },
+    {
+        "Name": "Maluti Tops"
+    },
+    {
+        "Name": "Mandela Park Spar"
+    },
+    {
+        "Name": "Mandini Spar"
+    },
+    {
+        "Name": "Mandini Tops"
+    },
+    {
+        "Name": "Mapumulo Spar"
+    },
+    {
+        "Name": "Mapumulo Tops"
+    },
+    {
+        "Name": "Matatiele Spar"
+    },
+    {
+        "Name": "Mdantsane SuperSpar"
+    },
+    {
+        "Name": "Mduku SaveMor"
+    },
+    {
+        "Name": "Mega Hammersdale Superspar"
+    },
+    {
+        "Name": "Melmoth Superspar"
+    },
+    {
+        "Name": "Mkuze Superspar"
+    },
+    {
+        "Name": "Mndeni Meats Housewives"
+    },
+    {
+        "Name": "Mndeni Meats Tongaat"
+    },
+    {
+        "Name": "Mooiplaas Savemor"
+    },
+    {
+        "Name": "Moratiwe Spar"
+    },
+    {
+        "Name": "Mtuba Superspar"
+    },
+    {
+        "Name": "Mtuba Tops"
+    },
+    {
+        "Name": "Myezo Spar"
+    },
+    {
+        "Name": "Naas Spar"
+    },
+    {
+        "Name": "Nahoon Spar"
+    },
+    {
+        "Name": "Ndu Spar"
+    },
+    {
+        "Name": "Nemato Spar"
+    },
+    {
+        "Name": "Newcastle Corner Superspar"
+    },
+    {
+        "Name": "Newtown Spar"
+    },
+    {
+        "Name": "Newtown Tops"
+    },
+    {
+        "Name": "Ngqeleni Spar"
+    },
+    {
+        "Name": "Nicks Berea SuperSpar"
+    },
+    {
+        "Name": "Nicks Berea Tops"
+    },
+    {
+        "Name": "Nicks Daily Spar"
+    },
+    {
+        "Name": "Nicks EL"
+    },
+    {
+        "Name": "Nicks Foods Berlin"
+    },
+    {
+        "Name": "Nicks Foods Berlin Tops"
+    },
+    {
+        "Name": "Nicks Foods Spar KWT"
+    },
+    {
+        "Name": "NONGOMA 1 SPAR"
+    },
+    {
+        "Name": "NONGOMA 2 SUPERSPAR"
+    },
+    {
+        "Name": "Northcrest Spar"
+    },
+    {
+        "Name": "NQUTHU SUPERSPAR"
+    },
+    {
+        "Name": "Nyakaza Savemor"
+    },
+    {
+        "Name": "Oak Cottage Spar"
+    },
+    {
+        "Name": "OK Algoa Park"
+    },
+    {
+        "Name": "OK Bonza Bay"
+    },
+    {
+        "Name": "OK Cambridge"
+    },
+    {
+        "Name": "OK Linton Grange"
+    },
+    {
+        "Name": "Paul Pietersburg Superspar"
+    },
+    {
+        "Name": "PEDDIE SPAR"
+    },
+    {
+        "Name": "Philani Valley Mega SuperSpar"
+    },
+    {
+        "Name": "Piet Retief Superspar"
+    },
+    {
+        "Name": "Pinetown Mega Superspar"
+    },
+    {
+        "Name": "Plaza Superspar"
+    },
+    {
+        "Name": "Pongola Spar"
+    },
+    {
+        "Name": "Power-Inanda Spar"
+    },
+    {
+        "Name": "President Hyper"
+    },
+    {
+        "Name": "President Hyper Vaal"
+    },
+    {
+        "Name": "Protea SuperSpar"
+    },
+    {
+        "Name": "Renckens Superspar"
+    },
+    {
+        "Name": "Renckens Tops"
+    },
+    {
+        "Name": "Richmond Superspar"
+    },
+    {
+        "Name": "Rink Street"
+    },
+    {
+        "Name": "Riverbend Spar"
+    },
+    {
+        "Name": "Rolyats Spar"
+    },
+    {
+        "Name": "Savoy Spar"
+    },
+    {
+        "Name": "Seven Oaks Superspar"
+    },
+    {
+        "Name": "Skinny Clinic"
+    },
+    {
+        "Name": "Sondela Savemor"
+    },
+    {
+        "Name": "Spar Kwa Fetting"
+    },
+    {
+        "Name": "Stanford Square"
+    },
+    {
+        "Name": "Supatrade Ephondweni Spar"
+    },
+    {
+        "Name": "Supatrade Hlabisa Spar"
+    },
+    {
+        "Name": "Supatrade Ingwavuma Spar"
+    },
+    {
+        "Name": "Supatrade Jozini Spar"
+    },
+    {
+        "Name": "Supatrade Kosi Bay Superspar"
+    },
+    {
+        "Name": "Supatrade Mbazwana Superspar"
+    },
+    {
+        "Name": "Supatrade Ndumu Spar"
+    },
+    {
+        "Name": "Supatrade Nongoma Spar"
+    },
+    {
+        "Name": "Sutherland Spar"
+    },
+    {
+        "Name": "Taxi City Superspar"
+    },
+    {
+        "Name": "The Coffee Society"
+    },
+    {
+        "Name": "Tintswalo Spar"
+    },
+    {
+        "Name": "TOPS MADADENI SUPERSPAR"
+    },
+    {
+        "Name": "TOPS NONGOMA SPAR"
+    },
+    {
+        "Name": "TOPS NONGOMA SUPERSPAR"
+    },
+    {
+        "Name": "TOPS NQUTHU SUPERSPAR"
+    },
+    {
+        "Name": "Tsolo Spar"
+    },
+    {
+        "Name": "Tubatse Superspar"
+    },
+    {
+        "Name": "Ugie Spar"
+    },
+    {
+        "Name": "Ulundi Spar"
+    },
+    {
+        "Name": "Umfolozi Savemor"
+    },
+    {
+        "Name": "Umlazi Mega SuperSpar"
+    },
+    {
+        "Name": "Umzimkhulu Spar"
+    },
+    {
+        "Name": "Uniondale Foodzone"
+    },
+    {
+        "Name": "Vangate Superspar"
+    },
+    {
+        "Name": "Vryheid Spar"
+    },
+    {
+        "Name": "Willowvale Spar"
+    },
+    {
+        "Name": "Winterton Superspar"
+    },
+    {
+        "Name": "Winterton Tops"
+    }
+]

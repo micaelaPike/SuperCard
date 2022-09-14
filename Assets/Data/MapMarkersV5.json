@@ -1,1873 +1,1873 @@
-[{
-        "StoreName": "1000 Hills Spar",
-        "Group": "Renckens",
-        "StoreType": "Spar",
-        "Address": "86 Old Main Rd, Bothas Hill, Outer West Durban, 3660",
-        "Longitude": "-29.752778",
-        "Latitude": "30.7403891000000"
-    },
-    {
-        "StoreName": "1000 Hills Tops",
-        "Group": "Renckens",
-        "StoreType": "Spar",
-        "Address": "86 Old Main Rd, Bothas Hill, Outer West Durban, 3660",
-        "Longitude": "-29.7524583205099",
-        "Latitude": "30.7424889976341"
-    },
-    {
-        "StoreName": "Abaqulusi Superspar",
-        "Group": "KZN DC",
-        "StoreType": "Spar",
-        "Address": "President St, Vryheid, 3100",
-        "Longitude": "-27.7696310515864",
-        "Latitude": "30.7905148441396"
-    },
-    {
-        "StoreName": "Abaqulusi Tops",
-        "Group": "KZN DC",
-        "StoreType": "Spar",
-        "Address": "166 Mark St, Vryheid, 3100",
-        "Longitude": "-27.7695250850911",
-        "Latitude": "30.7906549399087"
-    },
-    {
-        "StoreName": "Acornhoek Superspar",
-        "Group": "Christie Group",
-        "StoreType": "Spar",
-        "Address": "Main Street, Acornhoek-A, Acornhoek, 1360",
-        "Longitude": "-24.5955107732064",
-        "Latitude": "31.0658958798199"
-    },
-    {
-        "StoreName": "Acornhoek Tops",
-        "Group": "Christie Group",
-        "StoreType": "Spar",
-        "Address": "Mall, R40, Acornhoek, 1360",
-        "Longitude": "-24.5960623539808",
-        "Latitude": "31.0656382551733"
-    },
-    {
-        "StoreName": "Aliwal North Spar",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "Grey St, Aliwal North, 9750",
-        "Longitude": "-30.6902633100000",
-        "Latitude": "26.7027019100000"
-    },
-    {
-        "StoreName": "Aljos Spar",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "Kruger Ave, Estoire, Bloemfontein, 9301",
-        "Longitude": "-29.1115672107447",
-        "Latitude": "26.2776486230212"
-    },
-    {
-        "StoreName": "Amahlati Spar",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "22 Hill St, Stutterheim, 4930",
-        "Longitude": "-32.5697880000000",
-        "Latitude": "27.4259663000000"
-    },
-    {
-        "StoreName": "Amahlati Tops",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "22 Hill St, Stutterheim, 4930",
-        "Longitude": "-32.5697870000000",
-        "Latitude": "27.4259662000000"
-    },
-    {
-        "StoreName": "Berea Superspar",
-        "Group": "Nick's Foods",
-        "StoreType": "Spar",
-        "Address": "1 Glaston St, Berea, East London, 5241",
-        "Longitude": "-32.9914077800000",
-        "Latitude": "27.9107172100000"
-    },
-    {
-        "StoreName": "Berea Tops",
-        "Group": "Nick's Foods",
-        "StoreType": "Spar",
-        "Address": "1 Glaston St, Berea, East London, 5241",
-        "Longitude": "-32.9879999999999",
-        "Latitude": "27.9108172100000"
-    },
-    {
-        "StoreName": "Bergville Spar",
-        "Group": "Renckens",
-        "StoreType": "Spar",
-        "Address": "West St, Bergville, 3350",
-        "Longitude": "-28.7321188173426",
-        "Latitude": "29.3531142822622"
-    },
-    {
-        "StoreName": "Bergville Tops",
-        "Group": "Renckens",
-        "StoreType": "Spar",
-        "Address": "18 South St, Bergville, 3350",
-        "Longitude": "-28.7317517851247",
-        "Latitude": "29.3525790110981"
-    },
-    {
-        "StoreName": "Berlin Spar",
-        "Group": "Nick's Foods",
-        "StoreType": "Spar",
-        "Address": "21 Legion St, Berlin General, Ntabozuko, 5660",
-        "Longitude": "-32.8841579800000",
-        "Latitude": "27.5803510000000"
-    },
-    {
-        "StoreName": "Berlin Tops ",
-        "Group": "Nick's Foods",
-        "StoreType": "Spar",
-        "Address": "21 Legion St, Berlin General, Ntabozuko, 5660",
-        "Longitude": "-32.8841598000000",
-        "Latitude": "27.5805510000000"
-    },
-    {
-        "StoreName": "Bluewater Bay Superspar",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "1 Hillcrest Dr N2 City Shopping Centre, Bluewater Bay, Gqeberha, 6212",
-        "Longitude": "-33.8492815300000",
-        "Latitude": "25.6315244600000"
-    },
-    {
-        "StoreName": "BMS Beach Road",
-        "Group": "",
-        "StoreType": "BMS",
-        "Address": "6 Beach Rd, Ocean View, Durban, 4052",
-        "Longitude": "-29.9094791900000",
-        "Latitude": "31.0203265000000"
-    },
-    {
-        "StoreName": "BMS Berea",
-        "Group": "",
-        "StoreType": "BMS",
-        "Address": "337 King Dinuzulu Rd (South ), Bulwer, Berea, 4083",
-        "Longitude": "-29.8544542300000",
-        "Latitude": "31.0001589200000"
-    },
-    {
-        "StoreName": "BMS Chatsworth",
-        "Group": "",
-        "StoreType": "BMS",
-        "Address": "1 Tranquil St, Westcliff, Chatsworth, 4092",
-        "Longitude": "-29.9159475100000",
-        "Latitude": "30.8843037400000"
-    },
-    {
-        "StoreName": "BMS Durban North",
-        "Group": "",
-        "StoreType": "BMS",
-        "Address": "1399 Chris Hani Road, Durban North, Durban, 4051",
-        "Longitude": "-29.7667321000000",
-        "Latitude": "31.0263111100000"
-    },
-    {
-        "StoreName": "BMS Empangeni",
-        "Group": "",
-        "StoreType": "BMS",
-        "Address": "44 Tanner Rd, Mpangele, Empangeni, 3880",
-        "Longitude": "-28.7705560600000",
-        "Latitude": "31.9047259200000"
-    },
-    {
-        "StoreName": "BMS Henwood Drive",
-        "Group": "",
-        "StoreType": "BMS",
-        "Address": "25 Henwood Road New Germany, Pinetown, Durban, 4001",
-        "Longitude": "-29.8116277600000",
-        "Latitude": "30.8705084300000"
-    },
-    {
-        "StoreName": "BMS Hillcrest",
-        "Group": "",
-        "StoreType": "BMS",
-        "Address": "9 Inanda Rd, Hillcrest, Durban, 3610",
-        "Longitude": "-29.7778857900000",
-        "Latitude": "30.7658613700000"
-    },
-    {
-        "StoreName": "BMS Housewives",
-        "Group": "",
-        "StoreType": "BMS",
-        "Address": "Market Rd, The Meadows, Pietermaritzburg, 3201",
-        "Longitude": "-29.6398011700000",
-        "Latitude": "30.4122809000000"
-    },
-    {
-        "StoreName": "BMS Kingsburgh",
-        "Group": "",
-        "StoreType": "BMS",
-        "Address": "16 Winklespruit Rd, Winklespruit, Kingsburgh, 4126",
-        "Longitude": "-30.0955374300000",
-        "Latitude": "30.8568456200000"
-    },
-    {
-        "StoreName": "BMS Queensburgh",
-        "Group": "",
-        "StoreType": "BMS",
-        "Address": "Coronation Walk, 15 Coronation Rd, Malvern, Durban, 4093",
-        "Longitude": "-29.8809393200000",
-        "Latitude": "30.9193883000000"
-    },
-    {
-        "StoreName": "BMS RICHARDS BAY",
-        "Group": "",
-        "StoreType": "BMS",
-        "Address": "132 Alumina Allee St, Alton, Richards Bay, 3900",
-        "Longitude": "-28.7355357500000",
-        "Latitude": "32.0372040000000"
-    },
-    {
-        "StoreName": "BMS Rosedale",
-        "Group": "",
-        "StoreType": "BMS",
-        "Address": "20 Rosedale Rd, Mountain Rise, Pietermaritzburg, 3201",
-        "Longitude": "-29.5803120200000",
-        "Latitude": "30.4020636900000"
-    },
-    {
-        "StoreName": "BMS Springfield",
-        "Group": "",
-        "StoreType": "BMS",
-        "Address": "348 Springfield Rd, Essenwood, Durban, 4051",
-        "Longitude": "-29.8276234502777",
-        "Latitude": "31.0057553943118"
-    },
-    {
-        "StoreName": "BMS Victoria",
-        "Group": "",
-        "StoreType": "BMS",
-        "Address": "102 Victoria Rd, Pietermaritzburg, 3201",
-        "Longitude": "-29.6011360300000",
-        "Latitude": "30.3672608000000"
-    },
-    {
-        "StoreName": "Brays Spar",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "100 Main Rd, Keimoes, 8860",
-        "Longitude": "-28.7074916400000",
-        "Latitude": "20.9713731700000"
-    },
-    {
-        "StoreName": "Bridge City Superspar",
-        "Group": "Power Group",
-        "StoreType": "Spar",
-        "Address": "Nogwaja Street Bridge City shopping centre, Bridge city Boulevard, Durban, 4071",
-        "Longitude": "-29.7266394412347",
-        "Latitude": "30.9870883277949"
-    },
-    {
-        "StoreName": "Bridge City Tops",
-        "Group": "Power Group",
-        "StoreType": "Spar",
-        "Address": "Nogwaja Street Bridge City shopping centre, Bridge city Boulevard, Durban, 4071",
-        "Longitude": "-29.7260897407165",
-        "Latitude": "30.9864445976334"
-    },
-    {
-        "StoreName": "Brighton Spar",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "Ferguson Road New Brighton,Siya, Kulati Rd, Gqeberha, 6070",
-        "Longitude": "-33.9073976000000",
-        "Latitude": "25.5958634000000"
-    },
-    {
-        "StoreName": "Butterworth KWIKSPAR",
-        "Group": "EC DC",
-        "StoreType": "Spar",
-        "Address": "21 Umtata St, Butterworth, 4960",
-        "Longitude": "-32.3328690131416",
-        "Latitude": "28.1433633931008"
-    },
-    {
-        "StoreName": "Butterworth Superspar",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "Fuller St, Carnage Streets, Butterworth, 4960",
-        "Longitude": "-32.3305567292547",
-        "Latitude": "28.1467271494989"
-    },
-    {
-        "StoreName": "Butterworth Tops",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "Cnr. Fuller &, Carnegie St, Butterworth, 4960",
-        "Longitude": "-32.3324474186919",
-        "Latitude": "28.1432299400359"
-    },
-    {
-        "StoreName": "Cacadu Spar",
-        "Group": "KwaWicks",
-        "StoreType": "Spar",
-        "Address": "23 Indwe St, Lady Frere, 5410",
-        "Longitude": "-31.7011772500000",
-        "Latitude": "27.2299288600000"
-    },
-    {
-        "StoreName": "Cala Spar",
-        "Group": "KwaWicks",
-        "StoreType": "Spar",
-        "Address": "Tsitsa St, Cala, 5256",
-        "Longitude": "-31.5245051700000",
-        "Latitude": "27.6944517400000"
-    },
-    {
-        "StoreName": "Cambridge Spar",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "18 Garcia St, Cambridge, East London, 5256",
-        "Longitude": "-32.9803504000000",
-        "Latitude": "27.8915968000000"
-    },
-    {
-        "StoreName": "Cambridge West Kwikspar",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "68 Griffin Rd, Cambridge West, East London, 5256",
-        "Longitude": "-32.9754865000000",
-        "Latitude": "27.8680057000000"
-    },
-    {
-        "StoreName": "Centani Spar",
-        "Group": "EC DC",
-        "StoreType": "Spar",
-        "Address": "Bell St, Kentani, 6005",
-        "Longitude": "-32.5063510600000",
-        "Latitude": "28.3182192200000"
-    },
-    {
-        "StoreName": "Centani Tops",
-        "Group": "EC DC",
-        "StoreType": "Spar",
-        "Address": "Bell St, Kentani, 4980",
-        "Longitude": "-32.5062418800000",
-        "Latitude": "28.3186483700000"
-    },
-    {
-        "StoreName": "Charlesville Tops",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "Charlesville, Cape Town, 7490",
-        "Longitude": "-33.9616741500000",
-        "Latitude": "18.5683374000000"
-    },
-    {
-        "StoreName": "Circle Spar Elliotdale",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "84 Main Rd, Elliotdale, 5100",
-        "Longitude": "-31.9680261600000",
-        "Latitude": "28.6831005800000"
-    },
-    {
-        "StoreName": "Circle Spar Mthatha",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "Cnr. York & Elliot St, Mthatha, 5100",
-        "Longitude": "-31.5855141000000",
-        "Latitude": "28.7894004300000"
-    },
-    {
-        "StoreName": "Cofimvaba Superspar",
-        "Group": "AER",
-        "StoreType": "Spar",
-        "Address": "Main Street Bellaire Avenue, Cofimvaba, 5200",
-        "Longitude": "-32.0015993000000",
-        "Latitude": "27.5799376000000"
-    },
-    {
-        "StoreName": "Crawford Tops",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "2 Taronga Rd, Crawford, Cape Town, 7780",
-        "Longitude": "-33.9731423000000",
-        "Latitude": "18.5029499500000"
-    },
-    {
-        "StoreName": "Dagbreek Spar",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "8 Main Street, Kirkwood, 6120",
-        "Longitude": "-33.3996146300000",
-        "Latitude": "25.4408674800000"
-    },
-    {
-        "StoreName": "Dagbreek Tops",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "15 Main Street, Kirkwood, 6120",
-        "Longitude": "-33.4002030200000",
-        "Latitude": "25.4409522700000"
-    },
-    {
-        "StoreName": "Daily Spar",
-        "Group": "Nick's Foods",
-        "StoreType": "Spar",
-        "Address": "Queens Rd, Qonce, 5601",
-        "Longitude": "-32.8741879600000",
-        "Latitude": "27.4037034500000"
-    },
-    {
-        "StoreName": "Daily Tops",
-        "Group": "Nick's Foods",
-        "StoreType": "Spar",
-        "Address": "Queens Rd, Qonce, 5602",
-        "Longitude": "-32.8741879700000",
-        "Latitude": "27.4037034600000"
-    },
-    {
-        "StoreName": "Daku Spar",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "Daku Roa 96 Daku Building, Daku Square Kwazakhele, 6065",
-        "Longitude": "-33.8747426000000",
-        "Latitude": "25.5801774000000"
-    },
-    {
-        "StoreName": "Debilee Spar",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "121 Jan Smuts Ave, Greenfields, East London, 5247",
-        "Longitude": "-33.0350730991077",
-        "Latitude": "27.8543970823847"
-    },
-    {
-        "StoreName": "Debilee Tops",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "121 Jan Smuts Ave, Rosemount, East London, 5208",
-        "Longitude": "-33.0349875989245",
-        "Latitude": "27.8543461400568"
-    },
-    {
-        "StoreName": "Diphagane SaveMor",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "135, R579, Diphagane, 1085",
-        "Longitude": "-24.6574895000000",
-        "Latitude": "29.7448317700000"
-    },
-    {
-        "StoreName": "Durban Superspar",
-        "Group": "Mega",
-        "StoreType": "Spar",
-        "Address": "2 Soldiers Way, Durban Central, Durban, 4001",
-        "Longitude": "-29.8549158400000",
-        "Latitude": "31.0243736700000"
-    },
-    {
-        "StoreName": "Durban Tops",
-        "Group": "Mega",
-        "StoreType": "Spar",
-        "Address": "Shop 1, Shopping Centre, 2 Soldiers Way, Durban Central, Durban, 4001",
-        "Longitude": "-29.8555703600000",
-        "Latitude": "31.0238653700000"
-    },
-    {
-        "StoreName": "Edendale Spar",
-        "Group": "Mega",
-        "StoreType": "Spar",
-        "Address": "Kwamabulala Shopping Centre, Machibisa Rd, Edendale, Pietermaritzburg, 3217",
-        "Longitude": "-29.6475413364310",
-        "Latitude": "30.3228671669430"
-    },
-    {
-        "StoreName": "Edendale Tops",
-        "Group": "Mega",
-        "StoreType": "Spar",
-        "Address": "Kwamabulala Shopping Centre, Machibisa Rd, Edendale, Pietermaritzburg, 3217",
-        "Longitude": "-29.6475413364300",
-        "Latitude": "30.3228671669420"
-    },
-    {
-        "StoreName": "Eerste River Superspar",
-        "Group": "Erite",
-        "StoreType": "Spar",
-        "Address": "City Centre Eerste River, Cnr of Van Riebeeck Road &, Forest Dr, Eerste River, Cape Town, 7100",
-        "Longitude": "-34.0008718165364",
-        "Latitude": "18.7263144691854"
-    },
-    {
-        "StoreName": "Eerste River Tops",
-        "Group": "Erite",
-        "StoreType": "Spar",
-        "Address": "Cnr Van Riebeeck Rd &, Forest Dr, Russel`s Rest, Cape Town, 7100",
-        "Longitude": "-34.0000015994677",
-        "Latitude": "18.7269103689220"
-    },
-    {
-        "StoreName": "EL Superspar",
-        "Group": "Nick's Foods",
-        "StoreType": "Spar",
-        "Address": "7-9 Park Gates Rd, Parkside, East London, 5209",
-        "Longitude": "-33.0175300100000",
-        "Latitude": "27.9015758800000"
-    },
-    {
-        "StoreName": "EL Tops 1",
-        "Group": "Nick's Foods",
-        "StoreType": "Spar",
-        "Address": "7-9 Park Gates Rd, East London Cbd, East London, 5200",
-        "Longitude": "-33.0157294000000",
-        "Latitude": "27.9015329600000"
-    },
-    {
-        "StoreName": "EL Tops 2",
-        "Group": "Nick's Foods",
-        "StoreType": "Spar",
-        "Address": "Gilwell Rd, East London Cbd, East London, 5209",
-        "Longitude": "-33.0189877200000",
-        "Latitude": "27.9015329600000"
-    },
-    {
-        "StoreName": "EL Tops 3",
-        "Group": "Nick's Foods",
-        "StoreType": "Spar",
-        "Address": "Gilwell Rd, East London Cbd, East London, 5209",
-        "Longitude": "-33.0189887200000",
-        "Latitude": "27.9031313400000"
-    },
-    {
-        "StoreName": "Elukwatini Spar",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "R541 Shop 19, Elukwatini Square, Nhlazatshe 6, Elukwatini, 1192",
-        "Longitude": "-26.0396123600000",
-        "Latitude": "30.7922611500000"
-    },
-    {
-        "StoreName": "Empangeni Superspar",
-        "Group": "Power Group",
-        "StoreType": "Spar",
-        "Address": "66 Maxwell St, Empangeni Central, Empangeni, 3880",
-        "Longitude": "-28.7443033403750",
-        "Latitude": "31.8882496708861"
-    },
-    {
-        "StoreName": "Empangeni Tops",
-        "Group": "Power Group",
-        "StoreType": "Spar",
-        "Address": "66 Maxwell St, Empangeni Central, Empangeni, 3880",
-        "Longitude": "-28.7442851200812",
-        "Latitude": "31.8883169687705"
-    },
-    {
-        "StoreName": "Engcobo Spar",
-        "Group": "EC DC",
-        "StoreType": "Spar",
-        "Address": "High St, Ngcobo, 5050",
-        "Longitude": "-31.6766936400000",
-        "Latitude": "27.9994523800000"
-    },
-    {
-        "StoreName": "Engcobo Tops 1",
-        "Group": "EC DC",
-        "StoreType": "Spar",
-        "Address": "High St, Engcobo, 6005",
-        "Longitude": "-31.6758149600000",
-        "Latitude": "28.0025634900000"
-    },
-    {
-        "StoreName": "Engcobo Tops 2",
-        "Group": "EC DC",
-        "StoreType": "Spar",
-        "Address": "Main Rd Erf 317, Engcobo, 5050",
-        "Longitude": "-31.6764742100000",
-        "Latitude": "27.9990661400000"
-    },
-    {
-        "StoreName": "Ephondweni Spar",
-        "Group": "Supatrade",
-        "StoreType": "Spar",
-        "Address": "D1834 Road Main Road Ephondweni, 4000",
-        "Longitude": "-27.0401900000000",
-        "Latitude": "32.2699713000000"
-    },
-    {
-        "StoreName": "Ermelo Spar",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "2 Oosthuise St, Ermelo, 2351",
-        "Longitude": "-26.5177705811844",
-        "Latitude": "29.9876811398763"
-    },
-    {
-        "StoreName": "Ermelo Tops",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "2 Oosthuise St, Ermelo, 2351",
-        "Longitude": "-26.5177705811845",
-        "Latitude": "29.9876811398764"
-    },
-    {
-        "StoreName": "Esikhaweni Superspar",
-        "Group": "Renckens",
-        "StoreType": "Spar",
-        "Address": "Mall, 1 Mdlebe Ntshona Rd, Esikhawini H, Richards Bay, 4490",
-        "Longitude": "-28.8709649600000",
-        "Latitude": "31.8999284100000"
-    },
-    {
-        "StoreName": "Esikhaweni Tops",
-        "Group": "Renckens",
-        "StoreType": "Spar",
-        "Address": "Mdlebe Ntshona Rd, Esikhawini J, Richards Bay, 3887",
-        "Longitude": "-28.8710916700000",
-        "Latitude": "31.8997233600000"
-    },
-    {
-        "StoreName": "Gateway Superspar",
-        "Group": "KZN DC",
-        "StoreType": "Spar",
-        "Address": "Palm Boulevard LGI Gateway Shopping Centre, Umhlanga Ridge, Umhlanga, 4319",
-        "Longitude": "-29.7259983000000",
-        "Latitude": "31.0636988000000"
-    },
-    {
-        "StoreName": "Gateway Tops",
-        "Group": "KZN DC",
-        "StoreType": "Spar",
-        "Address": "Palm Blvd, Umhlanga Ridge, Umhlanga, 4319",
-        "Longitude": "-29.7253337900000",
-        "Latitude": "31.0658774300000"
-    },
-    {
-        "StoreName": "Gelvendale Superspar",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "Stanford Rd, Gelvandale, Gqeberha, 6005",
-        "Longitude": "-33.9117037400000",
-        "Latitude": "25.5593489000000"
-    },
-    {
-        "StoreName": "Georgious Superspar",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "50 Campbell St, Fort Beaufort, 5720",
-        "Longitude": "-32.7769217000000",
-        "Latitude": "26.6299471000000"
-    },
-    {
-        "StoreName": "Georgious Tops",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "50 Campbell St, Fort Beaufort, 5720",
-        "Longitude": "-32.7759245900000",
-        "Latitude": "26.6322792000000"
-    },
-    {
-        "StoreName": "Ghandi Spar",
-        "Group": "Vele",
-        "StoreType": "Spar",
-        "Address": "Marshall Street, Eloff St, Johannesburg, 1500",
-        "Longitude": "-26.2067522899649",
-        "Latitude": "28.0440515687046"
-    },
-    {
-        "StoreName": "Ghandi Tops",
-        "Group": "Vele",
-        "StoreType": "Spar",
-        "Address": "Cnr Kerk & Kruger Street, Piet Retief, 2380",
-        "Longitude": "-26.2067522899648",
-        "Latitude": "28.0440515687045"
-    },
-    {
-        "StoreName": "Gonubie Superspar",
-        "Group": "Fiznef",
-        "StoreType": "Spar",
-        "Address": "85-87 Main Road 6 Mayhem Place, Gonubie, East London, 5256",
-        "Longitude": "-32.9406877129988",
-        "Latitude": "28.0234616823819"
-    },
-    {
-        "StoreName": "Gonubie Tops",
-        "Group": "Fiznef",
-        "StoreType": "Spar",
-        "Address": "85 Main Rd, Gonubie, East London, 5256",
-        "Longitude": "-32.9405610688314",
-        "Latitude": "28.0235422265620"
-    },
-    {
-        "StoreName": "Gugulethu Superspar",
-        "Group": "Erite",
-        "StoreType": "Spar",
-        "Address": "Ny 3 Ny 3 St Gugulethu Shopping Centre, Guguletu, Cape Town, 7750",
-        "Longitude": "-33.9860873792959",
-        "Latitude": "18.5663672400856"
-    },
-    {
-        "StoreName": "Gugulethu Tops",
-        "Group": "Erite",
-        "StoreType": "Spar",
-        "Address": "Steve Biko Dr Gugulethu Shopping Centre, Guguletu, Cape Town, 7750",
-        "Longitude": "-33.9859850474739",
-        "Latitude": "18.5667812400856"
-    },
-    {
-        "StoreName": "Hammersdale Superspar",
-        "Group": "Mega",
-        "StoreType": "Spar",
-        "Address": "17156 Kunene Road Shop A, 29 Hammarsdale Junction, Durban, 3700",
-        "Longitude": "-29.8017176632039",
-        "Latitude": "30.6284264976355"
-    },
-    {
-        "StoreName": "Hammersdale Tops",
-        "Group": "Mega",
-        "StoreType": "Spar",
-        "Address": "17156 Kunene Rd Shop A, 29 Hammarsdale Junction, Mpumalanga, 3701",
-        "Longitude": "-29.8023088347804",
-        "Latitude": "30.6287482976355"
-    },
-    {
-        "StoreName": "Harding Superspar",
-        "Group": "Mega",
-        "StoreType": "Spar",
-        "Address": "11 Hawkins St, Harding, 4680",
-        "Longitude": "-30.5766468000000",
-        "Latitude": "29.8783960000000"
-    },
-    {
-        "StoreName": "Harding Tops",
-        "Group": "Mega",
-        "StoreType": "Spar",
-        "Address": "11 Hawkins St, Harding, 4680",
-        "Longitude": "-30.5766467000000",
-        "Latitude": "29.8783950000000"
-    },
-    {
-        "StoreName": "Heidelberg Spar",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "69 Voortrekker St, Heidelberg, Heidelberg - GP, 1441",
-        "Longitude": "-26.5014537567475",
-        "Latitude": "28.3599887128920"
-    },
-    {
-        "StoreName": "Heidelberg Tops",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "69 Voortrekker St, Heidelberg, Heidelberg - GP, 1441",
-        "Longitude": "-26.5014537567474",
-        "Latitude": "28.3599887128921"
-    },
-    {
-        "StoreName": "Highway Superspar",
-        "Group": "Moldenhauer Group",
-        "StoreType": "Spar",
-        "Address": "Sandile Road, Mdantsane Unit 1, Mdantsane, 5219",
-        "Longitude": "-32.9426370012241",
-        "Latitude": "27.7545047130701"
-    },
-    {
-        "StoreName": "Highway Tops 1",
-        "Group": "Moldenhauer Group",
-        "StoreType": "Spar",
-        "Address": "Sandile Rd, Mdantsane Unit 2, Mdantsane, 5219",
-        "Longitude": "-32.9429881489041",
-        "Latitude": "27.7537000503682"
-    },
-    {
-        "StoreName": "Hlabisa Spar",
-        "Group": "Supatrade",
-        "StoreType": "Spar",
-        "Address": "R618, Hlabisa, 3937",
-        "Longitude": "-28.1455075385838",
-        "Latitude": "31.8752663552628"
-    },
-    {
-        "StoreName": "Hlabisa Tops",
-        "Group": "Supatrade",
-        "StoreType": "Spar",
-        "Address": "R618, Hlabisa, 4000",
-        "Longitude": "-28.1453457218333",
-        "Latitude": "31.8752163545644"
-    },
-    {
-        "StoreName": "Hluhluwe Superspar",
-        "Group": "Power Group",
-        "StoreType": "Spar",
-        "Address": "Main Street Lot 15, Hluhluwe, 3960",
-        "Longitude": "-28.0181498476929",
-        "Latitude": "32.2692404693118"
-    },
-    {
-        "StoreName": "Hluhluwe Tops",
-        "Group": "Power Group",
-        "StoreType": "Spar",
-        "Address": "R22 Lot 15, 4071",
-        "Longitude": "-27.8719712741759",
-        "Latitude": "32.3650924864698"
-    },
-    {
-        "StoreName": "Idutywa Spar",
-        "Group": "EC DC",
-        "StoreType": "Spar",
-        "Address": "148 Richardson Rd, Idutywa, 5000",
-        "Longitude": "-32.0994814380052",
-        "Latitude": "28.3045129389667"
-    },
-    {
-        "StoreName": "Idutywa Tops 1",
-        "Group": "EC DC",
-        "StoreType": "Spar",
-        "Address": "147 Richardson Rd, Idutywa, 5000",
-        "Longitude": "-32.0994723493211",
-        "Latitude": "28.3044056506065"
-    },
-    {
-        "StoreName": "Idutywa Tops 2",
-        "Group": "EC DC",
-        "StoreType": "Spar",
-        "Address": "148 Richardson Rd, Idutywa, 5000",
-        "Longitude": "-32.0963228316573",
-        "Latitude": "28.3032798134782"
-    },
-    {
-        "StoreName": "Indlovu Superspar",
-        "Group": "Christie Group",
-        "StoreType": "Spar",
-        "Address": "Main Road Mpumalanga, Shop No 11, Lowveld Mall Blue Haze Shopping Centre, Hazyview, 1242",
-        "Longitude": "-25.0436865606156",
-        "Latitude": "31.1300442821678"
-    },
-    {
-        "StoreName": "Indlovu Tops",
-        "Group": "Christie Group",
-        "StoreType": "Spar",
-        "Address": "Main Road Blue Haze Shopping Centre, Hazyview, 1242",
-        "Longitude": "-25.0438368004511",
-        "Latitude": "31.1303405975120"
-    },
-    {
-        "StoreName": "Indwe Spar",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "37 Fletcher St, Indwe, 5445",
-        "Longitude": "-31.4680380300000",
-        "Latitude": "27.3389614000000"
-    },
-    {
-        "StoreName": "Ingwavuma Spar",
-        "Group": "Supatrade",
-        "StoreType": "Spar",
-        "Address": "D1837 Rd Lot 17, Ingwavuma, 3968",
-        "Longitude": "-27.1330129891595",
-        "Latitude": "32.0037728785335"
-    },
-    {
-        "StoreName": "Ingwavuma Tops",
-        "Group": "Supatrade",
-        "StoreType": "Spar",
-        "Address": "Main Road, Ingwavuma, 3968",
-        "Longitude": "-27.1341301147161",
-        "Latitude": "31.9960052012507"
-    },
-    {
-        "StoreName": "Ixopo Superspar",
-        "Group": "Mega",
-        "StoreType": "Spar",
-        "Address": "30 Margaret St, Ixopo, 3276",
-        "Longitude": "-30.1555407000000",
-        "Latitude": "30.0571589000000"
-    },
-    {
-        "StoreName": "Ixopo Tops",
-        "Group": "Mega",
-        "StoreType": "Spar",
-        "Address": "36 Margaret St, Ixopo, 3207",
-        "Longitude": "-30.1529456100000",
-        "Latitude": "30.0587591700000"
-    },
-    {
-        "StoreName": "Jeppe Kwikspar",
-        "Group": "Vele",
-        "StoreType": "Spar",
-        "Address": "157 Rahima Moosa St, Johannesburg, 2000",
-        "Longitude": "-26.2011890133590",
-        "Latitude": "28.0421944552125"
-    },
-    {
-        "StoreName": "Jeppe Tops",
-        "Group": "Vele",
-        "StoreType": "Spar",
-        "Address": "157 Rahima Moosa St, Johannesburg, 2000",
-        "Longitude": "-26.2011096961060",
-        "Latitude": "28.0421492687044"
-    },
-    {
-        "StoreName": "Jimmys Superspar",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "78 Sutherland St, Norwood, Mthatha, 5100",
-        "Longitude": "-31.5870428200000",
-        "Latitude": "28.7871582700000"
-    },
-    {
-        "StoreName": "Jozini Spar",
-        "Group": "Supatrade",
-        "StoreType": "Spar",
-        "Address": "Ithala Centre, 1 Nsinde Street Main Jozini Road, Jozini",
-        "Longitude": "-27.4297563845804",
-        "Latitude": "32.0696562975719"
-    },
-    {
-        "StoreName": "Jozini Tops",
-        "Group": "Supatrade",
-        "StoreType": "Spar",
-        "Address": "Main Rd Ithala Centre, Jozini, 3970",
-        "Longitude": "-27.4298948074735",
-        "Latitude": "32.0694581264078"
-    },
-    {
-        "StoreName": "Khayelitsha Superspar",
-        "Group": "Erite",
-        "StoreType": "Spar",
-        "Address": "Road Shopping Centre, 1 Julius Tsolo Street, Khayelitsha, Cape Town, 7100",
-        "Longitude": "-34.0484541000000",
-        "Latitude": "18.6699968000000"
-    },
-    {
-        "StoreName": "Kings Spar",
-        "Group": "Mega",
-        "StoreType": "Spar",
-        "Address": "22 Kings Rd, New Germany, Pinetown, 3620",
-        "Longitude": "-29.8122743027225",
-        "Latitude": "30.8570662687997"
-    },
-    {
-        "StoreName": "Kings Tops",
-        "Group": "Mega",
-        "StoreType": "Spar",
-        "Address": "22 Kings Rd Pine Walk Centre, New Germany, Pinetown, 3620",
-        "Longitude": "-29.8122743027224",
-        "Latitude": "30.8570662687996"
-    },
-    {
-        "StoreName": "Kosi Bay Superspar",
-        "Group": "Supatrade",
-        "StoreType": "Spar",
-        "Address": "Makprop Centre, Main Rd, Manguzi, 3973",
-        "Longitude": "-26.9875788826188",
-        "Latitude": "32.7564081338056"
-    },
-    {
-        "StoreName": "Kosi Bay Tops",
-        "Group": "Supatrade",
-        "StoreType": "Spar",
-        "Address": "Main Rd, Manguzi, 3973",
-        "Longitude": "-26.9874414518064",
-        "Latitude": "32.7565248453482"
-    },
-    {
-        "StoreName": "Kwa Fetting Spar",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "Main Road, Middeldrift, 5685",
-        "Longitude": "-32.3360149000000",
-        "Latitude": "28.1614102800000"
-    },
-    {
-        "StoreName": "Kwamashu Superspar",
-        "Group": "Power Group",
-        "StoreType": "Spar",
-        "Address": "300 Malandela Road Kwa Mashu, Durban, 4360",
-        "Longitude": "-29.7468532809235",
-        "Latitude": "30.9755693288291"
-    },
-    {
-        "StoreName": "Kwamashu Tops",
-        "Group": "Power Group",
-        "StoreType": "Spar",
-        "Address": "300 Malendela Rd, KwaMashu, 4360",
-        "Longitude": "-29.7468415573637",
-        "Latitude": "30.9755478282106"
-    },
-    {
-        "StoreName": "Kwanobuhle Spar",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "8 Hoyana St Kwa Nobuhle, Gqeberha, 6230",
-        "Longitude": "-33.8062649500000",
-        "Latitude": "25.3950153600000"
-    },
-    {
-        "StoreName": "Kwantu Superspar",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "Cnr Bridge & High Street, Alice, 5700",
-        "Longitude": "-32.7864585662899",
-        "Latitude": "26.8393074112134"
-    },
-    {
-        "StoreName": "Kwantu Tops",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "Thompson St, Alice, 5700",
-        "Longitude": "-32.7866523844619",
-        "Latitude": "26.8391059842295"
-    },
-    {
-        "StoreName": "KwaWicks Spar",
-        "Group": "KwaWicks",
-        "StoreType": "Spar",
-        "Address": "Ugie, 5470",
-        "Longitude": "-31.1652061180287",
-        "Latitude": "28.2303929107321"
-    },
-    {
-        "StoreName": "KwaWicks Tops",
-        "Group": "KwaWicks",
-        "StoreType": "Spar",
-        "Address": "Ugie, 5470",
-        "Longitude": "-31.1653061180286",
-        "Latitude": "28.2303329107320"
-    },
-    {
-        "StoreName": "KWT Superspar",
-        "Group": "Nick's Foods",
-        "StoreType": "Spar",
-        "Address": "36 Cathcart St, Qonce, 5601",
-        "Longitude": "-32.8778187400000",
-        "Latitude": "27.3867467900000"
-    },
-    {
-        "StoreName": "KWT Tops 1",
-        "Group": "Nick's Foods",
-        "StoreType": "Spar",
-        "Address": "9 Walker St, Qonce, 5601",
-        "Longitude": "-32.8781425100000",
-        "Latitude": "27.3877338400000"
-    },
-    {
-        "StoreName": "KWT Tops 2",
-        "Group": "Nick's Foods",
-        "StoreType": "Spar",
-        "Address": "Queens Rd, Qonce, 5601",
-        "Longitude": "-32.8728489110000",
-        "Latitude": "27.4035097110000"
-    },
-    {
-        "StoreName": "KWT Tops 3",
-        "Group": "Nick's Foods",
-        "StoreType": "Spar",
-        "Address": "Queens Rd, Qonce, 5602",
-        "Longitude": "-32.8728489100000",
-        "Latitude": "27.4035097100000"
-    },
-    {
-        "StoreName": "Ladysmith Superspar",
-        "Group": "Renckens",
-        "StoreType": "Spar",
-        "Address": "Queen Street Corner of, Lyell St, Ladysmith, 3370",
-        "Longitude": "-28.5606607000000",
-        "Latitude": "29.7789602000000"
-    },
-    {
-        "StoreName": "Ladysmith Tops",
-        "Group": "Renckens",
-        "StoreType": "Spar",
-        "Address": "Cnr Queen &, Lyell St, Ladysmith, 3370",
-        "Longitude": "-28.5598543000000",
-        "Latitude": "29.7830621000000"
-    },
-    {
-        "StoreName": "Lighthouse Spar",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "Moore St, Quigney, East London, 5256",
-        "Longitude": "-33.0124460000000",
-        "Latitude": "27.9177282000000"
-    },
-    {
-        "StoreName": "Lusikisiki Spar",
-        "Group": "Queenrose",
-        "StoreType": "Spar",
-        "Address": "21 Main Street, Lusikisiki, 4820",
-        "Longitude": "-31.3596312000000",
-        "Latitude": "29.5706252000000"
-    },
-    {
-        "StoreName": "Lusikisiki Tops",
-        "Group": "Queenrose",
-        "StoreType": "Spar",
-        "Address": "28 Main St, Lusikisiki, 4820",
-        "Longitude": "-31.3589280800000",
-        "Latitude": "29.5725200600000"
-    },
-    {
-        "StoreName": "Maclear Spar",
-        "Group": "Queenrose",
-        "StoreType": "Spar",
-        "Address": "Van Riebeeck Street 8, Nqanqarhu, 5480",
-        "Longitude": "-31.0696854000000",
-        "Latitude": "28.3489728000000"
-    },
-    {
-        "StoreName": "Madadeni Superspar",
-        "Group": "KwaNongoma",
-        "StoreType": "Spar",
-        "Address": "Madadeni, Newcastle",
-        "Longitude": "-27.7548142000000",
-        "Latitude": "30.0454705000000"
-    },
-    {
-        "StoreName": "Madadeni Tops",
-        "Group": "KwaNongoma",
-        "StoreType": "Spar",
-        "Address": "Madadeni, Newcastle",
-        "Longitude": "-27.7548141000000",
-        "Latitude": "30.0454704000000"
-    },
-    {
-        "StoreName": "Madalas SaveMor",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "185 Main St, Keiskammahoek, 4950",
-        "Longitude": "-32.6818818800000",
-        "Latitude": "27.1517836100000"
-    },
-    {
-        "StoreName": "Maluti Superspar",
-        "Group": "Renckens",
-        "StoreType": "Spar",
-        "Address": "Mampoi Rd &, Motebang Rd, Phuthaditjhaba-A, Phuthaditjhaba, 9869",
-        "Longitude": "-28.5345297600000",
-        "Latitude": "28.8017318700000"
-    },
-    {
-        "StoreName": "Maluti Tops",
-        "Group": "Renckens",
-        "StoreType": "Spar",
-        "Address": "Motebang Rd, Phuthaditjhaba-A, Phuthaditjhaba, 9869",
-        "Longitude": "-28.5347537700000",
-        "Latitude": "28.8017435700000"
-    },
-    {
-        "StoreName": "Mandela Park Spar",
-        "Group": "Erite",
-        "StoreType": "Spar",
-        "Address": "89 Govan Mbeki Rd, Mandela Park, Cape Town, 7784",
-        "Longitude": "-34.0476464800000",
-        "Latitude": "18.6881118500000"
-    },
-    {
-        "StoreName": "Mandini Spar",
-        "Group": "Renckens",
-        "StoreType": "Spar",
-        "Address": "Centre, Vector Square, 1 Long St, Mandini, 4490",
-        "Longitude": "-29.1540603900000",
-        "Latitude": "31.4107014100000"
-    },
-    {
-        "StoreName": "Mandini Tops",
-        "Group": "Renckens",
-        "StoreType": "Spar",
-        "Address": "Centre, Vector Square, 1 Long St, Mandini, 4490",
-        "Longitude": "-29.1541722600000",
-        "Latitude": "31.4106155800000"
-    },
-    {
-        "StoreName": "Mapumulo Spar",
-        "Group": "Renckens",
-        "StoreType": "Spar",
-        "Address": "Old Main Road, Kwa - Maphumulo, Stanger, 4470",
-        "Longitude": "-29.1575800497173",
-        "Latitude": "31.0668493552898"
-    },
-    {
-        "StoreName": "Mapumulo Tops",
-        "Group": "Renckens",
-        "StoreType": "Spar",
-        "Address": "74 Main Rd, Umphumulo, 4470",
-        "Longitude": "-29.1576215962486",
-        "Latitude": "31.0668006111098"
-    },
-    {
-        "StoreName": "Mbazwana Superspar",
-        "Group": "Supatrade",
-        "StoreType": "Spar",
-        "Address": "R22 Ithala Centre, Shop 6, Main Road, Mbazwana, 4000",
-        "Longitude": "-27.4805005772729",
-        "Latitude": "32.5820945527996"
-    },
-    {
-        "StoreName": "Mbazwana Tops",
-        "Group": "Supatrade",
-        "StoreType": "Spar",
-        "Address": "Shop 6, Ithala Shopping Centre, R22, Mbazwana, 4000",
-        "Longitude": "-27.4927923400000",
-        "Latitude": "32.5879432700000"
-    },
-    {
-        "StoreName": "Mdantsane Superspar",
-        "Group": "Moldenhauer Group",
-        "StoreType": "Spar",
-        "Address": "6 Mdantsane R47 St Zone 12, Unit, East London, 5256",
-        "Longitude": "-32.9268499000000",
-        "Latitude": "27.7031924000000"
-    },
-    {
-        "StoreName": "Mdoni Road Tops",
-        "Group": "Power Group",
-        "StoreType": "Spar",
-        "Address": "Cnr Nyathi &, John Ross Hwy, Mtubatuba, 3935",
-        "Longitude": "-28.4138690800000",
-        "Latitude": "32.1848524400000"
-    },
-    {
-        "StoreName": "Melmoth Superspar",
-        "Group": "KZN DC",
-        "StoreType": "Spar",
-        "Address": "Melmoth, 3835",
-        "Longitude": "-28.5925831745977",
-        "Latitude": "31.4002202822583"
-    },
-    {
-        "StoreName": "Melmoth Tops",
-        "Group": "KZN DC",
-        "StoreType": "Spar",
-        "Address": "306 Jacob Cohn St, Melmoth, 3835",
-        "Longitude": "-28.5926020153960",
-        "Latitude": "31.3999198748496"
-    },
-    {
-        "StoreName": "Mkuze Superspar",
-        "Group": "KZN DC",
-        "StoreType": "Spar",
-        "Address": "Old Main Road, Mkuze, 3965",
-        "Longitude": "-27.6174360000000",
-        "Latitude": "32.0319308000000"
-    },
-    {
-        "StoreName": "Mndeni Meats Central",
-        "Group": "",
-        "StoreType": "Mndeni",
-        "Address": "287 Church St, Pietermaritzburg, 3200",
-        "Longitude": "-29.4963115600000",
-        "Latitude": "30.3787275700000"
-    },
-    {
-        "StoreName": "Mndeni Meats Port Shepstone",
-        "Group": "",
-        "StoreType": "Mndeni",
-        "Address": "3A Laura St, Gandhinagar, Tongaat, 4400",
-        "Longitude": "-29.5698005000000",
-        "Latitude": "31.1150196300000"
-    },
-    {
-        "StoreName": "Mndeni Meats Tongaat",
-        "Group": "",
-        "StoreType": "Mndeni",
-        "Address": "George Sewpersadh St, Verulam, Durban, 4340",
-        "Longitude": "-29.6407852300000",
-        "Latitude": "31.0458659100000"
-    },
-    {
-        "StoreName": "Mndeni Meats Verulam",
-        "Group": "",
-        "StoreType": "Mndeni",
-        "Address": "49 Bazley St, Port Shepstone, 4240",
-        "Longitude": "-30.7378315500000",
-        "Latitude": "30.4478340400000"
-    },
-    {
-        "StoreName": "Moratiwe Superspar",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "R579 Shop 11, Moratiwa Crossing, Mmotwaneng, 1057",
-        "Longitude": "-24.9925468087473",
-        "Latitude": "29.7467923779287"
-    },
-    {
-        "StoreName": "Moratiwe Tops",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "R579 Moratiwa Crossing, Mmotwaneng, 1059",
-        "Longitude": "-24.9925468087472",
-        "Latitude": "29.7467923779286"
-    },
-    {
-        "StoreName": "Mtubatuba Superspar",
-        "Group": "Power Group",
-        "StoreType": "Spar",
-        "Address": "Lot 23, John Ross Highway, Mtubatuba, 3935",
-        "Longitude": "-28.4130631255640",
-        "Latitude": "32.1848754752185"
-    },
-    {
-        "StoreName": "Mtubatuba Tops",
-        "Group": "Power Group",
-        "StoreType": "Spar",
-        "Address": "Lot 23, John Ross Highway, Mtubatuba, 3936",
-        "Longitude": "-28.4139716000000",
-        "Latitude": "32.1827480000000"
-    },
-    {
-        "StoreName": "Myezo Superspar",
-        "Group": "Pacina",
-        "StoreType": "Spar",
-        "Address": "Nelson Mandela Dr, Norwood, Mthatha, 5256",
-        "Longitude": "-31.5926384000000",
-        "Latitude": "28.7880207000000"
-    },
-    {
-        "StoreName": "Myezo Tops",
-        "Group": "Pacina",
-        "StoreType": "Spar",
-        "Address": "1 Nelson Mandela Dr, Myezo Park, Mthatha, 5100",
-        "Longitude": "-31.5956904959274",
-        "Latitude": "28.7493519785636"
-    },
-    {
-        "StoreName": "Naas Superspar",
-        "Group": "Lowveld DC",
-        "StoreType": "Spar",
-        "Address": "R571 Kamaqhekeza Centre, Kamaqhekeza-A, Kamaqhekeza, 1379",
-        "Longitude": "-25.6679627700000",
-        "Latitude": "31.8567317600000"
-    },
-    {
-        "StoreName": "Naas Tops",
-        "Group": "Lowveld DC",
-        "StoreType": "Spar",
-        "Address": "R571 Kamaqhekeza Plaza, Kamaqhekeza-A, Kamaqhekeza, 1200",
-        "Longitude": "-25.6680508200000",
-        "Latitude": "31.8564508400000"
-    },
-    {
-        "StoreName": "Nahoon Superspar",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "Cnr 49 Beach &, Drake Rd, Bonnie Doon, East London, 5241",
-        "Longitude": "-32.9847787400000",
-        "Latitude": "27.9279390500000"
-    },
-    {
-        "StoreName": "Ndu Spar",
-        "Group": "EC DC",
-        "StoreType": "Spar",
-        "Address": "157 High St, Ngcobo, 5050",
-        "Longitude": "-31.6759033000000",
-        "Latitude": "28.0004453000000"
-    },
-    {
-        "StoreName": "Ndumu Spar",
-        "Group": "Supatrade",
-        "StoreType": "Spar",
-        "Address": "Sub 3 of Farm, D1851 Rd, Ndumu, 4000",
-        "Longitude": "-26.9261660000000",
-        "Latitude": "32.2496212000000"
-    },
-    {
-        "StoreName": "Nemato Spar",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "32 Biscay Rd, Port Alfred, 6170",
-        "Longitude": "-33.5921058502779",
-        "Latitude": "26.8828573554177"
-    },
-    {
-        "StoreName": "Nemato Tops",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "32-36 Biscay Rd, Port Alfred, 6170",
-        "Longitude": "-33.5922838282538",
-        "Latitude": "26.8830716130898"
-    },
-    {
-        "StoreName": "Newcastle Corner Superspar",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "Memel Road, Allen St, Newcastle, 2956",
-        "Longitude": "-27.7447736307686",
-        "Latitude": "29.9324828782684"
-    },
-    {
-        "StoreName": "Newcastle Corner Tops",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "Allen St, Hutten Heights, Newcastle, 2956",
-        "Longitude": "-27.7447736307685",
-        "Latitude": "29.9324828782683"
-    },
-    {
-        "StoreName": "Newtown Spar",
-        "Group": "Vele",
-        "StoreType": "Spar",
-        "Address": "81 Rahima Moosa St, Newtown, Johannesburg, 2113",
-        "Longitude": "-26.2023378000000",
-        "Latitude": "28.0328901000000"
-    },
-    {
-        "StoreName": "Newtown Tops",
-        "Group": "Vele",
-        "StoreType": "Spar",
-        "Address": "81 Rahima Moosa St, Newtown, Johannesburg, 2113",
-        "Longitude": "-26.2023379000000",
-        "Latitude": "28.0328902000000"
-    },
-    {
-        "StoreName": "Ngqamakhwe Spar ",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "20 Main Street, Nqamakwe, 4990",
-        "Longitude": "-32.2008535900000",
-        "Latitude": "27.9373228900000"
-    },
-    {
-        "StoreName": "Ngqamakhwe Tops",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "20 Main Street, Nqamakwe, 4990",
-        "Longitude": "-32.2007446500000",
-        "Latitude": "27.9371512300000"
-    },
-    {
-        "StoreName": "Ngqeleni Superspar",
-        "Group": "Pacina",
-        "StoreType": "Spar",
-        "Address": "King George Rd ERF 43, Main Road, Ngqeleni, 5256",
-        "Longitude": "-31.6715791000000",
-        "Latitude": "29.0260678000000"
-    },
-    {
-        "StoreName": "Nongoma 1 Spar",
-        "Group": "KwaNongoma",
-        "StoreType": "Spar",
-        "Address": "King Dinizulu Hwy Shop GF01A, Isizwe shopping, Lot 120, Nongoma, 3950",
-        "Longitude": "-27.9108932600000",
-        "Latitude": "31.6474202700000"
-    },
-    {
-        "StoreName": "Nongoma 1 Tops",
-        "Group": "KwaNongoma",
-        "StoreType": "Spar",
-        "Address": "Isizwe Shopping Centre, King Dinizulu Hwy Shop GF01A, Nongoma, 3950",
-        "Longitude": "-27.9118145000000",
-        "Latitude": "31.6452733000000"
-    },
-    {
-        "StoreName": "Nongoma 2 Superspar",
-        "Group": "KwaNongoma",
-        "StoreType": "Spar",
-        "Address": "Nongoma, 3950",
-        "Longitude": "-27.9079792781404",
-        "Latitude": "31.6458903645938"
-    },
-    {
-        "StoreName": "Nongoma 2 Tops",
-        "Group": "KwaNongoma",
-        "StoreType": "Spar",
-        "Address": "Nongoma, 3950",
-        "Longitude": "-27.9079792781403",
-        "Latitude": "31.6458903645937"
-    },
-    {
-        "StoreName": "Nongoma Spar",
-        "Group": "Supatrade",
-        "StoreType": "Spar",
-        "Address": "Main Street, Nongoma, 3950",
-        "Longitude": "-27.9109400079618",
-        "Latitude": "31.6473306737529"
-    },
-    {
-        "StoreName": "Northcrest Superspar",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "16 Durban Road Main Road, Umtata Central, Mthatha, 5256",
-        "Longitude": "-31.5665034673648",
-        "Latitude": "28.7964308929994"
-    },
-    {
-        "StoreName": "Northcrest Tops",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "16 Durban Rd, Hillcrest, Mthatha, 5119",
-        "Longitude": "-31.5666500133446",
-        "Latitude": "28.7968137223046"
-    },
-    {
-        "StoreName": "Nquthu Spar",
-        "Group": "KwaNongoma",
-        "StoreType": "Spar",
-        "Address": "Nqutu, 3135",
-        "Longitude": "-28.2106266000000",
-        "Latitude": "30.6749372000000"
-    },
-    {
-        "StoreName": "Nquthu Tops",
-        "Group": "KwaNongoma",
-        "StoreType": "Spar",
-        "Address": "P 36-2, Nqutu, 3135",
-        "Longitude": "-28.2106265000000",
-        "Latitude": "30.6749371000000"
-    },
-    {
-        "StoreName": "Nyakaza Savemor",
-        "Group": "Supatrade",
-        "StoreType": "Spar",
-        "Address": "R22, Hluhluwe, 3960",
-        "Longitude": "-28.0226703300000",
-        "Latitude": "32.2792420100000"
-    },
-    {
-        "StoreName": "Nyakaza Tops",
-        "Group": "Supatrade",
-        "StoreType": "Spar",
-        "Address": "R22, Hluhluwe, 3960",
-        "Longitude": "-28.0226703200000",
-        "Latitude": "32.2792420000000"
-    },
-    {
-        "StoreName": "Oak Cottage Spar",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "35 African St, Grahamstown, Makhanda, 6140",
-        "Longitude": "-33.3073620000000",
-        "Latitude": "26.5207515000000"
-    },
-    {
-        "StoreName": "Oak Cottage Tops",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "35 African St, Grahamstown, Makhanda, 6139",
-        "Longitude": "-33.3073610000000",
-        "Latitude": "26.5207514000000"
-    },
-    {
-        "StoreName": "Peddie Spar",
-        "Group": "EC DC",
-        "StoreType": "Spar",
-        "Address": "8 Albert Street, Peddie, 6005",
-        "Longitude": "-33.1968994000000",
-        "Latitude": "27.1148437000000"
-    },
-    {
-        "StoreName": "Peddie Tops",
-        "Group": "EC DC",
-        "StoreType": "Spar",
-        "Address": "8 Albert St, Peddie, 5640",
-        "Longitude": "-33.1968993000000",
-        "Latitude": "27.1148436000000"
-    },
-    {
-        "StoreName": "Philani Valley Superspar",
-        "Group": "Mega",
-        "StoreType": "Spar",
-        "Address": "179 Echwabeni Avenue Umlazi, Philani Valley Y-Section, Durban, 3207",
-        "Longitude": "-30.0040617563827",
-        "Latitude": "30.8770938429836"
-    },
-    {
-        "StoreName": "Philani Valley Tops",
-        "Group": "Mega",
-        "StoreType": "Spar",
-        "Address": "Philani Valley Mega, 179 Echwebeni Ave, Umlazi Y, Umlazi, 4066",
-        "Longitude": "-30.0040617563826",
-        "Latitude": "30.8770938429835"
-    },
-    {
-        "StoreName": "Pinetown Superspar",
-        "Group": "Mega",
-        "StoreType": "Spar",
-        "Address": "24 Josiah Gumede Road Shop 1 Mega Shopping Centre, New Germany, Pinetown, 3610",
-        "Longitude": "-29.8141906000000",
-        "Latitude": "30.8547326000000"
-    },
-    {
-        "StoreName": "Pinetown Tops",
-        "Group": "Mega",
-        "StoreType": "Spar",
-        "Address": "24 Josiah Gumede Rd Shop 2, Mega Shopping Centre, New Germany, Pinetown, 3620",
-        "Longitude": "-29.8141905000000",
-        "Latitude": "30.8547325000000"
-    },
-    {
-        "StoreName": "Plaza Superspar",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "Shop 9, Nelspruit Plaza Cnr Henshall &, Bester St, Nelspruit 312-Jt, Mbombela, 1201",
-        "Longitude": "-25.4671071000000",
-        "Latitude": "30.9788050800000"
-    },
-    {
-        "StoreName": "Pongola Spar",
-        "Group": "Supatrade",
-        "StoreType": "Spar",
-        "Address": "41 Naude St, Pongola, 3170",
-        "Longitude": "-27.3781989956756",
-        "Latitude": "31.6129085999998"
-    },
-    {
-        "StoreName": "Pongola tops",
-        "Group": "Supatrade",
-        "StoreType": "Spar",
-        "Address": "41 Naude St, Pongola, 3170",
-        "Longitude": "-27.3780781204836",
-        "Latitude": "31.6129662674935"
-    },
-    {
-        "StoreName": "Protea Superspar",
-        "Group": "AER",
-        "StoreType": "Spar",
-        "Address": "15 Ebden St, Balmoral, Queenstown, 5320",
-        "Longitude": "-31.8962532000000",
-        "Latitude": "26.8727039000000"
-    },
-    {
-        "StoreName": "Renckens Superspar",
-        "Group": "Renckens",
-        "StoreType": "Spar",
-        "Address": "Amajuba St 15 Old Mutual Centre, Renckens, Mandini, 4490",
-        "Longitude": "-29.1467303192484",
-        "Latitude": "31.4033907533690"
-    },
-    {
-        "StoreName": "Renckens Tops",
-        "Group": "Renckens",
-        "StoreType": "Spar",
-        "Address": "Amajuba St 15 Old Mutual Centre, Renckens, Mandini, 4490",
-        "Longitude": "-29.1467303192483",
-        "Latitude": "31.4033907533680"
-    },
-    {
-        "StoreName": "Richmond Superspar",
-        "Group": "Pacina",
-        "StoreType": "Spar",
-        "Address": "Cnr. Nelson &, Chilley St, Richmond - KZN, 3720",
-        "Longitude": "-29.8677985261649",
-        "Latitude": "30.2730207310051"
-    },
-    {
-        "StoreName": "Richmond Tops",
-        "Group": "Pacina",
-        "StoreType": "Spar",
-        "Address": "29 Chilley St, Richmond - KZN, 3780",
-        "Longitude": "-29.8677353096156",
-        "Latitude": "30.2731630532240"
-    },
-    {
-        "StoreName": "Rink Street Spar",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "21C Rink St, Central, Gqeberha, 6001",
-        "Longitude": "-33.9619699200000",
-        "Latitude": "25.6093474600000"
-    },
-    {
-        "StoreName": "Riverbend Spar",
-        "Group": "Fiznef",
-        "StoreType": "Spar",
-        "Address": "1 Loerie Ln, Gonubie North, East London, 5241",
-        "Longitude": "-32.9345952746576",
-        "Latitude": "27.9916204560291"
-    },
-    {
-        "StoreName": "Riverbend Tops",
-        "Group": "Fiznef",
-        "StoreType": "Spar",
-        "Address": "Lourie Heights Mall, Gonubie West, Gonubie, 5288",
-        "Longitude": "-32.9343115685874",
-        "Latitude": "27.9916060820655"
-    },
-    {
-        "StoreName": "Savoy Superspar",
-        "Group": "Pacina",
-        "StoreType": "Spar",
-        "Address": "129 Nelson Mandela Dr, Fort Gale, Mthatha, 5256",
-        "Longitude": "-31.5940037206577",
-        "Latitude": "28.7667321902349"
-    },
-    {
-        "StoreName": "Savoy Tops",
-        "Group": "Pacina",
-        "StoreType": "Spar",
-        "Address": "129 Nelson Mandela Dr, Fort Gale, Mthatha, 5100",
-        "Longitude": "-31.5940037206576",
-        "Latitude": "28.7667321902348"
-    },
-    {
-        "StoreName": "Seven Oaks",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "Cnr. York & Elliot St, Mthatha, 5100",
-        "Longitude": "-31.5864090000000",
-        "Latitude": "28.6493283000000"
-    },
-    {
-        "StoreName": "Stanford Square Superspar",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "45 Cottrell St, Korsten, Gqeberha, 6020",
-        "Longitude": "-33.9332600843638",
-        "Latitude": "25.5839633643729"
-    },
-    {
-        "StoreName": "Stanford Square Tops",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "Cottrell St, Neave Industrial, Gqeberha, 6020",
-        "Longitude": "-33.9332600843637",
-        "Latitude": "25.5839633643728"
-    },
-    {
-        "StoreName": "Sutherland Ridge Superspar",
-        "Group": "Pacina",
-        "StoreType": "Spar",
-        "Address": "Ingwavuma Rd Main Road 17, Ingwavuma, 4000",
-        "Longitude": "-31.5889506885435",
-        "Latitude": "28.7939438082601"
-    },
-    {
-        "StoreName": "Sutherlandridge Tops",
-        "Group": "Pacina",
-        "StoreType": "Spar",
-        "Address": "1276 Willem Botha Dr, Wierdapark, Pretoria, 0140",
-        "Longitude": "-31.5889506885434",
-        "Latitude": "28.7939438082600"
-    },
-    {
-        "StoreName": "Taxi City Superspar",
-        "Group": "",
-        "StoreType": "Spar",
-        "Address": "0157, 1280 Willem Botha Dr, Wierdapark, Centurion, 0157",
-        "Longitude": "-25.8460108000000",
-        "Latitude": "28.1436546900000"
-    },
-    {
-        "StoreName": "Tintswalo Spar",
-        "Group": "Christie Group",
-        "StoreType": "Spar",
-        "Address": "Cnr Kirkland &, Allen St, Newcastle CBD, Newcastle, 2940",
-        "Longitude": "-24.5963190995438",
-        "Latitude": "31.0659452746110"
-    },
-    {
-        "StoreName": "Tintswalo Tops",
-        "Group": "Christie Group",
-        "StoreType": "Spar",
-        "Address": "Van Klaserie St, Acornhoek-A, Acornhoek, 1360",
-        "Longitude": "-24.5963190995437",
-        "Latitude": "31.0659452746109"
-    },
-    {
-        "StoreName": "Tsolo Spar",
-        "Group": "Queenrose",
-        "StoreType": "Spar",
-        "Address": "Main St, Acornhoek, 1360",
-        "Longitude": "-24.5950378000000",
-        "Latitude": "31.0655309300000"
-    },
-    {
-        "StoreName": "Tubatse Superspar",
-        "Group": "Christie Group",
-        "StoreType": "Spar",
-        "Address": "Tsolo, 5170",
-        "Longitude": "-31.3106963000000",
-        "Latitude": "28.7566396000000"
-    },
-    {
-        "StoreName": "Ugie Spar",
-        "Group": "KwaWicks",
-        "StoreType": "Spar",
-        "Address": "Dirk Winterbach St Shop 12, Twin City Shopping Centre, Burgersfort, 1150",
-        "Longitude": "-24.6660959600000",
-        "Latitude": "30.3257150300000"
-    },
-    {
-        "StoreName": "Ulundi Superspar",
-        "Group": "Supatrade",
-        "StoreType": "Spar",
-        "Address": "Main Street 14, Elliot, 5480",
-        "Longitude": "-28.3023264186592",
-        "Latitude": "31.4218650581561"
-    },
-    {
-        "StoreName": "Ulundi Tops",
-        "Group": "Supatrade",
-        "StoreType": "Spar",
-        "Address": "Ulundi BA, Ulundi",
-        "Longitude": "-28.3023264186593",
-        "Latitude": "31.4218650581562"
-    },
-    {
-        "StoreName": "Umfolozi Savemor",
-        "Group": "Supatrade",
-        "StoreType": "Spar",
-        "Address": "Princess Magogo St Shop 12, Senzagakhona Centre, Ulundi BA, Ulundi, 3838",
-        "Longitude": "-28.3015932300000",
-        "Latitude": "31.4217845400000"
-    },
-    {
-        "StoreName": "Umlazi Superspar",
-        "Group": "Mega",
-        "StoreType": "Spar",
-        "Address": "Umlazi Mega City, Shop M8, 50 Griffiths Mxenge Hwy, Umlazi, 3207",
-        "Longitude": "-29.9540842000000",
-        "Latitude": "30.9377160000000"
-    },
-    {
-        "StoreName": "Umlazi Tops",
-        "Group": "Mega",
-        "StoreType": "Spar",
-        "Address": "50 Griffiths Mxenge Hwy Umlazi Mega City Shopping Centre, Umlazi V, Durban, 4089",
-        "Longitude": "-29.9540841000000",
-        "Latitude": "30.9377150000000"
-    },
-    {
-        "StoreName": "Umzimkhulu Superspar",
-        "Group": "Mega",
-        "StoreType": "Spar",
-        "Address": "Shop 15 De Bruyn Plaza, R56, Umzimkulu, 3297",
-        "Longitude": "-30.2612542000000",
-        "Latitude": "29.9360543000000"
-    },
-    {
-        "StoreName": "Umzimkhulu Tops",
-        "Group": "Mega",
-        "StoreType": "Spar",
-        "Address": "R56 Shop 14, De Bruyn Plaza, Umzimkulu, 3297",
-        "Longitude": "-30.2607096200000",
-        "Latitude": "29.9381036700000"
-    },
-    {
-        "StoreName": "Vangate Superspar",
-        "Group": "Erite",
-        "StoreType": "Spar",
-        "Address": "Shop 10, Vanguard Mall, Jakes Gerwel Dr, Athlone, Cape Town, 7792",
-        "Longitude": "-33.9601029000000",
-        "Latitude": "18.5366541000000"
-    },
-    {
-        "StoreName": "Vryheid Spar",
-        "Group": "KZN DC",
-        "StoreType": "Spar",
-        "Address": "President Street Vryheid, Corner of Utrecht and East Street, Vryheid, 3100",
-        "Longitude": "-27.7687259000000",
-        "Latitude": "30.7878122000000"
-    },
-    {
-        "StoreName": "Winterton Superspar",
-        "Group": "Renckens",
-        "StoreType": "Spar",
-        "Address": "Cnr Union St &, Springfield Rd, Winterton, 3340",
-        "Longitude": "-28.8121695239405",
-        "Latitude": "29.5368725177907"
-    },
-    {
-        "StoreName": "Winterton Tops",
-        "Group": "Renckens",
-        "StoreType": "Spar",
-        "Address": "Union St, Winterton, 3340",
-        "Longitude": "-28.8121695239406",
-        "Latitude": "29.5368725177908"
-    }
-]
+ [{
+         "StoreName": "1000 Hills Spar",
+         "Group": "Renckens",
+         "StoreType": "Spar",
+         "Address": "86 Old Main Rd, Bothas Hill, Outer West Durban, 3660",
+         "Longitude": "-29.752778",
+         "Latitude": "30.7403891000000"
+     },
+     {
+         "StoreName": "1000 Hills Tops",
+         "Group": "Renckens",
+         "StoreType": "Spar",
+         "Address": "86 Old Main Rd, Bothas Hill, Outer West Durban, 3660",
+         "Longitude": "-29.7524583205099",
+         "Latitude": "30.7424889976341"
+     },
+     {
+         "StoreName": "Abaqulusi Superspar",
+         "Group": "KZN DC",
+         "StoreType": "Spar",
+         "Address": "President St, Vryheid, 3100",
+         "Longitude": "-27.7696310515864",
+         "Latitude": "30.7905148441396"
+     },
+     {
+         "StoreName": "Abaqulusi Tops",
+         "Group": "KZN DC",
+         "StoreType": "Spar",
+         "Address": "166 Mark St, Vryheid, 3100",
+         "Longitude": "-27.7695250850911",
+         "Latitude": "30.7906549399087"
+     },
+     {
+         "StoreName": "Acornhoek Superspar",
+         "Group": "Christie Group",
+         "StoreType": "Spar",
+         "Address": "Main Street, Acornhoek-A, Acornhoek, 1360",
+         "Longitude": "-24.5955107732064",
+         "Latitude": "31.0658958798199"
+     },
+     {
+         "StoreName": "Acornhoek Tops",
+         "Group": "Christie Group",
+         "StoreType": "Spar",
+         "Address": "Mall, R40, Acornhoek, 1360",
+         "Longitude": "-24.5960623539808",
+         "Latitude": "31.0656382551733"
+     },
+     {
+         "StoreName": "Aliwal North Spar",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "Grey St, Aliwal North, 9750",
+         "Longitude": "-30.6902633100000",
+         "Latitude": "26.7027019100000"
+     },
+     {
+         "StoreName": "Aljos Spar",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "Kruger Ave, Estoire, Bloemfontein, 9301",
+         "Longitude": "-29.1115672107447",
+         "Latitude": "26.2776486230212"
+     },
+     {
+         "StoreName": "Amahlati Spar",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "22 Hill St, Stutterheim, 4930",
+         "Longitude": "-32.5697880000000",
+         "Latitude": "27.4259663000000"
+     },
+     {
+         "StoreName": "Amahlati Tops",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "22 Hill St, Stutterheim, 4930",
+         "Longitude": "-32.5697870000000",
+         "Latitude": "27.4259662000000"
+     },
+     {
+         "StoreName": "Berea Superspar",
+         "Group": "Nick's Foods",
+         "StoreType": "Spar",
+         "Address": "1 Glaston St, Berea, East London, 5241",
+         "Longitude": "-32.9914077800000",
+         "Latitude": "27.9107172100000"
+     },
+     {
+         "StoreName": "Berea Tops",
+         "Group": "Nick's Foods",
+         "StoreType": "Spar",
+         "Address": "1 Glaston St, Berea, East London, 5241",
+         "Longitude": "-32.9879999999999",
+         "Latitude": "27.9108172100000"
+     },
+     {
+         "StoreName": "Bergville Spar",
+         "Group": "Renckens",
+         "StoreType": "Spar",
+         "Address": "West St, Bergville, 3350",
+         "Longitude": "-28.7321188173426",
+         "Latitude": "29.3531142822622"
+     },
+     {
+         "StoreName": "Bergville Tops",
+         "Group": "Renckens",
+         "StoreType": "Spar",
+         "Address": "18 South St, Bergville, 3350",
+         "Longitude": "-28.7317517851247",
+         "Latitude": "29.3525790110981"
+     },
+     {
+         "StoreName": "Berlin Spar",
+         "Group": "Nick's Foods",
+         "StoreType": "Spar",
+         "Address": "21 Legion St, Berlin General, Ntabozuko, 5660",
+         "Longitude": "-32.8841579800000",
+         "Latitude": "27.5803510000000"
+     },
+     {
+         "StoreName": "Berlin Tops ",
+         "Group": "Nick's Foods",
+         "StoreType": "Spar",
+         "Address": "21 Legion St, Berlin General, Ntabozuko, 5660",
+         "Longitude": "-32.8841598000000",
+         "Latitude": "27.5805510000000"
+     },
+     {
+         "StoreName": "Bluewater Bay Superspar",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "1 Hillcrest Dr N2 City Shopping Centre, Bluewater Bay, Gqeberha, 6212",
+         "Longitude": "-33.8492815300000",
+         "Latitude": "25.6315244600000"
+     },
+     {
+         "StoreName": "BMS Beach Road",
+         "Group": "",
+         "StoreType": "BMS",
+         "Address": "6 Beach Rd, Ocean View, Durban, 4052",
+         "Longitude": "-29.9094791900000",
+         "Latitude": "31.0203265000000"
+     },
+     {
+         "StoreName": "BMS Berea",
+         "Group": "",
+         "StoreType": "BMS",
+         "Address": "337 King Dinuzulu Rd (South ), Bulwer, Berea, 4083",
+         "Longitude": "-29.8544542300000",
+         "Latitude": "31.0001589200000"
+     },
+     {
+         "StoreName": "BMS Chatsworth",
+         "Group": "",
+         "StoreType": "BMS",
+         "Address": "1 Tranquil St, Westcliff, Chatsworth, 4092",
+         "Longitude": "-29.9159475100000",
+         "Latitude": "30.8843037400000"
+     },
+     {
+         "StoreName": "BMS Durban North",
+         "Group": "",
+         "StoreType": "BMS",
+         "Address": "1399 Chris Hani Road, Durban North, Durban, 4051",
+         "Longitude": "-29.7667321000000",
+         "Latitude": "31.0263111100000"
+     },
+     {
+         "StoreName": "BMS Empangeni",
+         "Group": "",
+         "StoreType": "BMS",
+         "Address": "44 Tanner Rd, Mpangele, Empangeni, 3880",
+         "Longitude": "-28.7705560600000",
+         "Latitude": "31.9047259200000"
+     },
+     {
+         "StoreName": "BMS Henwood Drive",
+         "Group": "",
+         "StoreType": "BMS",
+         "Address": "25 Henwood Road New Germany, Pinetown, Durban, 4001",
+         "Longitude": "-29.8116277600000",
+         "Latitude": "30.8705084300000"
+     },
+     {
+         "StoreName": "BMS Hillcrest",
+         "Group": "",
+         "StoreType": "BMS",
+         "Address": "9 Inanda Rd, Hillcrest, Durban, 3610",
+         "Longitude": "-29.7778857900000",
+         "Latitude": "30.7658613700000"
+     },
+     {
+         "StoreName": "BMS Housewives",
+         "Group": "",
+         "StoreType": "BMS",
+         "Address": "Market Rd, The Meadows, Pietermaritzburg, 3201",
+         "Longitude": "-29.6398011700000",
+         "Latitude": "30.4122809000000"
+     },
+     {
+         "StoreName": "BMS Kingsburgh",
+         "Group": "",
+         "StoreType": "BMS",
+         "Address": "16 Winklespruit Rd, Winklespruit, Kingsburgh, 4126",
+         "Longitude": "-30.0955374300000",
+         "Latitude": "30.8568456200000"
+     },
+     {
+         "StoreName": "BMS Queensburgh",
+         "Group": "",
+         "StoreType": "BMS",
+         "Address": "Coronation Walk, 15 Coronation Rd, Malvern, Durban, 4093",
+         "Longitude": "-29.8809393200000",
+         "Latitude": "30.9193883000000"
+     },
+     {
+         "StoreName": "BMS RICHARDS BAY",
+         "Group": "",
+         "StoreType": "BMS",
+         "Address": "132 Alumina Allee St, Alton, Richards Bay, 3900",
+         "Longitude": "-28.7355357500000",
+         "Latitude": "32.0372040000000"
+     },
+     {
+         "StoreName": "BMS Rosedale",
+         "Group": "",
+         "StoreType": "BMS",
+         "Address": "20 Rosedale Rd, Mountain Rise, Pietermaritzburg, 3201",
+         "Longitude": "-29.5803120200000",
+         "Latitude": "30.4020636900000"
+     },
+     {
+         "StoreName": "BMS Springfield",
+         "Group": "",
+         "StoreType": "BMS",
+         "Address": "348 Springfield Rd, Essenwood, Durban, 4051",
+         "Longitude": "-29.8276234502777",
+         "Latitude": "31.0057553943118"
+     },
+     {
+         "StoreName": "BMS Victoria",
+         "Group": "",
+         "StoreType": "BMS",
+         "Address": "102 Victoria Rd, Pietermaritzburg, 3201",
+         "Longitude": "-29.6011360300000",
+         "Latitude": "30.3672608000000"
+     },
+     {
+         "StoreName": "Brays Spar",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "100 Main Rd, Keimoes, 8860",
+         "Longitude": "-28.7074916400000",
+         "Latitude": "20.9713731700000"
+     },
+     {
+         "StoreName": "Bridge City Superspar",
+         "Group": "Power Group",
+         "StoreType": "Spar",
+         "Address": "Nogwaja Street Bridge City shopping centre, Bridge city Boulevard, Durban, 4071",
+         "Longitude": "-29.7266394412347",
+         "Latitude": "30.9870883277949"
+     },
+     {
+         "StoreName": "Bridge City Tops",
+         "Group": "Power Group",
+         "StoreType": "Spar",
+         "Address": "Nogwaja Street Bridge City shopping centre, Bridge city Boulevard, Durban, 4071",
+         "Longitude": "-29.7260897407165",
+         "Latitude": "30.9864445976334"
+     },
+     {
+         "StoreName": "Brighton Spar",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "Ferguson Road New Brighton,Siya, Kulati Rd, Gqeberha, 6070",
+         "Longitude": "-33.9073976000000",
+         "Latitude": "25.5958634000000"
+     },
+     {
+         "StoreName": "Butterworth KWIKSPAR",
+         "Group": "EC DC",
+         "StoreType": "Spar",
+         "Address": "21 Umtata St, Butterworth, 4960",
+         "Longitude": "-32.3328690131416",
+         "Latitude": "28.1433633931008"
+     },
+     {
+         "StoreName": "Butterworth Superspar",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "Fuller St, Carnage Streets, Butterworth, 4960",
+         "Longitude": "-32.3305567292547",
+         "Latitude": "28.1467271494989"
+     },
+     {
+         "StoreName": "Butterworth Tops",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "Cnr. Fuller &, Carnegie St, Butterworth, 4960",
+         "Longitude": "-32.3324474186919",
+         "Latitude": "28.1432299400359"
+     },
+     {
+         "StoreName": "Cacadu Spar",
+         "Group": "KwaWicks",
+         "StoreType": "Spar",
+         "Address": "23 Indwe St, Lady Frere, 5410",
+         "Longitude": "-31.7011772500000",
+         "Latitude": "27.2299288600000"
+     },
+     {
+         "StoreName": "Cala Spar",
+         "Group": "KwaWicks",
+         "StoreType": "Spar",
+         "Address": "Tsitsa St, Cala, 5256",
+         "Longitude": "-31.5245051700000",
+         "Latitude": "27.6944517400000"
+     },
+     {
+         "StoreName": "Cambridge Spar",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "18 Garcia St, Cambridge, East London, 5256",
+         "Longitude": "-32.9803504000000",
+         "Latitude": "27.8915968000000"
+     },
+     {
+         "StoreName": "Cambridge West Kwikspar",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "68 Griffin Rd, Cambridge West, East London, 5256",
+         "Longitude": "-32.9754865000000",
+         "Latitude": "27.8680057000000"
+     },
+     {
+         "StoreName": "Centani Spar",
+         "Group": "EC DC",
+         "StoreType": "Spar",
+         "Address": "Bell St, Kentani, 6005",
+         "Longitude": "-32.5063510600000",
+         "Latitude": "28.3182192200000"
+     },
+     {
+         "StoreName": "Centani Tops",
+         "Group": "EC DC",
+         "StoreType": "Spar",
+         "Address": "Bell St, Kentani, 4980",
+         "Longitude": "-32.5062418800000",
+         "Latitude": "28.3186483700000"
+     },
+     {
+         "StoreName": "Charlesville Tops",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "Charlesville, Cape Town, 7490",
+         "Longitude": "-33.9616741500000",
+         "Latitude": "18.5683374000000"
+     },
+     {
+         "StoreName": "Circle Spar Elliotdale",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "84 Main Rd, Elliotdale, 5100",
+         "Longitude": "-31.9680261600000",
+         "Latitude": "28.6831005800000"
+     },
+     {
+         "StoreName": "Circle Spar Mthatha",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "Cnr. York & Elliot St, Mthatha, 5100",
+         "Longitude": "-31.5855141000000",
+         "Latitude": "28.7894004300000"
+     },
+     {
+         "StoreName": "Cofimvaba Superspar",
+         "Group": "AER",
+         "StoreType": "Spar",
+         "Address": "Main Street Bellaire Avenue, Cofimvaba, 5200",
+         "Longitude": "-32.0015993000000",
+         "Latitude": "27.5799376000000"
+     },
+     {
+         "StoreName": "Crawford Tops",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "2 Taronga Rd, Crawford, Cape Town, 7780",
+         "Longitude": "-33.9731423000000",
+         "Latitude": "18.5029499500000"
+     },
+     {
+         "StoreName": "Dagbreek Spar",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "8 Main Street, Kirkwood, 6120",
+         "Longitude": "-33.3996146300000",
+         "Latitude": "25.4408674800000"
+     },
+     {
+         "StoreName": "Dagbreek Tops",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "15 Main Street, Kirkwood, 6120",
+         "Longitude": "-33.4002030200000",
+         "Latitude": "25.4409522700000"
+     },
+     {
+         "StoreName": "Daily Spar",
+         "Group": "Nick's Foods",
+         "StoreType": "Spar",
+         "Address": "Queens Rd, Qonce, 5601",
+         "Longitude": "-32.8741879600000",
+         "Latitude": "27.4037034500000"
+     },
+     {
+         "StoreName": "Daily Tops",
+         "Group": "Nick's Foods",
+         "StoreType": "Spar",
+         "Address": "Queens Rd, Qonce, 5602",
+         "Longitude": "-32.8741879700000",
+         "Latitude": "27.4037034600000"
+     },
+     {
+         "StoreName": "Daku Spar",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "Daku Roa 96 Daku Building, Daku Square Kwazakhele, 6065",
+         "Longitude": "-33.8747426000000",
+         "Latitude": "25.5801774000000"
+     },
+     {
+         "StoreName": "Debilee Spar",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "121 Jan Smuts Ave, Greenfields, East London, 5247",
+         "Longitude": "-33.0350730991077",
+         "Latitude": "27.8543970823847"
+     },
+     {
+         "StoreName": "Debilee Tops",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "121 Jan Smuts Ave, Rosemount, East London, 5208",
+         "Longitude": "-33.0349875989245",
+         "Latitude": "27.8543461400568"
+     },
+     {
+         "StoreName": "Diphagane SaveMor",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "135, R579, Diphagane, 1085",
+         "Longitude": "-24.6574895000000",
+         "Latitude": "29.7448317700000"
+     },
+     {
+         "StoreName": "Durban Superspar",
+         "Group": "Mega",
+         "StoreType": "Spar",
+         "Address": "2 Soldiers Way, Durban Central, Durban, 4001",
+         "Longitude": "-29.8549158400000",
+         "Latitude": "31.0243736700000"
+     },
+     {
+         "StoreName": "Durban Tops",
+         "Group": "Mega",
+         "StoreType": "Spar",
+         "Address": "Shop 1, Shopping Centre, 2 Soldiers Way, Durban Central, Durban, 4001",
+         "Longitude": "-29.8555703600000",
+         "Latitude": "31.0238653700000"
+     },
+     {
+         "StoreName": "Edendale Spar",
+         "Group": "Mega",
+         "StoreType": "Spar",
+         "Address": "Kwamabulala Shopping Centre, Machibisa Rd, Edendale, Pietermaritzburg, 3217",
+         "Longitude": "-29.6475413364310",
+         "Latitude": "30.3228671669430"
+     },
+     {
+         "StoreName": "Edendale Tops",
+         "Group": "Mega",
+         "StoreType": "Spar",
+         "Address": "Kwamabulala Shopping Centre, Machibisa Rd, Edendale, Pietermaritzburg, 3217",
+         "Longitude": "-29.6475413364300",
+         "Latitude": "30.3228671669420"
+     },
+     {
+         "StoreName": "Eerste River Superspar",
+         "Group": "Erite",
+         "StoreType": "Spar",
+         "Address": "City Centre Eerste River, Cnr of Van Riebeeck Road &, Forest Dr, Eerste River, Cape Town, 7100",
+         "Longitude": "-34.0008718165364",
+         "Latitude": "18.7263144691854"
+     },
+     {
+         "StoreName": "Eerste River Tops",
+         "Group": "Erite",
+         "StoreType": "Spar",
+         "Address": "Cnr Van Riebeeck Rd &, Forest Dr, Russel`s Rest, Cape Town, 7100",
+         "Longitude": "-34.0000015994677",
+         "Latitude": "18.7269103689220"
+     },
+     {
+         "StoreName": "EL Superspar",
+         "Group": "Nick's Foods",
+         "StoreType": "Spar",
+         "Address": "7-9 Park Gates Rd, Parkside, East London, 5209",
+         "Longitude": "-33.0175300100000",
+         "Latitude": "27.9015758800000"
+     },
+     {
+         "StoreName": "EL Tops 1",
+         "Group": "Nick's Foods",
+         "StoreType": "Spar",
+         "Address": "7-9 Park Gates Rd, East London Cbd, East London, 5200",
+         "Longitude": "-33.0157294000000",
+         "Latitude": "27.9015329600000"
+     },
+     {
+         "StoreName": "EL Tops 2",
+         "Group": "Nick's Foods",
+         "StoreType": "Spar",
+         "Address": "Gilwell Rd, East London Cbd, East London, 5209",
+         "Longitude": "-33.0189877200000",
+         "Latitude": "27.9015329600000"
+     },
+     {
+         "StoreName": "EL Tops 3",
+         "Group": "Nick's Foods",
+         "StoreType": "Spar",
+         "Address": "Gilwell Rd, East London Cbd, East London, 5209",
+         "Longitude": "-33.0189887200000",
+         "Latitude": "27.9031313400000"
+     },
+     {
+         "StoreName": "Elukwatini Spar",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "R541 Shop 19, Elukwatini Square, Nhlazatshe 6, Elukwatini, 1192",
+         "Longitude": "-26.0396123600000",
+         "Latitude": "30.7922611500000"
+     },
+     {
+         "StoreName": "Empangeni Superspar",
+         "Group": "Power Group",
+         "StoreType": "Spar",
+         "Address": "66 Maxwell St, Empangeni Central, Empangeni, 3880",
+         "Longitude": "-28.7443033403750",
+         "Latitude": "31.8882496708861"
+     },
+     {
+         "StoreName": "Empangeni Tops",
+         "Group": "Power Group",
+         "StoreType": "Spar",
+         "Address": "66 Maxwell St, Empangeni Central, Empangeni, 3880",
+         "Longitude": "-28.7442851200812",
+         "Latitude": "31.8883169687705"
+     },
+     {
+         "StoreName": "Engcobo Spar",
+         "Group": "EC DC",
+         "StoreType": "Spar",
+         "Address": "High St, Ngcobo, 5050",
+         "Longitude": "-31.6766936400000",
+         "Latitude": "27.9994523800000"
+     },
+     {
+         "StoreName": "Engcobo Tops 1",
+         "Group": "EC DC",
+         "StoreType": "Spar",
+         "Address": "High St, Engcobo, 6005",
+         "Longitude": "-31.6758149600000",
+         "Latitude": "28.0025634900000"
+     },
+     {
+         "StoreName": "Engcobo Tops 2",
+         "Group": "EC DC",
+         "StoreType": "Spar",
+         "Address": "Main Rd Erf 317, Engcobo, 5050",
+         "Longitude": "-31.6764742100000",
+         "Latitude": "27.9990661400000"
+     },
+     {
+         "StoreName": "Ephondweni Spar",
+         "Group": "Supatrade",
+         "StoreType": "Spar",
+         "Address": "D1834 Road Main Road Ephondweni, 4000",
+         "Longitude": "-27.0401900000000",
+         "Latitude": "32.2699713000000"
+     },
+     {
+         "StoreName": "Ermelo Spar",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "2 Oosthuise St, Ermelo, 2351",
+         "Longitude": "-26.5177705811844",
+         "Latitude": "29.9876811398763"
+     },
+     {
+         "StoreName": "Ermelo Tops",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "2 Oosthuise St, Ermelo, 2351",
+         "Longitude": "-26.5177705811845",
+         "Latitude": "29.9876811398764"
+     },
+     {
+         "StoreName": "Esikhaweni Superspar",
+         "Group": "Renckens",
+         "StoreType": "Spar",
+         "Address": "Mall, 1 Mdlebe Ntshona Rd, Esikhawini H, Richards Bay, 4490",
+         "Longitude": "-28.8709649600000",
+         "Latitude": "31.8999284100000"
+     },
+     {
+         "StoreName": "Esikhaweni Tops",
+         "Group": "Renckens",
+         "StoreType": "Spar",
+         "Address": "Mdlebe Ntshona Rd, Esikhawini J, Richards Bay, 3887",
+         "Longitude": "-28.8710916700000",
+         "Latitude": "31.8997233600000"
+     },
+     {
+         "StoreName": "Gateway Superspar",
+         "Group": "KZN DC",
+         "StoreType": "Spar",
+         "Address": "Palm Boulevard LGI Gateway Shopping Centre, Umhlanga Ridge, Umhlanga, 4319",
+         "Longitude": "-29.7259983000000",
+         "Latitude": "31.0636988000000"
+     },
+     {
+         "StoreName": "Gateway Tops",
+         "Group": "KZN DC",
+         "StoreType": "Spar",
+         "Address": "Palm Blvd, Umhlanga Ridge, Umhlanga, 4319",
+         "Longitude": "-29.7253337900000",
+         "Latitude": "31.0658774300000"
+     },
+     {
+         "StoreName": "Gelvendale Superspar",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "Stanford Rd, Gelvandale, Gqeberha, 6005",
+         "Longitude": "-33.9117037400000",
+         "Latitude": "25.5593489000000"
+     },
+     {
+         "StoreName": "Georgious Superspar",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "50 Campbell St, Fort Beaufort, 5720",
+         "Longitude": "-32.7769217000000",
+         "Latitude": "26.6299471000000"
+     },
+     {
+         "StoreName": "Georgious Tops",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "50 Campbell St, Fort Beaufort, 5720",
+         "Longitude": "-32.7759245900000",
+         "Latitude": "26.6322792000000"
+     },
+     {
+         "StoreName": "Ghandi Spar",
+         "Group": "Vele",
+         "StoreType": "Spar",
+         "Address": "Marshall Street, Eloff St, Johannesburg, 1500",
+         "Longitude": "-26.2067522899649",
+         "Latitude": "28.0440515687046"
+     },
+     {
+         "StoreName": "Ghandi Tops",
+         "Group": "Vele",
+         "StoreType": "Spar",
+         "Address": "Cnr Kerk & Kruger Street, Piet Retief, 2380",
+         "Longitude": "-26.2067522899648",
+         "Latitude": "28.0440515687045"
+     },
+     {
+         "StoreName": "Gonubie Superspar",
+         "Group": "Fiznef",
+         "StoreType": "Spar",
+         "Address": "85-87 Main Road 6 Mayhem Place, Gonubie, East London, 5256",
+         "Longitude": "-32.9406877129988",
+         "Latitude": "28.0234616823819"
+     },
+     {
+         "StoreName": "Gonubie Tops",
+         "Group": "Fiznef",
+         "StoreType": "Spar",
+         "Address": "85 Main Rd, Gonubie, East London, 5256",
+         "Longitude": "-32.9405610688314",
+         "Latitude": "28.0235422265620"
+     },
+     {
+         "StoreName": "Gugulethu Superspar",
+         "Group": "Erite",
+         "StoreType": "Spar",
+         "Address": "Ny 3 Ny 3 St Gugulethu Shopping Centre, Guguletu, Cape Town, 7750",
+         "Longitude": "-33.9860873792959",
+         "Latitude": "18.5663672400856"
+     },
+     {
+         "StoreName": "Gugulethu Tops",
+         "Group": "Erite",
+         "StoreType": "Spar",
+         "Address": "Steve Biko Dr Gugulethu Shopping Centre, Guguletu, Cape Town, 7750",
+         "Longitude": "-33.9859850474739",
+         "Latitude": "18.5667812400856"
+     },
+     {
+         "StoreName": "Hammersdale Superspar",
+         "Group": "Mega",
+         "StoreType": "Spar",
+         "Address": "17156 Kunene Road Shop A, 29 Hammarsdale Junction, Durban, 3700",
+         "Longitude": "-29.8017176632039",
+         "Latitude": "30.6284264976355"
+     },
+     {
+         "StoreName": "Hammersdale Tops",
+         "Group": "Mega",
+         "StoreType": "Spar",
+         "Address": "17156 Kunene Rd Shop A, 29 Hammarsdale Junction, Mpumalanga, 3701",
+         "Longitude": "-29.8023088347804",
+         "Latitude": "30.6287482976355"
+     },
+     {
+         "StoreName": "Harding Superspar",
+         "Group": "Mega",
+         "StoreType": "Spar",
+         "Address": "11 Hawkins St, Harding, 4680",
+         "Longitude": "-30.5766468000000",
+         "Latitude": "29.8783960000000"
+     },
+     {
+         "StoreName": "Harding Tops",
+         "Group": "Mega",
+         "StoreType": "Spar",
+         "Address": "11 Hawkins St, Harding, 4680",
+         "Longitude": "-30.5766467000000",
+         "Latitude": "29.8783950000000"
+     },
+     {
+         "StoreName": "Heidelberg Spar",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "69 Voortrekker St, Heidelberg, Heidelberg - GP, 1441",
+         "Longitude": "-26.5014537567475",
+         "Latitude": "28.3599887128920"
+     },
+     {
+         "StoreName": "Heidelberg Tops",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "69 Voortrekker St, Heidelberg, Heidelberg - GP, 1441",
+         "Longitude": "-26.5014537567474",
+         "Latitude": "28.3599887128921"
+     },
+     {
+         "StoreName": "Highway Superspar",
+         "Group": "Moldenhauer Group",
+         "StoreType": "Spar",
+         "Address": "Sandile Road, Mdantsane Unit 1, Mdantsane, 5219",
+         "Longitude": "-32.9426370012241",
+         "Latitude": "27.7545047130701"
+     },
+     {
+         "StoreName": "Highway Tops 1",
+         "Group": "Moldenhauer Group",
+         "StoreType": "Spar",
+         "Address": "Sandile Rd, Mdantsane Unit 2, Mdantsane, 5219",
+         "Longitude": "-32.9429881489041",
+         "Latitude": "27.7537000503682"
+     },
+     {
+         "StoreName": "Hlabisa Spar",
+         "Group": "Supatrade",
+         "StoreType": "Spar",
+         "Address": "R618, Hlabisa, 3937",
+         "Longitude": "-28.1455075385838",
+         "Latitude": "31.8752663552628"
+     },
+     {
+         "StoreName": "Hlabisa Tops",
+         "Group": "Supatrade",
+         "StoreType": "Spar",
+         "Address": "R618, Hlabisa, 4000",
+         "Longitude": "-28.1453457218333",
+         "Latitude": "31.8752163545644"
+     },
+     {
+         "StoreName": "Hluhluwe Superspar",
+         "Group": "Power Group",
+         "StoreType": "Spar",
+         "Address": "Main Street Lot 15, Hluhluwe, 3960",
+         "Longitude": "-28.0181498476929",
+         "Latitude": "32.2692404693118"
+     },
+     {
+         "StoreName": "Hluhluwe Tops",
+         "Group": "Power Group",
+         "StoreType": "Spar",
+         "Address": "R22 Lot 15, 4071",
+         "Longitude": "-27.8719712741759",
+         "Latitude": "32.3650924864698"
+     },
+     {
+         "StoreName": "Idutywa Spar",
+         "Group": "EC DC",
+         "StoreType": "Spar",
+         "Address": "148 Richardson Rd, Idutywa, 5000",
+         "Longitude": "-32.0994814380052",
+         "Latitude": "28.3045129389667"
+     },
+     {
+         "StoreName": "Idutywa Tops 1",
+         "Group": "EC DC",
+         "StoreType": "Spar",
+         "Address": "147 Richardson Rd, Idutywa, 5000",
+         "Longitude": "-32.0994723493211",
+         "Latitude": "28.3044056506065"
+     },
+     {
+         "StoreName": "Idutywa Tops 2",
+         "Group": "EC DC",
+         "StoreType": "Spar",
+         "Address": "148 Richardson Rd, Idutywa, 5000",
+         "Longitude": "-32.0963228316573",
+         "Latitude": "28.3032798134782"
+     },
+     {
+         "StoreName": "Indlovu Superspar",
+         "Group": "Christie Group",
+         "StoreType": "Spar",
+         "Address": "Main Road Mpumalanga, Shop No 11, Lowveld Mall Blue Haze Shopping Centre, Hazyview, 1242",
+         "Longitude": "-25.0436865606156",
+         "Latitude": "31.1300442821678"
+     },
+     {
+         "StoreName": "Indlovu Tops",
+         "Group": "Christie Group",
+         "StoreType": "Spar",
+         "Address": "Main Road Blue Haze Shopping Centre, Hazyview, 1242",
+         "Longitude": "-25.0438368004511",
+         "Latitude": "31.1303405975120"
+     },
+     {
+         "StoreName": "Indwe Spar",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "37 Fletcher St, Indwe, 5445",
+         "Longitude": "-31.4680380300000",
+         "Latitude": "27.3389614000000"
+     },
+     {
+         "StoreName": "Ingwavuma Spar",
+         "Group": "Supatrade",
+         "StoreType": "Spar",
+         "Address": "D1837 Rd Lot 17, Ingwavuma, 3968",
+         "Longitude": "-27.1330129891595",
+         "Latitude": "32.0037728785335"
+     },
+     {
+         "StoreName": "Ingwavuma Tops",
+         "Group": "Supatrade",
+         "StoreType": "Spar",
+         "Address": "Main Road, Ingwavuma, 3968",
+         "Longitude": "-27.1341301147161",
+         "Latitude": "31.9960052012507"
+     },
+     {
+         "StoreName": "Ixopo Superspar",
+         "Group": "Mega",
+         "StoreType": "Spar",
+         "Address": "30 Margaret St, Ixopo, 3276",
+         "Longitude": "-30.1555407000000",
+         "Latitude": "30.0571589000000"
+     },
+     {
+         "StoreName": "Ixopo Tops",
+         "Group": "Mega",
+         "StoreType": "Spar",
+         "Address": "36 Margaret St, Ixopo, 3207",
+         "Longitude": "-30.1529456100000",
+         "Latitude": "30.0587591700000"
+     },
+     {
+         "StoreName": "Jeppe Kwikspar",
+         "Group": "Vele",
+         "StoreType": "Spar",
+         "Address": "157 Rahima Moosa St, Johannesburg, 2000",
+         "Longitude": "-26.2011890133590",
+         "Latitude": "28.0421944552125"
+     },
+     {
+         "StoreName": "Jeppe Tops",
+         "Group": "Vele",
+         "StoreType": "Spar",
+         "Address": "157 Rahima Moosa St, Johannesburg, 2000",
+         "Longitude": "-26.2011096961060",
+         "Latitude": "28.0421492687044"
+     },
+     {
+         "StoreName": "Jimmys Superspar",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "78 Sutherland St, Norwood, Mthatha, 5100",
+         "Longitude": "-31.5870428200000",
+         "Latitude": "28.7871582700000"
+     },
+     {
+         "StoreName": "Jozini Spar",
+         "Group": "Supatrade",
+         "StoreType": "Spar",
+         "Address": "Ithala Centre, 1 Nsinde Street Main Jozini Road, Jozini",
+         "Longitude": "-27.4297563845804",
+         "Latitude": "32.0696562975719"
+     },
+     {
+         "StoreName": "Jozini Tops",
+         "Group": "Supatrade",
+         "StoreType": "Spar",
+         "Address": "Main Rd Ithala Centre, Jozini, 3970",
+         "Longitude": "-27.4298948074735",
+         "Latitude": "32.0694581264078"
+     },
+     {
+         "StoreName": "Khayelitsha Superspar",
+         "Group": "Erite",
+         "StoreType": "Spar",
+         "Address": "Road Shopping Centre, 1 Julius Tsolo Street, Khayelitsha, Cape Town, 7100",
+         "Longitude": "-34.0484541000000",
+         "Latitude": "18.6699968000000"
+     },
+     {
+         "StoreName": "Kings Spar",
+         "Group": "Mega",
+         "StoreType": "Spar",
+         "Address": "22 Kings Rd, New Germany, Pinetown, 3620",
+         "Longitude": "-29.8122743027225",
+         "Latitude": "30.8570662687997"
+     },
+     {
+         "StoreName": "Kings Tops",
+         "Group": "Mega",
+         "StoreType": "Spar",
+         "Address": "22 Kings Rd Pine Walk Centre, New Germany, Pinetown, 3620",
+         "Longitude": "-29.8122743027224",
+         "Latitude": "30.8570662687996"
+     },
+     {
+         "StoreName": "Kosi Bay Superspar",
+         "Group": "Supatrade",
+         "StoreType": "Spar",
+         "Address": "Makprop Centre, Main Rd, Manguzi, 3973",
+         "Longitude": "-26.9875788826188",
+         "Latitude": "32.7564081338056"
+     },
+     {
+         "StoreName": "Kosi Bay Tops",
+         "Group": "Supatrade",
+         "StoreType": "Spar",
+         "Address": "Main Rd, Manguzi, 3973",
+         "Longitude": "-26.9874414518064",
+         "Latitude": "32.7565248453482"
+     },
+     {
+         "StoreName": "Kwa Fetting Spar",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "Main Road, Middeldrift, 5685",
+         "Longitude": "-32.3360149000000",
+         "Latitude": "28.1614102800000"
+     },
+     {
+         "StoreName": "Kwamashu Superspar",
+         "Group": "Power Group",
+         "StoreType": "Spar",
+         "Address": "300 Malandela Road Kwa Mashu, Durban, 4360",
+         "Longitude": "-29.7468532809235",
+         "Latitude": "30.9755693288291"
+     },
+     {
+         "StoreName": "Kwamashu Tops",
+         "Group": "Power Group",
+         "StoreType": "Spar",
+         "Address": "300 Malendela Rd, KwaMashu, 4360",
+         "Longitude": "-29.7468415573637",
+         "Latitude": "30.9755478282106"
+     },
+     {
+         "StoreName": "Kwanobuhle Spar",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "8 Hoyana St Kwa Nobuhle, Gqeberha, 6230",
+         "Longitude": "-33.8062649500000",
+         "Latitude": "25.3950153600000"
+     },
+     {
+         "StoreName": "Kwantu Superspar",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "Cnr Bridge & High Street, Alice, 5700",
+         "Longitude": "-32.7864585662899",
+         "Latitude": "26.8393074112134"
+     },
+     {
+         "StoreName": "Kwantu Tops",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "Thompson St, Alice, 5700",
+         "Longitude": "-32.7866523844619",
+         "Latitude": "26.8391059842295"
+     },
+     {
+         "StoreName": "KwaWicks Spar",
+         "Group": "KwaWicks",
+         "StoreType": "Spar",
+         "Address": "Ugie, 5470",
+         "Longitude": "-31.1652061180287",
+         "Latitude": "28.2303929107321"
+     },
+     {
+         "StoreName": "KwaWicks Tops",
+         "Group": "KwaWicks",
+         "StoreType": "Spar",
+         "Address": "Ugie, 5470",
+         "Longitude": "-31.1653061180286",
+         "Latitude": "28.2303329107320"
+     },
+     {
+         "StoreName": "KWT Superspar",
+         "Group": "Nick's Foods",
+         "StoreType": "Spar",
+         "Address": "36 Cathcart St, Qonce, 5601",
+         "Longitude": "-32.8778187400000",
+         "Latitude": "27.3867467900000"
+     },
+     {
+         "StoreName": "KWT Tops 1",
+         "Group": "Nick's Foods",
+         "StoreType": "Spar",
+         "Address": "9 Walker St, Qonce, 5601",
+         "Longitude": "-32.8781425100000",
+         "Latitude": "27.3877338400000"
+     },
+     {
+         "StoreName": "KWT Tops 2",
+         "Group": "Nick's Foods",
+         "StoreType": "Spar",
+         "Address": "Queens Rd, Qonce, 5601",
+         "Longitude": "-32.8728489110000",
+         "Latitude": "27.4035097110000"
+     },
+     {
+         "StoreName": "KWT Tops 3",
+         "Group": "Nick's Foods",
+         "StoreType": "Spar",
+         "Address": "Queens Rd, Qonce, 5602",
+         "Longitude": "-32.8728489100000",
+         "Latitude": "27.4035097100000"
+     },
+     {
+         "StoreName": "Ladysmith Superspar",
+         "Group": "Renckens",
+         "StoreType": "Spar",
+         "Address": "Queen Street Corner of, Lyell St, Ladysmith, 3370",
+         "Longitude": "-28.5606607000000",
+         "Latitude": "29.7789602000000"
+     },
+     {
+         "StoreName": "Ladysmith Tops",
+         "Group": "Renckens",
+         "StoreType": "Spar",
+         "Address": "Cnr Queen &, Lyell St, Ladysmith, 3370",
+         "Longitude": "-28.5598543000000",
+         "Latitude": "29.7830621000000"
+     },
+     {
+         "StoreName": "Lighthouse Spar",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "Moore St, Quigney, East London, 5256",
+         "Longitude": "-33.0124460000000",
+         "Latitude": "27.9177282000000"
+     },
+     {
+         "StoreName": "Lusikisiki Spar",
+         "Group": "Queenrose",
+         "StoreType": "Spar",
+         "Address": "21 Main Street, Lusikisiki, 4820",
+         "Longitude": "-31.3596312000000",
+         "Latitude": "29.5706252000000"
+     },
+     {
+         "StoreName": "Lusikisiki Tops",
+         "Group": "Queenrose",
+         "StoreType": "Spar",
+         "Address": "28 Main St, Lusikisiki, 4820",
+         "Longitude": "-31.3589280800000",
+         "Latitude": "29.5725200600000"
+     },
+     {
+         "StoreName": "Maclear Spar",
+         "Group": "Queenrose",
+         "StoreType": "Spar",
+         "Address": "Van Riebeeck Street 8, Nqanqarhu, 5480",
+         "Longitude": "-31.0696854000000",
+         "Latitude": "28.3489728000000"
+     },
+     {
+         "StoreName": "Madadeni Superspar",
+         "Group": "KwaNongoma",
+         "StoreType": "Spar",
+         "Address": "Madadeni, Newcastle",
+         "Longitude": "-27.7548142000000",
+         "Latitude": "30.0454705000000"
+     },
+     {
+         "StoreName": "Madadeni Tops",
+         "Group": "KwaNongoma",
+         "StoreType": "Spar",
+         "Address": "Madadeni, Newcastle",
+         "Longitude": "-27.7548141000000",
+         "Latitude": "30.0454704000000"
+     },
+     {
+         "StoreName": "Madalas SaveMor",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "185 Main St, Keiskammahoek, 4950",
+         "Longitude": "-32.6818818800000",
+         "Latitude": "27.1517836100000"
+     },
+     {
+         "StoreName": "Maluti Superspar",
+         "Group": "Renckens",
+         "StoreType": "Spar",
+         "Address": "Mampoi Rd &, Motebang Rd, Phuthaditjhaba-A, Phuthaditjhaba, 9869",
+         "Longitude": "-28.5345297600000",
+         "Latitude": "28.8017318700000"
+     },
+     {
+         "StoreName": "Maluti Tops",
+         "Group": "Renckens",
+         "StoreType": "Spar",
+         "Address": "Motebang Rd, Phuthaditjhaba-A, Phuthaditjhaba, 9869",
+         "Longitude": "-28.5347537700000",
+         "Latitude": "28.8017435700000"
+     },
+     {
+         "StoreName": "Mandela Park Spar",
+         "Group": "Erite",
+         "StoreType": "Spar",
+         "Address": "89 Govan Mbeki Rd, Mandela Park, Cape Town, 7784",
+         "Longitude": "-34.0476464800000",
+         "Latitude": "18.6881118500000"
+     },
+     {
+         "StoreName": "Mandini Spar",
+         "Group": "Renckens",
+         "StoreType": "Spar",
+         "Address": "Centre, Vector Square, 1 Long St, Mandini, 4490",
+         "Longitude": "-29.1540603900000",
+         "Latitude": "31.4107014100000"
+     },
+     {
+         "StoreName": "Mandini Tops",
+         "Group": "Renckens",
+         "StoreType": "Spar",
+         "Address": "Centre, Vector Square, 1 Long St, Mandini, 4490",
+         "Longitude": "-29.1541722600000",
+         "Latitude": "31.4106155800000"
+     },
+     {
+         "StoreName": "Mapumulo Spar",
+         "Group": "Renckens",
+         "StoreType": "Spar",
+         "Address": "Old Main Road, Kwa - Maphumulo, Stanger, 4470",
+         "Longitude": "-29.1575800497173",
+         "Latitude": "31.0668493552898"
+     },
+     {
+         "StoreName": "Mapumulo Tops",
+         "Group": "Renckens",
+         "StoreType": "Spar",
+         "Address": "74 Main Rd, Umphumulo, 4470",
+         "Longitude": "-29.1576215962486",
+         "Latitude": "31.0668006111098"
+     },
+     {
+         "StoreName": "Mbazwana Superspar",
+         "Group": "Supatrade",
+         "StoreType": "Spar",
+         "Address": "R22 Ithala Centre, Shop 6, Main Road, Mbazwana, 4000",
+         "Longitude": "-27.4805005772729",
+         "Latitude": "32.5820945527996"
+     },
+     {
+         "StoreName": "Mbazwana Tops",
+         "Group": "Supatrade",
+         "StoreType": "Spar",
+         "Address": "Shop 6, Ithala Shopping Centre, R22, Mbazwana, 4000",
+         "Longitude": "-27.4927923400000",
+         "Latitude": "32.5879432700000"
+     },
+     {
+         "StoreName": "Mdantsane Superspar",
+         "Group": "Moldenhauer Group",
+         "StoreType": "Spar",
+         "Address": "6 Mdantsane R47 St Zone 12, Unit, East London, 5256",
+         "Longitude": "-32.9268499000000",
+         "Latitude": "27.7031924000000"
+     },
+     {
+         "StoreName": "Mdoni Road Tops",
+         "Group": "Power Group",
+         "StoreType": "Spar",
+         "Address": "Cnr Nyathi &, John Ross Hwy, Mtubatuba, 3935",
+         "Longitude": "-28.4138690800000",
+         "Latitude": "32.1848524400000"
+     },
+     {
+         "StoreName": "Melmoth Superspar",
+         "Group": "KZN DC",
+         "StoreType": "Spar",
+         "Address": "Melmoth, 3835",
+         "Longitude": "-28.5925831745977",
+         "Latitude": "31.4002202822583"
+     },
+     {
+         "StoreName": "Melmoth Tops",
+         "Group": "KZN DC",
+         "StoreType": "Spar",
+         "Address": "306 Jacob Cohn St, Melmoth, 3835",
+         "Longitude": "-28.5926020153960",
+         "Latitude": "31.3999198748496"
+     },
+     {
+         "StoreName": "Mkuze Superspar",
+         "Group": "KZN DC",
+         "StoreType": "Spar",
+         "Address": "Old Main Road, Mkuze, 3965",
+         "Longitude": "-27.6174360000000",
+         "Latitude": "32.0319308000000"
+     },
+     {
+         "StoreName": "Mndeni Meats Central",
+         "Group": "",
+         "StoreType": "Mndeni",
+         "Address": "287 Church St, Pietermaritzburg, 3200",
+         "Longitude": "-29.4963115600000",
+         "Latitude": "30.3787275700000"
+     },
+     {
+         "StoreName": "Mndeni Meats Port Shepstone",
+         "Group": "",
+         "StoreType": "Mndeni",
+         "Address": "3A Laura St, Gandhinagar, Tongaat, 4400",
+         "Longitude": "-29.5698005000000",
+         "Latitude": "31.1150196300000"
+     },
+     {
+         "StoreName": "Mndeni Meats Tongaat",
+         "Group": "",
+         "StoreType": "Mndeni",
+         "Address": "George Sewpersadh St, Verulam, Durban, 4340",
+         "Longitude": "-29.6407852300000",
+         "Latitude": "31.0458659100000"
+     },
+     {
+         "StoreName": "Mndeni Meats Verulam",
+         "Group": "",
+         "StoreType": "Mndeni",
+         "Address": "49 Bazley St, Port Shepstone, 4240",
+         "Longitude": "-30.7378315500000",
+         "Latitude": "30.4478340400000"
+     },
+     {
+         "StoreName": "Moratiwe Superspar",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "R579 Shop 11, Moratiwa Crossing, Mmotwaneng, 1057",
+         "Longitude": "-24.9925468087473",
+         "Latitude": "29.7467923779287"
+     },
+     {
+         "StoreName": "Moratiwe Tops",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "R579 Moratiwa Crossing, Mmotwaneng, 1059",
+         "Longitude": "-24.9925468087472",
+         "Latitude": "29.7467923779286"
+     },
+     {
+         "StoreName": "Mtubatuba Superspar",
+         "Group": "Power Group",
+         "StoreType": "Spar",
+         "Address": "Lot 23, John Ross Highway, Mtubatuba, 3935",
+         "Longitude": "-28.4130631255640",
+         "Latitude": "32.1848754752185"
+     },
+     {
+         "StoreName": "Mtubatuba Tops",
+         "Group": "Power Group",
+         "StoreType": "Spar",
+         "Address": "Lot 23, John Ross Highway, Mtubatuba, 3936",
+         "Longitude": "-28.4139716000000",
+         "Latitude": "32.1827480000000"
+     },
+     {
+         "StoreName": "Myezo Superspar",
+         "Group": "Pacina",
+         "StoreType": "Spar",
+         "Address": "Nelson Mandela Dr, Norwood, Mthatha, 5256",
+         "Longitude": "-31.5926384000000",
+         "Latitude": "28.7880207000000"
+     },
+     {
+         "StoreName": "Myezo Tops",
+         "Group": "Pacina",
+         "StoreType": "Spar",
+         "Address": "1 Nelson Mandela Dr, Myezo Park, Mthatha, 5100",
+         "Longitude": "-31.5956904959274",
+         "Latitude": "28.7493519785636"
+     },
+     {
+         "StoreName": "Naas Superspar",
+         "Group": "Lowveld DC",
+         "StoreType": "Spar",
+         "Address": "R571 Kamaqhekeza Centre, Kamaqhekeza-A, Kamaqhekeza, 1379",
+         "Longitude": "-25.6679627700000",
+         "Latitude": "31.8567317600000"
+     },
+     {
+         "StoreName": "Naas Tops",
+         "Group": "Lowveld DC",
+         "StoreType": "Spar",
+         "Address": "R571 Kamaqhekeza Plaza, Kamaqhekeza-A, Kamaqhekeza, 1200",
+         "Longitude": "-25.6680508200000",
+         "Latitude": "31.8564508400000"
+     },
+     {
+         "StoreName": "Nahoon Superspar",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "Cnr 49 Beach &, Drake Rd, Bonnie Doon, East London, 5241",
+         "Longitude": "-32.9847787400000",
+         "Latitude": "27.9279390500000"
+     },
+     {
+         "StoreName": "Ndu Spar",
+         "Group": "EC DC",
+         "StoreType": "Spar",
+         "Address": "157 High St, Ngcobo, 5050",
+         "Longitude": "-31.6759033000000",
+         "Latitude": "28.0004453000000"
+     },
+     {
+         "StoreName": "Ndumu Spar",
+         "Group": "Supatrade",
+         "StoreType": "Spar",
+         "Address": "Sub 3 of Farm, D1851 Rd, Ndumu, 4000",
+         "Longitude": "-26.9261660000000",
+         "Latitude": "32.2496212000000"
+     },
+     {
+         "StoreName": "Nemato Spar",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "32 Biscay Rd, Port Alfred, 6170",
+         "Longitude": "-33.5921058502779",
+         "Latitude": "26.8828573554177"
+     },
+     {
+         "StoreName": "Nemato Tops",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "32-36 Biscay Rd, Port Alfred, 6170",
+         "Longitude": "-33.5922838282538",
+         "Latitude": "26.8830716130898"
+     },
+     {
+         "StoreName": "Newcastle Corner Superspar",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "Memel Road, Allen St, Newcastle, 2956",
+         "Longitude": "-27.7447736307686",
+         "Latitude": "29.9324828782684"
+     },
+     {
+         "StoreName": "Newcastle Corner Tops",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "Allen St, Hutten Heights, Newcastle, 2956",
+         "Longitude": "-27.7447736307685",
+         "Latitude": "29.9324828782683"
+     },
+     {
+         "StoreName": "Newtown Spar",
+         "Group": "Vele",
+         "StoreType": "Spar",
+         "Address": "81 Rahima Moosa St, Newtown, Johannesburg, 2113",
+         "Longitude": "-26.2023378000000",
+         "Latitude": "28.0328901000000"
+     },
+     {
+         "StoreName": "Newtown Tops",
+         "Group": "Vele",
+         "StoreType": "Spar",
+         "Address": "81 Rahima Moosa St, Newtown, Johannesburg, 2113",
+         "Longitude": "-26.2023379000000",
+         "Latitude": "28.0328902000000"
+     },
+     {
+         "StoreName": "Ngqamakhwe Spar ",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "20 Main Street, Nqamakwe, 4990",
+         "Longitude": "-32.2008535900000",
+         "Latitude": "27.9373228900000"
+     },
+     {
+         "StoreName": "Ngqamakhwe Tops",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "20 Main Street, Nqamakwe, 4990",
+         "Longitude": "-32.2007446500000",
+         "Latitude": "27.9371512300000"
+     },
+     {
+         "StoreName": "Ngqeleni Superspar",
+         "Group": "Pacina",
+         "StoreType": "Spar",
+         "Address": "King George Rd ERF 43, Main Road, Ngqeleni, 5256",
+         "Longitude": "-31.6715791000000",
+         "Latitude": "29.0260678000000"
+     },
+     {
+         "StoreName": "Nongoma 1 Spar",
+         "Group": "KwaNongoma",
+         "StoreType": "Spar",
+         "Address": "King Dinizulu Hwy Shop GF01A, Isizwe shopping, Lot 120, Nongoma, 3950",
+         "Longitude": "-27.9108932600000",
+         "Latitude": "31.6474202700000"
+     },
+     {
+         "StoreName": "Nongoma 1 Tops",
+         "Group": "KwaNongoma",
+         "StoreType": "Spar",
+         "Address": "Isizwe Shopping Centre, King Dinizulu Hwy Shop GF01A, Nongoma, 3950",
+         "Longitude": "-27.9118145000000",
+         "Latitude": "31.6452733000000"
+     },
+     {
+         "StoreName": "Nongoma 2 Superspar",
+         "Group": "KwaNongoma",
+         "StoreType": "Spar",
+         "Address": "Nongoma, 3950",
+         "Longitude": "-27.9079792781404",
+         "Latitude": "31.6458903645938"
+     },
+     {
+         "StoreName": "Nongoma 2 Tops",
+         "Group": "KwaNongoma",
+         "StoreType": "Spar",
+         "Address": "Nongoma, 3950",
+         "Longitude": "-27.9079792781403",
+         "Latitude": "31.6458903645937"
+     },
+     {
+         "StoreName": "Nongoma Spar",
+         "Group": "Supatrade",
+         "StoreType": "Spar",
+         "Address": "Main Street, Nongoma, 3950",
+         "Longitude": "-27.9109400079618",
+         "Latitude": "31.6473306737529"
+     },
+     {
+         "StoreName": "Northcrest Superspar",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "16 Durban Road Main Road, Umtata Central, Mthatha, 5256",
+         "Longitude": "-31.5665034673648",
+         "Latitude": "28.7964308929994"
+     },
+     {
+         "StoreName": "Northcrest Tops",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "16 Durban Rd, Hillcrest, Mthatha, 5119",
+         "Longitude": "-31.5666500133446",
+         "Latitude": "28.7968137223046"
+     },
+     {
+         "StoreName": "Nquthu Spar",
+         "Group": "KwaNongoma",
+         "StoreType": "Spar",
+         "Address": "Nqutu, 3135",
+         "Longitude": "-28.2106266000000",
+         "Latitude": "30.6749372000000"
+     },
+     {
+         "StoreName": "Nquthu Tops",
+         "Group": "KwaNongoma",
+         "StoreType": "Spar",
+         "Address": "P 36-2, Nqutu, 3135",
+         "Longitude": "-28.2106265000000",
+         "Latitude": "30.6749371000000"
+     },
+     {
+         "StoreName": "Nyakaza Savemor",
+         "Group": "Supatrade",
+         "StoreType": "Spar",
+         "Address": "R22, Hluhluwe, 3960",
+         "Longitude": "-28.0226703300000",
+         "Latitude": "32.2792420100000"
+     },
+     {
+         "StoreName": "Nyakaza Tops",
+         "Group": "Supatrade",
+         "StoreType": "Spar",
+         "Address": "R22, Hluhluwe, 3960",
+         "Longitude": "-28.0226703200000",
+         "Latitude": "32.2792420000000"
+     },
+     {
+         "StoreName": "Oak Cottage Spar",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "35 African St, Grahamstown, Makhanda, 6140",
+         "Longitude": "-33.3073620000000",
+         "Latitude": "26.5207515000000"
+     },
+     {
+         "StoreName": "Oak Cottage Tops",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "35 African St, Grahamstown, Makhanda, 6139",
+         "Longitude": "-33.3073610000000",
+         "Latitude": "26.5207514000000"
+     },
+     {
+         "StoreName": "Peddie Spar",
+         "Group": "EC DC",
+         "StoreType": "Spar",
+         "Address": "8 Albert Street, Peddie, 6005",
+         "Longitude": "-33.1968994000000",
+         "Latitude": "27.1148437000000"
+     },
+     {
+         "StoreName": "Peddie Tops",
+         "Group": "EC DC",
+         "StoreType": "Spar",
+         "Address": "8 Albert St, Peddie, 5640",
+         "Longitude": "-33.1968993000000",
+         "Latitude": "27.1148436000000"
+     },
+     {
+         "StoreName": "Philani Valley Superspar",
+         "Group": "Mega",
+         "StoreType": "Spar",
+         "Address": "179 Echwabeni Avenue Umlazi, Philani Valley Y-Section, Durban, 3207",
+         "Longitude": "-30.0040617563827",
+         "Latitude": "30.8770938429836"
+     },
+     {
+         "StoreName": "Philani Valley Tops",
+         "Group": "Mega",
+         "StoreType": "Spar",
+         "Address": "Philani Valley Mega, 179 Echwebeni Ave, Umlazi Y, Umlazi, 4066",
+         "Longitude": "-30.0040617563826",
+         "Latitude": "30.8770938429835"
+     },
+     {
+         "StoreName": "Pinetown Superspar",
+         "Group": "Mega",
+         "StoreType": "Spar",
+         "Address": "24 Josiah Gumede Road Shop 1 Mega Shopping Centre, New Germany, Pinetown, 3610",
+         "Longitude": "-29.8141906000000",
+         "Latitude": "30.8547326000000"
+     },
+     {
+         "StoreName": "Pinetown Tops",
+         "Group": "Mega",
+         "StoreType": "Spar",
+         "Address": "24 Josiah Gumede Rd Shop 2, Mega Shopping Centre, New Germany, Pinetown, 3620",
+         "Longitude": "-29.8141905000000",
+         "Latitude": "30.8547325000000"
+     },
+     {
+         "StoreName": "Plaza Superspar",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "Shop 9, Nelspruit Plaza Cnr Henshall &, Bester St, Nelspruit 312-Jt, Mbombela, 1201",
+         "Longitude": "-25.4671071000000",
+         "Latitude": "30.9788050800000"
+     },
+     {
+         "StoreName": "Pongola Spar",
+         "Group": "Supatrade",
+         "StoreType": "Spar",
+         "Address": "41 Naude St, Pongola, 3170",
+         "Longitude": "-27.3781989956756",
+         "Latitude": "31.6129085999998"
+     },
+     {
+         "StoreName": "Pongola tops",
+         "Group": "Supatrade",
+         "StoreType": "Spar",
+         "Address": "41 Naude St, Pongola, 3170",
+         "Longitude": "-27.3780781204836",
+         "Latitude": "31.6129662674935"
+     },
+     {
+         "StoreName": "Protea Superspar",
+         "Group": "AER",
+         "StoreType": "Spar",
+         "Address": "15 Ebden St, Balmoral, Queenstown, 5320",
+         "Longitude": "-31.8962532000000",
+         "Latitude": "26.8727039000000"
+     },
+     {
+         "StoreName": "Renckens Superspar",
+         "Group": "Renckens",
+         "StoreType": "Spar",
+         "Address": "Amajuba St 15 Old Mutual Centre, Renckens, Mandini, 4490",
+         "Longitude": "-29.1467303192484",
+         "Latitude": "31.4033907533690"
+     },
+     {
+         "StoreName": "Renckens Tops",
+         "Group": "Renckens",
+         "StoreType": "Spar",
+         "Address": "Amajuba St 15 Old Mutual Centre, Renckens, Mandini, 4490",
+         "Longitude": "-29.1467303192483",
+         "Latitude": "31.4033907533680"
+     },
+     {
+         "StoreName": "Richmond Superspar",
+         "Group": "Pacina",
+         "StoreType": "Spar",
+         "Address": "Cnr. Nelson &, Chilley St, Richmond - KZN, 3720",
+         "Longitude": "-29.8677985261649",
+         "Latitude": "30.2730207310051"
+     },
+     {
+         "StoreName": "Richmond Tops",
+         "Group": "Pacina",
+         "StoreType": "Spar",
+         "Address": "29 Chilley St, Richmond - KZN, 3780",
+         "Longitude": "-29.8677353096156",
+         "Latitude": "30.2731630532240"
+     },
+     {
+         "StoreName": "Rink Street Spar",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "21C Rink St, Central, Gqeberha, 6001",
+         "Longitude": "-33.9619699200000",
+         "Latitude": "25.6093474600000"
+     },
+     {
+         "StoreName": "Riverbend Spar",
+         "Group": "Fiznef",
+         "StoreType": "Spar",
+         "Address": "1 Loerie Ln, Gonubie North, East London, 5241",
+         "Longitude": "-32.9345952746576",
+         "Latitude": "27.9916204560291"
+     },
+     {
+         "StoreName": "Riverbend Tops",
+         "Group": "Fiznef",
+         "StoreType": "Spar",
+         "Address": "Lourie Heights Mall, Gonubie West, Gonubie, 5288",
+         "Longitude": "-32.9343115685874",
+         "Latitude": "27.9916060820655"
+     },
+     {
+         "StoreName": "Savoy Superspar",
+         "Group": "Pacina",
+         "StoreType": "Spar",
+         "Address": "129 Nelson Mandela Dr, Fort Gale, Mthatha, 5256",
+         "Longitude": "-31.5940037206577",
+         "Latitude": "28.7667321902349"
+     },
+     {
+         "StoreName": "Savoy Tops",
+         "Group": "Pacina",
+         "StoreType": "Spar",
+         "Address": "129 Nelson Mandela Dr, Fort Gale, Mthatha, 5100",
+         "Longitude": "-31.5940037206576",
+         "Latitude": "28.7667321902348"
+     },
+     {
+         "StoreName": "Seven Oaks",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "Cnr. York & Elliot St, Mthatha, 5100",
+         "Longitude": "-31.5864090000000",
+         "Latitude": "28.6493283000000"
+     },
+     {
+         "StoreName": "Stanford Square Superspar",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "45 Cottrell St, Korsten, Gqeberha, 6020",
+         "Longitude": "-33.9332600843638",
+         "Latitude": "25.5839633643729"
+     },
+     {
+         "StoreName": "Stanford Square Tops",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "Cottrell St, Neave Industrial, Gqeberha, 6020",
+         "Longitude": "-33.9332600843637",
+         "Latitude": "25.5839633643728"
+     },
+     {
+         "StoreName": "Sutherland Ridge Superspar",
+         "Group": "Pacina",
+         "StoreType": "Spar",
+         "Address": "Ingwavuma Rd Main Road 17, Ingwavuma, 4000",
+         "Longitude": "-31.5889506885435",
+         "Latitude": "28.7939438082601"
+     },
+     {
+         "StoreName": "Sutherlandridge Tops",
+         "Group": "Pacina",
+         "StoreType": "Spar",
+         "Address": "1276 Willem Botha Dr, Wierdapark, Pretoria, 0140",
+         "Longitude": "-31.5889506885434",
+         "Latitude": "28.7939438082600"
+     },
+     {
+         "StoreName": "Taxi City Superspar",
+         "Group": "",
+         "StoreType": "Spar",
+         "Address": "0157, 1280 Willem Botha Dr, Wierdapark, Centurion, 0157",
+         "Longitude": "-25.8460108000000",
+         "Latitude": "28.1436546900000"
+     },
+     {
+         "StoreName": "Tintswalo Spar",
+         "Group": "Christie Group",
+         "StoreType": "Spar",
+         "Address": "Cnr Kirkland &, Allen St, Newcastle CBD, Newcastle, 2940",
+         "Longitude": "-24.5963190995438",
+         "Latitude": "31.0659452746110"
+     },
+     {
+         "StoreName": "Tintswalo Tops",
+         "Group": "Christie Group",
+         "StoreType": "Spar",
+         "Address": "Van Klaserie St, Acornhoek-A, Acornhoek, 1360",
+         "Longitude": "-24.5963190995437",
+         "Latitude": "31.0659452746109"
+     },
+     {
+         "StoreName": "Tsolo Spar",
+         "Group": "Queenrose",
+         "StoreType": "Spar",
+         "Address": "Main St, Acornhoek, 1360",
+         "Longitude": "-24.5950378000000",
+         "Latitude": "31.0655309300000"
+     },
+     {
+         "StoreName": "Tubatse Superspar",
+         "Group": "Christie Group",
+         "StoreType": "Spar",
+         "Address": "Tsolo, 5170",
+         "Longitude": "-31.3106963000000",
+         "Latitude": "28.7566396000000"
+     },
+     {
+         "StoreName": "Ugie Spar",
+         "Group": "KwaWicks",
+         "StoreType": "Spar",
+         "Address": "Dirk Winterbach St Shop 12, Twin City Shopping Centre, Burgersfort, 1150",
+         "Longitude": "-24.6660959600000",
+         "Latitude": "30.3257150300000"
+     },
+     {
+         "StoreName": "Ulundi Superspar",
+         "Group": "Supatrade",
+         "StoreType": "Spar",
+         "Address": "Main Street 14, Elliot, 5480",
+         "Longitude": "-28.3023264186592",
+         "Latitude": "31.4218650581561"
+     },
+     {
+         "StoreName": "Ulundi Tops",
+         "Group": "Supatrade",
+         "StoreType": "Spar",
+         "Address": "Ulundi BA, Ulundi",
+         "Longitude": "-28.3023264186593",
+         "Latitude": "31.4218650581562"
+     },
+     {
+         "StoreName": "Umfolozi Savemor",
+         "Group": "Supatrade",
+         "StoreType": "Spar",
+         "Address": "Princess Magogo St Shop 12, Senzagakhona Centre, Ulundi BA, Ulundi, 3838",
+         "Longitude": "-28.3015932300000",
+         "Latitude": "31.4217845400000"
+     },
+     {
+         "StoreName": "Umlazi Superspar",
+         "Group": "Mega",
+         "StoreType": "Spar",
+         "Address": "Umlazi Mega City, Shop M8, 50 Griffiths Mxenge Hwy, Umlazi, 3207",
+         "Longitude": "-29.9540842000000",
+         "Latitude": "30.9377160000000"
+     },
+     {
+         "StoreName": "Umlazi Tops",
+         "Group": "Mega",
+         "StoreType": "Spar",
+         "Address": "50 Griffiths Mxenge Hwy Umlazi Mega City Shopping Centre, Umlazi V, Durban, 4089",
+         "Longitude": "-29.9540841000000",
+         "Latitude": "30.9377150000000"
+     },
+     {
+         "StoreName": "Umzimkhulu Superspar",
+         "Group": "Mega",
+         "StoreType": "Spar",
+         "Address": "Shop 15 De Bruyn Plaza, R56, Umzimkulu, 3297",
+         "Longitude": "-30.2612542000000",
+         "Latitude": "29.9360543000000"
+     },
+     {
+         "StoreName": "Umzimkhulu Tops",
+         "Group": "Mega",
+         "StoreType": "Spar",
+         "Address": "R56 Shop 14, De Bruyn Plaza, Umzimkulu, 3297",
+         "Longitude": "-30.2607096200000",
+         "Latitude": "29.9381036700000"
+     },
+     {
+         "StoreName": "Vangate Superspar",
+         "Group": "Erite",
+         "StoreType": "Spar",
+         "Address": "Shop 10, Vanguard Mall, Jakes Gerwel Dr, Athlone, Cape Town, 7792",
+         "Longitude": "-33.9601029000000",
+         "Latitude": "18.5366541000000"
+     },
+     {
+         "StoreName": "Vryheid Spar",
+         "Group": "KZN DC",
+         "StoreType": "Spar",
+         "Address": "President Street Vryheid, Corner of Utrecht and East Street, Vryheid, 3100",
+         "Longitude": "-27.7687259000000",
+         "Latitude": "30.7878122000000"
+     },
+     {
+         "StoreName": "Winterton Superspar",
+         "Group": "Renckens",
+         "StoreType": "Spar",
+         "Address": "Cnr Union St &, Springfield Rd, Winterton, 3340",
+         "Longitude": "-28.8121695239405",
+         "Latitude": "29.5368725177907"
+     },
+     {
+         "StoreName": "Winterton Tops",
+         "Group": "Renckens",
+         "StoreType": "Spar",
+         "Address": "Union St, Winterton, 3340",
+         "Longitude": "-28.8121695239406",
+         "Latitude": "29.5368725177908"
+     }
+ ]

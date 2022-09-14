@@ -1,10 +1,12 @@
+import { saveToXLSX } from "./saveToXLSX.js";
+
 let btnSearchStore = document.querySelector("#btnSearchStore");
 let btnLayerChange = document.querySelector("#btnLayerChange");
 let btnZoom = document.querySelector(".btnZoom");
 let featureGroupMarker = new L.FeatureGroup;
 let searchErrorBox = document.querySelector(".searchError");
-let inputSearchStore = document.getElementById("searchStore");
 let closeButton = document.querySelector(".closeButton");
+let inputSearchStore = document.querySelector(".inputSearchStore");
 
 let storeGroupsArr = ["aer", "christie group", "ec dc", "erite", "fiznef", "kwanongoma", "kwawicks", "kzn dc", "lowveld dc", "mega", "moldenhauer group", "nick's foods", "pacina", "power group", "queenrose", "renckens", "supatrade", "vele"];
 let storeTypesArr = ["spar", "bms", "mndeni"];
@@ -54,18 +56,6 @@ async function createMarker() {
         },
     })
     return storeMarker;
-}
-
-//Import Search Results Dictionary
-async function createStores() {
-    // was const
-    let { default: storeList } = await
-    import ("/Assets/Data/SearchDictionary.json", {
-        assert: {
-            type: "json",
-        },
-    })
-    return storeList;
 }
 
 //Options for fuse search
@@ -140,12 +130,9 @@ function changeLayer() {
         mapLayer = "osMap";
     }
 }
+
 //Creating populating map with Map Icons
 const markerLocations = await createMarker();
-//debugger
-const storeDictionary = await createStores();
-
-console.log(storeDictionary);
 
 let markerCluster = new L.MarkerClusterGroup({
     iconCreateFunction: function() {
@@ -265,9 +252,13 @@ displayMarkers(markerLocations);
 
 //Fires when users clicks the button to search for a store
 function searchStore() {
+    // debugger
 
     let inputSearchStoreValue = document.getElementById("searchStore").value;
     inputSearchStoreValue = inputSearchStoreValue.toLowerCase();
+
+    saveToXLSX(inputSearchStoreValue);
+
     if (inputSearchStoreValue == undefined) {
         inputSearchStoreValue = "";
     }
