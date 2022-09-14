@@ -44,38 +44,43 @@ function lastDayofMonth(date) {
 
 function saveToArr(input) {
     debugger
-    storeDictionary.forEach(function(arrayItem, arrIndex) {
-
-        let simarlarity = stringSimilarity.compareTwoStrings(storeDictionary[arrIndex].Name.toLowerCase(), input);
-
-        if (simarlarity <= 0.7) {
-            if (!arrReport == []) { //If the array is empty
-                for (let i = 0; i < arrReport.length; i++) {
-                    if (JSON.stringify(arrReport[arrIndex][0]) == input) { //if the value exists
-                        occurrCounter++;
-                        arrRecord = [{ "user_input": input }, { "Occurred": occurrCounter }];
-                        arrReport.push(arrRecord);
-                    }
-                }
-            } else { //If the array is empty or there is no value
-                arrRecord = [{ "user_input": input }, { "Occurred": 0 }];
-                arrReport.push(arrRecord);
-            }
-        }
-    });
-
-    Array.from(profanityDictionary).forEach(function(arrayItem, arrayIndex) {
+    Array.from(profanityDictionary).forEach(function(arrayItem, arrIndex) {
         let simarlarityProfanity = stringSimilarity.compareTwoStrings(profanityDictionary.badWords[arrIndex].toLowerCase(), input);
 
         if (simarlarityProfanity >= 0.5) {
             return [];
         }
-
-
     })
-    console.log(arrReport);
-    return arrReport;
 
+    storeDictionary.forEach(function(arrayItem, arrIndex) {
+
+        let simarlarity = stringSimilarity.compareTwoStrings(storeDictionary[arrIndex].Name.toLowerCase(), input);
+
+        if (simarlarity <= 0.7) {
+
+            if (arrReport.length !== 0) {
+                for (let i = 0; i < arrReport.length; i++) {
+                    if (arrReport[i][0].User_Input !== input) {
+                        occurrCounter++;
+                        arrRecord = [{ "User_Input": input }, { "Occurred": occurrCounter }];
+                        arrReport.push(arrRecord);
+                        return arrReport;
+                    } else { //update the record
+                        arrRecord = arrRecord.map(() => {
+                            occurrCounter++;
+                            return arrReport;
+                        })
+
+                    }
+                }
+            } else {
+                arrRecord = [{ "User_Input": input }, { "Occurred": 0 }];
+                arrReport.push(arrRecord);
+                return arrReport;
+            }
+        };
+
+    });
 }
 
 export function saveToXLSX(input) {
@@ -88,30 +93,30 @@ export function saveToXLSX(input) {
 
     // console.log(data);
 
-    const fileType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;charset=UTF-8";
+    // const fileType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;charset=UTF-8";
 
-    //const fileExtension = ".xlsx";
+    // //const fileExtension = ".xlsx";
 
 
-    wb.SheetNames.push(title);
+    // wb.SheetNames.push(title);
 
-    let ws_data = data;
+    // let ws_data = data;
 
-    // let ws = XLSX.utils.json_to_sheet(ws_data)
+    // // let ws = XLSX.utils.json_to_sheet(ws_data)
 
-    wb.Sheets["sc_website_" + month + "_" + year] = ws;
+    // wb.Sheets["sc_website_" + month + "_" + year] = ws;
 
-    let wbout = XLSX.write(wb, { bookType: 'xlsx', type: 'array' });
+    // let wbout = XLSX.write(wb, { bookType: 'xlsx', type: 'array' });
 
-    function s2ab(s) {
-        var buf = new ArrayBuffer(s.length); //convert s to arrayBuffer
-        var view = new Uint8Array(buf); //create uint8array as viewer
-        for (var i = 0; i < s.length; i++) { view[i] = s.charCodeAt(i) & 0xFF }; //convert to octet
-        return buf;
-    }
-    console.log(data);
-    //     if (lastDayofMonth) {
-    FileSaver.saveAs(new Blob([s2ab(wbout)], { type: filetype }), title + ".xlsx");
+    // function s2ab(s) {
+    //     var buf = new ArrayBuffer(s.length); //convert s to arrayBuffer
+    //     var view = new Uint8Array(buf); //create uint8array as viewer
+    //     for (var i = 0; i < s.length; i++) { view[i] = s.charCodeAt(i) & 0xFF }; //convert to octet
+    //     return buf;
+    // }
+    // console.log(data);
+    // //     if (lastDayofMonth) {
+    // FileSaver.saveAs(new Blob([s2ab(wbout)], { type: filetype }), title + ".xlsx");
     //     }
 
 
