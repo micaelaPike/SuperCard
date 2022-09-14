@@ -25,10 +25,10 @@ async function createArr() {
 }
 const storeDictionary = await createStores();
 const profanityDictionary = await createArr();
-
-let occurrCounter = 0;
 let arrReport = [];
 let arrRecord = [];
+
+let occurrCounter = 0;
 
 const month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 const d = new Date();
@@ -41,17 +41,6 @@ function lastDayofMonth(date) {
     return new Date(date.getTime() + dayInMS).getDate() == 1;
 }
 
-function setInputCounter(input) {
-    if (!arrReport == undefined) {
-        for (let i = 0; i < arrReport.length; i++) {
-            if (arrReport[i].user_input == input) {
-                occurrCounter++;
-                arrReport[i].Occurred = occurrCounter;
-                return;
-            }
-        }
-    }
-}
 
 function saveToArr(input) {
     debugger
@@ -59,89 +48,72 @@ function saveToArr(input) {
 
         let simarlarity = stringSimilarity.compareTwoStrings(storeDictionary[arrIndex].Name.toLowerCase(), input);
 
-        if (!arrReport == undefined) {
-            for (let i = 0; i < arrReport.length; i++) {
-                if (arrReport[i][0] == input) {
-                    occurrCounter++;
-                    arrReport[i][1] = occurrCounter;
-
-                }
-            }
-        } else {
-            occurrCounter = 0;
-        }
-
-        //arrRecord
-        //arrRecord = [{ "user_input": in }]
-
-
         if (simarlarity <= 0.7) {
-            if (arrReport == undefined) {
-                arrReport.push(arrHeading);
+            if (!arrReport == []) { //If the array is empty
+                for (let i = 0; i < arrReport.length; i++) {
+                    if (JSON.stringify(arrReport[arrIndex][0]) == input) { //if the value exists
+                        occurrCounter++;
+                        arrRecord = [{ "user_input": input }, { "Occurred": occurrCounter }];
+                        arrReport.push(arrRecord);
+                    }
+                }
+            } else { //If the array is empty or there is no value
+                arrRecord = [{ "user_input": input }, { "Occurred": 0 }];
+                arrReport.push(arrRecord);
             }
-            arrRecord = [{ "user_input": input }, { "Occurred": occurrCounter }];
-            arrReport.push(arrRecord);
         }
+    });
 
-        console.log('arrReport ' + arrReport[0][0]);
-        console.log('arrReport ' + arrReport[0][1]);
-
+    Array.from(profanityDictionary).forEach(function(arrayItem, arrayIndex) {
         let simarlarityProfanity = stringSimilarity.compareTwoStrings(profanityDictionary.badWords[arrIndex].toLowerCase(), input);
 
         if (simarlarityProfanity >= 0.5) {
             return [];
         }
 
-        //setInputCounter(); //Updates the array if the store occurrs again
-        console.log(arrReport);
-        return arrReport;
-    });
+
+    })
+    console.log(arrReport);
+    return arrReport;
+
 }
 
 export function saveToXLSX(input) {
-    // let title = "sc_Map_Search_Report_" + monthName + "_" + year;
-    // let wb = XLSX.utils.book_new();
+    let title = "sc_Map_Search_Report_" + monthName + "_" + year;
+    let wb = XLSX.utils.book_new();
 
 
-    // debugger
-    // let data = saveToArr(input);
+    debugger
+    let data = JSON.stringify(saveToArr(input));
 
     // console.log(data);
 
-    // const fileType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;charset=UTF-8";
+    const fileType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;charset=UTF-8";
 
-    // const fileExtension = ".xlsx";
+    //const fileExtension = ".xlsx";
 
 
-    // wb.SheetNames.push("sc_website_" + month + "_" + year);
+    wb.SheetNames.push(title);
 
-    // let ws_data = data;
+    let ws_data = data;
 
     // let ws = XLSX.utils.json_to_sheet(ws_data)
 
-    // wb.Sheets["sc_website_" + month + "_" + year] = ws;
+    wb.Sheets["sc_website_" + month + "_" + year] = ws;
 
-    // let wbout = XLSX.write(wb, { bookType: 'xlsx', type: 'array' });
+    let wbout = XLSX.write(wb, { bookType: 'xlsx', type: 'array' });
 
-    // function s2ab(s) {
-    //     var buf = new ArrayBuffer(s.length); //convert s to arrayBuffer
-    //     var view = new Uint8Array(buf); //create uint8array as viewer
-    //     for (var i = 0; i < s.length; i++) { view[i] = s.charCodeAt(i) & 0xFF }; //convert to octet
-    //     return buf;
-    // }
-    // console.log(data);
-    // //     if (lastDayofMonth) {
-    // FileSaver.saveAs(new Blob([s2ab(wbout)], { type: filetype }), title + fileExtension);
-    // //     }
+    function s2ab(s) {
+        var buf = new ArrayBuffer(s.length); //convert s to arrayBuffer
+        var view = new Uint8Array(buf); //create uint8array as viewer
+        for (var i = 0; i < s.length; i++) { view[i] = s.charCodeAt(i) & 0xFF }; //convert to octet
+        return buf;
+    }
+    console.log(data);
+    //     if (lastDayofMonth) {
+    FileSaver.saveAs(new Blob([s2ab(wbout)], { type: filetype }), title + ".xlsx");
+    //     }
 
-    //Sheet header names
-    let worksheetColumnName = ["User Input", "Occurred"];
 
-    let worksheetName = "sc_website_" + month + "_" + year;
-
-    let filepath = "./sc_website_" + month + "_" + year + ".xlxs";
-
-    //data
-    let worksheetData = saveToArr(input)
 
 }
