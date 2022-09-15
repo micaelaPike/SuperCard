@@ -86,7 +86,9 @@ export function saveToXLSX(input) {
 
 
 
-    let data = JSON.stringify(saveToArr(input));
+    //let data = JSON.stringify(saveToArr(input));
+
+    console.log(saveToArr(input));
 
     // console.log(data);
 
