@@ -41,43 +41,73 @@ function lastDayofMonth(date) {
     return new Date(date.getTime() + dayInMS).getDate() == 1;
 }
 
+function profanityCheck(profanityList, input) {
+    Array.from(profanityList).forEach(function(arrayItem, arrIndex) {
+        let simarlarityProfanity = stringSimilarity.compareTwoStrings(profanityList.badWords[arrIndex].toLowerCase(), input.toLowerCase());
+
+        if (simarlarityProfanity <= 0.5) {
+            return false;
+        } else {
+            return true;
+        }
+    })
+}
+
+function existingStoreCheck(storeList, input) {
+    storeList.forEach(function(arrayItem, arrIndex) {
+        let simarlarityStores = stringSimilarity.compareTwoStrings(storeList[arrIndex].Name.toLowerCase(), input.toLowerCase());
+        if (simarlarityStores <= 0.7) {
+            return false;
+        } else {
+            return true;
+        }
+    })
+}
+
+function similarEntryCheck(array, input) {
+    Array.from(array).forEach(function(item, index) {
+        let simarlarityEntries = stringSimilarity.compareTwoStrings(array[index][0].User_Input.toLowerCase(), input.toLowerCase());
+
+        if (simarlarityEntries <= 0.7) {
+            return false;
+        } else {
+            return true;
+        }
+    })
+}
 
 function saveToArr(input) {
     debugger
-    Array.from(profanityDictionary).forEach(function(arrayItem, arrIndex) {
-        let simarlarityProfanity = stringSimilarity.compareTwoStrings(profanityDictionary.badWords[arrIndex].toLowerCase(), input);
-
-        if (simarlarityProfanity >= 0.5) {
-            return [];
-        }
-    })
+    console.log(arrReport);
 
     if (arrReport.length !== 0) {
-        storeDictionary.forEach(function(arrayItem, arrIndex) {
-            let simarlarityStores = stringSimilarity.compareTwoStrings(storeDictionary[arrIndex].Name.toLowerCase(), input);
-
-            let simarlarityEntries;
-
-            Array.from(arrReport).forEach(function(item, index) {
-                simarlarityEntries = stringSimilarity.compareTwoStrings(arrReport[index][0].User_Input.toLowerCase(), input);
-                if (simarlarityStores <= 0.7) {
-                    if (simarlarityEntries <= 0.7) {
-                        arrRecord = [{ "User_Input": input }, { "Occurred": 1 }];
-                        arrReport.push(arrRecord);
-                        return arrReport;
-                    } else { //update the record
+        Array.from(profanityDictionary).forEach(function(ArrayItem, ArrayIndex) {
+            if (!profanityCheck(profanityDictionary, input)) {
+                storeDictionary.forEach(function(arrItem, arrIndex) {
+                    if (!existingStoreCheck(storeDictionary, input)) {
+                        Array.from(arrReport).forEach(function(item, index) {
+                            if (!similarEntryCheck(arrReport, input)) {
+                                arrRecord = { "User_Input": input, "Occurred": 1 };
+                                arrReport.push(arrRecord);
+                                return arrReport;
+                            }
+                        })
+                    } else {
                         occurrCounter++;
-                        arrReport[arrIndex] = [{ "User_Input": input }, { "Occurred": occurrCounter }];
+                        arrReport[arrIndex] = { "User_Input": input, "Occurred": occurrCounter };
                         return arrReport;
                     }
-                }
-            })
+                })
+            } else {
+                return arrReport;
+            }
         })
     } else {
-        arrRecord = [{ "User_Input": input }, { "Occurred": 1 }];
+        arrRecord = { "User_Input": input, "Occurred": 1 };
         arrReport.push(arrRecord);
+        console.log("after " + arrReport);
+        return arrReport;
     }
-    return arrReport;
 }
 
 export function saveToXLSX(input) {
@@ -88,7 +118,8 @@ export function saveToXLSX(input) {
 
     //let data = JSON.stringify(saveToArr(input));
 
-    console.log(saveToArr(input));
+    // console.log(saveToArr(input));
+    saveToArr(input);
 
     // console.log(data);
 
