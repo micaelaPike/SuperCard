@@ -28,7 +28,7 @@ const profanityDictionary = await createArr();
 let arrReport = [];
 let arrRecord = [];
 
-let occurrCounter = 0;
+let occurrCounter = 1;
 
 const month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 const d = new Date();
@@ -52,35 +52,32 @@ function saveToArr(input) {
         }
     })
 
-    storeDictionary.forEach(function(arrayItem, arrIndex) {
+    if (arrReport.length !== 0) {
+        storeDictionary.forEach(function(arrayItem, arrIndex) {
+            let simarlarityStores = stringSimilarity.compareTwoStrings(storeDictionary[arrIndex].Name.toLowerCase(), input);
 
-        let simarlarity = stringSimilarity.compareTwoStrings(storeDictionary[arrIndex].Name.toLowerCase(), input);
+            let simarlarityEntries;
 
-        if (simarlarity <= 0.7) {
-
-            if (arrReport.length !== 0) {
-                for (let i = 0; i < arrReport.length; i++) {
-                    if (arrReport[i][0].User_Input !== input) {
-                        occurrCounter++;
-                        arrRecord = [{ "User_Input": input }, { "Occurred": occurrCounter }];
+            Array.from(arrReport).forEach(function(item, index) {
+                simarlarityEntries = stringSimilarity.compareTwoStrings(arrReport[index][0].User_Input.toLowerCase(), input);
+                if (simarlarityStores <= 0.7) {
+                    if (simarlarityEntries <= 0.7) {
+                        arrRecord = [{ "User_Input": input }, { "Occurred": 1 }];
                         arrReport.push(arrRecord);
                         return arrReport;
                     } else { //update the record
-                        arrRecord = arrRecord.map(() => {
-                            occurrCounter++;
-                            return arrReport;
-                        })
-
+                        occurrCounter++;
+                        arrReport[arrIndex] = [{ "User_Input": input }, { "Occurred": occurrCounter }];
+                        return arrReport;
                     }
                 }
-            } else {
-                arrRecord = [{ "User_Input": input }, { "Occurred": 0 }];
-                arrReport.push(arrRecord);
-                return arrReport;
-            }
-        };
-
-    });
+            })
+        })
+    } else {
+        arrRecord = [{ "User_Input": input }, { "Occurred": 1 }];
+        arrReport.push(arrRecord);
+    }
+    return arrReport;
 }
 
 export function saveToXLSX(input) {
@@ -88,7 +85,7 @@ export function saveToXLSX(input) {
     let wb = XLSX.utils.book_new();
 
 
-    debugger
+
     let data = JSON.stringify(saveToArr(input));
 
     // console.log(data);
