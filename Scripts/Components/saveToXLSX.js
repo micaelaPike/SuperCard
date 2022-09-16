@@ -42,72 +42,78 @@ function lastDayofMonth(date) {
 }
 
 function profanityCheck(profanityList, input) {
-    Array.from(profanityList).forEach(function(arrayItem, arrIndex) {
-        let simarlarityProfanity = stringSimilarity.compareTwoStrings(profanityList.badWords[arrIndex].toLowerCase(), input.toLowerCase());
-
-        if (simarlarityProfanity <= 0.5) {
-            return false;
-        } else {
+    for (let i = 0; i < profanityList.length; i++) {
+        let simarlarityProfanity = stringSimilarity.compareTwoStrings(profanityList.badWords[i].toLowerCase(), input.toLowerCase());
+        if (simarlarityProfanity >= 0.5) {
+            i = profanityList.length;
             return true;
         }
-    })
+    }
+    return false;
 }
 
 function existingStoreCheck(storeList, input) {
-    storeList.forEach(function(arrayItem, arrIndex) {
-        let simarlarityStores = stringSimilarity.compareTwoStrings(storeList[arrIndex].Name.toLowerCase(), input.toLowerCase());
-        if (simarlarityStores <= 0.7) {
-            return false;
-        } else {
+    for (let i = 0; i < storeList.length; i++) {
+        let simarlarityStores = stringSimilarity.compareTwoStrings(storeList[i].Name.toLowerCase(), input.toLowerCase());
+        if (simarlarityStores >= 0.7) {
+            i = storeList.length;
             return true;
         }
-    })
+    }
+    return false;
 }
 
 function similarEntryCheck(array, input) {
-    Array.from(array).forEach(function(item, index) {
-        let simarlarityEntries = stringSimilarity.compareTwoStrings(array[index][0].User_Input.toLowerCase(), input.toLowerCase());
-
-        if (simarlarityEntries <= 0.7) {
-            return false;
-        } else {
+    for (let i = 0; i < array.length; i++) {
+        let simarlarityEntries = stringSimilarity.compareTwoStrings(array[i].User_Input.toLowerCase(), input.toLowerCase());
+        if (simarlarityEntries >= 0.7) {
+            i = array.length;
             return true;
         }
-    })
+    }
+    return false;
 }
 
 function saveToArr(input) {
     debugger
-    console.log(arrReport);
+
 
     if (arrReport.length !== 0) {
-        Array.from(profanityDictionary).forEach(function(ArrayItem, ArrayIndex) {
-            if (!profanityCheck(profanityDictionary, input)) {
-                storeDictionary.forEach(function(arrItem, arrIndex) {
-                    if (!existingStoreCheck(storeDictionary, input)) {
-                        Array.from(arrReport).forEach(function(item, index) {
-                            if (!similarEntryCheck(arrReport, input)) {
-                                arrRecord = { "User_Input": input, "Occurred": 1 };
-                                arrReport.push(arrRecord);
-                                return arrReport;
-                            }
-                        })
-                    } else {
-                        occurrCounter++;
-                        arrReport[arrIndex] = { "User_Input": input, "Occurred": occurrCounter };
-                        return arrReport;
-                    }
-                })
+        if (profanityCheck(profanityDictionary, input) == false) { // no profanity
+            if (existingStoreCheck(storeDictionary, input) == false) { //not similar to an existing store
+                if (similarEntryCheck(arrReport, input) == false) { //not similar to a user entry
+                    arrRecord = { "User_Input": input, "Occurred": 1 };
+                    arrReport.push(arrRecord);
+                    return arrReport;
+                } else {
+                    let arrIndex = arrReport.findIndex((obj) => obj.User_Input === input);
+                    occurrCounter++;
+                    arrReport[arrIndex] = { "User_Input": input, "Occurred": occurrCounter };
+                    console.log(arrReport[0].User_Input + " " + arrReport[0].Occurred)
+
+                    return arrReport;
+                }
             } else {
+                let arrIndex = arrReport.findIndex((obj) => obj.User_Input === input);
+                occurrCounter++;
+                arrReport[arrIndex] = { "User_Input": input, "Occurred": occurrCounter };
+                console.log(arrReport[0].User_Input + " " + arrReport[0].Occurred)
+
                 return arrReport;
             }
-        })
+        } else {
+            console.log(arrReport[0].User_Input + " " + arrReport[0].Occurred)
+
+            return arrReport;
+        }
     } else {
         arrRecord = { "User_Input": input, "Occurred": 1 };
         arrReport.push(arrRecord);
-        console.log("after " + arrReport);
+        console.log(arrReport[0].User_Input + " " + arrReport[0].Occurred)
+
         return arrReport;
     }
+
 }
 
 export function saveToXLSX(input) {
@@ -115,11 +121,10 @@ export function saveToXLSX(input) {
     let wb = XLSX.utils.book_new();
 
 
-
     //let data = JSON.stringify(saveToArr(input));
 
     // console.log(saveToArr(input));
-    saveToArr(input);
+    return saveToArr(input);
 
     // console.log(data);
 
@@ -148,7 +153,4 @@ export function saveToXLSX(input) {
     // //     if (lastDayofMonth) {
     // FileSaver.saveAs(new Blob([s2ab(wbout)], { type: filetype }), title + ".xlsx");
     //     }
-
-
-
 }
