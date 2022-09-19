@@ -79,11 +79,10 @@ function similarEntryCheck(array, input) {
     for (let i = 0; i < array.length; i++) {
         let simarlarityEntries = stringSimilarity.compareTwoStrings(array[i].User_Input.toLowerCase(), input.toLowerCase());
         if (simarlarityEntries >= 0.7) {
-            // i = array.length; For testing 
             return i;
         }
     }
-    return false;
+    return -1;
 }
 
 function saveToArr(input) {
@@ -93,15 +92,17 @@ function saveToArr(input) {
     if (profanityCheck(profanityDictionary, input) == false) { // no profanity
         if (existingStoreCheck(storeDictionary, input) == false) { //not similar to an existing store
             let arrIndex = similarEntryCheck(arrReport, input);
-            if (arrIndex == false) { //not similar to a user entry
+            if (arrIndex == -1) { //not similar to a user entry
                 arrRecord = { "User_Input": input, "Occurred": 1 };
                 arrReport.push(arrRecord);
             } else {
-                occurrCounter++;
+                occurrCounter = occurrCounter + 1;
                 arrReport[arrIndex] = occurrCounter;
             }
         }
     }
+    console.log(arrReport[0].User_Input + " " + arrReport[0].Occurred);
+
     return arrReport;
 }
 
