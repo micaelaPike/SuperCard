@@ -35,6 +35,18 @@ const d = new Date();
 let monthName = month[d.getMonth()];
 let year = d.getFullYear();
 
+const options = {
+    isCaseSensitive: false,
+    threshold: 0.7,
+    includeScore: true,
+    includeMatches: true,
+    shouldSort: true,
+    keys: [
+        "User_Input"
+    ]
+}
+
+
 function lastDayofMonth(date) {
     let dayInMS = 1000 * 60 * 60 * 24;
 
@@ -67,8 +79,8 @@ function similarEntryCheck(array, input) {
     for (let i = 0; i < array.length; i++) {
         let simarlarityEntries = stringSimilarity.compareTwoStrings(array[i].User_Input.toLowerCase(), input.toLowerCase());
         if (simarlarityEntries >= 0.7) {
-            i = array.length;
-            return true;
+            // i = array.length; For testing 
+            return i;
         }
     }
     return false;
@@ -78,42 +90,19 @@ function saveToArr(input) {
     debugger
 
 
-    if (arrReport.length !== 0) {
-        if (profanityCheck(profanityDictionary, input) == false) { // no profanity
-            if (existingStoreCheck(storeDictionary, input) == false) { //not similar to an existing store
-                if (similarEntryCheck(arrReport, input) == false) { //not similar to a user entry
-                    arrRecord = { "User_Input": input, "Occurred": 1 };
-                    arrReport.push(arrRecord);
-                    return arrReport;
-                } else {
-                    let arrIndex = arrReport.findIndex((obj) => obj.User_Input === input);
-                    occurrCounter++;
-                    arrReport[arrIndex] = { "User_Input": input, "Occurred": occurrCounter };
-                    console.log(arrReport[0].User_Input + " " + arrReport[0].Occurred)
-
-                    return arrReport;
-                }
+    if (profanityCheck(profanityDictionary, input) == false) { // no profanity
+        if (existingStoreCheck(storeDictionary, input) == false) { //not similar to an existing store
+            let arrIndex = similarEntryCheck(arrReport, input);
+            if (arrIndex == false) { //not similar to a user entry
+                arrRecord = { "User_Input": input, "Occurred": 1 };
+                arrReport.push(arrRecord);
             } else {
-                let arrIndex = arrReport.findIndex((obj) => obj.User_Input === input);
                 occurrCounter++;
-                arrReport[arrIndex] = { "User_Input": input, "Occurred": occurrCounter };
-                console.log(arrReport[0].User_Input + " " + arrReport[0].Occurred)
-
-                return arrReport;
+                arrReport[arrIndex] = occurrCounter;
             }
-        } else {
-            console.log(arrReport[0].User_Input + " " + arrReport[0].Occurred)
-
-            return arrReport;
         }
-    } else {
-        arrRecord = { "User_Input": input, "Occurred": 1 };
-        arrReport.push(arrRecord);
-        console.log(arrReport[0].User_Input + " " + arrReport[0].Occurred)
-
-        return arrReport;
     }
-
+    return arrReport;
 }
 
 export function saveToXLSX(input) {
