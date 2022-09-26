@@ -85,62 +85,50 @@ function similarEntryCheck(array, input) {
     return -1;
 }
 
-function saveToArr(input) {
+export function saveToArr(input) {
     debugger
 
-
     if (profanityCheck(profanityDictionary, input) == false) { // no profanity
-        if (existingStoreCheck(storeDictionary, input) == false) { //not similar to an existing store
-            let arrIndex = similarEntryCheck(arrReport, input);
-            if (arrIndex == -1) { //not similar to a user entry
-                arrRecord = { "User_Input": input, "Occurred": 1 };
-                arrReport.push(arrRecord);
-            } else {
-                occurrCounter = occurrCounter + 1;
-                arrReport[arrIndex] = occurrCounter;
-            }
-        }
+        postData(input)
+            .then((data) => {
+                console.log(data + " sent!");
+            });
     }
-    console.log(arrReport[0].User_Input + " " + arrReport[0].Occurred);
+    console.log(input);
 
-    return arrReport;
+    return;
 }
 
-export function saveToXLSX(input) {
-    let title = "sc_Map_Search_Report_" + monthName + "_" + year;
-    let wb = XLSX.utils.book_new();
 
 
-    //let data = JSON.stringify(saveToArr(input));
 
-    // console.log(saveToArr(input));
-    return saveToArr(input);
+// if (existingStoreCheck(storeDictionary, input) == false) { //not similar to an existing store
+//     let arrIndex = similarEntryCheck(arrReport, input);
+//     if (arrIndex == -1) { //not similar to a user entry
+//         arrRecord = { "User_Input": input, "Occurred": 1 };
+//         arrReport.push(arrRecord);
+//     } else {
+//         occurrCounter = occurrCounter + 1;
+//         arrReport[arrIndex] = occurrCounter;
+//     }
+// }
 
-    // console.log(data);
-
-    // const fileType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;charset=UTF-8";
-
-    // //const fileExtension = ".xlsx";
 
 
-    // wb.SheetNames.push(title);
+export async function postData(data) {
 
-    // let ws_data = data;
+    const response = await fetch("http://localhost:9000/Service.asmx", {
+        method: 'POST',
+        mode: 'no-cors',
+        cache: 'no-cache',
+        credentials: 'omit',
+        headers: {
+            'Content-Type': 'String'
+        },
+        redirect: 'follow',
+        referrerPolicy: 'no-referrer',
+        body: (data)
+    });
 
-    // // let ws = XLSX.utils.json_to_sheet(ws_data)
-
-    // wb.Sheets["sc_website_" + month + "_" + year] = ws;
-
-    // let wbout = XLSX.write(wb, { bookType: 'xlsx', type: 'array' });
-
-    // function s2ab(s) {
-    //     var buf = new ArrayBuffer(s.length); //convert s to arrayBuffer
-    //     var view = new Uint8Array(buf); //create uint8array as viewer
-    //     for (var i = 0; i < s.length; i++) { view[i] = s.charCodeAt(i) & 0xFF }; //convert to octet
-    //     return buf;
-    // }
-    // console.log(data);
-    // //     if (lastDayofMonth) {
-    // FileSaver.saveAs(new Blob([s2ab(wbout)], { type: filetype }), title + ".xlsx");
-    //     }
+    return response.text();
 }

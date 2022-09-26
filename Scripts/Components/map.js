@@ -1,4 +1,4 @@
-import { saveToXLSX } from "./saveToArr.js";
+import { saveToArr } from "./saveToArr.js";
 
 let btnSearchStore = document.querySelector("#btnSearchStore");
 let btnLayerChange = document.querySelector("#btnLayerChange");
@@ -257,7 +257,7 @@ function searchStore() {
     let inputSearchStoreValue = document.getElementById("searchStore").value;
     inputSearchStoreValue = inputSearchStoreValue.toLowerCase();
 
-    saveToXLSX(inputSearchStoreValue);
+    saveToArr(inputSearchStoreValue);
 
     if (inputSearchStoreValue == undefined) {
         inputSearchStoreValue = "";
