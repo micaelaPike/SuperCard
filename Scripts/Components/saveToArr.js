@@ -2,16 +2,16 @@
 import * as XLSX from "https://cdn.sheetjs.com/xlsx-0.18.11/package/xlsx.mjs";
 
 //Import Search Results Dictionary
-async function createStores() {
-    // was const
-    let { default: storeList } = await
-    import ("/Assets/Data/SearchDictionary.json", {
-        assert: {
-            type: "json",
-        },
-    })
-    return storeList;
-}
+// async function createStores() {
+//     // was const
+//     let { default: storeList } = await
+//     import ("/Assets/Data/SearchDictionary.json", {
+//         assert: {
+//             type: "json",
+//         },
+//     })
+//     return storeList;
+// }
 //Import Profanity Filter
 async function createArr() {
     // was const
@@ -23,17 +23,17 @@ async function createArr() {
     })
     return profanityArr;
 }
-const storeDictionary = await createStores();
+// const storeDictionary = await createStores();
 const profanityDictionary = await createArr();
-let arrReport = [];
-let arrRecord = [];
+// let arrReport = [];
+// let arrRecord = [];
 
 let occurrCounter = 1;
 
-const month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-const d = new Date();
-let monthName = month[d.getMonth()];
-let year = d.getFullYear();
+// const month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+// const d = new Date();
+// let monthName = month[d.getMonth()];
+// let year = d.getFullYear();
 
 const options = {
     isCaseSensitive: false,
@@ -47,11 +47,11 @@ const options = {
 }
 
 
-function lastDayofMonth(date) {
-    let dayInMS = 1000 * 60 * 60 * 24;
+// function lastDayofMonth(date) {
+//     let dayInMS = 1000 * 60 * 60 * 24;
 
-    return new Date(date.getTime() + dayInMS).getDate() == 1;
-}
+//     return new Date(date.getTime() + dayInMS).getDate() == 1;
+// }
 
 function profanityCheck(profanityList, input) {
     for (let i = 0; i < profanityList.length; i++) {
@@ -64,71 +64,65 @@ function profanityCheck(profanityList, input) {
     return false;
 }
 
-function existingStoreCheck(storeList, input) {
-    for (let i = 0; i < storeList.length; i++) {
-        let simarlarityStores = stringSimilarity.compareTwoStrings(storeList[i].Name.toLowerCase(), input.toLowerCase());
-        if (simarlarityStores >= 0.7) {
-            i = storeList.length;
-            return true;
-        }
-    }
-    return false;
-}
+// function existingStoreCheck(storeList, input) {
+//     for (let i = 0; i < storeList.length; i++) {
+//         let simarlarityStores = stringSimilarity.compareTwoStrings(storeList[i].Name.toLowerCase(), input.toLowerCase());
+//         if (simarlarityStores >= 0.7) {
+//             i = storeList.length;
+//             return true;
+//         }
+//     }
+//     return false;
+// }
 
-function similarEntryCheck(array, input) {
-    for (let i = 0; i < array.length; i++) {
-        let simarlarityEntries = stringSimilarity.compareTwoStrings(array[i].User_Input.toLowerCase(), input.toLowerCase());
-        if (simarlarityEntries >= 0.7) {
-            return i;
-        }
-    }
-    return -1;
-}
+// function similarEntryCheck(array, input) {
+//     for (let i = 0; i < array.length; i++) {
+//         let simarlarityEntries = stringSimilarity.compareTwoStrings(array[i].User_Input.toLowerCase(), input.toLowerCase());
+//         if (simarlarityEntries >= 0.7) {
+//             return i;
+//         }
+//     }
+//     return -1;
+// }
 
 export function saveToArr(input) {
     debugger
 
     if (profanityCheck(profanityDictionary, input) == false) { // no profanity
-        postData(input)
+        fetch("http://localhost:9000/Service.asmx?op=MapSearchReport", {
+                method: 'POST',
+                mode: 'no-cors',
+
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(input),
+            })
+            .then((response) => response.json())
             .then((data) => {
-                console.log(data + " sent!");
+                console.log('Success:', data);
+            })
+            .catch((error) => {
+                console.error('Error:', error);
             });
     }
-    console.log(input);
-
-    return;
 }
 
 
+// export async function postData(data) {
 
+//     const response = await fetch("http://localhost:9000/Service.asmx", {
+//         method: 'POST',
+//         mode: 'no-cors',
+//         cache: 'no-cache',
+//         credentials: 'omit',
+//         headers: {
+//             'Content-Type': 'String'
+//         },
+//         redirect: 'follow',
+//         referrerPolicy: 'no-referrer',
+//         body: (data)
+//     });
 
-// if (existingStoreCheck(storeDictionary, input) == false) { //not similar to an existing store
-//     let arrIndex = similarEntryCheck(arrReport, input);
-//     if (arrIndex == -1) { //not similar to a user entry
-//         arrRecord = { "User_Input": input, "Occurred": 1 };
-//         arrReport.push(arrRecord);
-//     } else {
-//         occurrCounter = occurrCounter + 1;
-//         arrReport[arrIndex] = occurrCounter;
-//     }
+//     return response.text();
 // }
-
-
-
-export async function postData(data) {
-
-    const response = await fetch("http://localhost:9000/Service.asmx", {
-        method: 'POST',
-        mode: 'no-cors',
-        cache: 'no-cache',
-        credentials: 'omit',
-        headers: {
-            'Content-Type': 'String'
-        },
-        redirect: 'follow',
-        referrerPolicy: 'no-referrer',
-        body: (data)
-    });
-
-    return response.text();
-}
