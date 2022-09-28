@@ -27,7 +27,7 @@ export function saveToArr(input) {
 
     if (profanityCheck(profanityDictionary, input) == false) { // no profanity
         // fetch("http://localhost:9000/Service.asmx", {
-        fetch("http://localhost:9000/Service.asmx?op=MapSearchReport", {
+        fetch("http://localhost:9000/Service.asmx?op=search_log_call", {
             method: 'POST',
             mode: 'no-cors',
             cache: 'no-cache',
