@@ -253,6 +253,10 @@ displayMarkers(markerLocations);
 //Fires when users clicks the button to search for a store
 function searchStore() {
     // debugger
+    // markerLocations.forEach((item, index) => {
+    //     console.log(markerLocations[index].StoreName);
+
+    // })
 
     let inputSearchStoreValue = document.getElementById("searchStore").value;
     inputSearchStoreValue = inputSearchStoreValue.toLowerCase();
