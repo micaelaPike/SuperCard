@@ -1,6 +1,5 @@
 //Import Profanity Filter
 async function createArr() {
-    // was const
     let { default: profanityArr } = await
     import ("/Assets/Data/ProfanityFilter.json", {
         assert: {
@@ -25,13 +24,11 @@ function profanityCheck(profanityList, input) {
 export function saveToArr(input) {
     // debugger
 
-    if (profanityCheck(profanityDictionary, input) == false) { // no profanity
-        // fetch("http://localhost:9000/Service.asmx", {
-        fetch("http://localhost:9000/Service.asmx?op=search_log_call", {
+    if (profanityCheck(profanityDictionary, input) == false) {
+        fetch("https://localhost:7095/search", {
             method: 'POST',
             mode: 'no-cors',
             cache: 'no-cache',
-            credentials: 'omit',
 
             headers: {
                 'Content-Type': 'String',
@@ -47,24 +44,6 @@ export function saveToArr(input) {
             .catch((error) => {
                 console.error('Error:', input);
             });
+        //return response.text();
     }
 }
-
-
-// export async function postData(data) {
-
-//     const response = await fetch("http://localhost:9000/Service.asmx", {
-//         method: 'POST',
-//         mode: 'no-cors',
-//         cache: 'no-cache',
-//         credentials: 'omit',
-//         headers: {
-//             'Content-Type': 'String'
-//         },
-//         redirect: 'follow',
-//         referrerPolicy: 'no-referrer',
-//         body: (data)
-//     });
-
-//     return response.text();
-// }
