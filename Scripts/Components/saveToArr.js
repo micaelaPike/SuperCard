@@ -31,7 +31,7 @@ export function saveToArr(input) {
             cache: 'no-cache',
 
             headers: {
-                'Content-Type': 'String',
+                'Content-Type': 'text/html',
             },
             body: input,
 
