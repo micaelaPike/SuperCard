@@ -31,7 +31,8 @@ export function saveToArr(input) {
             cache: 'no-cache',
 
             headers: {
-                'Content-Type': 'text/html',
+                Accept: 'application/x-www-form-urlencoded',
+                'Content-Type': 'text/plain;charset=UTF-8',
             },
             body: input,
 
@@ -42,7 +43,7 @@ export function saveToArr(input) {
                 console.log('Success:', input);
             })
             .catch((error) => {
-                console.error('Error:', input);
+                console.error('Error:', error);
             });
         //return response.text();
     }
